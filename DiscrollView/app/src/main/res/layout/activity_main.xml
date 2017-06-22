@@ -9,6 +9,7 @@
         android:layout_height="match_parent">
 
         <!-- here you put discrollvable views -->
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="800dp">
@@ -25,12 +26,72 @@
 
         </FrameLayout>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Hello"/>
-        
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/iconCat1"
+            android:src="@drawable/ic_action_name"
+            android:layout_gravity="center"
+            discrollve:discrollve_alpha="true"
+            discrollve:discrollve_translation="fromLeft"
+            discrollve:discrollve_threshold="0.3"
+            />
 
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/iconCat2"
+            android:src="@drawable/ic_android"
+            android:layout_gravity="center"
+            discrollve:discrollve_alpha="true"
+            discrollve:discrollve_translation="fromLeft"
+            discrollve:discrollve_threshold="0.3"
+            android:layout_marginTop="20dp"
+            />
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/iconCat3"
+            android:src="@drawable/ic_android"
+            android:layout_gravity="center"
+            discrollve:discrollve_alpha="true"
+            discrollve:discrollve_translation="fromLeft"
+            discrollve:discrollve_threshold="0.3"
+            android:layout_marginTop="20dp"/>
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/iconCat4"
+            android:src="@drawable/ic_android"
+            android:layout_gravity="center"
+            discrollve:discrollve_alpha="true"
+            discrollve:discrollve_translation="fromLeft"
+            discrollve:discrollve_threshold="0.3"
+            android:layout_marginTop="20dp"/>
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/iconCat5"
+            android:src="@drawable/ic_android"
+            android:layout_gravity="center"
+            discrollve:discrollve_alpha="true"
+            discrollve:discrollve_translation="fromLeft"
+            discrollve:discrollve_threshold="0.3"
+            android:layout_marginTop="20dp"/>
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/iconCat6"
+            android:src="@drawable/ic_android"
+            android:layout_gravity="center"
+            discrollve:discrollve_alpha="true"
+            discrollve:discrollve_translation="fromLeft"
+            discrollve:discrollve_threshold="0.3"
+            android:layout_marginTop="20dp"/>
 
     </com.flavienlaurent.discrollview.lib.DiscrollViewContent>
 
