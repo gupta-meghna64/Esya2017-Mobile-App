@@ -37,8 +37,7 @@
             android:text="DIRECTIONS"
             android:textStyle="bold"
             android:paddingBottom="20dp"
-            discrollve:discrollve_alpha="false"
-            discrollve:discrollve_translation="fromRight"
+            discrollve:discrollve_alpha="true"
             android:textSize="20dp"/>
 
 
@@ -70,6 +69,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="ABOUT US"
+            discrollve:discrollve_alpha="true"
             android:textStyle="bold"
             android:paddingTop="20dp"
             android:textAlignment="center"
@@ -104,6 +104,7 @@
             android:layout_height="wrap_content"
             android:text="CONTACT"
             android:textStyle="bold"
+            discrollve:discrollve_alpha="true"
             android:paddingTop="20dp"
             android:textAlignment="center"
             android:paddingBottom="20dp"
@@ -112,8 +113,6 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            discrollve:discrollve_alpha="true"
-            discrollve:discrollve_translation="fromRight"
             android:orientation="horizontal"
             android:weightSum="2">
 
