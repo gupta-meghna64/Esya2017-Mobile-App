@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">DiscrollView</string>
+    <string name="google_android_map_api_key">AIzaSyABanDYKPW05HfslxvemTB1r5Nor2p3Khc</string>
 </resources>

@@ -26,7 +26,7 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
-
+    compile 'com.google.android.gms:play-services-maps:11.0.1'
     compile 'com.github.flavienlaurent.discrollview:library:0.0.2@aar'
     testCompile 'junit:junit:4.12'
 }
