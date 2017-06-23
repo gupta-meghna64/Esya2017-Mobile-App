@@ -69,7 +69,60 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ABOUT US"
+            android:text="ABOUT US"/>
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/iconCat1"
+            android:src="@drawable/ic_android"
+            android:layout_gravity="center"
+            discrollve:discrollve_alpha="true"
+            discrollve:discrollve_translation="fromLeft"
+            discrollve:discrollve_threshold="0.3"
+            android:layout_marginTop="20dp"
+            />
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/iconCat2"
+            android:src="@drawable/ic_android"
+            android:layout_gravity="center"
+            discrollve:discrollve_alpha="true"
+            discrollve:discrollve_translation="fromRight"
+            discrollve:discrollve_threshold="0.3"
+            android:layout_marginTop="20dp"
+            />
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/iconCat3"
+            android:src="@drawable/ic_android"
+            android:layout_gravity="center"
+            discrollve:discrollve_alpha="true"
+            discrollve:discrollve_translation="fromLeft"
+            discrollve:discrollve_threshold="0.3"
+            android:layout_marginTop="20dp"/>
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/iconCat4"
+            android:src="@drawable/ic_android"
+            android:layout_gravity="center"
+            discrollve:discrollve_alpha="true"
+            discrollve:discrollve_translation="fromRight"
+            discrollve:discrollve_threshold="0.3"
+            android:layout_marginTop="20dp"/>
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/iconCat5"
+            android:src="@drawable/ic_android"
+            android:layout_gravity="center"
             discrollve:discrollve_alpha="true"
             discrollve:discrollve_translation="fromRight"
             android:textStyle="bold"
