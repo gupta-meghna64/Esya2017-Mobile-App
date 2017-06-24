@@ -13,6 +13,8 @@ import android.widget.Toast;
 
 import com.ramotion.foldingcell.FoldingCell;
 
+import static android.R.id.message;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -28,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         ImageButton facebook = (ImageButton) findViewById(R.id.facebookEsya);
         ImageButton instagram = (ImageButton) findViewById(R.id.instagramEsya);
         ImageButton twitter = (ImageButton) findViewById(R.id.twitterEsya);
-        ImageButton website = (ImageButton) findViewById(R.id.websiteEsya);
+        //ImageButton website = (ImageButton) findViewById(R.id.websiteEsya);
         facebook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -73,11 +75,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        website.setOnClickListener(new View.OnClickListener() {
+        ImageButton email = (ImageButton) findViewById(R.id.emailEsya);
+        email.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://esya.iiitd.edu.in/"));
-                startActivity(browserIntent);
+                Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
+                        "mailto","esya@iiitd.ac.in", null));
+                intent.putExtra(Intent.EXTRA_SUBJECT, "Query");
+                intent.putExtra(Intent.EXTRA_TEXT, message);
+                startActivity(Intent.createChooser(intent, "Choose an Email client :"));
             }
         });
 
@@ -90,5 +96,50 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        final FoldingCell fc2 = (FoldingCell) findViewById(R.id.folding_cell2);
+        // attach click listener to folding cell
+        fc2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                fc2.toggle(false);
+            }
+        });
+
+        final FoldingCell fc3 = (FoldingCell) findViewById(R.id.folding_cell3);
+        // attach click listener to folding cell
+        fc3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                fc3.toggle(false);
+            }
+        });
+
+        final FoldingCell fc4 = (FoldingCell) findViewById(R.id.folding_cell4);
+        // attach click listener to folding cell
+        fc4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                fc4.toggle(false);
+            }
+        });
+
+        final FoldingCell fc5 = (FoldingCell) findViewById(R.id.folding_cell5);
+        // attach click listener to folding cell
+        fc5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                fc5.toggle(false);
+            }
+        });
+
+
+        final FoldingCell fc6 = (FoldingCell) findViewById(R.id.folding_cell6);
+        // attach click listener to folding cell
+        fc6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                fc6.toggle(false);
+            }
+        });
     }
 }

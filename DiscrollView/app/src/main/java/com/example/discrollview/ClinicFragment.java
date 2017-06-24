@@ -38,7 +38,7 @@ public class ClinicFragment extends Fragment {
 
         toast("Working till here");
         SupportMapFragment mapFragment = (SupportMapFragment) this.getChildFragmentManager()
-                .findFragmentById(R.id.map);
+                .findFragmentById(R.id.mapV);
         mapFragment.getMapAsync(new OnMapReadyCallback() {
             @Override
             public void onMapReady(GoogleMap googleMap) {
