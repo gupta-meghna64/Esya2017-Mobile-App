@@ -87,6 +87,19 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        ImageView navigate = (ImageView) findViewById(R.id.navigateEsya);
+        navigate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri gmmIntentUri = Uri.parse("google.navigation:q="+"IIIT Delhi");
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+                mapIntent.setPackage("com.google.android.apps.maps");
+                startActivity(mapIntent);
+
+
+            }
+        });
+
         final FoldingCell fc = (FoldingCell) findViewById(R.id.folding_cell);
         // attach click listener to folding cell
         fc.setOnClickListener(new View.OnClickListener() {
