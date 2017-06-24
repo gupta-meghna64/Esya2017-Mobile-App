@@ -316,9 +316,54 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Indraprastha Institute of Information Technology Delhi"/>
+
+                <TextView
+                    android:paddingTop="10dp"
+                    android:textAlignment="center"
+                    android:paddingBottom="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Okhla Industrial Estate, Phase III, Near Govind Puri Metro Station, Delhi, 110020"/>
+
+                <Button
+                    android:id="@+id/navigateEsya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="  Get Directions"
+                    android:drawableLeft="@drawable/ic_near_me_black_18dp"
+                    android:textSize="16dp"/>
+
+
+            </LinearLayout>
+
 
         </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            />
+
+
+
 
         <TextView
             android:layout_width="match_parent"
