@@ -1,11 +1,17 @@
 package com.example.discrollview;
 
+import android.content.ActivityNotFoundException;
+import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
+
+import com.ramotion.foldingcell.FoldingCell;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -72,6 +78,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://esya.iiitd.edu.in/"));
                 startActivity(browserIntent);
+            }
+        });
+
+        final FoldingCell fc = (FoldingCell) findViewById(R.id.folding_cell);
+        // attach click listener to folding cell
+        fc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                fc.toggle(false);
             }
         });
 

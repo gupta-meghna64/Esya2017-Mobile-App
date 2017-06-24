@@ -28,5 +28,6 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.google.android.gms:play-services-maps:11.0.1'
     compile 'com.github.flavienlaurent.discrollview:library:0.0.2@aar'
+    compile 'com.ramotion.foldingcell:folding-cell:1.2.1'
     testCompile 'junit:junit:4.12'
 }
