@@ -1,5 +1,6 @@
 package com.example.discrollview;
 
+import android.animation.ObjectAnimator;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
@@ -12,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.HorizontalScrollView;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -39,22 +41,12 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        ImageView img = (ImageView) findViewById(R.id.starterImage);
-//        img.setBackgroundResource(R.drawable.progress_animation);
-//        AnimationDrawable frameAnimation = (AnimationDrawable) img.getBackground();
-//        frameAnimation.start();
-
         ImageButton facebook = (ImageButton) findViewById(R.id.facebookEsya);
         ImageButton instagram = (ImageButton) findViewById(R.id.instagramEsya);
         ImageButton twitter = (ImageButton) findViewById(R.id.twitterEsya);
-        //ImageButton website = (ImageButton) findViewById(R.id.websiteEsya);
         facebook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Uri uri = Uri.parse("https://www.facebook.com/EsyaIIITD/"); // missing 'http://' will cause crashed
-//                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-//                startActivity(intent);
-//                getOpenFacebookIntent(getApplicationContext());
                 try {
                     Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("fb://profile/Fe9qooYPLQd"));
                     startActivity(intent);
@@ -105,10 +97,8 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         });
 
 
-        //ImageView navigate = (ImageView) findViewById(R.id.navigateEsya);
         Button navigate = (Button) findViewById(R.id.navigateEsya);
 
-        //Button navigate = (Button) findViewById(R.id.navigateEsya);
         navigate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -118,6 +108,14 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
                 startActivity(mapIntent);
 
 
+            }
+        });
+
+        TextView web = (TextView) findViewById(R.id.websiteEsya);
+        web.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.esya.iiitd.ac.in")));
             }
         });
 
@@ -176,38 +174,6 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
             }
         });
 
-//        sliderShow = (SliderLayout) findViewById(R.id.slider);
-//        TextSliderView textSliderView1 = new TextSliderView(this);
-//        textSliderView1
-//                .description("Image 1")
-//                .image("https://scontent.fdel1-1.fna.fbcdn.net/v/t1.0-9/18893217_1926482404043877_1443193016012393349_n.jpg?oh=0e314474e7d8de6f0e669d6e045d8a01&oe=59D17054");
-//
-//        sliderShow.addSlider(textSliderView1);
-//        onStop();
-//
-//        TextSliderView textSliderView2 = new TextSliderView(this);
-//        textSliderView2
-//                .description("Image 2")
-//                .image("https://scontent.fdel1-1.fna.fbcdn.net/v/t1.0-9/13934896_1492546327437489_2987325064525604867_n.jpg?oh=cb62dd6d5dca23b730bff042cbc3a30b&oe=59DF8F71");
-//
-//        sliderShow.addSlider(textSliderView2);
-//        onStop();
-//
-//        TextSliderView textSliderView3 = new TextSliderView(this);
-//        textSliderView3
-//                .description("Image 3")
-//                .image("https://scontent.fdel1-1.fna.fbcdn.net/v/t1.0-9/13935114_1487768377915284_7396714088998725695_n.png?oh=a4723bf4562be6d74913157719efe086&oe=59D461EC");
-//
-//        sliderShow.addSlider(textSliderView3);
-//        onStop();
-
-        TextView web = (TextView) findViewById(R.id.websiteEsya);
-        web.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.esya.iiitd.edu.in")));
-            }
-        });
 
         sliderLayout = (SliderLayout) findViewById(R.id.slider);
         HashMap<String,Integer> file_maps = new HashMap<String, Integer>();
