@@ -7,9 +7,7 @@
 
     <com.flavienlaurent.discrollview.lib.DiscrollViewContent
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:clipChildren="false"
-        android:clipToPadding="false">
+        android:layout_height="match_parent">
 
 
         <RelativeLayout
@@ -40,18 +38,13 @@
                 android:textStyle="bold"/>
         </RelativeLayout>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            />
-
-
 
         <com.ramotion.foldingcell.FoldingCell
             xmlns:android="http://schemas.android.com/apk/res/android"
             android:id="@+id/folding_cell"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp">
             <FrameLayout
                 android:id="@+id/cell_content_view"
                 android:layout_width="match_parent"
@@ -67,7 +60,9 @@
             <FrameLayout
                 android:id="@+id/cell_title_view"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
@@ -83,7 +78,8 @@
             xmlns:android="http://schemas.android.com/apk/res/android"
             android:id="@+id/folding_cell2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp">
             <FrameLayout
                 android:id="@+id/cell_content_view2"
                 android:layout_width="match_parent"
@@ -99,7 +95,9 @@
             <FrameLayout
                 android:id="@+id/cell_title_view2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
@@ -115,7 +113,8 @@
             xmlns:android="http://schemas.android.com/apk/res/android"
             android:id="@+id/folding_cell3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp">
             <FrameLayout
                 android:id="@+id/cell_content_view3"
                 android:layout_width="match_parent"
@@ -131,7 +130,9 @@
             <FrameLayout
                 android:id="@+id/cell_title_view3"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
@@ -147,7 +148,8 @@
             xmlns:android="http://schemas.android.com/apk/res/android"
             android:id="@+id/folding_cell4"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp">
             <FrameLayout
                 android:id="@+id/cell_content_view4"
                 android:layout_width="match_parent"
@@ -163,7 +165,9 @@
             <FrameLayout
                 android:id="@+id/cell_title_view4"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
@@ -178,7 +182,8 @@
             xmlns:android="http://schemas.android.com/apk/res/android"
             android:id="@+id/folding_cell5"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp">
             <FrameLayout
                 android:id="@+id/cell_content_view5"
                 android:layout_width="match_parent"
@@ -194,7 +199,9 @@
             <FrameLayout
                 android:id="@+id/cell_title_view5"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
@@ -210,7 +217,8 @@
             xmlns:android="http://schemas.android.com/apk/res/android"
             android:id="@+id/folding_cell6"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp">
             <FrameLayout
                 android:id="@+id/cell_content_view6"
                 android:layout_width="match_parent"
@@ -226,7 +234,9 @@
             <FrameLayout
                 android:id="@+id/cell_title_view6"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
@@ -235,11 +245,6 @@
             </FrameLayout>
             ​
         </com.ramotion.foldingcell.FoldingCell>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="30dp" />
-
 
 
         <android.support.v7.widget.CardView
@@ -295,34 +300,6 @@
         </android.support.v7.widget.CardView>
 
 
-
-        <!--<FrameLayout-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:paddingBottom="20dp">-->
-
-        <!--<TextView-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:textStyle="bold"-->
-        <!--android:text="EXPLORING INFINITY AND BEYOND"-->
-        <!--android:textAlignment="center"/>-->
-
-
-        <!--<TextView-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:paddingTop="20dp"-->
-        <!--android:text="Esya is a two-day long festival that aims to stimulate new innovations and carve out hidden talents.This year, Esya promises to be an unprecedented celebration of budding talent, technical excellence and innovative minds, breaking all barriers and exploring the unexplored.."-->
-        <!--android:textAlignment="center"-->
-        <!--/>-->
-
-        <!--</FrameLayout>-->
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            />
 
         <android.support.v7.widget.CardView
             android:id="@+id/cardView2"
@@ -397,11 +374,6 @@
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            />
 
 
 
@@ -529,10 +501,6 @@
 
         </android.support.v7.widget.CardView>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            />
 
         <android.support.v7.widget.CardView
             android:id="@+id/cardView4"
@@ -547,6 +515,85 @@
             card_view:cardBackgroundColor="@android:color/background_light"
             card_view:cardCornerRadius="2dp"
             card_view:contentPadding="10dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="PAST SPONSORS"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View All"
+                    android:layout_gravity="right"
+                    android:marginLeft="50dp"/>
+            </LinearLayout>
+
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/esya01"
+                        android:paddingLeft="8dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/esya01"
+                        android:paddingLeft="8dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/esya01"
+                        android:paddingLeft="8dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/esya01"
+                        android:paddingLeft="8dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/esya01"
+                        android:paddingLeft="8dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/esya01"
+                        android:paddingLeft="8dp"
+                        />
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
 
         </android.support.v7.widget.CardView>
 
