@@ -1,6 +1,7 @@
 <com.flavienlaurent.discrollview.lib.DiscrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:discrollve="http://schemas.android.com/apk/res-auto"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:custom="http://schemas.android.com/tools">
@@ -44,30 +45,34 @@
             android:id="@+id/folding_cell"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="8dp">
-            <FrameLayout
+            android:paddingTop="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            >
+
+        <FrameLayout
                 android:id="@+id/cell_content_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@android:color/holo_green_dark"
                 android:visibility="gone">
-                <TextView
+
+                <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="250dp"
-                    android:text="This is sample text inside."/>
+                    android:layout_height="800px"
+                    android:background="@drawable/fullmountain"
+                    />
             </FrameLayout>
             ​
             <FrameLayout
                 android:id="@+id/cell_title_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp">
-                <TextView
+                >
+
+                <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:text="This is sample text outside."
-                    android:background="@android:color/holo_blue_dark" />
+                    android:layout_height="200px"
+                    android:background="@drawable/topmountain" />
             </FrameLayout>
             ​
         </com.ramotion.foldingcell.FoldingCell>
@@ -79,30 +84,34 @@
             android:id="@+id/folding_cell2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="8dp">
+            android:paddingTop="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            >
+
             <FrameLayout
                 android:id="@+id/cell_content_view2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@android:color/holo_green_dark"
                 android:visibility="gone">
-                <TextView
+
+                <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="250dp"
-                    android:text="This is sample text inside."/>
+                    android:layout_height="800px"
+                    android:background="@drawable/fullmountain"
+                    />
             </FrameLayout>
             ​
             <FrameLayout
                 android:id="@+id/cell_title_view2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingRight="8dp"
-                android:paddingLeft="8dp">
-                <TextView
+                >
+
+                <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:text="This is sample text outside."
-                    android:background="@android:color/holo_blue_dark" />
+                    android:layout_height="200px"
+                    android:background="@drawable/topmountain" />
             </FrameLayout>
             ​
         </com.ramotion.foldingcell.FoldingCell>
@@ -114,30 +123,34 @@
             android:id="@+id/folding_cell3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="8dp">
+            android:paddingTop="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            >
+
             <FrameLayout
                 android:id="@+id/cell_content_view3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@android:color/holo_green_dark"
                 android:visibility="gone">
-                <TextView
+
+                <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="250dp"
-                    android:text="This is sample text inside."/>
+                    android:layout_height="800px"
+                    android:background="@drawable/fullmountain"
+                    />
             </FrameLayout>
             ​
             <FrameLayout
                 android:id="@+id/cell_title_view3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp">
-                <TextView
+                >
+
+                <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:text="This is sample text outside."
-                    android:background="@android:color/holo_blue_dark" />
+                    android:layout_height="200px"
+                    android:background="@drawable/topmountain" />
             </FrameLayout>
             ​
         </com.ramotion.foldingcell.FoldingCell>
@@ -149,33 +162,38 @@
             android:id="@+id/folding_cell4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="8dp">
+            android:paddingTop="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            >
+
             <FrameLayout
                 android:id="@+id/cell_content_view4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@android:color/holo_green_dark"
                 android:visibility="gone">
-                <TextView
+
+                <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="250dp"
-                    android:text="This is sample text inside."/>
+                    android:layout_height="800px"
+                    android:background="@drawable/fullmountain"
+                    />
             </FrameLayout>
             ​
             <FrameLayout
                 android:id="@+id/cell_title_view4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp">
-                <TextView
+                >
+
+                <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:text="This is sample text outside."
-                    android:background="@android:color/holo_blue_dark" />
+                    android:layout_height="200px"
+                    android:background="@drawable/topmountain" />
             </FrameLayout>
             ​
         </com.ramotion.foldingcell.FoldingCell>
+
 
 
         <com.ramotion.foldingcell.FoldingCell
@@ -183,30 +201,34 @@
             android:id="@+id/folding_cell5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="8dp">
+            android:paddingTop="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            >
+
             <FrameLayout
                 android:id="@+id/cell_content_view5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@android:color/holo_green_dark"
                 android:visibility="gone">
-                <TextView
+
+                <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="250dp"
-                    android:text="This is sample text inside."/>
+                    android:layout_height="800px"
+                    android:background="@drawable/fullmountain"
+                    />
             </FrameLayout>
             ​
             <FrameLayout
                 android:id="@+id/cell_title_view5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp">
-                <TextView
+                >
+
+                <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:text="This is sample text outside."
-                    android:background="@android:color/holo_blue_dark" />
+                    android:layout_height="200px"
+                    android:background="@drawable/topmountain" />
             </FrameLayout>
             ​
         </com.ramotion.foldingcell.FoldingCell>
@@ -218,33 +240,38 @@
             android:id="@+id/folding_cell6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="8dp">
+            android:paddingTop="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            >
+
             <FrameLayout
                 android:id="@+id/cell_content_view6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@android:color/holo_green_dark"
                 android:visibility="gone">
-                <TextView
+
+                <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="250dp"
-                    android:text="This is sample text inside."/>
+                    android:layout_height="800px"
+                    android:background="@drawable/fullmountain"
+                    />
             </FrameLayout>
             ​
             <FrameLayout
                 android:id="@+id/cell_title_view6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp">
-                <TextView
+                >
+
+                <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:text="This is sample text outside."
-                    android:background="@android:color/holo_blue_dark" />
+                    android:layout_height="200px"
+                    android:background="@drawable/topmountain" />
             </FrameLayout>
             ​
         </com.ramotion.foldingcell.FoldingCell>
+
 
 
         <android.support.v7.widget.CardView
@@ -554,6 +581,7 @@
                         android:layout_height="200dp"
                         android:src="@drawable/esya01"
                         android:paddingLeft="8dp"
+                        android:id="@+id/firstImage"
                         />
 
                     <ImageView

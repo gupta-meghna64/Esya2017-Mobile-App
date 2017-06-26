@@ -202,6 +202,12 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         sliderLayout.setDuration(1250);
         sliderLayout.addOnPageChangeListener(this);
 
+        HorizontalScrollView sponsors= (HorizontalScrollView) findViewById(R.id.sponsors);
+        ObjectAnimator animator=ObjectAnimator.ofInt(sponsors, "scrollX",R.id.firstImage, R.id.lastImage);
+        animator.setStartDelay(1000);
+        animator.setDuration(10000);
+        animator.start();
+
 
     }
     @Override
