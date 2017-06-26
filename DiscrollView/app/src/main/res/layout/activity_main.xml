@@ -45,28 +45,41 @@
             android:id="@+id/folding_cell"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="8dp"
-            android:paddingLeft="8dp"
-            android:paddingRight="8dp"
             >
 
         <FrameLayout
                 android:id="@+id/cell_content_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:visibility="gone">
+                android:visibility="gone"
+                android:paddingTop="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="800px"
                     android:background="@drawable/fullmountain"
                     />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Events"
+                    android:id="@+id/events"
+                    android:layout_gravity="top|right"
+            />
+
+
             </FrameLayout>
             ​
             <FrameLayout
                 android:id="@+id/cell_title_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
                 >
 
                 <ImageView
@@ -84,16 +97,16 @@
             android:id="@+id/folding_cell2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="8dp"
-            android:paddingLeft="8dp"
-            android:paddingRight="8dp"
             >
 
             <FrameLayout
                 android:id="@+id/cell_content_view2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:visibility="gone">
+                android:visibility="gone"
+                android:paddingTop="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">>
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -106,7 +119,9 @@
                 android:id="@+id/cell_title_view2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                >
+                android:paddingTop="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">>
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -122,17 +137,16 @@
             xmlns:android="http://schemas.android.com/apk/res/android"
             android:id="@+id/folding_cell3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="8dp"
-            android:paddingLeft="8dp"
-            android:paddingRight="8dp"
-            >
+            android:layout_height="wrap_content">
 
             <FrameLayout
                 android:id="@+id/cell_content_view3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:visibility="gone">
+                android:visibility="gone"
+                android:paddingTop="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -145,7 +159,9 @@
                 android:id="@+id/cell_title_view3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                >
+                android:paddingTop="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -162,17 +178,17 @@
             android:id="@+id/folding_cell4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="8dp"
-            android:paddingLeft="8dp"
-            android:paddingRight="8dp"
             >
 
             <FrameLayout
                 android:id="@+id/cell_content_view4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:visibility="gone">
-
+                android:visibility="gone"
+                android:paddingTop="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                >
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="800px"
@@ -184,7 +200,9 @@
                 android:id="@+id/cell_title_view4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                >
+                android:paddingTop="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -201,16 +219,16 @@
             android:id="@+id/folding_cell5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="8dp"
-            android:paddingLeft="8dp"
-            android:paddingRight="8dp"
             >
 
             <FrameLayout
                 android:id="@+id/cell_content_view5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:visibility="gone">
+                android:visibility="gone"
+                android:paddingTop="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -223,7 +241,9 @@
                 android:id="@+id/cell_title_view5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                >
+                android:paddingTop="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -240,16 +260,16 @@
             android:id="@+id/folding_cell6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="8dp"
-            android:paddingLeft="8dp"
-            android:paddingRight="8dp"
             >
 
             <FrameLayout
                 android:id="@+id/cell_content_view6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:visibility="gone">
+                android:visibility="gone"
+                android:paddingTop="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -262,7 +282,9 @@
                 android:id="@+id/cell_title_view6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                >
+                android:paddingTop="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -544,86 +566,45 @@
             card_view:contentPadding="10dp" >
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="20dp"
-                    android:text="PAST SPONSORS"
-                    android:textStyle="bold"
-                    android:layout_gravity="center"/>
-
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="View All"
-                    android:layout_gravity="right"
-                    android:layout_marginLeft="20dp" />
-            </LinearLayout>
-
-
-
-            <HorizontalScrollView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/sponsors">
-
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
 
-                    <ImageView
-                        android:layout_width="200dp"
-                        android:layout_height="200dp"
-                        android:src="@drawable/esya01"
-                        android:paddingLeft="8dp"
-                        android:id="@+id/firstImage"
-                        />
-
-                    <ImageView
-                        android:layout_width="200dp"
-                        android:layout_height="200dp"
-                        android:src="@drawable/esya01"
-                        android:paddingLeft="8dp"
-                        />
-
-                    <ImageView
-                        android:layout_width="200dp"
-                        android:layout_height="200dp"
-                        android:src="@drawable/esya01"
-                        android:paddingLeft="8dp"
-                        />
-
-                    <ImageView
-                        android:layout_width="200dp"
-                        android:layout_height="200dp"
-                        android:src="@drawable/esya01"
-                        android:paddingLeft="8dp"
-                        />
-
-                    <ImageView
-                        android:layout_width="200dp"
-                        android:layout_height="200dp"
-                        android:src="@drawable/esya01"
-                        android:paddingLeft="8dp"
-                        />
-
-                    <ImageView
-                        android:layout_width="200dp"
-                        android:layout_height="200dp"
-                        android:src="@drawable/esya01"
-                        android:paddingLeft="8dp"
-                        android:id="@+id/lastImage"
-                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="PAST SPONSORS"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"/>
 
 
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="View All"
+                        android:layout_marginLeft="20dp" />
                 </LinearLayout>
 
-            </HorizontalScrollView>
+
+
+                <com.daimajia.slider.library.SliderLayout
+                    android:id="@+id/sponsors"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:background="#000000"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dp"
+                    custom:auto_cycle="true"
+                    />
+
+
+            </LinearLayout>
+
 
         </android.support.v7.widget.CardView>
 

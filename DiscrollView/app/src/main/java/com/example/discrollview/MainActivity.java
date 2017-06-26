@@ -35,6 +35,8 @@ import static java.security.AccessController.getContext;
 public class MainActivity extends AppCompatActivity implements BaseSliderView.OnSliderClickListener, ViewPagerEx.OnPageChangeListener {
 
     private SliderLayout sliderLayout;
+    private SliderLayout sponsorsSliderLayout;
+    private Button events;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -202,13 +204,43 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         sliderLayout.setDuration(1250);
         sliderLayout.addOnPageChangeListener(this);
 
-        HorizontalScrollView sponsors= (HorizontalScrollView) findViewById(R.id.sponsors);
-        ObjectAnimator animator=ObjectAnimator.ofInt(sponsors, "scrollX",R.id.firstImage, R.id.lastImage);
-        animator.setStartDelay(1000);
-        animator.setDuration(10000);
-        animator.start();
+
+        sponsorsSliderLayout=(SliderLayout) findViewById(R.id.sponsors);
+        HashMap<String,Integer> sponsor_maps = new HashMap<String, Integer>();
+        sponsor_maps.put("Image 1", R.drawable.esya01);
+        sponsor_maps.put("Image 2", R.drawable.esya02);
+        sponsor_maps.put("Image 3", R.drawable.esya03);
+        sponsor_maps.put("Image 4", R.drawable.esya04);
+        for(String name : file_maps.keySet()){
+            TextSliderView textSliderView = new TextSliderView(MainActivity.this);
+            textSliderView
+
+                    .image(file_maps.get(name))
+                    .setScaleType(BaseSliderView.ScaleType.Fit)
+                    .setOnSliderClickListener(this);
 
 
+            textSliderView.bundle(new Bundle());
+            textSliderView.getBundle()
+                    .putString("extra", name);
+            sponsorsSliderLayout.addSlider(textSliderView);
+
+        }
+
+        sponsorsSliderLayout.setPresetTransformer(SliderLayout.Transformer.Default);
+        sponsorsSliderLayout.setCustomAnimation(new DescriptionAnimation());
+        sponsorsSliderLayout.setDuration(2000);
+        sponsorsSliderLayout.addOnPageChangeListener(this);
+
+
+        events=(Button) findViewById(R.id.events);
+        events.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent eventsIntent= new Intent(MainActivity.this, fourup.class);
+                startActivity(eventsIntent);
+            }
+        });
     }
     @Override
     protected void onStop(){
