@@ -37,11 +37,20 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
     private SliderLayout sliderLayout;
     private SliderLayout sponsorsSliderLayout;
     private Button events;
+    final int foldingCellArr[]=new int[6];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        foldingCellArr[0]=R.id.folding_cell;
+        foldingCellArr[1]=R.id.folding_cell2;
+        foldingCellArr[2]=R.id.folding_cell3;
+        foldingCellArr[3]=R.id.folding_cell4;
+        foldingCellArr[4]=R.id.folding_cell5;
+        foldingCellArr[5]=R.id.folding_cell6;
 
         ImageButton facebook = (ImageButton) findViewById(R.id.facebookEsya);
         ImageButton instagram = (ImageButton) findViewById(R.id.instagramEsya);
@@ -122,10 +131,10 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         });
 
         final FoldingCell fc = (FoldingCell) findViewById(R.id.folding_cell);
-        // attach click listener to folding cell
         fc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                checkUnfolder(R.id.folding_cell);
                 fc.toggle(false);
             }
         });
@@ -135,6 +144,7 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         fc2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                checkUnfolder(R.id.folding_cell2);
                 fc2.toggle(false);
             }
         });
@@ -144,6 +154,7 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         fc3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                checkUnfolder(R.id.folding_cell3);
                 fc3.toggle(false);
             }
         });
@@ -153,6 +164,7 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         fc4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                checkUnfolder(R.id.folding_cell4);
                 fc4.toggle(false);
             }
         });
@@ -162,6 +174,7 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         fc5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                checkUnfolder(R.id.folding_cell5);
                 fc5.toggle(false);
             }
         });
@@ -172,6 +185,7 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         fc6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                checkUnfolder(R.id.folding_cell6);
                 fc6.toggle(false);
             }
         });
@@ -242,6 +256,20 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
 //            }
 //        });
     }
+
+    public void checkUnfolder(int unfolderID)
+    {
+        for(int i=0;i<6;i++)
+        {
+            FoldingCell fc=(FoldingCell) findViewById(foldingCellArr[i]);
+            if(fc.isUnfolded())
+            {
+                fc.toggle(false);
+            }
+        }
+    }
+
+
     @Override
     protected void onStop(){
         sliderLayout.stopAutoCycle();
