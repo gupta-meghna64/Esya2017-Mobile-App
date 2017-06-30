@@ -37,7 +37,7 @@ public class MyTextViewHeading extends android.support.v7.widget.AppCompatTextVi
 
     private void init() {
         if (!isInEditMode()) {
-            Typeface tf = Typeface.createFromAsset(getContext().getAssets(), "Roboto-Medium.ttf");
+            Typeface tf = Typeface.createFromAsset(getContext().getAssets(), "Roboto-Bold.ttf");
             setTypeface(tf);
         }
     }

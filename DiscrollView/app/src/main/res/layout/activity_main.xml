@@ -4,7 +4,7 @@
     xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F8F8"
+    android:background="#DFE1E1"
     xmlns:custom="http://schemas.android.com/tools">
 
     <com.flavienlaurent.discrollview.lib.DiscrollViewContent
@@ -38,7 +38,7 @@
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="20dp" />
+                android:layout_height="15dp" />
 
 
             <android.support.v7.widget.CardView
@@ -47,7 +47,7 @@
                 android:layout_height="300dp"
                 android:layout_alignBottom="@+id/slideFrame"
                 card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="2dp"
+                card_view:cardElevation="1dp"
                 android:layout_marginLeft="-4dp"
                 android:layout_marginRight="-4dp"
                 android:foreground="?android:attr/selectableItemBackground"
@@ -62,261 +62,284 @@
 
         </LinearLayout>
 
-
-
-        <com.ramotion.foldingcell.FoldingCell
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/folding_cell"
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardViewFoldableLayouts"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            >
+            card_view:cardUseCompatPadding="true"
+            card_view:cardElevation="1dp"
+            android:layout_marginLeft="-4dp"
+            android:layout_marginRight="-4dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_gravity="center"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="2dp"
+            card_view:contentPaddingBottom="5dp" >
 
-        <FrameLayout
-                android:id="@+id/cell_content_view"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:visibility="gone"
-                android:paddingTop="8dp"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp">
-
-                <ImageView
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="800px"
-                    android:background="@drawable/fullmountain"
-                    />
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
 
-                <Button
-                    android:layout_width="wrap_content"
+
+                <com.ramotion.foldingcell.FoldingCell
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/folding_cell"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Events"
-                    android:id="@+id/events"
-                    android:layout_gravity="top|right"
-            />
+                    >
 
+                <FrameLayout
+                        android:id="@+id/cell_content_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:paddingTop="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">
 
-            </FrameLayout>
-            ​
-            <FrameLayout
-                android:id="@+id/cell_title_view"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="8dp"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp">
-                >
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="800px"
+                            android:background="@drawable/fullmountain"
+                            />
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="200px"
-                    android:background="@drawable/topmountain" />
-            </FrameLayout>
-            ​
-        </com.ramotion.foldingcell.FoldingCell>
-
-
-
-        <com.ramotion.foldingcell.FoldingCell
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/folding_cell2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
-
-            <FrameLayout
-                android:id="@+id/cell_content_view2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:visibility="gone"
-                android:paddingTop="8dp"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp">>
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="800px"
-                    android:background="@drawable/fullmountain"
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Events"
+                            android:id="@+id/events"
+                            android:layout_gravity="top|right"
                     />
-            </FrameLayout>
-            ​
-            <FrameLayout
-                android:id="@+id/cell_title_view2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="8dp"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp">>
 
-                <ImageView
+
+                    </FrameLayout>
+                    ​
+                    <FrameLayout
+                        android:id="@+id/cell_title_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">
+                        >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="200px"
+                            android:background="@drawable/topmountain" />
+                    </FrameLayout>
+                    ​
+                </com.ramotion.foldingcell.FoldingCell>
+
+
+
+                <com.ramotion.foldingcell.FoldingCell
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/folding_cell2"
                     android:layout_width="match_parent"
-                    android:layout_height="200px"
-                    android:background="@drawable/topmountain" />
-            </FrameLayout>
-            ​
-        </com.ramotion.foldingcell.FoldingCell>
+                    android:layout_height="wrap_content"
+                    >
+
+                    <FrameLayout
+                        android:id="@+id/cell_content_view2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:paddingTop="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="800px"
+                            android:background="@drawable/fullmountain"
+                            />
+                    </FrameLayout>
+                    ​
+                    <FrameLayout
+                        android:id="@+id/cell_title_view2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="200px"
+                            android:background="@drawable/topmountain" />
+                    </FrameLayout>
+                    ​
+                </com.ramotion.foldingcell.FoldingCell>
 
 
 
-        <com.ramotion.foldingcell.FoldingCell
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/folding_cell3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <FrameLayout
-                android:id="@+id/cell_content_view3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:visibility="gone"
-                android:paddingTop="8dp"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp">
-
-                <ImageView
+                <com.ramotion.foldingcell.FoldingCell
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/folding_cell3"
                     android:layout_width="match_parent"
-                    android:layout_height="800px"
-                    android:background="@drawable/fullmountain"
-                    />
-            </FrameLayout>
-            ​
-            <FrameLayout
-                android:id="@+id/cell_title_view3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="8dp"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp">
+                    android:layout_height="wrap_content">
 
-                <ImageView
+                    <FrameLayout
+                        android:id="@+id/cell_content_view3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:paddingTop="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="800px"
+                            android:background="@drawable/fullmountain"
+                            />
+                    </FrameLayout>
+                    ​
+                    <FrameLayout
+                        android:id="@+id/cell_title_view3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="200px"
+                            android:background="@drawable/topmountain" />
+                    </FrameLayout>
+                    ​
+                </com.ramotion.foldingcell.FoldingCell>
+
+
+
+                <com.ramotion.foldingcell.FoldingCell
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/folding_cell4"
                     android:layout_width="match_parent"
-                    android:layout_height="200px"
-                    android:background="@drawable/topmountain" />
-            </FrameLayout>
-            ​
-        </com.ramotion.foldingcell.FoldingCell>
+                    android:layout_height="wrap_content"
+                    >
+
+                    <FrameLayout
+                        android:id="@+id/cell_content_view4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:paddingTop="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        >
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="800px"
+                            android:background="@drawable/fullmountain"
+                            />
+                    </FrameLayout>
+                    ​
+                    <FrameLayout
+                        android:id="@+id/cell_title_view4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="200px"
+                            android:background="@drawable/topmountain" />
+                    </FrameLayout>
+                    ​
+                </com.ramotion.foldingcell.FoldingCell>
 
 
 
-        <com.ramotion.foldingcell.FoldingCell
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/folding_cell4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
-
-            <FrameLayout
-                android:id="@+id/cell_content_view4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:visibility="gone"
-                android:paddingTop="8dp"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
-                >
-                <ImageView
+                <com.ramotion.foldingcell.FoldingCell
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/folding_cell5"
                     android:layout_width="match_parent"
-                    android:layout_height="800px"
-                    android:background="@drawable/fullmountain"
-                    />
-            </FrameLayout>
-            ​
-            <FrameLayout
-                android:id="@+id/cell_title_view4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="8dp"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp">
+                    android:layout_height="wrap_content"
+                    >
 
-                <ImageView
+                    <FrameLayout
+                        android:id="@+id/cell_content_view5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:paddingTop="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="800px"
+                            android:background="@drawable/fullmountain"
+                            />
+                    </FrameLayout>
+                    ​
+                    <FrameLayout
+                        android:id="@+id/cell_title_view5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="200px"
+                            android:background="@drawable/topmountain" />
+                    </FrameLayout>
+                    ​
+                </com.ramotion.foldingcell.FoldingCell>
+
+
+
+                <com.ramotion.foldingcell.FoldingCell
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/folding_cell6"
                     android:layout_width="match_parent"
-                    android:layout_height="200px"
-                    android:background="@drawable/topmountain" />
-            </FrameLayout>
-            ​
-        </com.ramotion.foldingcell.FoldingCell>
+                    android:layout_height="wrap_content"
+                    >
 
+                    <FrameLayout
+                        android:id="@+id/cell_content_view6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:paddingTop="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">
 
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="800px"
+                            android:background="@drawable/fullmountain"
+                            />
+                    </FrameLayout>
+                    ​
+                    <FrameLayout
+                        android:id="@+id/cell_title_view6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">
 
-        <com.ramotion.foldingcell.FoldingCell
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/folding_cell5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="200px"
+                            android:background="@drawable/topmountain" />
+                    </FrameLayout>
+                    ​
+                </com.ramotion.foldingcell.FoldingCell>
 
-            <FrameLayout
-                android:id="@+id/cell_content_view5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:visibility="gone"
-                android:paddingTop="8dp"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp">
+            </LinearLayout>
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="800px"
-                    android:background="@drawable/fullmountain"
-                    />
-            </FrameLayout>
-            ​
-            <FrameLayout
-                android:id="@+id/cell_title_view5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="8dp"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="200px"
-                    android:background="@drawable/topmountain" />
-            </FrameLayout>
-            ​
-        </com.ramotion.foldingcell.FoldingCell>
-
-
-
-        <com.ramotion.foldingcell.FoldingCell
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/folding_cell6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
-
-            <FrameLayout
-                android:id="@+id/cell_content_view6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:visibility="gone"
-                android:paddingTop="8dp"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="800px"
-                    android:background="@drawable/fullmountain"
-                    />
-            </FrameLayout>
-            ​
-            <FrameLayout
-                android:id="@+id/cell_title_view6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="8dp"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="200px"
-                    android:background="@drawable/topmountain" />
-            </FrameLayout>
-            ​
-        </com.ramotion.foldingcell.FoldingCell>
+        </android.support.v7.widget.CardView>
 
 
 
@@ -326,7 +349,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             card_view:cardUseCompatPadding="true"
-            card_view:cardElevation="2dp"
+            card_view:cardElevation="1dp"
             android:layout_marginLeft="-4dp"
             android:layout_marginRight="-4dp"
             android:foreground="?android:attr/selectableItemBackground"
@@ -349,7 +372,6 @@
                     android:textSize="18dp"
                     android:padding="8dp"
                     android:layout_weight="1"
-                    android:textStyle="bold"
                     android:textAlignment="center" />
 
                 <com.example.discrollview.MyTextViewMedium
@@ -382,7 +404,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             card_view:cardUseCompatPadding="true"
-            card_view:cardElevation="2dp"
+            card_view:cardElevation="1dp"
             android:layout_marginLeft="-4dp"
             android:layout_marginRight="-4dp"
             android:foreground="?android:attr/selectableItemBackground"
@@ -413,7 +435,6 @@
                         android:textSize="18dp"
                         android:padding="8dp"
                         android:layout_weight="1"
-                        android:textStyle="bold"
                         android:textAlignment="center" />
 
                     <com.example.discrollview.MyTextView
@@ -421,7 +442,6 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:textAlignment="center"
-
                         android:textStyle="bold"
                         android:text="Indraprastha Institute of Information Technology Delhi"/>
 
@@ -459,7 +479,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             card_view:cardUseCompatPadding="true"
-            card_view:cardElevation="2dp"
+            card_view:cardElevation="1dp"
             android:layout_marginLeft="-4dp"
             android:layout_marginRight="-4dp"
             android:foreground="?android:attr/selectableItemBackground"
@@ -484,7 +504,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="CONTACT"
-                    android:textStyle="bold"
                     android:paddingTop="20dp"
                     android:textAlignment="center"
                     android:paddingBottom="20dp"
@@ -586,7 +605,7 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             card_view:cardUseCompatPadding="true"
-            card_view:cardElevation="2dp"
+            card_view:cardElevation="1dp"
             android:layout_marginLeft="-4dp"
             android:layout_marginRight="-4dp"
             android:foreground="?android:attr/selectableItemBackground"
@@ -611,7 +630,6 @@
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
                         android:text="PAST SPONSORS"
-                        android:textStyle="bold"
                         android:layout_gravity="center"/>
 
 
