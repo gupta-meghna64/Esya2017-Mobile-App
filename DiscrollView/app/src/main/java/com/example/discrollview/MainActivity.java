@@ -233,14 +233,14 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         sponsorsSliderLayout.addOnPageChangeListener(this);
 
 
-        events=(Button) findViewById(R.id.events);
-        events.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent eventsIntent= new Intent(MainActivity.this, fourup.class);
-                startActivity(eventsIntent);
-            }
-        });
+//        events=(Button) findViewById(R.id.events);
+//        events.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent eventsIntent= new Intent(MainActivity.this, fourup.class);
+//                startActivity(eventsIntent);
+//            }
+//        });
     }
     @Override
     protected void onStop(){
