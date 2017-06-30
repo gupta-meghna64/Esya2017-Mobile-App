@@ -293,4 +293,6 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
 
     @Override
     public void onPageScrollStateChanged(int state) {}
+
+
 }
