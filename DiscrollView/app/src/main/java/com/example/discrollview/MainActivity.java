@@ -251,7 +251,7 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         events.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent eventsIntent= new Intent(MainActivity.this, SelectEvents.class);
+                Intent eventsIntent= new Intent(MainActivity.this, EventsMainActivity.class);
                 startActivity(eventsIntent);
             }
         });
