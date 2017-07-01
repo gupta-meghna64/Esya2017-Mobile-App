@@ -1,0 +1,314 @@
+<com.flavienlaurent.discrollview.lib.DiscrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:discrollve="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFE1E1"
+    xmlns:custom="http://schemas.android.com/tools">
+
+    <com.flavienlaurent.discrollview.lib.DiscrollViewContent
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="6dp"
+            android:weightSum="10">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="1dp"
+                android:layout_marginLeft="-4dp"
+                android:layout_marginRight="-4dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_gravity="center"
+                card_view:cardBackgroundColor="@android:color/background_light"
+                card_view:cardCornerRadius="2dp"
+                card_view:contentPaddingTop="1dp"
+                card_view:contentPaddingBottom="1dp" >
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DARWIN GAMES"
+                    android:textAlignment="center"
+                    android:textSize="24dp"
+                    android:layout_gravity="center"/>
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardViewTop"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="4"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="1dp"
+                android:layout_marginLeft="-4dp"
+                android:layout_marginRight="-4dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_gravity="center"
+                card_view:cardBackgroundColor="@android:color/background_light"
+                card_view:cardCornerRadius="2dp"
+                card_view:contentPaddingTop="1dp"
+                card_view:contentPaddingBottom="1dp" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/darwin"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="1dp"
+                android:layout_marginLeft="-4dp"
+                android:layout_marginRight="-4dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_gravity="center"
+                card_view:cardBackgroundColor="@android:color/background_light"
+                card_view:cardCornerRadius="2dp"
+                card_view:contentPaddingTop="5dp"
+                card_view:contentPaddingBottom="5dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="5">
+
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="DESCRIPTION"
+                        android:textSize="18dp"
+                        android:padding="8dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center" />
+
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:padding="8dp"
+                        android:text="Darwin Games is one of the many events in the Esya’s flagship event Techathalon. It involves problem solving by coding in 'not so popular languages'. The event is quite fascinating as it allows the participants to learn new languages and also, adapt to their environment. The details of the languages are revealed on the spot. The event is organised in a manner that it is expected to be fun for everyone. Most importantly, the event has no prerequisites. In all, it an exciting and a unique coding competition."/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardElevation="1dp"
+            android:layout_marginLeft="-4dp"
+            android:layout_marginRight="-4dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_gravity="center"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="2dp"
+            card_view:contentPaddingTop="5dp"
+            card_view:contentPaddingBottom="5dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="5">
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RULES"
+                    android:textSize="18dp"
+                    android:padding="8dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center" />
+
+                <com.example.discrollview.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:padding="8dp"
+                    android:text="content not provided yet"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardElevation="1dp"
+            android:layout_marginLeft="-4dp"
+            android:layout_marginRight="-4dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_gravity="center"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="2dp"
+            card_view:contentPaddingTop="5dp"
+            card_view:contentPaddingBottom="5dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="POINT OF CONTACT"
+                    android:textSize="18dp"
+                    android:padding="8dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Shravika Mittal"/>
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="9650357613"/>
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="shravika16093@iiitd.ac.in"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Brihi Joshi"/>
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="8812012300"/>
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="brihi16142@iiitd.ac.in"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Akarsha Sehwag"/>
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="9971408507"/>
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="akarsha15010@iiitd.ac.in"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Sanidhya Singal"/>
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="7042578175"/>
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="sanidhya15085@iiitd.ac.in"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+
+
+    </com.flavienlaurent.discrollview.lib.DiscrollViewContent>
+
+</com.flavienlaurent.discrollview.lib.DiscrollView>

@@ -1,0 +1,351 @@
+<com.flavienlaurent.discrollview.lib.DiscrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:discrollve="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFE1E1"
+    xmlns:custom="http://schemas.android.com/tools">
+
+    <com.flavienlaurent.discrollview.lib.DiscrollViewContent
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="6dp"
+            android:weightSum="10">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="1dp"
+                android:layout_marginLeft="-4dp"
+                android:layout_marginRight="-4dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_gravity="center"
+                card_view:cardBackgroundColor="@android:color/background_light"
+                card_view:cardCornerRadius="2dp"
+                card_view:contentPaddingTop="1dp"
+                card_view:contentPaddingBottom="1dp" >
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="HACKOVERFLOW"
+                    android:textAlignment="center"
+                    android:textSize="24dp"
+                    android:layout_gravity="center"/>
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardViewTop"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="4"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="1dp"
+                android:layout_marginLeft="-4dp"
+                android:layout_marginRight="-4dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_gravity="center"
+                card_view:cardBackgroundColor="@android:color/background_light"
+                card_view:cardCornerRadius="2dp"
+                card_view:contentPaddingTop="1dp"
+                card_view:contentPaddingBottom="1dp" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/hackoverflow"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="1dp"
+                android:layout_marginLeft="-4dp"
+                android:layout_marginRight="-4dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_gravity="center"
+                card_view:cardBackgroundColor="@android:color/background_light"
+                card_view:cardCornerRadius="2dp"
+                card_view:contentPaddingTop="5dp"
+                card_view:contentPaddingBottom="5dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="5">
+
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="DESCRIPTION"
+                        android:textSize="18dp"
+                        android:padding="8dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center" />
+
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:padding="8dp"
+                        android:text="With hundreds of Smart Cities coming up , India is on a path to Digitalization .. We have an obligation to give something back to the society of which we are an integral part.
+HACKware aims to provide an innovative platform where all hardware enthusiasts come together to provide some of the best solutions to these social problems.
+"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardElevation="1dp"
+            android:layout_marginLeft="-4dp"
+            android:layout_marginRight="-4dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_gravity="center"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="2dp"
+            card_view:contentPaddingTop="5dp"
+            card_view:contentPaddingBottom="5dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="5">
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RULES"
+                    android:textSize="18dp"
+                    android:padding="8dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center" />
+
+                <com.example.discrollview.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:padding="8dp"
+                    android:text="1) Team size : maximum 5 participants per team (Cross College teams are allowed) \n \n
+2) All participants are requested to bring their valid school/college ID cards. Entry will not be given without it. \n \n
+3) Security money : Rs 500 per team (Refundable) \n \n
+4) Security money and college ID card should be submitted before the competition which would be refunded once the competition is over. \n \n
+5) Only original ideas will be considered. Plagiarism of any kind (in ideas) will lead to disqualification from the final presentation. \n \n
+6) Destroying any property (includes sensors,hardware material,accommodation stuff,etc. ) provided by the HACKware isn’t appreciated and it would lead to forfeiting of security money. \n \n
+7) Extra time won’t be given to any team in whatsoever case. \n \n
+8) If they have been assigned a certain time to present their idea then they have to be there on time otherwise it will lead to delay. \n \n
+Although we would ensure full transparency and fair conduct. In case of any dispute, final say of Esya Organising Team would be valid and upheld.
+"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardElevation="1dp"
+            android:layout_marginLeft="-4dp"
+            android:layout_marginRight="-4dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_gravity="center"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="2dp"
+            card_view:contentPaddingTop="5dp"
+            card_view:contentPaddingBottom="5dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="13">
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="POINT OF CONTACT"
+                    android:textSize="18dp"
+                    android:padding="8dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Mukul Chhabra"/>
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="9958455627"/>
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="mukul16166@iiitd.ac.in"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Pulkit Madan"/>
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="7503134615"/>
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="pulkit16257@iiitd.ac.in"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Gyanesh Anand"/>
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="8882207355"/>
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="gyanesh16039@iiitd.ac.in"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Suyash Singh"/>
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="9560505347"/>
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="suyash16105@iiitd.ac.in"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Raghav Goel"/>
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="9654047277"/>
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="raghav16179@iiitd.ac.in"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+
+
+    </com.flavienlaurent.discrollview.lib.DiscrollViewContent>
+
+</com.flavienlaurent.discrollview.lib.DiscrollView>

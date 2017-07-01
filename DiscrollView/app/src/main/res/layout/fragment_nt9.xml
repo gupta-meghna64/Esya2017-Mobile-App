@@ -1,0 +1,265 @@
+<com.flavienlaurent.discrollview.lib.DiscrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:discrollve="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFE1E1"
+    xmlns:custom="http://schemas.android.com/tools">
+
+    <com.flavienlaurent.discrollview.lib.DiscrollViewContent
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="6dp"
+            android:weightSum="10">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="1dp"
+                android:layout_marginLeft="-4dp"
+                android:layout_marginRight="-4dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_gravity="center"
+                card_view:cardBackgroundColor="@android:color/background_light"
+                card_view:cardCornerRadius="2dp"
+                card_view:contentPaddingTop="1dp"
+                card_view:contentPaddingBottom="1dp" >
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MINI MILITIA"
+                    android:textAlignment="center"
+                    android:textSize="24dp"
+                    android:layout_gravity="center"/>
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardViewTop"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="4"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="1dp"
+                android:layout_marginLeft="-4dp"
+                android:layout_marginRight="-4dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_gravity="center"
+                card_view:cardBackgroundColor="@android:color/background_light"
+                card_view:cardCornerRadius="2dp"
+                card_view:contentPaddingTop="1dp"
+                card_view:contentPaddingBottom="1dp" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/minimilitia"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="1dp"
+                android:layout_marginLeft="-4dp"
+                android:layout_marginRight="-4dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_gravity="center"
+                card_view:cardBackgroundColor="@android:color/background_light"
+                card_view:cardCornerRadius="2dp"
+                card_view:contentPaddingTop="5dp"
+                card_view:contentPaddingBottom="5dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="5">
+
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="DESCRIPTION"
+                        android:textSize="18dp"
+                        android:padding="8dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center" />
+
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:padding="8dp"
+                        android:text="Doodle Army 2: Mini Militia (DA2) is a free-to-play 2D shooter game released for iOS and Android devices. The game was released for iOS devices on April 5, 2011 and on Google Play for Android on March 18, 2015. \n \n
+It has three modes: training, survival and multiplayer. \n
+Our event is based on the multiplayer mode in which people connect to one server to join a game and compete against one another. We have two types of events - Team event and lone wolf event. In team event, we have two teams (comprising of 4-5 players each) competing against each other. The team with the maximum kills in the game will proceed to the next round and the other team will be eliminated (knock-out style tournament). In the lone wolf event, we have 8-10 individual players playing one match and the top two players (according to maximum kills) get cash prize in each match. A person can participate any number of times in the lone wolf event (provided he/she registers each time), but can only play for one team in the team event. If your team is knocked-out, you can’t take further part in the tournament.
+"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardElevation="1dp"
+            android:layout_marginLeft="-4dp"
+            android:layout_marginRight="-4dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_gravity="center"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="2dp"
+            card_view:contentPaddingTop="5dp"
+            card_view:contentPaddingBottom="5dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="5">
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RULES"
+                    android:textSize="18dp"
+                    android:padding="8dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center" />
+
+                <com.example.discrollview.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:padding="8dp"
+                    android:text="not specified yet"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardElevation="1dp"
+            android:layout_marginLeft="-4dp"
+            android:layout_marginRight="-4dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_gravity="center"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="2dp"
+            card_view:contentPaddingTop="5dp"
+            card_view:contentPaddingBottom="5dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="7">
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="POINT OF CONTACT"
+                    android:textSize="18dp"
+                    android:padding="8dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Amit Jaggi"/>
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="9953992703"/>
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="amit15013@iiitd.ac.in"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Shubhankar"/>
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="9891892917"/>
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="shubhankar15180@iiitd.ac.in "/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+
+
+    </com.flavienlaurent.discrollview.lib.DiscrollViewContent>
+
+</com.flavienlaurent.discrollview.lib.DiscrollView>

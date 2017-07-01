@@ -1,0 +1,355 @@
+<com.flavienlaurent.discrollview.lib.DiscrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:discrollve="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFE1E1"
+    xmlns:custom="http://schemas.android.com/tools">
+
+    <com.flavienlaurent.discrollview.lib.DiscrollViewContent
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="6dp"
+            android:weightSum="10">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="1dp"
+                android:layout_marginLeft="-4dp"
+                android:layout_marginRight="-4dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_gravity="center"
+                card_view:cardBackgroundColor="@android:color/background_light"
+                card_view:cardCornerRadius="2dp"
+                card_view:contentPaddingTop="1dp"
+                card_view:contentPaddingBottom="1dp" >
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="HUNTIT"
+                    android:textAlignment="center"
+                    android:textSize="24dp"
+                    android:layout_gravity="center"/>
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardViewTop"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="4"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="1dp"
+                android:layout_marginLeft="-4dp"
+                android:layout_marginRight="-4dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_gravity="center"
+                card_view:cardBackgroundColor="@android:color/background_light"
+                card_view:cardCornerRadius="2dp"
+                card_view:contentPaddingTop="1dp"
+                card_view:contentPaddingBottom="1dp" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/huntit"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="1dp"
+                android:layout_marginLeft="-4dp"
+                android:layout_marginRight="-4dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_gravity="center"
+                card_view:cardBackgroundColor="@android:color/background_light"
+                card_view:cardCornerRadius="2dp"
+                card_view:contentPaddingTop="5dp"
+                card_view:contentPaddingBottom="5dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="5">
+
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="DESCRIPTION"
+                        android:textSize="18dp"
+                        android:padding="8dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center" />
+
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:padding="8dp"
+                        android:text=" “Don't limit your challenges - challenge your limits” \n
+Esya'17 presents Hunt IT, Delhi's most exciting and the most awaited on-ground Treasure Hunt ! \n
+Be ready to unravel one of the greatest mysteries behind the death of “Marilyn Monroe”, one of the best actresses Hollywood has seen till date and get a chance to show off your amazing Sherlock detective skills.
+So, pull up your socks and get ready to have an amazing time solving tricky clues, hunting down locations and winning amazing prizes and goodies worth upto 50,000 !
+"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardElevation="1dp"
+            android:layout_marginLeft="-4dp"
+            android:layout_marginRight="-4dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_gravity="center"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="2dp"
+            card_view:contentPaddingTop="5dp"
+            card_view:contentPaddingBottom="5dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="5">
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RULES"
+                    android:textSize="18dp"
+                    android:padding="8dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center" />
+
+                <com.example.discrollview.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:padding="8dp"
+                    android:text="HuntIt is a completely non-tech fun event and will not give any unfair advantage to the participants from technical colleges or schools. It is an event to test your analytical skills. \n \n
+1) The maximum team size is 4. Lone wolves are also invited. Cross-college and cross-school teams are allowed. Multiple teams from same college are allowed. \n \n
+2) It will be a two day event in which some of the rounds will require teams to race across the city to carry out the hunt successfully. \n \n
+3) Teams will face elimination through subsequent rounds leading up to the final round of the hunt. \n \n
+4) No participant can be a member of more than one team. \n \n
+5) Changing teams after registration is prohibited. Participants are requested to bring smartphones or atleast mobile phones with internet so that they can carry out the hunt without being held back due to the lack of internet. Even though we might be able to provide internet connection inside the campus, you’ll rely on your own internet packages when you are off campus. \n \n
+6) Discussing answers with other teams would be regarded as violation of rules and an appropriate penalty would be applied (including instant elimination). \n \n
+7) On day 2, you’ll have to use public transport to go from one location to another. Anyone found using their own vehicle will be eliminated. \n \n
+Please note : \n
+1) In the elimination rounds, teams solving the rounds after a certain number of teams would be eliminated. \n \n
+2) Organizers have the right to disqualify any team if they break any rule. \n \n
+3) In case of any discrepancy, the decision of the organisers will be final and binding. \n \n
+"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardElevation="1dp"
+            android:layout_marginLeft="-4dp"
+            android:layout_marginRight="-4dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_gravity="center"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="2dp"
+            card_view:contentPaddingTop="5dp"
+            card_view:contentPaddingBottom="5dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="16">
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="POINT OF CONTACT"
+                    android:textSize="18dp"
+                    android:padding="8dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Ayushman Pandita"/>
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="9871918003"/>
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="ayushman16026@iiitd.ac.in"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Manvi Goel"/>
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="9818511925"/>
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="manvi16244@iiitd.ac.in"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Sejal Kumar"/>
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="9871980411"/>
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="sejal16191@iiitd.ac.in"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Priysha Gupta"/>
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="9971424593"/>
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="priysha16256@iiitd.ac.in"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Nirmita Mehra"/>
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="9560785599"/>
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="nirmita16174@iiitd.ac.in"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+
+
+    </com.flavienlaurent.discrollview.lib.DiscrollViewContent>
+
+</com.flavienlaurent.discrollview.lib.DiscrollView>

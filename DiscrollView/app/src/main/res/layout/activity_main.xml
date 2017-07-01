@@ -632,15 +632,12 @@
                         android:text="PAST SPONSORS"
                         android:layout_gravity="center"/>
 
-
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="View All"
                         android:layout_marginLeft="20dp" />
                 </LinearLayout>
-
-
 
                 <com.daimajia.slider.library.SliderLayout
                     android:id="@+id/sponsors"
@@ -652,15 +649,9 @@
                     custom:auto_cycle="true"
                     />
 
-
             </LinearLayout>
 
-
         </android.support.v7.widget.CardView>
-
-
-
-
 
     </com.flavienlaurent.discrollview.lib.DiscrollViewContent>
 

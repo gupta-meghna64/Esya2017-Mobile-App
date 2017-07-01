@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">DiscrollView</string>
     <string name="google_android_map_api_key">AIzaSyABanDYKPW05HfslxvemTB1r5Nor2p3Khc</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tab_one">CSE </string>
+    <string name="tab_two">ECE </string>
+    <string name="tab_three">NON-TECH </string>
 </resources>
