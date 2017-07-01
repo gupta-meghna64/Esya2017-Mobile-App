@@ -1,6 +1,9 @@
 package com.example.discrollview;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
@@ -23,22 +26,27 @@ public class TabOneFragment extends Fragment {
         proconjr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Fragment Fragment = new FragmentCSE1();
-                FragmentTransaction transaction = getFragmentManager().beginTransaction();
-//                ViewPager pager = (ViewPager)v.findViewById(R.id.pagerCse);
-//                pager.setAdapter(new MyPagerAdapterEvents(getFragmentManager()));
-//
-//                // Bind the tabs to the ViewPager
-//                PagerSlidingTabStrip tabs = (PagerSlidingTabStrip)v.findViewById(R.id.tabsCse);
-//                tabs.setViewPager(pager);
-                transaction.replace(R.id.cardProconJr, Fragment ); // give your fragment container id in first parameter
-                transaction.addToBackStack(null);  // if written, this transaction will be added to backstack
-                transaction.commit();
+                Intent intent1 = new Intent(getActivity(), CSEMainActivity.class);
+                startActivityForResult(intent1, 1000);
+                //Edited here
             }
         });
 
 
 
+
         return v;
     }
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+
+        if (requestCode == 1) {
+            if(resultCode == Activity.RESULT_OK){
+                String result=data.getStringExtra("result");
+            }
+            if (resultCode == Activity.RESULT_CANCELED) {
+                //Write your code if there's no result
+            }
+        }
+    }//onActivityResult
 }
