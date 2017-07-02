@@ -13,6 +13,7 @@ import android.provider.ContactsContract;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutCompat;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
@@ -494,7 +495,11 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
             int imageResourceId		 =	getResources().getIdentifier(imageNameArray[i], "drawable",getPackageName());
             Drawable image 			 =	this.getResources().getDrawable(imageResourceId);
             imageButton.setBackgroundDrawable(image);
+            float scale = getResources().getDisplayMetrics().density;
+            int dpAsPixels = (int) (12*scale + 0.5f);
+            imageButton.setPadding (dpAsPixels , 0, dpAsPixels, 0);
             imageButton.setTag(i);
+
             imageButton.setOnClickListener(new View.OnClickListener(){
                 @Override
                 public void onClick(View arg0) {
@@ -520,13 +525,23 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
                             }
                         };
 
-                        clickTimer.schedule( clickSchedule, 300);
+                        clickTimer.schedule( clickSchedule, 1500);
                     }
                 }
             });
+            int h = image.getIntrinsicHeight();
+            int w = image.getIntrinsicWidth();
+            int r=h/w;
+            if(r==0) {
+                r=w/h;
+                r=256*r;
+            }
+            else {
+                r = 256 / r;
+            }
 
-            LinearLayout.LayoutParams params 	=	new LinearLayout.LayoutParams(256,256);
-            params.setMargins(0, 25, 0, 25);
+            LinearLayout.LayoutParams params 	=	new LinearLayout.LayoutParams(r,256);
+            params.setMargins(0, dpAsPixels, 0, dpAsPixels);
             imageButton.setLayoutParams(params);
             horizontalOuterLayout.addView(imageButton);
         }
@@ -534,7 +549,7 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
 
     public Animation scaleFaceUpAnimation(){
         Animation scaleFace = new ScaleAnimation(1.0f, 1.2f, 1.0f, 1.2f, Animation.RELATIVE_TO_SELF,0.5f,Animation.RELATIVE_TO_SELF,0.5f);
-        scaleFace.setDuration(100);
+        scaleFace.setDuration(500);
         scaleFace.setFillAfter(true);
         scaleFace.setInterpolator(new AccelerateInterpolator());
         Animation.AnimationListener	scaleFaceAnimationListener = new Animation.AnimationListener() {
@@ -564,7 +579,7 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
                     }
                 };
 
-                faceTimer.schedule(faceAnimationSchedule, 150);
+                faceTimer.schedule(faceAnimationSchedule, 750);
             }
         };
         scaleFace.setAnimationListener(scaleFaceAnimationListener);
@@ -575,7 +590,7 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         @Override
         public void handleMessage(Message msg) {
             if(clickedButton.isSelected() == true)
-                clickedButton.startAnimation(scaleFaceDownAnimation(100));
+                clickedButton.startAnimation(scaleFaceDownAnimation(500));
         }
     };
 
