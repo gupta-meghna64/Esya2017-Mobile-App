@@ -161,16 +161,16 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
-                    android:text="1) Solving cube before starting stackmat will lead to penalty.
-2) Stopping stackmat before finishing cube will lead to penalty.
-3) Starting cube after completing inspection time will lead to penalty. Make sure that you will start solving cube before the timer runs out of time.
-4) There will be time limit after the time limit is crossed, the attempt will be stopped and will be considered DNF(Did not finish).
-5) A puzzle is solved when all colored parts are reassembled and all parts are aligned within the limits specified below
-      a) If one face of the cube is misaligned by at most 45 degrees.
-      b) Else it is considered equivalent to requiring one more move to solve the cube and in such a case there will be a penalty of 2 seconds.
-      c) In any other state in which more than one move is required to solve the cube, the puzzle is considered unsolved (DNF).
-6) Decision of event head is final.
-7) Event head can modify the rules according to the situation, assuring you that no biasing will happen.
+                    android:text="1) Solving cube before starting stackmat will lead to penalty. \n \n
+2) Stopping stackmat before finishing cube will lead to penalty. \n \n
+3) Starting cube after completing inspection time will lead to penalty. Make sure that you will start solving cube before the timer runs out of time. \n \n
+4) There will be time limit after the time limit is crossed, the attempt will be stopped and will be considered DNF(Did not finish). \n \n
+5) A puzzle is solved when all colored parts are reassembled and all parts are aligned within the limits specified below \n \n
+      a) If one face of the cube is misaligned by at most 45 degrees. \n \n
+      b) Else it is considered equivalent to requiring one more move to solve the cube and in such a case there will be a penalty of 2 seconds. \n \n
+      c) In any other state in which more than one move is required to solve the cube, the puzzle is considered unsolved (DNF). \n \n
+6) Event head can modify the rules according to the situation, assuring you that no biasing will happen. \n \n
+7) Decision of organizers is final and binding.
 "/>
 
             </LinearLayout>

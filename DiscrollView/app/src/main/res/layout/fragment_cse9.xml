@@ -164,7 +164,8 @@
 2) The CTF will follow Jeopardy style format. \n \n
 3) No physical coercion. This is still a game. \n \n
 4) Sharing of flags / solutions (online or offline) is strictly against the spirit of the game, and any proof found of sharing will lead to disqualification of the team. \n \n
-5) Flags are in the format d4rk{[a-zA-Z0-9_]*}c0de unless otherwise mentioned.
+5) Flags are in the format d4rk{[a-zA-Z0-9_]*}c0de unless otherwise mentioned. \n \n
+6) Decision of organizers is final and binding.
 "/>
 
             </LinearLayout>

@@ -163,7 +163,7 @@ Our event is based on the multiplayer mode in which people connect to one server
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
-                    android:text="not specified yet"/>
+                    android:text="1) Decision of organizers is final and binding."/>
 
             </LinearLayout>
 

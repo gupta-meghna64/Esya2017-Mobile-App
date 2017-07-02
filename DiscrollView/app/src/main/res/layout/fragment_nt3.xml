@@ -160,7 +160,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
-                    android:text="In case of any conflict, the quiz-master’s decision will be considered final and binding."/>
+                    android:text="Decision of organizers is final and binding."/>
 
             </LinearLayout>
 

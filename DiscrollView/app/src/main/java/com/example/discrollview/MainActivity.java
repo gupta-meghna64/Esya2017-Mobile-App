@@ -79,6 +79,7 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
     private Button workshops;
     private Button intiatives;
     private ImageView unfoldedDJ;
+    private ImageView foldedDJ;
     final int foldingCellArr[]=new int[6];
 
     private final LatLng LOCATION_IIITD = new LatLng(28.5459495, 77.2688703);
@@ -119,11 +120,14 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
 
 
         unfoldedDJ=(ImageView) findViewById(R.id.unfoldedDJ);
-        final int height= (int) Math.round(Resources.getSystem().getDisplayMetrics().widthPixels*1.77);
-        unfoldedDJ.getLayoutParams().height = height;
+        foldedDJ=(ImageView) findViewById(R.id.iconDJ);
+        unfoldedDJ.getLayoutParams().height = Resources.getSystem().getDisplayMetrics().widthPixels;
         unfoldedDJ.getLayoutParams().width = Resources.getSystem().getDisplayMetrics().widthPixels;
         unfoldedDJ.requestLayout();
 
+        foldedDJ.getLayoutParams().width = Resources.getSystem().getDisplayMetrics().widthPixels;
+        foldedDJ.getLayoutParams().height= (int) Resources.getSystem().getDisplayMetrics().widthPixels/3;
+        foldedDJ.requestLayout();
 
         foldingCellArr[0]=R.id.folding_cell;
         foldingCellArr[1]=R.id.folding_cell2;

@@ -162,7 +162,7 @@ So each team need to get their Prime bots and save our campus from Megatron and 
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
-                    android:text="not provided yet"/>
+                    android:text="Decision of organizers is final and binding."/>
 
             </LinearLayout>
 
