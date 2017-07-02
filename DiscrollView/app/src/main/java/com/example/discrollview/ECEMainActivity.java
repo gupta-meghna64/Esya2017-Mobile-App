@@ -22,5 +22,18 @@ public class ECEMainActivity extends AppCompatActivity {
         // Bind the tabs to the ViewPager
         PagerSlidingTabStrip tabs = (PagerSlidingTabStrip) findViewById(R.id.tabsEce);
         tabs.setViewPager(pager);
+
+        int position = 0;
+        Bundle extras = getIntent().getExtras();
+        if(extras != null) {
+            position = extras.getInt("viewpager_position");
+        }
+        pager = (ViewPager) findViewById(R.id.pagerEce);
+        MyPagerAdapterECE myPagerAdapter = new MyPagerAdapterECE(getSupportFragmentManager());
+        if(pager.getAdapter() == null) {
+            pager.setAdapter(myPagerAdapter);
+
+        }
+        pager.setCurrentItem(position);
     }
 }
