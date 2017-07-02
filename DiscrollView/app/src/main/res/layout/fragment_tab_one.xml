@@ -11,733 +11,266 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:orientation="vertical"
-            android:padding="8dp"
+            android:padding="4dp"
             android:layout_height="wrap_content">
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
+                android:layout_height="400px"
                 android:layout_gravity="center"
                 android:id="@+id/cardProconJr"
                 card_view:cardUseCompatPadding="true"
                 card_view:cardElevation="1dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="0dp"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:clickable="true"
                 card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="2dp"
-                card_view:contentPaddingTop="5dp"
-                card_view:contentPaddingLeft="5dp"
-                card_view:contentPaddingBottom="5dp">
+                card_view:cardCornerRadius="4dp"
+                >
 
-                <LinearLayout
+                <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:weightSum="5">
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="PROCON JUNIOR"/>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:weightSum="2"
-                        android:layout_weight="4">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent" />
-
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:scaleType="fitXY"
-                                android:src="@drawable/proconjr"/>
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-                </LinearLayout>
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/proconjunior_overlay"/>
 
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="400px"
                 android:layout_gravity="center"
                 android:id="@+id/cardProcon"
                 card_view:cardUseCompatPadding="true"
                 card_view:cardElevation="1dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="0dp"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:clickable="true"
                 card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="2dp"
-                card_view:contentPaddingTop="5dp"
-                card_view:contentPaddingLeft="5dp"
-                card_view:contentPaddingBottom="5dp">
+                card_view:cardCornerRadius="4dp">
 
-                <LinearLayout
+                <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:weightSum="5">
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="PROCON"/>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:weightSum="2"
-                        android:layout_weight="4">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent" />
-
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:scaleType="fitXY"
-                                android:src="@drawable/procon"/>
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-                </LinearLayout>
-
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/procon_overlay"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="400px"
                 android:layout_gravity="center"
                 android:id="@+id/cardProsort"
                 card_view:cardUseCompatPadding="true"
                 card_view:cardElevation="1dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="0dp"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:clickable="true"
                 card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="2dp"
-                card_view:contentPaddingTop="5dp"
-                card_view:contentPaddingLeft="5dp"
-                card_view:contentPaddingBottom="5dp">
+                card_view:cardCornerRadius="4dp">
 
-                <LinearLayout
+                <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:weightSum="5">
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="PROSORT"/>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:weightSum="2"
-                        android:layout_weight="4">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent" />
-
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:scaleType="fitXY"
-                                android:src="@drawable/prosort"/>
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-                </LinearLayout>
-
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/procon_overlay"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="400px"
                 android:layout_gravity="center"
                 android:id="@+id/cardCodeinless"
                 card_view:cardUseCompatPadding="true"
                 card_view:cardElevation="1dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="0dp"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:clickable="true"
                 card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="2dp"
-                card_view:contentPaddingTop="5dp"
-                card_view:contentPaddingLeft="5dp"
-                card_view:contentPaddingBottom="5dp">
+                card_view:cardCornerRadius="4dp">
 
-                <LinearLayout
+                <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:weightSum="5">
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="CODE IN LESS"/>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:weightSum="2"
-                        android:layout_weight="4">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent" />
-
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:scaleType="fitXY"
-                                android:src="@drawable/codeinless"/>
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-                </LinearLayout>
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/codeinless_overlay"/>
 
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="400px"
                 android:layout_gravity="center"
                 android:id="@+id/cardDarwingames"
                 card_view:cardUseCompatPadding="true"
                 card_view:cardElevation="1dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="0dp"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:clickable="true"
                 card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="2dp"
-                card_view:contentPaddingTop="5dp"
-                card_view:contentPaddingLeft="5dp"
-                card_view:contentPaddingBottom="5dp">
+                card_view:cardCornerRadius="4dp"
+          >
 
-                <LinearLayout
+                <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:weightSum="5">
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="DARWIN GAMES"/>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:weightSum="2"
-                        android:layout_weight="4">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent" />
-
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:scaleType="fitXY"
-                                android:src="@drawable/darwin"/>
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-                </LinearLayout>
-
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/darwingames_overlay"/>
             </android.support.v7.widget.CardView>
 
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="400px"
                 android:layout_gravity="center"
                 android:id="@+id/cardSegfault"
                 card_view:cardUseCompatPadding="true"
                 card_view:cardElevation="1dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="0dp"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:clickable="true"
                 card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="2dp"
-                card_view:contentPaddingTop="5dp"
-                card_view:contentPaddingLeft="5dp"
-                card_view:contentPaddingBottom="5dp">
+                card_view:cardCornerRadius="4dp"
+              >
 
-                <LinearLayout
+                <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:weightSum="5">
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="SEG FAULT"/>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:weightSum="2"
-                        android:layout_weight="4">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent" />
-
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:scaleType="fitXY"
-                                android:src="@drawable/segfault"/>
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-                </LinearLayout>
-
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/segfault_overlay"/>
             </android.support.v7.widget.CardView>
 
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="400px"
                 android:layout_gravity="center"
                 android:id="@+id/cardBrainFuzz"
                 card_view:cardUseCompatPadding="true"
                 card_view:cardElevation="1dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="0dp"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:clickable="true"
                 card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="2dp"
-                card_view:contentPaddingTop="5dp"
-                card_view:contentPaddingLeft="5dp"
-                card_view:contentPaddingBottom="5dp">
+                card_view:cardCornerRadius="4dp"
+                >
 
-                <LinearLayout
+                <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:weightSum="5">
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="BRAINFUZZ"/>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:weightSum="2"
-                        android:layout_weight="4">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-
-                            <com.example.discrollview.MyTextView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_gravity="center"
-                                android:padding="8dp"
-                                android:textAlignment="center"
-                                android:text="Algorithm Design Challenge"/>
-
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:scaleType="fitXY"
-                                android:src="@drawable/brainfuzz"/>
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-                </LinearLayout>
-
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/brainfuzz_overlay"/>
             </android.support.v7.widget.CardView>
 
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="400px"
                 android:layout_gravity="center"
                 android:id="@+id/cardToastToCode"
                 card_view:cardUseCompatPadding="true"
                 card_view:cardElevation="1dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="0dp"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:clickable="true"
                 card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="2dp"
-                card_view:contentPaddingTop="5dp"
-                card_view:contentPaddingLeft="5dp"
-                card_view:contentPaddingBottom="5dp">
+                card_view:cardCornerRadius="4dp"
+                >
 
-                <LinearLayout
+                <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:weightSum="5">
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="TOAST TO CODE"/>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:weightSum="2"
-                        android:layout_weight="4">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent" />
-
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:scaleType="fitXY"
-                                android:src="@drawable/toast"/>
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-                </LinearLayout>
-
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/toasttocode_overlay"/>
             </android.support.v7.widget.CardView>
 
 
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="400px"
                 android:layout_gravity="center"
                 android:id="@+id/cardHackOn"
                 card_view:cardUseCompatPadding="true"
                 card_view:cardElevation="1dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="0dp"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:clickable="true"
                 card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="2dp"
-                card_view:contentPaddingTop="5dp"
-                card_view:contentPaddingLeft="5dp"
-                card_view:contentPaddingBottom="5dp">
+                card_view:cardCornerRadius="4dp"
+               >
 
-                <LinearLayout
+                <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:weightSum="5">
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="HACKON"/>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:weightSum="2"
-                        android:layout_weight="4">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent" />
-
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:scaleType="fitXY"
-                                android:src="@drawable/hackon"/>
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-                </LinearLayout>
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hackon_overlay"/>
 
             </android.support.v7.widget.CardView>
 
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="400px"
                 android:layout_gravity="center"
                 android:id="@+id/cardHackIIITD"
                 card_view:cardUseCompatPadding="true"
                 card_view:cardElevation="1dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="0dp"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:clickable="true"
                 card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="2dp"
-                card_view:contentPaddingTop="5dp"
-                card_view:contentPaddingLeft="5dp"
-                card_view:contentPaddingBottom="5dp">
+                card_view:cardCornerRadius="4dp"
+                >
 
-                <LinearLayout
+                <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:weightSum="5">
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="HACKIIITD"/>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:weightSum="2"
-                        android:layout_weight="4">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent" />
-
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:scaleType="fitXY"
-                                android:src="@drawable/hackiiitd"/>
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-                </LinearLayout>
-
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hack_overlay"/>
             </android.support.v7.widget.CardView>
 
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="400px"
                 android:layout_gravity="center"
                 android:id="@+id/cardDesign360"
                 card_view:cardUseCompatPadding="true"
                 card_view:cardElevation="1dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="0dp"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:clickable="true"
                 card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="2dp"
-                card_view:contentPaddingTop="5dp"
-                card_view:contentPaddingLeft="5dp"
-                card_view:contentPaddingBottom="5dp">
+                card_view:cardCornerRadius="0dp"
+                >
 
-                <LinearLayout
+                <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:weightSum="5">
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="DESIGN360"/>
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/design360_overlay"/>
+            </android.support.v7.widget.CardView>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:weightSum="2"
-                        android:layout_weight="4">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="400px"
+                android:layout_gravity="center"
+                android:id="@+id/cardTechathlon"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="1dp"
+                android:layout_marginBottom="0dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                card_view:cardBackgroundColor="@android:color/background_light"
+                card_view:cardCornerRadius="4dp"
+                >
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent" />
-
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:scaleType="fitXY"
-                                android:src="@drawable/design360"/>
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-                </LinearLayout>
-
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/techatholon_overlay"/>
             </android.support.v7.widget.CardView>
         </LinearLayout>
 

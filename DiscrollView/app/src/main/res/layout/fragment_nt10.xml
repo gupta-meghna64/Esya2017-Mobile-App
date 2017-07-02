@@ -1,5 +1,5 @@
-<com.flavienlaurent.discrollview.lib.DiscrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:discrollve="http://schemas.android.com/apk/res-auto"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -7,42 +7,12 @@
     android:background="#DFE1E1"
     xmlns:custom="http://schemas.android.com/tools">
 
-    <com.flavienlaurent.discrollview.lib.DiscrollViewContent
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingTop="6dp"
+            android:padding="4dp"
             android:weightSum="10">
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="1dp"
-                android:layout_marginLeft="-4dp"
-                android:layout_marginRight="-4dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:layout_gravity="center"
-                card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="2dp"
-                card_view:contentPaddingTop="1dp"
-                card_view:contentPaddingBottom="1dp" >
-
-                <com.example.discrollview.MyTextViewHeading
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="POKER"
-                    android:textAlignment="center"
-                    android:textSize="24dp"
-                    android:layout_gravity="center"/>
-
-            </android.support.v7.widget.CardView>
 
 
 
@@ -54,27 +24,19 @@
                 android:layout_weight="4"
                 card_view:cardUseCompatPadding="true"
                 card_view:cardElevation="1dp"
-                android:layout_marginLeft="-4dp"
-                android:layout_marginRight="-4dp"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:clickable="true"
                 android:layout_gravity="center"
                 card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="2dp"
-                card_view:contentPaddingTop="1dp"
-                card_view:contentPaddingBottom="1dp" >
+                card_view:cardCornerRadius="4dp">
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
 
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:scaleType="fitXY"
-                        android:src="@drawable/poker"/>
+                        android:src="@drawable/poker_plain"/>
 
-                </RelativeLayout>
 
             </android.support.v7.widget.CardView>
 
@@ -84,13 +46,11 @@
                 android:layout_weight="4"
                 card_view:cardUseCompatPadding="true"
                 card_view:cardElevation="1dp"
-                android:layout_marginLeft="-4dp"
-                android:layout_marginRight="-4dp"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:clickable="true"
                 android:layout_gravity="center"
                 card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="2dp"
+                card_view:cardCornerRadius="4dp"
                 card_view:contentPaddingTop="5dp"
                 card_view:contentPaddingBottom="5dp" >
 
@@ -133,21 +93,17 @@ All the rules mentioned in the document above along with a few rules thought by 
             </android.support.v7.widget.CardView>
 
 
-        </LinearLayout>
-
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="4"
             card_view:cardUseCompatPadding="true"
             card_view:cardElevation="1dp"
-            android:layout_marginLeft="-4dp"
-            android:layout_marginRight="-4dp"
             android:foreground="?android:attr/selectableItemBackground"
             android:clickable="true"
             android:layout_gravity="center"
             card_view:cardBackgroundColor="@android:color/background_light"
-            card_view:cardCornerRadius="2dp"
+            card_view:cardCornerRadius="4dp"
             card_view:contentPaddingTop="5dp"
             card_view:contentPaddingBottom="5dp" >
 
@@ -190,13 +146,11 @@ All the rules mentioned in the document above along with a few rules thought by 
             android:layout_weight="4"
             card_view:cardUseCompatPadding="true"
             card_view:cardElevation="1dp"
-            android:layout_marginLeft="-4dp"
-            android:layout_marginRight="-4dp"
             android:foreground="?android:attr/selectableItemBackground"
             android:clickable="true"
             android:layout_gravity="center"
             card_view:cardBackgroundColor="@android:color/background_light"
-            card_view:cardCornerRadius="2dp"
+            card_view:cardCornerRadius="4dp"
             card_view:contentPaddingTop="5dp"
             card_view:contentPaddingBottom="5dp" >
 
@@ -273,8 +227,6 @@ All the rules mentioned in the document above along with a few rules thought by 
 
 
         </android.support.v7.widget.CardView>
+    </LinearLayout>
 
-
-    </com.flavienlaurent.discrollview.lib.DiscrollViewContent>
-
-</com.flavienlaurent.discrollview.lib.DiscrollView>
+</ScrollView>

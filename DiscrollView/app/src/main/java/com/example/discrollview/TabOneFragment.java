@@ -2,6 +2,8 @@ package com.example.discrollview;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.res.Resources;
+import android.net.Uri;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.os.Bundle;
@@ -34,6 +36,12 @@ public class TabOneFragment extends Fragment {
         CardView hackon = (CardView)v.findViewById(R.id.cardHackOn);
         CardView hackiiitd = (CardView)v.findViewById(R.id.cardHackIIITD);
         CardView design360 = (CardView)v.findViewById(R.id.cardDesign360);
+        CardView techathlon = (CardView)v.findViewById(R.id.cardTechathlon);
+
+//        proconjr.getLayoutParams().width= Resources.getSystem().getDisplayMetrics().widthPixels;
+//        int height = (int) Math.round(Resources.getSystem().getDisplayMetrics().widthPixels/2.69);
+//        proconjr.getLayoutParams().height = height;
+//        proconjr.requestLayout();
 
         proconjr.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -119,9 +127,7 @@ public class TabOneFragment extends Fragment {
         hackiiitd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getActivity(), CSEMainActivity.class);
-                i.putExtra("viewpager_position", 9);
-                startActivity(i);
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.hackiiitd.in/")));
             }
         });
 
@@ -130,6 +136,15 @@ public class TabOneFragment extends Fragment {
             public void onClick(View v) {
                 Intent i = new Intent(getActivity(), CSEMainActivity.class);
                 i.putExtra("viewpager_position", 10);
+                startActivity(i);
+            }
+        });
+
+        techathlon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getActivity(), CSEMainActivity.class);
+                i.putExtra("viewpager_position", 11);
                 startActivity(i);
             }
         });

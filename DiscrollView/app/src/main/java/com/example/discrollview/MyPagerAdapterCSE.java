@@ -39,12 +39,14 @@ public class MyPagerAdapterCSE extends FragmentPagerAdapter {
             return "HackOn";
         else if(position == 9)
             return "HackIIITD";
-        else
+        else if(position == 10)
             return "Design360";
+        else
+            return "Techathlon";
     }
     @Override
     public int getCount() {
-        return 11;
+        return 12;
     }
     @Override
     public Fragment getItem(int position) {
@@ -71,8 +73,10 @@ public class MyPagerAdapterCSE extends FragmentPagerAdapter {
             return new FragmentCSE10();
         else if(position == 10)
             return new FragmentCSE11();
-        else
+        else if(position == 11)
             return new FragmentCSE12();
+        else
+            return new FragmentCSE1();
 
     }
 }
