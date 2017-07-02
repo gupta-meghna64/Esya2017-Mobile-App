@@ -162,8 +162,10 @@ The final round will be on the first day of the fest itself*. The announcement o
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
-                    android:text="Images should not be taken more than three years prior to the beginning date of the Contest.
-Photos should not violate or infringe upon another person's rights, including but not limited to copyright." />
+                    android:text="1)Images should not be taken more than three years prior to the beginning date of the Contest. \n \n
+2) Photos should not violate or infringe upon another person's rights, including but not limited to copyright. \n \n
+3) Decision of organizers is final and binding.
+" />
 
             </LinearLayout>
 

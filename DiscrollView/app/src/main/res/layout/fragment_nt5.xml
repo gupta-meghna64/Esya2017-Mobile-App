@@ -160,7 +160,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
-                    android:text="content too large"/>
+                    android:text="1) Decision of organizers is final and binding."/>
 
             </LinearLayout>
 

@@ -166,7 +166,8 @@ The event would consist of fun quizzes on almost everything related to astronomy
                     android:padding="8dp"
                     android:text="1) Team size of at most two is allowed. \n \n
 2) Cross-college/cross-school teams are allowed. \n \n
-3) Use of any electronic gadget(mobile phones, laptops, tablets, calculators, etc.) is prohibited.
+3) Use of any electronic gadget(mobile phones, laptops, tablets, calculators, etc.) is prohibited. \n \n
+4) Decision of organizers is final and binding.
 "/>
 
             </LinearLayout>
