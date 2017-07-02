@@ -1,5 +1,5 @@
-<com.flavienlaurent.discrollview.lib.DiscrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:discrollve="http://schemas.android.com/apk/res-auto"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -7,9 +7,6 @@
     android:background="#DFE1E1"
     xmlns:custom="http://schemas.android.com/tools">
 
-    <com.flavienlaurent.discrollview.lib.DiscrollViewContent
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
         <!-- TODO: Update blank fragment layout -->
         <LinearLayout
@@ -22,7 +19,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
-                android:id="@+id/cardProconJr"
+                android:id="@+id/cardChess"
                 card_view:cardUseCompatPadding="true"
                 card_view:cardElevation="1dp"
                 android:layout_marginBottom="8dp"
@@ -34,102 +31,52 @@
                 card_view:contentPaddingLeft="5dp"
                 card_view:contentPaddingBottom="5dp">
 
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Chess"/>
+                    android:orientation="vertical"
+                    android:weightSum="5">
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="CHESS"/>
 
-            </android.support.v7.widget.CardView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_weight="4">
 
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                android:id="@+id/cardProcon"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="1dp"
-                android:layout_marginBottom="8dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="2dp"
-                card_view:contentPaddingTop="5dp"
-                card_view:contentPaddingLeft="5dp"
-                card_view:contentPaddingBottom="5dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="huntIT"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
 
-            </android.support.v7.widget.CardView>
 
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                android:id="@+id/cardProsort"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="1dp"
-                android:layout_marginBottom="8dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="2dp"
-                card_view:contentPaddingTop="5dp"
-                card_view:contentPaddingLeft="5dp"
-                card_view:contentPaddingBottom="5dp">
+                        </LinearLayout>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Quiz"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/chess"/>
 
-            </android.support.v7.widget.CardView>
+                        </LinearLayout>
 
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                android:id="@+id/cardCodeinless"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="1dp"
-                android:layout_marginBottom="8dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="2dp"
-                card_view:contentPaddingTop="5dp"
-                card_view:contentPaddingLeft="5dp"
-                card_view:contentPaddingBottom="5dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="FOQS"/>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                android:id="@+id/cardDarwingames"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="1dp"
-                android:layout_marginBottom="8dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="2dp"
-                card_view:contentPaddingTop="5dp"
-                card_view:contentPaddingLeft="5dp"
-                card_view:contentPaddingBottom="5dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="PWNED"/>
+                    </LinearLayout>
+                </LinearLayout>
 
             </android.support.v7.widget.CardView>
 
@@ -138,6 +85,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
+                android:id="@+id/cardHuntIT"
                 card_view:cardUseCompatPadding="true"
                 card_view:cardElevation="1dp"
                 android:layout_marginBottom="8dp"
@@ -149,10 +97,247 @@
                 card_view:contentPaddingLeft="5dp"
                 card_view:contentPaddingBottom="5dp">
 
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Faking the Research"/>
+                    android:orientation="vertical"
+                    android:weightSum="5">
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="HuntIT"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_weight="4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/huntit"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:id="@+id/cardQuiz"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="1dp"
+                android:layout_marginBottom="8dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                card_view:cardBackgroundColor="@android:color/background_light"
+                card_view:cardCornerRadius="2dp"
+                card_view:contentPaddingTop="5dp"
+                card_view:contentPaddingLeft="5dp"
+                card_view:contentPaddingBottom="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="5">
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="QUIZ"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_weight="4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/quiz" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:id="@+id/cardFOQS"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="1dp"
+                android:layout_marginBottom="8dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                card_view:cardBackgroundColor="@android:color/background_light"
+                card_view:cardCornerRadius="2dp"
+                card_view:contentPaddingTop="5dp"
+                card_view:contentPaddingLeft="5dp"
+                card_view:contentPaddingBottom="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="5">
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="FOQS"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_weight="4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/foqs" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:id="@+id/cardPWNED"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="1dp"
+                android:layout_marginBottom="8dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                card_view:cardBackgroundColor="@android:color/background_light"
+                card_view:cardCornerRadius="2dp"
+                card_view:contentPaddingTop="5dp"
+                card_view:contentPaddingLeft="5dp"
+                card_view:contentPaddingBottom="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="5">
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="PWNED"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_weight="4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/pwned" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
 
             </android.support.v7.widget.CardView>
 
@@ -161,6 +346,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
+                android:id="@+id/cardFakingTheResearch"
                 card_view:cardUseCompatPadding="true"
                 card_view:cardElevation="1dp"
                 android:layout_marginBottom="8dp"
@@ -172,10 +358,52 @@
                 card_view:contentPaddingLeft="5dp"
                 card_view:contentPaddingBottom="5dp">
 
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="The Big Bang"/>
+                    android:orientation="vertical"
+                    android:weightSum="5">
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="FAKING THE RESEARCH"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_weight="4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/faking"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
 
             </android.support.v7.widget.CardView>
 
@@ -184,6 +412,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
+                android:id="@+id/cardBigBang"
                 card_view:cardUseCompatPadding="true"
                 card_view:cardElevation="1dp"
                 android:layout_marginBottom="8dp"
@@ -195,80 +424,52 @@
                 card_view:contentPaddingLeft="5dp"
                 card_view:contentPaddingBottom="5dp">
 
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="16 Words To Go"/>
+                    android:orientation="vertical"
+                    android:weightSum="5">
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="THE BIG BANG"/>
 
-            </android.support.v7.widget.CardView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_weight="4">
 
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
 
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="1dp"
-                android:layout_marginBottom="8dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="2dp"
-                card_view:contentPaddingTop="5dp"
-                card_view:contentPaddingLeft="5dp"
-                card_view:contentPaddingBottom="5dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Mini Militia"/>
-
-            </android.support.v7.widget.CardView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
 
 
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="1dp"
-                android:layout_marginBottom="8dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="2dp"
-                card_view:contentPaddingTop="5dp"
-                card_view:contentPaddingLeft="5dp"
-                card_view:contentPaddingBottom="5dp">
+                        </LinearLayout>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Poker"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/bigbang" />
 
-            </android.support.v7.widget.CardView>
+                        </LinearLayout>
 
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="1dp"
-                android:layout_marginBottom="8dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="2dp"
-                card_view:contentPaddingTop="5dp"
-                card_view:contentPaddingLeft="5dp"
-                card_view:contentPaddingBottom="5dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="SpeedCubing"/>
+                    </LinearLayout>
+                </LinearLayout>
 
             </android.support.v7.widget.CardView>
 
@@ -276,6 +477,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
+                android:id="@+id/cardWordsToGo"
                 card_view:cardUseCompatPadding="true"
                 card_view:cardElevation="1dp"
                 android:layout_marginBottom="8dp"
@@ -287,10 +489,250 @@
                 card_view:contentPaddingLeft="5dp"
                 card_view:contentPaddingBottom="5dp">
 
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="MockStocks"/>
+                    android:orientation="vertical"
+                    android:weightSum="5">
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="16 WORDS TO GO"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_weight="4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/words" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:id="@+id/cardMiniMilitia"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="1dp"
+                android:layout_marginBottom="8dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                card_view:cardBackgroundColor="@android:color/background_light"
+                card_view:cardCornerRadius="2dp"
+                card_view:contentPaddingTop="5dp"
+                card_view:contentPaddingLeft="5dp"
+                card_view:contentPaddingBottom="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="5">
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="MINI MILITIA"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_weight="4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/minimilitia" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:id="@+id/cardPoker"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="1dp"
+                android:layout_marginBottom="8dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                card_view:cardBackgroundColor="@android:color/background_light"
+                card_view:cardCornerRadius="2dp"
+                card_view:contentPaddingTop="5dp"
+                card_view:contentPaddingLeft="5dp"
+                card_view:contentPaddingBottom="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="5">
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="POKER"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_weight="4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/poker" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:id="@+id/cardSpeedCubing"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="1dp"
+                android:layout_marginBottom="8dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                card_view:cardBackgroundColor="@android:color/background_light"
+                card_view:cardCornerRadius="2dp"
+                card_view:contentPaddingTop="5dp"
+                card_view:contentPaddingLeft="5dp"
+                card_view:contentPaddingBottom="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="5">
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="SPEED CUBING"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_weight="4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/speedcubing" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
 
             </android.support.v7.widget.CardView>
 
@@ -298,6 +740,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
+                android:id="@+id/cardMockstocks"
                 card_view:cardUseCompatPadding="true"
                 card_view:cardElevation="1dp"
                 android:layout_marginBottom="8dp"
@@ -309,21 +752,123 @@
                 card_view:contentPaddingLeft="5dp"
                 card_view:contentPaddingBottom="5dp">
 
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Chakravyuha"/>
+                    android:orientation="vertical"
+                    android:weightSum="5">
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="MOCKSTOCKS"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_weight="4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/mockstock" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:id="@+id/cardChakravyuha"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="1dp"
+                android:layout_marginBottom="8dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                card_view:cardBackgroundColor="@android:color/background_light"
+                card_view:cardCornerRadius="2dp"
+                card_view:contentPaddingTop="5dp"
+                card_view:contentPaddingLeft="5dp"
+                card_view:contentPaddingBottom="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="5">
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="CHAKRAVYUHA"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_weight="4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/chakravyuha"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
 
             </android.support.v7.widget.CardView>
 
         </LinearLayout>
 
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="0dp" />
 
 
-    </com.flavienlaurent.discrollview.lib.DiscrollViewContent>
-
-</com.flavienlaurent.discrollview.lib.DiscrollView>
+</ScrollView>

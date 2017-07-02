@@ -1,15 +1,11 @@
-<com.flavienlaurent.discrollview.lib.DiscrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:discrollve="http://schemas.android.com/apk/res-auto"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#DFE1E1"
     xmlns:custom="http://schemas.android.com/tools">
-
-    <com.flavienlaurent.discrollview.lib.DiscrollViewContent
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
     <!-- TODO: Update blank fragment layout -->
         <LinearLayout
@@ -480,7 +476,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
-                android:id="@+id/toastToCode"
+                android:id="@+id/cardToastToCode"
                 card_view:cardUseCompatPadding="true"
                 card_view:cardElevation="1dp"
                 android:layout_marginBottom="8dp"
@@ -547,7 +543,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
-                android:id="@+id/hackOn"
+                android:id="@+id/cardHackOn"
                 card_view:cardUseCompatPadding="true"
                 card_view:cardElevation="1dp"
                 android:layout_marginBottom="8dp"
@@ -613,7 +609,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
-                android:id="@+id/hackIIITD"
+                android:id="@+id/cardHackIIITD"
                 card_view:cardUseCompatPadding="true"
                 card_view:cardElevation="1dp"
                 android:layout_marginBottom="8dp"
@@ -742,11 +738,6 @@
         </LinearLayout>
 
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="0dp" />
 
 
-    </com.flavienlaurent.discrollview.lib.DiscrollViewContent>
-
-</com.flavienlaurent.discrollview.lib.DiscrollView>
+</ScrollView>
