@@ -162,7 +162,8 @@ And this time we have a surprise* for all the participants, which would take thi
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
-                    android:text="We strongly discourage the use of any robot kits in the Tournament and the fest would not be responsible for any kind of damage to your Robot and no money would be given to repair it."/>
+                    android:text="1) We strongly discourage the use of any robot kits in the Tournament and the fest would not be responsible for any kind of damage to your Robot and no money would be given to repair it. \n \n
+                2) Decision of organizers is final and binding."/>
 
             </LinearLayout>
 

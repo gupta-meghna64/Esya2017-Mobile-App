@@ -165,7 +165,8 @@ Exact details will only be conveyed at the start of the contest >:O
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
-                    android:text="ProSort is a mandatory event for qualifying."/>
+                    android:text="1) ProSort is a mandatory event for qualifying. \n \n
+2) Decision of organizers is final and binding."/>
 
             </LinearLayout>
 
