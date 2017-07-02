@@ -3,8 +3,10 @@ package com.example.discrollview;
 import android.animation.ObjectAnimator;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.graphics.drawable.AnimationDrawable;
 import android.net.Uri;
+import android.provider.ContactsContract;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -37,12 +39,22 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
     private SliderLayout sliderLayout;
     private SliderLayout sponsorsSliderLayout;
     private Button events;
+    private Button djNight;
+    private Button comedyNight;
+    private Button workshops;
+    private Button intiatives;
+    private ImageView unfoldedDJ;
     final int foldingCellArr[]=new int[6];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        unfoldedDJ=(ImageView) findViewById(R.id.unfoldedDJ);
+        final int height= (int) Math.round(Resources.getSystem().getDisplayMetrics().widthPixels*1.77);
+        unfoldedDJ.getLayoutParams().height = height;
+        unfoldedDJ.getLayoutParams().width = Resources.getSystem().getDisplayMetrics().widthPixels;
+        unfoldedDJ.requestLayout();
 
 
         foldingCellArr[0]=R.id.folding_cell;
@@ -255,6 +267,25 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
                 startActivity(eventsIntent);
             }
         });
+
+        djNight=(Button) findViewById(R.id.djNight);
+        djNight.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent djIntent= new Intent(MainActivity.this, DjNight.class);
+                startActivity(djIntent);
+            }
+        });
+
+        comedyNight=(Button) findViewById(R.id.comedyNight);
+        comedyNight.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+
     }
 
     public void checkUnfolder(int unfolderID)

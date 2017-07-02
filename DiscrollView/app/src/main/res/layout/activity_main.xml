@@ -108,7 +108,7 @@
                         <Button
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Events"
+                            android:text="EVENTS"
                             android:id="@+id/events"
                             android:layout_gravity="top|right"
                     />
@@ -129,6 +129,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="200px"
                             android:background="@drawable/topmountain" />
+
                     </FrameLayout>
                     ​
                 </com.ramotion.foldingcell.FoldingCell>
@@ -152,10 +153,18 @@
                         android:paddingRight="8dp">>
 
                         <ImageView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="800px"
-                            android:background="@drawable/fullmountain"
+                            android:id="@+id/unfoldedDJ"
+                            android:background="@drawable/starnight"
                             />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MORE INFORMATION"
+                            android:id="@+id/djNight"
+                            android:layout_gravity="bottom|center"/>
                     </FrameLayout>
                     ​
                     <FrameLayout
@@ -168,8 +177,8 @@
 
                         <ImageView
                             android:layout_width="match_parent"
-                            android:layout_height="200px"
-                            android:background="@drawable/topmountain" />
+                            android:layout_height="314px"
+                            android:background="@drawable/djnight_icon" />
                     </FrameLayout>
                     ​
                 </com.ramotion.foldingcell.FoldingCell>
@@ -196,6 +205,13 @@
                             android:layout_height="800px"
                             android:background="@drawable/fullmountain"
                             />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="COMEDY NIGHT"
+                            android:id="@+id/comedyNight"
+                            android:layout_gravity="top|right" />
                     </FrameLayout>
                     ​
                     <FrameLayout
@@ -237,6 +253,13 @@
                             android:layout_height="800px"
                             android:background="@drawable/fullmountain"
                             />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SOCIAL INITIATIVES"
+                            android:id="@+id/initiatives"
+                            android:layout_gravity="top|right" />
                     </FrameLayout>
                     ​
                     <FrameLayout
@@ -278,6 +301,13 @@
                             android:layout_height="800px"
                             android:background="@drawable/fullmountain"
                             />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="WORKSHOPS"
+                            android:id="@+id/workshops"
+                            android:layout_gravity="top|right" />
                     </FrameLayout>
                     ​
                     <FrameLayout
@@ -632,12 +662,15 @@
                         android:text="PAST SPONSORS"
                         android:layout_gravity="center"/>
 
+
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="View All"
                         android:layout_marginLeft="20dp" />
                 </LinearLayout>
+
+
 
                 <com.daimajia.slider.library.SliderLayout
                     android:id="@+id/sponsors"
@@ -649,9 +682,15 @@
                     custom:auto_cycle="true"
                     />
 
+
             </LinearLayout>
 
+
         </android.support.v7.widget.CardView>
+
+
+
+
 
     </com.flavienlaurent.discrollview.lib.DiscrollViewContent>
 
