@@ -442,7 +442,7 @@
             card_view:cardBackgroundColor="@android:color/background_light"
             card_view:cardCornerRadius="2dp"
             card_view:contentPaddingTop="5dp"
-            card_view:contentPaddingBottom="5dp" >
+            card_view:contentPaddingBottom="8dp" >
 
 
             <LinearLayout
@@ -483,27 +483,30 @@
                         android:layout_height="wrap_content"
                         android:text="Okhla Industrial Estate, Phase III, Near Govind Puri Metro Station, Delhi, 110020"/>
 
-                    <Button
-                        android:id="@+id/navigateEsya"
-                        android:layout_width="wrap_content"
+                    <!--<Button-->
+                        <!--android:id="@+id/navigateEsya"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:paddingTop="10dp"-->
+                        <!--android:paddingBottom="10dp"-->
+                        <!--android:text="  Get Directions"-->
+                        <!--android:drawableLeft="@drawable/ic_near_me_black_18dp"-->
+                        <!--android:textSize="16dp"/>-->
+
+                    <include layout="@layout/activity_iiitdmap" />
+
+                    <com.example.discrollview.MyTextView
+                        android:paddingTop="7dp"
+                        android:textAlignment="center"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingTop="10dp"
-                        android:paddingBottom="10dp"
-                        android:text="  Get Directions"
-                        android:drawableLeft="@drawable/ic_near_me_black_18dp"
-                        android:textSize="16dp"/>
-
-
+                        android:text="*Tap on the pin marker to get directions"
+                        android:layout_weight="1"/>
                 </LinearLayout>
-
-
             </LinearLayout>
-
         </android.support.v7.widget.CardView>
-
-
-
+        
         <android.support.v7.widget.CardView
             android:id="@+id/cardView3"
             android:layout_width="match_parent"

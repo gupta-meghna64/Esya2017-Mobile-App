@@ -27,14 +27,49 @@ import com.daimajia.slider.library.SliderLayout;
 import com.daimajia.slider.library.SliderTypes.BaseSliderView;
 import com.daimajia.slider.library.SliderTypes.TextSliderView;
 import com.daimajia.slider.library.Tricks.ViewPagerEx;
+import com.google.android.gms.maps.model.Marker;
 import com.ramotion.foldingcell.FoldingCell;
 
 import java.util.HashMap;
 
 import static android.R.id.message;
 import static java.security.AccessController.getContext;
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.View;
 
-public class MainActivity extends AppCompatActivity implements BaseSliderView.OnSliderClickListener, ViewPagerEx.OnPageChangeListener {
+import com.google.android.gms.maps.CameraUpdate;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapFragment;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.View;
+
+import com.google.android.gms.maps.CameraUpdate;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapFragment;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.View;
+
+import com.google.android.gms.maps.CameraUpdate;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapFragment;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
+
+public class MainActivity extends AppCompatActivity implements BaseSliderView.OnSliderClickListener, ViewPagerEx.OnPageChangeListener
+{
 
     private SliderLayout sliderLayout;
     private SliderLayout sponsorsSliderLayout;
@@ -46,10 +81,43 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
     private ImageView unfoldedDJ;
     final int foldingCellArr[]=new int[6];
 
+    private final LatLng LOCATION_IIITD = new LatLng(28.5459495, 77.2688703);
+    private GoogleMap map;
+    private Marker myMarker;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        map  = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
+
+        myMarker= map.addMarker(new MarkerOptions().position(LOCATION_IIITD).title("Find us here! IIITD"));
+
+        map.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+        CameraUpdate update = CameraUpdateFactory.newLatLngZoom(LOCATION_IIITD, 15);
+        map.animateCamera(update);
+
+        map.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener()
+        {
+
+            @Override
+            public boolean onMarkerClick(Marker arg0) {
+                if(arg0.getTitle().equals("Find us here! IIITD"))
+                {// if marker source is clicked
+                     Toast.makeText(MainActivity.this, arg0.getTitle(), Toast.LENGTH_SHORT).show();// display toast
+                     Uri gmmIntentUri = Uri.parse("google.navigation:q=" + "IIIT Delhi");
+                    Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+                    mapIntent.setPackage("com.google.android.apps.maps");
+                    startActivity(mapIntent);
+                }
+                return true;
+            }
+
+        });
+
+
+
         unfoldedDJ=(ImageView) findViewById(R.id.unfoldedDJ);
         final int height= (int) Math.round(Resources.getSystem().getDisplayMetrics().widthPixels*1.77);
         unfoldedDJ.getLayoutParams().height = height;
@@ -120,19 +188,19 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         });
 
 
-        Button navigate = (Button) findViewById(R.id.navigateEsya);
-
-        navigate.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Uri gmmIntentUri = Uri.parse("google.navigation:q="+"IIIT Delhi");
-                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
-                mapIntent.setPackage("com.google.android.apps.maps");
-                startActivity(mapIntent);
-
-
-            }
-        });
+//        Button navigate = (Button) findViewById(R.id.navigateEsya);
+//
+//        navigate.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Uri gmmIntentUri = Uri.parse("google.navigation:q="+"IIIT Delhi");
+//                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+//                mapIntent.setPackage("com.google.android.apps.maps");
+//                startActivity(mapIntent);
+//
+//
+//            }
+//        });
 
         TextView web = (TextView) findViewById(R.id.websiteEsya);
         web.setOnClickListener(new View.OnClickListener() {

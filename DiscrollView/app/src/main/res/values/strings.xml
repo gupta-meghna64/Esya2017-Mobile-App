@@ -7,4 +7,7 @@
     <string name="tab_one">CSE </string>
     <string name="tab_two">ECE </string>
     <string name="tab_three">NON-TECH </string>
+
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
 </resources>
