@@ -165,7 +165,21 @@ Register and start writing! Check out the rules!
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
-                    android:text="rewxp problem"/>
+                    android:text="1) 16 words is an upper limit participants may use less than 16 words to express themselves. \n \n
+2) The competition will go on from X to Y date. \n \n
+3) You must submit your entries here on the Facebook page to be considered for qualification and prizes. \n \n
+4) Both English and Hindi stories are welcome. \n \n
+5) The event entries are only to be submitted online on the Facebook event page. \n \n
+6) Participants may choose to write on one of the following themes: (to be provided) \n \n
+7) Foul words/racism in any form in the stories will not be tolerated and such posts will disqualified immediately. \n \n
+8) Multiple entries per participant are allowed and encouraged! Keep writing folks! \n \n
+9) We will check for plagiarism and any entries found to be copied will be disqualified without any notice. We are serious here. \n \n
+10) You need to mention the word count after your story along with mentioning the theme as a hashtag. \n \n
+11) Mentioning the theme is compulsory to be eligible for judgement. \n \n
+12) A minimum of one and a maximum of four keywords from the given keywords must be included in the stories. Any story without following this rule will not be considered for qualification/prizes. \n \n
+13) The keywords and themes should be hashtagged at the end of each story. \n \n
+14) Decision of the judges will be final and binding.
+"/>
 
             </LinearLayout>
 
