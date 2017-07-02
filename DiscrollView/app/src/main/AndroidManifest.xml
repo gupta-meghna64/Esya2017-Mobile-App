@@ -28,7 +28,6 @@
         android:icon="@mipmap/ic_launcher"
         android:largeHeap="true"
         android:label="@string/app_name"
-        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -57,14 +56,11 @@
             android:label="NON-TECH EVENTS"></activity>
         <activity
             android:name=".EventsMainActivity"
-<<<<<<< HEAD
-            android:label="NON-TECH EVENTS"></activity>
-=======
-            android:label="EVENTS">
-        </activity>
 
->>>>>>> e41de49e35d962ab358a840e6e1c8135747dd6e4
-        <activity
+            android:label="NON-TECH EVENTS"></activity>
+
+
+<activity
             android:name=".SelectEvents"
             android:label="@string/app_name"></activity>
         <activity
@@ -86,6 +82,7 @@
                 <!--<category android:name="android.intent.category.LAUNCHER" />-->
             <!--</intent-filter>-->
         </activity>
+
     </application>
 
 </manifest>
