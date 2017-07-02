@@ -62,6 +62,25 @@
             android:label="@string/app_name">
         </activity>
 
+        <activity android:name=".ComedyNight"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+
+        </activity>
+
+        <activity android:name=".DjNight"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+
+        </activity>
+
+        <activity android:name=".Initiatives"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+
+        </activity>
+
+        <activity android:name=".Workshops"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+
+        </activity>
 
     </application>
 
