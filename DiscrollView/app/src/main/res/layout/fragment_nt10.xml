@@ -15,8 +15,6 @@
             android:weightSum="10">
 
 
-
-
             <android.support.v7.widget.CardView
                 android:id="@+id/cardViewTop"
                 android:layout_width="match_parent"
@@ -223,8 +221,6 @@ All the rules mentioned in the document above along with a few rules thought by 
 
 
             </LinearLayout>
-
-
 
         </android.support.v7.widget.CardView>
     </LinearLayout>

@@ -33,6 +33,7 @@
                  >
 
 
+
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -138,7 +139,7 @@
             android:clickable="true"
             android:layout_gravity="center"
             card_view:cardBackgroundColor="@android:color/background_light"
-            card_view:cardCornerRadius="dp"
+            card_view:cardCornerRadius="4dp"
             card_view:contentPaddingTop="5dp"
             card_view:contentPaddingBottom="5dp" >
 

@@ -14,8 +14,6 @@
             android:padding="4dp"
             android:weightSum="10">
 
-
-
             <android.support.v7.widget.CardView
                 android:id="@+id/cardViewTop"
                 android:layout_width="match_parent"
@@ -34,7 +32,6 @@
                         android:layout_height="match_parent"
                         android:scaleType="fitXY"
                         android:src="@drawable/robomaze_plain"/>
-
 
             </android.support.v7.widget.CardView>
 
@@ -230,7 +227,6 @@ So each team need to get their Prime bots and save our campus from Megatron and 
                 </LinearLayout>
 
             </LinearLayout>
-
 
 
         </android.support.v7.widget.CardView>

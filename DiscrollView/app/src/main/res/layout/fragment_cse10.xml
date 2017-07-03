@@ -14,7 +14,6 @@
             android:padding="4dp"
             android:weightSum="10">
 
-
             <android.support.v7.widget.CardView
                 android:id="@+id/cardViewTop"
                 android:layout_width="match_parent"
@@ -28,7 +27,6 @@
                 card_view:cardBackgroundColor="@android:color/background_light"
                 card_view:cardCornerRadius="4dp"
                  >
-
 
                     <ImageView
                         android:layout_width="match_parent"
@@ -81,7 +79,6 @@ Shoutout to all computer nerds and gizmo geeks. For our 6th Edition of TechFest 
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
-
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"

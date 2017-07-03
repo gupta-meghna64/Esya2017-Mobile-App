@@ -14,7 +14,6 @@
             android:padding="4dp"
             android:weightSum="10">
 
-
             <android.support.v7.widget.CardView
                 android:id="@+id/cardViewTop"
                 android:layout_width="match_parent"
@@ -293,8 +292,6 @@ Although we would ensure full transparency and fair conduct. \n \n
 
 
             </LinearLayout>
-
-
 
         </android.support.v7.widget.CardView>
     </LinearLayout>

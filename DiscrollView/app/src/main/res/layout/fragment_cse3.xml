@@ -14,7 +14,6 @@
             android:padding="4dp"
             android:weightSum="10">
 
-
             <android.support.v7.widget.CardView
                 android:id="@+id/cardViewTop"
                 android:layout_width="match_parent"
@@ -248,7 +247,6 @@ ProSort is part of the Techathlon series of Esya '16. Techathlon is a 6-event te
                 </LinearLayout>
 
             </LinearLayout>
-
 
 
         </android.support.v7.widget.CardView>

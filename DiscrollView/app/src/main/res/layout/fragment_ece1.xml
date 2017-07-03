@@ -14,8 +14,6 @@
             android:padding="4dp"
             android:weightSum="10">
 
-
-
             <android.support.v7.widget.CardView
                 android:id="@+id/cardViewTop"
                 android:layout_width="match_parent"
@@ -240,8 +238,6 @@ as a platform to showcase our Institute’s progress in the field of Electronics
                 </LinearLayout>
 
             </LinearLayout>
-
-
 
         </android.support.v7.widget.CardView>
     </LinearLayout>

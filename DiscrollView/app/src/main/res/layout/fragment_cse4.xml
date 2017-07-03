@@ -14,8 +14,6 @@
             android:padding="4dp"
             android:weightSum="10">
 
-
-
             <android.support.v7.widget.CardView
                 android:id="@+id/cardViewTop"
                 android:layout_width="match_parent"
@@ -237,8 +235,6 @@ Solve the problems, optimize your code and shorten it. The shortest solution win
                 </LinearLayout>
 
             </LinearLayout>
-
-
 
         </android.support.v7.widget.CardView>
 
