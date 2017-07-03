@@ -8,7 +8,7 @@
     xmlns:custom="http://schemas.android.com/tools">
 
 
-<LinearLayout
+    <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -215,4 +215,5 @@ Our event is based on the multiplayer mode in which people connect to one server
 
 
 </LinearLayout>
-    </ScrollView>
+
+</ScrollView>

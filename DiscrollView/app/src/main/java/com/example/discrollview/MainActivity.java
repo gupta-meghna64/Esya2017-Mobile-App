@@ -325,7 +325,6 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         });
 
         final FoldingCell fc2 = (FoldingCell) findViewById(R.id.folding_cell2);
-        // attach click listener to folding cell
         fc2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -335,7 +334,6 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         });
 
         final FoldingCell fc3 = (FoldingCell) findViewById(R.id.folding_cell3);
-        // attach click listener to folding cell
         fc3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -345,7 +343,6 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         });
 
         final FoldingCell fc4 = (FoldingCell) findViewById(R.id.folding_cell4);
-        // attach click listener to folding cell
         fc4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -355,7 +352,6 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         });
 
         final FoldingCell fc5 = (FoldingCell) findViewById(R.id.folding_cell5);
-        // attach click listener to folding cell
         fc5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -477,7 +473,6 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
     public void onPageScrollStateChanged(int state) {}
 
     public void getScrollMaxAmount(){
-//        int actualWidth = (horizontalOuterLayout.getMeasuredWidth()-512);
         int actualWidth = (horizontalOuterLayout.getMeasuredWidth() - getWindowManager().getDefaultDisplay().getWidth());
 
         scrollMax   = actualWidth;
@@ -508,12 +503,8 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
     }
 
     public void moveScrollView(){
-        scrollPos							= 	(int) (horizontalScrollview.getScrollX() + 4.0);
-//        if(scrollPos >= scrollMax){
-//            scrollPos						=	0;
-//        }
-//        horizontalScrollview.scrollTo(scrollPos, 0);
-//
+        scrollPos=(int)(horizontalScrollview.getScrollX() + 4.0);
+
         if (scrollPos >= scrollMax) {
             Log.v("childCount", ""+scrollMax);
             addImagesToView();

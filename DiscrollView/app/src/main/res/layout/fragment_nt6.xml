@@ -167,11 +167,13 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Riya Sinha"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="9205402948"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -193,11 +195,13 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Paridhi Lohani"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="9654222150"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -219,11 +223,13 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Vipan Kumar"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="9958260607"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

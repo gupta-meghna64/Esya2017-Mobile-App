@@ -79,184 +79,184 @@
             </android.support.v7.widget.CardView>
 
 
-        <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="4"
-            card_view:cardUseCompatPadding="true"
-            card_view:cardElevation="1dp"
-            android:foreground="?android:attr/selectableItemBackground"
-            android:clickable="true"
-            android:layout_gravity="center"
-            card_view:cardBackgroundColor="@android:color/background_light"
-            card_view:cardCornerRadius="4dp"
-            card_view:contentPaddingTop="5dp"
-            card_view:contentPaddingBottom="5dp" >
-
-            <LinearLayout
+            <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:weightSum="5">
+                android:layout_weight="4"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="1dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_gravity="center"
+                card_view:cardBackgroundColor="@android:color/background_light"
+                card_view:cardCornerRadius="4dp"
+                card_view:contentPaddingTop="5dp"
+                card_view:contentPaddingBottom="5dp" >
 
-                <com.example.discrollview.MyTextViewHeading
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="RULES"
-                    android:textSize="18dp"
-                    android:padding="8dp"
-                    android:layout_weight="1"
-                    android:textAlignment="center" />
+                    android:orientation="vertical"
+                    android:weightSum="5">
 
-                <com.example.discrollview.MyTextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="4"
-                    android:padding="8dp"
-                    android:text="Decision of organizers is final and binding."/>
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="RULES"
+                        android:textSize="18dp"
+                        android:padding="8dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center" />
 
-            </LinearLayout>
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:padding="8dp"
+                        android:text="Decision of organizers is final and binding."/>
 
-        </android.support.v7.widget.CardView>
+                </LinearLayout>
 
-        <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="4"
-            card_view:cardUseCompatPadding="true"
-            card_view:cardElevation="1dp"
-            android:foreground="?android:attr/selectableItemBackground"
-            android:clickable="true"
-            android:layout_gravity="center"
-            card_view:cardBackgroundColor="@android:color/background_light"
-            card_view:cardCornerRadius="4dp"
-            card_view:contentPaddingTop="5dp"
-            card_view:contentPaddingBottom="5dp" >
+            </android.support.v7.widget.CardView>
 
-            <LinearLayout
+            <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:weightSum="10">
-
-                <com.example.discrollview.MyTextViewHeading
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="POINT OF CONTACT"
-                    android:textSize="18dp"
-                    android:padding="8dp"
-                    android:layout_weight="1"
-                    android:textAlignment="center" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="3"
-                    android:padding="8dp"
-                    android:orientation="vertical"
-                    android:weightSum="3">
-
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Siddharth Varshney"/>
-                    <com.example.discrollview.MyTextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="9717259818"/>
-                    <com.example.discrollview.MyTextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="siddharth16200@iiitd.ac.in"/>
-
-                </LinearLayout>
+                android:layout_weight="4"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="1dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_gravity="center"
+                card_view:cardBackgroundColor="@android:color/background_light"
+                card_view:cardCornerRadius="4dp"
+                card_view:contentPaddingTop="5dp"
+                card_view:contentPaddingBottom="5dp" >
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="3"
-                    android:padding="8dp"
                     android:orientation="vertical"
-                    android:weightSum="3">
+                    android:weightSum="10">
 
                     <com.example.discrollview.MyTextViewHeading
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:text="POINT OF CONTACT"
+                        android:textSize="18dp"
+                        android:padding="8dp"
                         android:layout_weight="1"
-                        android:text="Vishaal Udandarao"/>
-                    <com.example.discrollview.MyTextView
+                        android:textAlignment="center" />
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="9573903259"/>
-                    <com.example.discrollview.MyTextView
+                        android:layout_weight="3"
+                        android:padding="8dp"
+                        android:orientation="vertical"
+                        android:weightSum="3">
+
+                        <com.example.discrollview.MyTextViewHeading
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Siddharth Varshney"/>
+                        <com.example.discrollview.MyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="9717259818"/>
+                        <com.example.discrollview.MyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="siddharth16200@iiitd.ac.in"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text=""/>
+                        android:layout_weight="3"
+                        android:padding="8dp"
+                        android:orientation="vertical"
+                        android:weightSum="3">
+
+                        <com.example.discrollview.MyTextViewHeading
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Vishaal Udandarao"/>
+                        <com.example.discrollview.MyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="9573903259"/>
+                        <com.example.discrollview.MyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:padding="8dp"
+                        android:orientation="vertical"
+                        android:weightSum="3">
+
+                        <com.example.discrollview.MyTextViewHeading
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Jigme"/>
+                        <com.example.discrollview.MyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="8637085363"/>
+                        <com.example.discrollview.MyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:padding="8dp"
+                        android:orientation="vertical"
+                        android:weightSum="3">
+
+                        <com.example.discrollview.MyTextViewHeading
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Jai Mahajan"/>
+                        <com.example.discrollview.MyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="9953644086"/>
+                        <com.example.discrollview.MyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="jai16154@iiitd.ac.in"/>
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="3"
-                    android:padding="8dp"
-                    android:orientation="vertical"
-                    android:weightSum="3">
 
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Jigme"/>
-                    <com.example.discrollview.MyTextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="8637085363"/>
-                    <com.example.discrollview.MyTextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text=""/>
+            </android.support.v7.widget.CardView>
 
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="3"
-                    android:padding="8dp"
-                    android:orientation="vertical"
-                    android:weightSum="3">
-
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Jai Mahajan"/>
-                    <com.example.discrollview.MyTextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="9953644086"/>
-                    <com.example.discrollview.MyTextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="jai16154@iiitd.ac.in"/>
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-
-        </android.support.v7.widget.CardView>
-    </LinearLayout>
-
+        </LinearLayout>
 
 </ScrollView>

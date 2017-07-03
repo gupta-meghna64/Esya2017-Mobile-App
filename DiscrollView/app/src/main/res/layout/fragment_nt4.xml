@@ -168,11 +168,13 @@ The final round will be on the first day of the fest itself*. The announcement o
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Anvit Mangal"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="9971729258"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -194,11 +196,13 @@ The final round will be on the first day of the fest itself*. The announcement o
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Kartik Mathur"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="9818757395"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -220,11 +224,13 @@ The final round will be on the first day of the fest itself*. The announcement o
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Hemant Rattey"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="8800548443"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -238,6 +244,7 @@ The final round will be on the first day of the fest itself*. The announcement o
 
 
         </android.support.v7.widget.CardView>
+
     </LinearLayout>
 
 </ScrollView>

@@ -38,10 +38,6 @@ public class TabOneFragment extends Fragment {
         CardView design360 = (CardView)v.findViewById(R.id.cardDesign360);
         CardView techathlon = (CardView)v.findViewById(R.id.cardTechathlon);
 
-//        proconjr.getLayoutParams().width= Resources.getSystem().getDisplayMetrics().widthPixels;
-//        int height = (int) Math.round(Resources.getSystem().getDisplayMetrics().widthPixels/2.69);
-//        proconjr.getLayoutParams().height = height;
-//        proconjr.requestLayout();
 
         proconjr.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -155,26 +151,5 @@ public class TabOneFragment extends Fragment {
 
         return v;
     }
-//    @Override
-//    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-//
-//        if (requestCode == 1) {
-//            if(resultCode == Activity.RESULT_OK){
-//                new FragmentCSE1();
-//            }
-//            if (resultCode == Activity.RESULT_CANCELED) {
-//                //Write your code if there's no result
-//                Toast.makeText(getContext(), "No Fragment Returned", Toast.LENGTH_LONG).show();
-//            }
-//        }
-//        else if(requestCode == 2) {
-//            if(resultCode == Activity.RESULT_OK){
-//                new FragmentCSE2();
-//            }
-//            if (resultCode == Activity.RESULT_CANCELED) {
-//                //Write your code if there's no result
-//                Toast.makeText(getContext(), "No Fragment Returned", Toast.LENGTH_LONG).show();
-//            }
-//        }
-//    }//onActivityResult
+
 }
