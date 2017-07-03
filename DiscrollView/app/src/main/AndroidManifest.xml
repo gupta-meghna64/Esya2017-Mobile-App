@@ -56,10 +56,11 @@
             android:label="NON-TECH EVENTS"></activity>
         <activity
             android:name=".EventsMainActivity"
-            android:label="EVENTS"></activity>
+
+            android:label="NON-TECH EVENTS"></activity>
 
 
-        <activity
+<activity
             android:name=".SelectEvents"
             android:label="@string/app_name"></activity>
         <activity
@@ -81,6 +82,7 @@
                 <!--<category android:name="android.intent.category.LAUNCHER" />-->
             <!--</intent-filter>-->
         </activity>
+
     </application>
 
 </manifest>
