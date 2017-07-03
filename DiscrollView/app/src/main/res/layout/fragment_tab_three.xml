@@ -308,7 +308,7 @@
                         android:paddingBottom="8dp"
                         android:textStyle="bold"
                         android:textAlignment="center"
-                        android:text="No need to go."
+                        android:text="16 words to go."
                         android:textColor="#FFFFFF"/>
                 </FrameLayout>
 

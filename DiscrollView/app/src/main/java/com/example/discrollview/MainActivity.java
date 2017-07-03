@@ -90,10 +90,18 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
     private Button djNight;
     private Button comedyNight;
     private Button workshops;
-    private Button intiatives;
+    private Button initiatives;
     private ImageView unfoldedDJ;
     private ImageView foldedDJ;
-    final int foldingCellArr[]=new int[6];
+    private ImageView unfoldedEvents;
+    private ImageView foldedEvents;
+    private ImageView unfoldedComedy;
+    private ImageView foldedComedy;
+    private ImageView unfoldedWorkshops;
+    private ImageView foldedWorkshops;
+    private ImageView unfoldedInitiatives;
+    private ImageView foldedInitiatives;
+    final int foldingCellArr[]=new int[5];
 
     private final LatLng LOCATION_IIITD = new LatLng(28.5459495, 77.2688703);
     private GoogleMap map;
@@ -196,12 +204,51 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         foldedDJ.getLayoutParams().height= (int) Resources.getSystem().getDisplayMetrics().widthPixels/3;
         foldedDJ.requestLayout();
 
+        unfoldedEvents=(ImageView) findViewById(R.id.unfoldedEvents);
+        foldedEvents=(ImageView) findViewById(R.id.iconComedy);
+        unfoldedEvents.getLayoutParams().height = Resources.getSystem().getDisplayMetrics().widthPixels;
+        unfoldedEvents.getLayoutParams().width = Resources.getSystem().getDisplayMetrics().widthPixels;
+        unfoldedEvents.requestLayout();
+
+        foldedEvents.getLayoutParams().width = Resources.getSystem().getDisplayMetrics().widthPixels;
+        foldedEvents.getLayoutParams().height= (int) Resources.getSystem().getDisplayMetrics().widthPixels/3;
+        foldedEvents.requestLayout();
+
+        unfoldedInitiatives=(ImageView) findViewById(R.id.unfoldedInitiatives);
+        foldedInitiatives=(ImageView) findViewById(R.id.iconInitiatives);
+        unfoldedInitiatives.getLayoutParams().height = Resources.getSystem().getDisplayMetrics().widthPixels;
+        unfoldedInitiatives.getLayoutParams().width = Resources.getSystem().getDisplayMetrics().widthPixels;
+        unfoldedInitiatives.requestLayout();
+
+        foldedInitiatives.getLayoutParams().width = Resources.getSystem().getDisplayMetrics().widthPixels;
+        foldedInitiatives.getLayoutParams().height= (int) Resources.getSystem().getDisplayMetrics().widthPixels/3;
+        foldedInitiatives.requestLayout();
+
+        unfoldedWorkshops=(ImageView) findViewById(R.id.unfoldedWorkshops);
+        foldedWorkshops=(ImageView) findViewById(R.id.iconWorkshops);
+        unfoldedWorkshops.getLayoutParams().height = Resources.getSystem().getDisplayMetrics().widthPixels;
+        unfoldedWorkshops.getLayoutParams().width = Resources.getSystem().getDisplayMetrics().widthPixels;
+        unfoldedWorkshops.requestLayout();
+
+        foldedWorkshops.getLayoutParams().width = Resources.getSystem().getDisplayMetrics().widthPixels;
+        foldedWorkshops.getLayoutParams().height= (int) Resources.getSystem().getDisplayMetrics().widthPixels/3;
+        foldedWorkshops.requestLayout();
+
+        unfoldedComedy=(ImageView) findViewById(R.id.unfoldedComedy);
+        foldedComedy=(ImageView) findViewById(R.id.iconComedy);
+        unfoldedComedy.getLayoutParams().height = Resources.getSystem().getDisplayMetrics().widthPixels;
+        unfoldedComedy.getLayoutParams().width = Resources.getSystem().getDisplayMetrics().widthPixels;
+        unfoldedComedy.requestLayout();
+
+        foldedComedy.getLayoutParams().width = Resources.getSystem().getDisplayMetrics().widthPixels;
+        foldedComedy.getLayoutParams().height= (int) Resources.getSystem().getDisplayMetrics().widthPixels/3;
+        foldedComedy.requestLayout();
+
         foldingCellArr[0]=R.id.folding_cell;
         foldingCellArr[1]=R.id.folding_cell2;
         foldingCellArr[2]=R.id.folding_cell3;
         foldingCellArr[3]=R.id.folding_cell4;
         foldingCellArr[4]=R.id.folding_cell5;
-        foldingCellArr[5]=R.id.folding_cell6;
 
         ImageButton facebook = (ImageButton) findViewById(R.id.facebookEsya);
         ImageButton instagram = (ImageButton) findViewById(R.id.instagramEsya);
@@ -259,19 +306,6 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         });
 
 
-//        Button navigate = (Button) findViewById(R.id.navigateEsya);
-//
-//        navigate.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Uri gmmIntentUri = Uri.parse("google.navigation:q="+"IIIT Delhi");
-//                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
-//                mapIntent.setPackage("com.google.android.apps.maps");
-//                startActivity(mapIntent);
-//
-//
-//            }
-//        });
 
         TextView web = (TextView) findViewById(R.id.websiteEsya);
         web.setOnClickListener(new View.OnClickListener() {
@@ -331,16 +365,6 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         });
 
 
-        final FoldingCell fc6 = (FoldingCell) findViewById(R.id.folding_cell6);
-        // attach click listener to folding cell
-        fc6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                checkUnfolder(R.id.folding_cell6);
-                fc6.toggle(false);
-            }
-        });
-
 
         sliderLayout = (SliderLayout) findViewById(R.id.slider);
         HashMap<String,Integer> file_maps = new HashMap<String, Integer>();
@@ -371,34 +395,6 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         sliderLayout.addOnPageChangeListener(this);
 
 
-//        sponsorsSliderLayout=(SliderLayout) findViewById(R.id.sponsors);
-//        HashMap<String,Integer> sponsor_maps = new HashMap<String, Integer>();
-//        sponsor_maps.put("Image 1", R.drawable.esya01);
-//        sponsor_maps.put("Image 2", R.drawable.esya02);
-//        sponsor_maps.put("Image 3", R.drawable.esya03);
-//        sponsor_maps.put("Image 4", R.drawable.esya04);
-//        for(String name : file_maps.keySet()){
-//            TextSliderView textSliderView = new TextSliderView(MainActivity.this);
-//            textSliderView
-//
-//                    .image(file_maps.get(name))
-//                    .setScaleType(BaseSliderView.ScaleType.Fit)
-//                    .setOnSliderClickListener(this);
-//
-//
-//            textSliderView.bundle(new Bundle());
-//            textSliderView.getBundle()
-//                    .putString("extra", name);
-//            sponsorsSliderLayout.addSlider(textSliderView);
-//
-//        }
-//
-//        sponsorsSliderLayout.setPresetTransformer(SliderLayout.Transformer.Default);
-//        sponsorsSliderLayout.setCustomAnimation(new DescriptionAnimation());
-//        sponsorsSliderLayout.setDuration(2000);
-//        sponsorsSliderLayout.addOnPageChangeListener(this);
-
-
         events=(Button) findViewById(R.id.events);
         events.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -421,16 +417,35 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         comedyNight.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent comedyIntent= new Intent(MainActivity.this, ComedyNight.class);
+                startActivity(comedyIntent);
 
             }
         });
 
+        workshops=(Button) findViewById(R.id.workshops);
+        workshops.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent workshopIntent= new Intent(MainActivity.this,Workshops.class);
+                startActivity(workshopIntent);
+            }
+        });
+
+        initiatives=(Button) findViewById(R.id.initiatives);
+        initiatives.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent initiativeIntent= new Intent(MainActivity.this,Initiatives.class);
+                startActivity(initiativeIntent);
+            }
+        });
 
     }
 
     public void checkUnfolder(int unfolderID)
     {
-        for(int i=0;i<6;i++)
+        for(int i=0;i<5;i++)
         {
             FoldingCell fc=(FoldingCell) findViewById(foldingCellArr[i]);
             if(fc.isUnfolded())

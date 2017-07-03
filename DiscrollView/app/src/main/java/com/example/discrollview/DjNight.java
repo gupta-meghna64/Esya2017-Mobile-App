@@ -21,7 +21,7 @@ public class DjNight extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.djnight_main);
-        back=(Button) findViewById(R.id.backButton);
+        back=(Button) findViewById(R.id.backButtonDJ);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

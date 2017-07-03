@@ -178,56 +178,55 @@
                     android:layout_height="wrap_content">
 
 
-                <com.ramotion.foldingcell.FoldingCell
-                    xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/folding_cell"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    >
 
-                <FrameLayout
-                        android:id="@+id/cell_content_view"
+                    <com.ramotion.foldingcell.FoldingCell
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/folding_cell"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:visibility="gone"
-                        android:paddingTop="8dp"
-                        android:paddingLeft="8dp"
-                        android:paddingRight="8dp">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="800px"
-                            android:background="@drawable/fullmountain"
-                            />
-
-                        <Button
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="EVENTS"
-                            android:id="@+id/events"
-                            android:layout_gravity="top|right"
-                    />
-
-
-                    </FrameLayout>
-                    ​
-                    <FrameLayout
-                        android:id="@+id/cell_title_view"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:paddingTop="8dp"
-                        android:paddingLeft="8dp"
-                        android:paddingRight="8dp">
+                        folding-cell:backSideColor="#FFFFFF"
                         >
 
-                        <ImageView
+                        <FrameLayout
+                            android:id="@+id/cell_content_view"
                             android:layout_width="match_parent"
-                            android:layout_height="200px"
-                            android:background="@drawable/topmountain" />
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:paddingTop="8dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp">>
 
-                    </FrameLayout>
-                    ​
-                </com.ramotion.foldingcell.FoldingCell>
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="800px"
+                                android:id="@+id/unfoldedEvents"
+                                android:background="@drawable/maindj"
+                                />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="MORE INFORMATION"
+                                android:id="@+id/events"
+                                android:layout_gravity="bottom|center"/>
+                        </FrameLayout>
+                        ​
+                        <FrameLayout
+                            android:id="@+id/cell_title_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="8dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp">>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="480px"
+                                android:id="@+id/iconEvents"
+                                android:background="@drawable/iconevents" />
+                        </FrameLayout>
+                        ​
+                    </com.ramotion.foldingcell.FoldingCell>
 
 
 
@@ -282,188 +281,157 @@
 
 
 
-                <com.ramotion.foldingcell.FoldingCell
-                    xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/folding_cell3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
 
-                    <FrameLayout
-                        android:id="@+id/cell_content_view3"
+                    <com.ramotion.foldingcell.FoldingCell
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/folding_cell3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:visibility="gone"
-                        android:paddingTop="8dp"
-                        android:paddingLeft="8dp"
-                        android:paddingRight="8dp">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="800px"
-                            android:background="@drawable/fullmountain"
-                            />
-
-                        <Button
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="COMEDY NIGHT"
-                            android:id="@+id/comedyNight"
-                            android:layout_gravity="top|right" />
-                    </FrameLayout>
-                    ​
-                    <FrameLayout
-                        android:id="@+id/cell_title_view3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:paddingTop="8dp"
-                        android:paddingLeft="8dp"
-                        android:paddingRight="8dp">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="200px"
-                            android:background="@drawable/topmountain" />
-                    </FrameLayout>
-                    ​
-                </com.ramotion.foldingcell.FoldingCell>
-
-
-
-                <com.ramotion.foldingcell.FoldingCell
-                    xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/folding_cell4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    >
-
-                    <FrameLayout
-                        android:id="@+id/cell_content_view4"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:visibility="gone"
-                        android:paddingTop="8dp"
-                        android:paddingLeft="8dp"
-                        android:paddingRight="8dp"
+                        folding-cell:backSideColor="#FFFFFF"
                         >
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="800px"
-                            android:background="@drawable/fullmountain"
-                            />
 
-                        <Button
-                            android:layout_width="wrap_content"
+                        <FrameLayout
+                            android:id="@+id/cell_content_view3"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="SOCIAL INITIATIVES"
-                            android:id="@+id/initiatives"
-                            android:layout_gravity="top|right" />
-                    </FrameLayout>
-                    ​
-                    <FrameLayout
-                        android:id="@+id/cell_title_view4"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:paddingTop="8dp"
-                        android:paddingLeft="8dp"
-                        android:paddingRight="8dp">
+                            android:visibility="gone"
+                            android:paddingTop="8dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp">>
 
-                        <ImageView
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="800px"
+                                android:id="@+id/unfoldedComedy"
+                                android:background="@drawable/maindj"
+                                />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="MORE INFORMATION"
+                                android:id="@+id/comedyNight"
+                                android:layout_gravity="bottom|center"/>
+                        </FrameLayout>
+                        ​
+                        <FrameLayout
+                            android:id="@+id/cell_title_view3"
                             android:layout_width="match_parent"
-                            android:layout_height="200px"
-                            android:background="@drawable/topmountain" />
-                    </FrameLayout>
-                    ​
-                </com.ramotion.foldingcell.FoldingCell>
-
-
-
-                <com.ramotion.foldingcell.FoldingCell
-                    xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/folding_cell5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    >
-
-                    <FrameLayout
-                        android:id="@+id/cell_content_view5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:visibility="gone"
-                        android:paddingTop="8dp"
-                        android:paddingLeft="8dp"
-                        android:paddingRight="8dp">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="800px"
-                            android:background="@drawable/fullmountain"
-                            />
-
-                        <Button
-                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="WORKSHOPS"
-                            android:id="@+id/workshops"
-                            android:layout_gravity="top|right" />
-                    </FrameLayout>
-                    ​
-                    <FrameLayout
-                        android:id="@+id/cell_title_view5"
+                            android:paddingTop="8dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp">>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="480px"
+                                android:id="@+id/iconComedy"
+                                android:background="@drawable/iconcomedy" />
+                        </FrameLayout>
+                        ​
+                    </com.ramotion.foldingcell.FoldingCell>
+
+
+
+                    <com.ramotion.foldingcell.FoldingCell
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/folding_cell4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:paddingTop="8dp"
-                        android:paddingLeft="8dp"
-                        android:paddingRight="8dp">
+                        folding-cell:backSideColor="#FFFFFF"
+                        >
 
-                        <ImageView
+                        <FrameLayout
+                            android:id="@+id/cell_content_view4"
                             android:layout_width="match_parent"
-                            android:layout_height="200px"
-                            android:background="@drawable/topmountain" />
-                    </FrameLayout>
-                    ​
-                </com.ramotion.foldingcell.FoldingCell>
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:paddingTop="8dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp">>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="800px"
+                                android:id="@+id/unfoldedInitiatives"
+                                android:background="@drawable/maindj"
+                                />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="MORE INFORMATION"
+                                android:id="@+id/initiatives"
+                                android:layout_gravity="bottom|center"/>
+                        </FrameLayout>
+                        ​
+                        <FrameLayout
+                            android:id="@+id/cell_title_view4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="8dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp">>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="480px"
+                                android:id="@+id/iconInitiatives"
+                                android:background="@drawable/iconinitiatives" />
+                        </FrameLayout>
+                        ​
+                    </com.ramotion.foldingcell.FoldingCell>
 
 
 
-                <com.ramotion.foldingcell.FoldingCell
-                    xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/folding_cell6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    >
-
-                    <FrameLayout
-                        android:id="@+id/cell_content_view6"
+                    <com.ramotion.foldingcell.FoldingCell
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/folding_cell5"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:visibility="gone"
-                        android:paddingTop="8dp"
-                        android:paddingLeft="8dp"
-                        android:paddingRight="8dp">
+                        folding-cell:backSideColor="#FFFFFF"
+                        >
 
-                        <ImageView
+                        <FrameLayout
+                            android:id="@+id/cell_content_view5"
                             android:layout_width="match_parent"
-                            android:layout_height="800px"
-                            android:background="@drawable/fullmountain"
-                            />
-                    </FrameLayout>
-                    ​
-                    <FrameLayout
-                        android:id="@+id/cell_title_view6"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:paddingTop="8dp"
-                        android:paddingLeft="8dp"
-                        android:paddingRight="8dp">
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:paddingTop="8dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp">>
 
-                        <ImageView
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="800px"
+                                android:id="@+id/unfoldedWorkshops"
+                                android:background="@drawable/maindj"
+                                />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="MORE INFORMATION"
+                                android:id="@+id/workshops"
+                                android:layout_gravity="bottom|center"/>
+                        </FrameLayout>
+                        ​
+                        <FrameLayout
+                            android:id="@+id/cell_title_view5"
                             android:layout_width="match_parent"
-                            android:layout_height="200px"
-                            android:background="@drawable/topmountain" />
-                    </FrameLayout>
-                    ​
-                </com.ramotion.foldingcell.FoldingCell>
+                            android:layout_height="wrap_content"
+                            android:paddingTop="8dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp">>
 
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="480px"
+                                android:id="@+id/iconWorkshops"
+                                android:background="@drawable/iconworkshops" />
+                        </FrameLayout>
+                        ​
+                    </com.ramotion.foldingcell.FoldingCell>
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
