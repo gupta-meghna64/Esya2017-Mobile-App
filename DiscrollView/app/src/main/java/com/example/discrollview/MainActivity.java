@@ -117,11 +117,11 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
     private TimerTask clickSchedule;
     private TimerTask scrollerSchedule;
     private TimerTask faceAnimationSchedule;
-    private Button clickedButton	=	null;
-    private Timer scrollTimer		=	null;
-    private Timer clickTimer		=	null;
-    private Timer faceTimer         =   null;
-    private Boolean isFaceDown      =   true;
+    private Button clickedButton=null;
+    private Timer scrollTimer=null;
+    private Timer clickTimer=null;
+    private Timer faceTimer=null;
+    private Boolean isFaceDown=true;
     private String[] nameArray = {"AutoDesk", "RAJA Biscuits", "Bittoo Tikki Wala", "CodeChef", "Coding_Ninjas","Engineers India LTD.", "GitLab", "Hacker Earth", "Happn", "Holiday IQ", "Luxor", "Qnswr", "Rau's IAS Study Circle", "Spykar", "UNIBIC"};
     private String[] imageNameArray = {"autode", "bisc", "btw", "codechef", "coding_ninjas","eil", "gitlab", "hack", "happn", "holiq", "luxor", "qnswr","rauias","spykar","unibic"};
 
@@ -139,15 +139,15 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         Typeface countertype= Typeface.createFromAsset(getAssets(),"fonts/Roboto-Light.ttf");
 
         eventCount=(CountAnimationTextView) findViewById(R.id.count_animation_textView2);
-        eventCount.setAnimationDuration(3000).countAnimation(0,30);
+        eventCount.setAnimationDuration(2000).countAnimation(0,30);
         eventCount.setTypeface(countertype);
 
         footfallCount=(CountAnimationTextView) findViewById(R.id.count_animation_textView1);
-        footfallCount.setAnimationDuration(3000).countAnimation(0,8000);
+        footfallCount.setAnimationDuration(2000).countAnimation(0,8000);
         footfallCount.setTypeface(countertype);
 
         schoolCount=(CountAnimationTextView) findViewById(R.id.count_animation_textView);
-        schoolCount.setAnimationDuration(3000).countAnimation(0,800);
+        schoolCount.setAnimationDuration(2000).countAnimation(0,800);
         schoolCount.setTypeface(countertype);
 
         horizontalScrollview  = (HorizontalScrollView) findViewById(R.id.horiztonal_scrollview_id);
@@ -182,9 +182,10 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
             @Override
             public boolean onMarkerClick(Marker arg0) {
                 if(arg0.getTitle().equals("Find us here! IIITD"))
-                {// if marker source is clicked
-                     Toast.makeText(MainActivity.this, arg0.getTitle(), Toast.LENGTH_SHORT).show();// display toast
-                     Uri gmmIntentUri = Uri.parse("google.navigation:q=" + "IIIT Delhi");
+                {
+                    // if marker source is clicked
+                    Toast.makeText(MainActivity.this, arg0.getTitle(), Toast.LENGTH_SHORT).show();
+                    Uri gmmIntentUri = Uri.parse("google.navigation:q=" + "IIIT Delhi");
                     Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
                     mapIntent.setPackage("com.google.android.apps.maps");
                     startActivity(mapIntent);

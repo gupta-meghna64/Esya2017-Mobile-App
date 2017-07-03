@@ -30,4 +30,12 @@ public class ComedyNight extends AppCompatActivity {
         });
     }
 
+    @Override
+    public void onBackPressed() {
+        Intent homeIntent= new Intent(ComedyNight.this,MainActivity.class);
+        homeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        homeIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(homeIntent);
+    }
+
 }
