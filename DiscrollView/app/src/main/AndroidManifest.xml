@@ -97,6 +97,10 @@
 
         </activity>
 
+        <activity android:name=".Sponspopup">
+
+        </activity>
+
     </application>
 
 </manifest>

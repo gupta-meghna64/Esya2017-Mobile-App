@@ -17,7 +17,7 @@ public class Initiatives extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.initiatives_main);
-        back=(Button) findViewById(R.id.backButtonComedy);
+        back=(Button) findViewById(R.id.backButtonInitiatives);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

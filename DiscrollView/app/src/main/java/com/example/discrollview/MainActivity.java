@@ -12,10 +12,12 @@ import android.os.Handler;
 import android.os.Message;
 import android.provider.ContactsContract;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutCompat;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
@@ -305,6 +307,21 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
             }
         });
 
+        Button viewallspons=(Button) findViewById(R.id.viewallspons);
+        viewallspons.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                View view= LayoutInflater.from(MainActivity.this).inflate(R.layout.activity_sponspopup,null);
+                AlertDialog.Builder builder=new AlertDialog.Builder(MainActivity.this);
+                LayoutInflater inflater = getLayoutInflater();
+                builder.setView(inflater.inflate(R.layout.activity_sponspopup, null));
+                AlertDialog ad = builder.create();
+                ad.setTitle("All Past Sponsors");
+                ad.show();
+            }
+        });
 
 
         TextView web = (TextView) findViewById(R.id.websiteEsya);
@@ -514,14 +531,15 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
     }
 
     /** Adds the images to view. */
-    public void addImagesToView(){
+    public void addImagesToView()
+    {
         for (int i=0;i<imageNameArray.length;i++){
             final Button imageButton =	new Button(this);
             int imageResourceId		 =	getResources().getIdentifier(imageNameArray[i], "drawable",getPackageName());
             Drawable image 			 =	this.getResources().getDrawable(imageResourceId);
             imageButton.setBackgroundDrawable(image);
             float scale = getResources().getDisplayMetrics().density;
-            int dpAsPixels = (int) (12*scale + 0.5f);
+            int dpAsPixels = (int) (10*scale + 0.5f);
             imageButton.setPadding (dpAsPixels , 0, dpAsPixels, 0);
             imageButton.setTag(i);
 
@@ -564,9 +582,12 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
             else {
                 r = 256 / r;
             }
-
+            if(r>400)
+                r=400;
             LinearLayout.LayoutParams params 	=	new LinearLayout.LayoutParams(r,256);
             params.setMargins(0, dpAsPixels, 0, dpAsPixels);
+            params.leftMargin=10;
+            params.rightMargin=10;
             imageButton.setLayoutParams(params);
             horizontalOuterLayout.addView(imageButton);
         }
