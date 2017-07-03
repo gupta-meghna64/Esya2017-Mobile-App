@@ -1,3 +1,4 @@
+
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
@@ -7,84 +8,41 @@
     android:background="#DFE1E1"
     xmlns:custom="http://schemas.android.com/tools">
 
-        <LinearLayout
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="4dp"
+        android:weightSum="10">
+
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardViewTop"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="4dp"
-            android:weightSum="10">
+            android:layout_height="400px"
+            android:layout_weight="4"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardElevation="1dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_gravity="center"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="4dp"
+            >
 
-            <android.support.v7.widget.CardView
-                android:id="@+id/cardViewTop"
+
+
+            <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="400px"
-                android:layout_weight="4"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="1dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:layout_gravity="center"
-                card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="4dp"
-                card_view:contentPaddingTop="1dp"
-                card_view:contentPaddingBottom="1dp" >
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/proconjunior_plain"/>
 
 
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/procon_plain"/>
-
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="4"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="1dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:layout_gravity="center"
-                card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="4dp"
-                card_view:contentPaddingTop="5dp"
-                card_view:contentPaddingBottom="5dp" >
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:weightSum="5">
-
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textStyle="bold"
-                        android:text="DESCRIPTION"
-                        android:textSize="18dp"
-                        android:padding="8dp"
-                        android:layout_weight="1"
-                        android:textAlignment="center" />
-
-                    <com.example.discrollview.MyTextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="4"
-                        android:padding="8dp"
-                        android:text="Don\'t mind the code. Code the mind. \n
-Part of Techathlon, the flagship onsite marathon. \n
-ProSort is the onsite programming contest organised by IIIT-Delhi's programming club Foobar for Esya '16. ProSort is a team event in which the best minds across the nation compete against each other to solve algorithmic problems. \n
-ProSort is part of the Techathlon series of Esya '16. Techathlon is a 6-event technical extravaganza which tests the teams under many spheres of coding and algorithm design. Only the teams selected in the first five events participate in the finale event- Toast to Code ! Note that ProSort is mandatory for participating in Techathlon.
-                    "/>
-
-                </LinearLayout>
-
-            </android.support.v7.widget.CardView>
-
+        </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
@@ -109,6 +67,50 @@ ProSort is part of the Techathlon series of Esya '16. Techathlon is a 6-event te
                 <com.example.discrollview.MyTextViewHeading
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:text="DESCRIPTION"
+                    android:textSize="18dp"
+                    android:padding="8dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center" />
+
+                <com.example.discrollview.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:padding="8dp"
+                    android:textAlignment="center"
+                    android:text="This is a competitive programming contest exclusively for school students. The event will involve problems based on basic data structures and algorithms (those which  are a part of ZCO/ZIO) viz. binary search, dynamic programming, ad hoc and basic graph theory."/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_weight="4"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardElevation="1dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_gravity="center"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="4dp"
+            card_view:contentPaddingTop="5dp"
+            card_view:contentPaddingBottom="5dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:text="RULES"
                     android:textSize="18dp"
                     android:padding="8dp"
@@ -120,20 +122,8 @@ ProSort is part of the Techathlon series of Esya '16. Techathlon is a 6-event te
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
-                    android:text="1)  Team size: At most 2 members \n \n
-2) Duration: 2 hours \n \n
-3) No. of questions: 5-6 \n \n
-4) Languages allowed: C, C++, Java \n \n
-5) Event is open to all college/institute/school students \n \n
-6) Your login details will be emailed to you - do try to ensure that you reach the venue [B.Tech labs, 2nd floor library building, IIITD] well in time \n \n
-7) Carrying your college ID card is a must \n \n
-8) Rough sheets will be provided but please bring your own pens \n \n
-9) Participants are not allowed to access internet during the contest \n \n
-10) Usage of no electronic device other than allotted PC is allowed \n \n
-11) Violation of rules may lead to disqualification \n \n
-12) Decision of organizers is final and binding.
-
-"/>
+                    android:textAlignment="center"
+                    android:text="Decision of organizers is final and binding."/>
 
             </LinearLayout>
 
@@ -180,17 +170,17 @@ ProSort is part of the Techathlon series of Esya '16. Techathlon is a 6-event te
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Utsav Rohilla"/>
+                        android:text="Piyush Gupta"/>
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="9953234769"/>
+                        android:text="9953547227"/>
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="utsav15110@iiitd.ac.in"/>
+                        android:text="piyush16066@iiitd.ac.in"/>
 
                 </LinearLayout>
 
@@ -206,17 +196,17 @@ ProSort is part of the Techathlon series of Esya '16. Techathlon is a 6-event te
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Nishant Sinha"/>
+                        android:text="Harshit Sharma"/>
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="8376051663"/>
+                        android:text="9013380170"/>
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="nishant15066@iiitd.ac.in"/>
+                        android:text="harshit15036@iiitd.ac.in"/>
 
                 </LinearLayout>
 
@@ -232,24 +222,29 @@ ProSort is part of the Techathlon series of Esya '16. Techathlon is a 6-event te
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Nikhil Hassija"/>
+                        android:text="Kushagra Arora"/>
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="9899008719"/>
+                        android:text="9650989548"/>
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="siddharth16096@iiitd.ac.in"/>
+                        android:text="kushagra15049@iiitd.ac.in"/>
 
                 </LinearLayout>
 
             </LinearLayout>
 
 
+
         </android.support.v7.widget.CardView>
     </LinearLayout>
+
+
+
+
 
 </ScrollView>

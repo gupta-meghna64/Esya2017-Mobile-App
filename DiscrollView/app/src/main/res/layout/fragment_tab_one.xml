@@ -20,15 +20,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="400px"
                 android:layout_gravity="center"
-                android:id="@+id/cardProconJr"
+                android:id="@+id/cardProsort"
                 card_view:cardUseCompatPadding="true"
                 card_view:cardElevation="1dp"
                 android:layout_marginBottom="0dp"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:clickable="true"
                 card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="4dp"
-                >
+                card_view:cardCornerRadius="4dp">
+
                 <FrameLayout
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent">
@@ -37,7 +37,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:scaleType="fitXY"
-                        android:src="@drawable/proconjunior_overlay"/>
+                        android:src="@drawable/prosort_overlay"/>
 
                     <com.example.discrollview.MyTextViewHeading
                         android:layout_width="match_parent"
@@ -46,12 +46,12 @@
                         android:paddingLeft="8dp"
                         android:paddingBottom="8dp"
                         android:textStyle="bold"
-                        android:textAlignment="center"
-                        android:text="Programming Competition for School Students"
+                        android:text="On-Campus Programming Event"
                         android:textColor="#FFFFFF"/>
                 </FrameLayout>
-
             </android.support.v7.widget.CardView>
+
+
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
@@ -83,7 +83,6 @@
                         android:paddingLeft="8dp"
                         android:paddingBottom="8dp"
                         android:textStyle="bold"
-                        android:textAlignment="center"
                         android:text="Online Programming Contest"
                         android:textColor="#FFFFFF"/>
                 </FrameLayout>
@@ -93,15 +92,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="400px"
                 android:layout_gravity="center"
-                android:id="@+id/cardProsort"
+                android:id="@+id/cardProconJr"
                 card_view:cardUseCompatPadding="true"
                 card_view:cardElevation="1dp"
                 android:layout_marginBottom="0dp"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:clickable="true"
                 card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="4dp">
-
+                card_view:cardCornerRadius="4dp"
+                >
                 <FrameLayout
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent">
@@ -110,7 +109,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:scaleType="fitXY"
-                        android:src="@drawable/procon_overlay"/>
+                        android:src="@drawable/proconjunior_overlay"/>
 
                     <com.example.discrollview.MyTextViewHeading
                         android:layout_width="match_parent"
@@ -119,11 +118,13 @@
                         android:paddingLeft="8dp"
                         android:paddingBottom="8dp"
                         android:textStyle="bold"
-                        android:textAlignment="center"
-                        android:text="On-Campus Programming Event"
+                        android:text="Programming Competition for School Students"
                         android:textColor="#FFFFFF"/>
                 </FrameLayout>
+
             </android.support.v7.widget.CardView>
+
+
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
@@ -156,7 +157,6 @@
                         android:paddingBottom="8dp"
                         android:paddingRight="8dp"
                         android:textStyle="bold"
-                        android:textAlignment="center"
                         android:text="Concision in Style, Precision in Thought, Decision in Life"
                         android:textColor="#FFFFFF"/>
                 </FrameLayout>
@@ -195,7 +195,6 @@
                         android:paddingBottom="8dp"
                         android:paddingRight="8dp"
                         android:textStyle="bold"
-                        android:textAlignment="center"
                         android:text="Challenge yourself to new environments"
                         android:textColor="#FFFFFF"/>
                 </FrameLayout>
@@ -235,7 +234,6 @@
                         android:paddingBottom="8dp"
                         android:paddingRight="8dp"
                         android:textStyle="bold"
-                        android:textAlignment="center"
                         android:text="Win or Bugger Off"
                         android:textColor="#FFFFFF"/>
                 </FrameLayout>
@@ -274,7 +272,6 @@
                         android:paddingBottom="8dp"
                         android:paddingRight="8dp"
                         android:textStyle="bold"
-                        android:textAlignment="center"
                         android:text="Algorithm Design Challenge"
                         android:textColor="#FFFFFF"/>
                 </FrameLayout>
@@ -313,7 +310,6 @@
                         android:paddingBottom="8dp"
                         android:paddingRight="8dp"
                         android:textStyle="bold"
-                        android:textAlignment="center"
                         android:text="Techathlon Finale"
                         android:textColor="#FFFFFF"/>
                 </FrameLayout>
@@ -353,7 +349,6 @@
                         android:paddingBottom="8dp"
                         android:paddingRight="8dp"
                         android:textStyle="bold"
-                        android:textAlignment="center"
                         android:text="Capture The Flag"
                         android:textColor="#FFFFFF"/>
                 </FrameLayout>
@@ -392,7 +387,6 @@
                         android:paddingBottom="8dp"
                         android:paddingRight="8dp"
                         android:textStyle="bold"
-                        android:textAlignment="center"
                         android:text="Ultimate Overnight Hackathon"
                         android:textColor="#FFFFFF"/>
                 </FrameLayout>
@@ -431,7 +425,6 @@
                         android:paddingBottom="8dp"
                         android:paddingRight="8dp"
                         android:textStyle="bold"
-                        android:textAlignment="center"
                         android:text="Overnight Design Hackathon"
                         android:textColor="#FFFFFF"/>
                 </FrameLayout>
@@ -469,7 +462,6 @@
                         android:paddingBottom="8dp"
                         android:paddingRight="8dp"
                         android:textStyle="bold"
-                        android:textAlignment="center"
                         android:text="Six event Technical Extravaganza"
                         android:textColor="#FFFFFF"/>
                 </FrameLayout>

@@ -47,7 +47,7 @@ public class TabOneFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getActivity(), CSEMainActivity.class);
-                i.putExtra("viewpager_position", 0);
+                i.putExtra("viewpager_position", 2);
                 startActivity(i);
             }
         });
@@ -65,7 +65,7 @@ public class TabOneFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getActivity(), CSEMainActivity.class);
-                i.putExtra("viewpager_position", 2);
+                i.putExtra("viewpager_position", 0);
                 startActivity(i);
             }
         });

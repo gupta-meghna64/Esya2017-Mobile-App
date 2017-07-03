@@ -200,7 +200,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="800px"
                                 android:id="@+id/unfoldedEvents"
-                                android:background="@drawable/maindj"
+                                android:background="#D3D3D3"
                                 />
 
                             <Button
@@ -303,7 +303,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="800px"
                                 android:id="@+id/unfoldedComedy"
-                                android:background="@drawable/maindj"
+                                android:background="#D3D3D3"
                                 />
 
                             <Button
@@ -354,7 +354,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="800px"
                                 android:id="@+id/unfoldedInitiatives"
-                                android:background="@drawable/maindj"
+                                android:background="#D3D3D3"
                                 />
 
                             <Button
@@ -405,7 +405,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="800px"
                                 android:id="@+id/unfoldedWorkshops"
-                                android:background="@drawable/maindj"
+                                android:background="#D3D3D3"
                                 />
 
                             <Button

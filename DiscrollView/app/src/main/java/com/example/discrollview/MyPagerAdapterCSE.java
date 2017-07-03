@@ -20,11 +20,11 @@ public class MyPagerAdapterCSE extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         //return (position == 0)? "Procon Junior" : "Tab2" ;
         if(position == 0)
-            return "Procon Junior";
+            return "Prosort";
         else if(position == 1)
             return "Procon";
         else if(position == 2)
-            return "Prosort";
+            return "Procon Junior";
         else if(position == 3)
             return "Code in Less";
         else if(position == 4)
