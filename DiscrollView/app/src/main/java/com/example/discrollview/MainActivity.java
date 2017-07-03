@@ -378,20 +378,16 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
             textSliderView
 
                     .image(file_maps.get(name))
-                    .setScaleType(BaseSliderView.ScaleType.Fit)
-                    .setOnSliderClickListener(this);
+                    .setScaleType(BaseSliderView.ScaleType.Fit);
 
 
-            textSliderView.bundle(new Bundle());
-            textSliderView.getBundle()
-                    .putString("extra", name);
             sliderLayout.addSlider(textSliderView);
 
         }
         sliderLayout.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom);
         sliderLayout.setPresetTransformer(SliderLayout.Transformer.Accordion);
         sliderLayout.setCustomAnimation(new DescriptionAnimation());
-        sliderLayout.setDuration(1500);
+        sliderLayout.setDuration(2500);
         sliderLayout.addOnPageChangeListener(this);
 
 
