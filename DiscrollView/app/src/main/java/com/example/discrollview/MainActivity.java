@@ -4,6 +4,7 @@ import android.animation.ObjectAnimator;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.content.res.Resources;
+import android.graphics.Typeface;
 import android.graphics.drawable.AnimationDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
@@ -31,6 +32,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.daasuu.cat.CountAnimationTextView;
 import com.daimajia.slider.library.Animations.DescriptionAnimation;
 import com.daimajia.slider.library.SliderLayout;
 import com.daimajia.slider.library.SliderTypes.BaseSliderView;
@@ -113,10 +115,30 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
     private String[] nameArray = {"AutoDesk", "RAJA Biscuits", "Bittoo Tikki Wala", "CodeChef", "Coding_Ninjas","Engineers India LTD.", "GitLab", "Hacker Earth", "Happn", "Holiday IQ", "Luxor", "Qnswr", "Rau's IAS Study Circle", "Spykar", "UNIBIC"};
     private String[] imageNameArray = {"autode", "bisc", "btw", "codechef", "coding_ninjas","eil", "gitlab", "hack", "happn", "holiq", "luxor", "qnswr","rauias","spykar","unibic"};
 
+
+    private CountAnimationTextView eventCount;
+    private CountAnimationTextView footfallCount;
+    private CountAnimationTextView schoolCount;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Typeface countertype= Typeface.createFromAsset(getAssets(),"fonts/Roboto-Light.ttf");
+
+        eventCount=(CountAnimationTextView) findViewById(R.id.count_animation_textView2);
+        eventCount.setAnimationDuration(3000).countAnimation(0,30);
+        eventCount.setTypeface(countertype);
+
+        footfallCount=(CountAnimationTextView) findViewById(R.id.count_animation_textView1);
+        footfallCount.setAnimationDuration(3000).countAnimation(0,8000);
+        footfallCount.setTypeface(countertype);
+
+        schoolCount=(CountAnimationTextView) findViewById(R.id.count_animation_textView);
+        schoolCount.setAnimationDuration(3000).countAnimation(0,800);
+        schoolCount.setTypeface(countertype);
 
         horizontalScrollview  = (HorizontalScrollView) findViewById(R.id.horiztonal_scrollview_id);
         horizontalOuterLayout =	(LinearLayout)findViewById(R.id.horiztonal_outer_layout_id);

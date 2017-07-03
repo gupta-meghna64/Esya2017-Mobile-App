@@ -28,11 +28,28 @@
                 card_view:cardBackgroundColor="@android:color/background_light"
                 card_view:cardCornerRadius="4dp">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/chess_overlay"
-                    android:scaleType="fitXY"/>
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/chess_overlay"/>
+
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:paddingLeft="8dp"
+                        android:paddingBottom="8dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:text="Rapid chess event for School and college students."
+                        android:textColor="#FFFFFF"/>
+                </FrameLayout>
+
             </android.support.v7.widget.CardView>
 
 
@@ -49,11 +66,28 @@
                 card_view:cardBackgroundColor="@android:color/background_light"
                 card_view:cardCornerRadius="4dp">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/huntit_overlay"
-                    android:scaleType="fitXY"/>
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/huntit_overlay"/>
+
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:paddingLeft="8dp"
+                        android:paddingBottom="8dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:text="Unravel one of the greatest mysteries behind the death of Marilyn Monroe."
+                        android:textColor="#FFFFFF"/>
+                </FrameLayout>
+
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
@@ -69,11 +103,28 @@
                 card_view:cardBackgroundColor="@android:color/background_light"
                 card_view:cardCornerRadius="4dp">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/quiztime_overlay"
-                    android:scaleType="fitXY"/>
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/quiztime_overlay"/>
+
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:paddingLeft="8dp"
+                        android:paddingBottom="8dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:text="Quiz."
+                        android:textColor="#FFFFFF"/>
+                </FrameLayout>
+
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
@@ -89,11 +140,28 @@
                 card_view:cardBackgroundColor="@android:color/background_light"
                 card_view:cardCornerRadius="4dp">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/foqs_overlay"
-                    android:scaleType="fitXY"/>
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/foqs_overlay"/>
+
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:paddingLeft="8dp"
+                        android:paddingBottom="8dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:text="Create, control &amp; capture it all."
+                        android:textColor="#FFFFFF"/>
+                </FrameLayout>
+
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
@@ -109,11 +177,28 @@
                 card_view:cardBackgroundColor="@android:color/background_light"
                 card_view:cardCornerRadius="4dp">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/pawned_overlay"
-                    android:scaleType="fitXY"/>
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/pawned_overlay"/>
+
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:paddingLeft="8dp"
+                        android:paddingBottom="8dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:text="Escape reality and respawn."
+                        android:textColor="#FFFFFF"/>
+                </FrameLayout>
+
             </android.support.v7.widget.CardView>
 
 
@@ -130,11 +215,28 @@
                 card_view:cardBackgroundColor="@android:color/background_light"
                 card_view:cardCornerRadius="4dp">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/fakingthrresearch_overlay"
-                    android:scaleType="fitXY"/>
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/fakingthrresearch_overlay"/>
+
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:paddingLeft="8dp"
+                        android:paddingBottom="8dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:text="Fake the research."
+                        android:textColor="#FFFFFF"/>
+                </FrameLayout>
+
             </android.support.v7.widget.CardView>
 
 
@@ -151,11 +253,27 @@
                 card_view:cardBackgroundColor="@android:color/background_light"
                 card_view:cardCornerRadius="4dp">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/bigbang_overlay"
-                    android:scaleType="fitXY"/>
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/bigbang_overlay"/>
+
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:paddingLeft="8dp"
+                        android:paddingBottom="8dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:text="A celestial quest through the stars."
+                        android:textColor="#FFFFFF"/>
+                </FrameLayout>
 
             </android.support.v7.widget.CardView>
 
@@ -172,11 +290,27 @@
                 card_view:cardBackgroundColor="@android:color/background_light"
                 card_view:cardCornerRadius="4dp">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/wordstogo_overlay"
-                    android:scaleType="fitXY"/>
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/wordstogo_overlay"/>
+
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:paddingLeft="8dp"
+                        android:paddingBottom="8dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:text="No need to go."
+                        android:textColor="#FFFFFF"/>
+                </FrameLayout>
 
             </android.support.v7.widget.CardView>
 
@@ -193,11 +327,28 @@
                 android:clickable="true"
                 card_view:cardBackgroundColor="@android:color/background_light"
                 card_view:cardCornerRadius="4dp">
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/minimafia_overlay"
-                    android:scaleType="fitXY"/>
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/minimafia_overlay"/>
+
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:paddingLeft="8dp"
+                        android:paddingBottom="8dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:text="Mini militia Delhi battle."
+                        android:textColor="#FFFFFF"/>
+                </FrameLayout>
 
             </android.support.v7.widget.CardView>
 
@@ -215,11 +366,27 @@
                 card_view:cardBackgroundColor="@android:color/background_light"
                 card_view:cardCornerRadius="4dp">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/poker_overlay"
-                    android:scaleType="fitXY"/>
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/poker_overlay"/>
+
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:paddingLeft="8dp"
+                        android:paddingBottom="8dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:text="Compete against each other in the no limit Texas hold’em format."
+                        android:textColor="#FFFFFF"/>
+                </FrameLayout>
 
             </android.support.v7.widget.CardView>
 
@@ -237,11 +404,27 @@
                 card_view:cardBackgroundColor="@android:color/background_light"
                 card_view:cardCornerRadius="4dp">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/speedcubing_overlay"
-                    android:scaleType="fitXY"/>
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/speedcubing_overlay"/>
+
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:paddingLeft="8dp"
+                        android:paddingBottom="8dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:text="Race to get shortest time to solve rubik's cubes."
+                        android:textColor="#FFFFFF"/>
+                </FrameLayout>
 
             </android.support.v7.widget.CardView>
 
@@ -258,11 +441,27 @@
                 card_view:cardBackgroundColor="@android:color/background_light"
                 card_view:cardCornerRadius="4dp">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/mockstock_overlay"
-                    android:scaleType="fitXY"/>
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/mockstock_overlay"/>
+
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:paddingLeft="8dp"
+                        android:paddingBottom="8dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:text="Online stock market simulation contest."
+                        android:textColor="#FFFFFF"/>
+                </FrameLayout>
 
             </android.support.v7.widget.CardView>
 
@@ -279,11 +478,27 @@
                 card_view:cardBackgroundColor="@android:color/background_light"
                 card_view:cardCornerRadius="4dp">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/chakravyu_overlay"
-                    android:scaleType="fitXY"/>
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/chakravyu_overlay"/>
+
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:paddingLeft="8dp"
+                        android:paddingBottom="8dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:text="Online cryptic hunt."
+                        android:textColor="#FFFFFF"/>
+                </FrameLayout>
 
             </android.support.v7.widget.CardView>
 
