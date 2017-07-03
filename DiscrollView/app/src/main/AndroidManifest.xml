@@ -57,7 +57,7 @@
         <activity
             android:name=".EventsMainActivity"
 
-            android:label="NON-TECH EVENTS"></activity>
+            android:label="EVENTS"></activity>
 
 
 <activity
