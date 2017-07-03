@@ -348,6 +348,7 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         file_maps.put("Image 2", R.drawable.esya02);
         file_maps.put("Image 3", R.drawable.esya03);
         file_maps.put("Image 4", R.drawable.esya04);
+        file_maps.put("Image 5", R.drawable.esya05);
         for(String name : file_maps.keySet()){
             TextSliderView textSliderView = new TextSliderView(MainActivity.this);
             textSliderView
@@ -366,7 +367,7 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         sliderLayout.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom);
         sliderLayout.setPresetTransformer(SliderLayout.Transformer.Accordion);
         sliderLayout.setCustomAnimation(new DescriptionAnimation());
-        sliderLayout.setDuration(1250);
+        sliderLayout.setDuration(1500);
         sliderLayout.addOnPageChangeListener(this);
 
 
