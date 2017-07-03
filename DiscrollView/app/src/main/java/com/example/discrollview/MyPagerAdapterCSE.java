@@ -18,7 +18,6 @@ public class MyPagerAdapterCSE extends FragmentPagerAdapter {
     }
     @Override
     public CharSequence getPageTitle(int position) {
-        //return (position == 0)? "Procon Junior" : "Tab2" ;
         if(position == 0)
             return "Prosort";
         else if(position == 1)
@@ -50,7 +49,6 @@ public class MyPagerAdapterCSE extends FragmentPagerAdapter {
     }
     @Override
     public Fragment getItem(int position) {
-        //return (position == 0)? new FragmentA() : new FragmentB() ;
         if(position == 0)
             return new FragmentCSE1();
         else if(position == 1)

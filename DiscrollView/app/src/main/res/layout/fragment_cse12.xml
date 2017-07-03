@@ -179,11 +179,13 @@ Techathlon consists of the following events, other than the grand finale Toast t
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Kushagra Arora"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="9650989548"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -205,26 +207,25 @@ Techathlon consists of the following events, other than the grand finale Toast t
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Lohitaksh Parmar"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="8860803480"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="lohitaksh14059@iiitd.ac.in"/>
 
+                    </LinearLayout>
+
                 </LinearLayout>
 
+            </android.support.v7.widget.CardView>
 
-            </LinearLayout>
-
-
-
-        </android.support.v7.widget.CardView>
-
-            </LinearLayout>
+        </LinearLayout>
 
 </ScrollView>

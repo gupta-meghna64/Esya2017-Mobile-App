@@ -168,11 +168,13 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Sagar Khurana"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="7982129707"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -194,11 +196,13 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Gurpreet"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="9818678230"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -220,11 +224,13 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Vasisht Duddu"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="8851235632"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -236,6 +242,7 @@
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
+
     </LinearLayout>
 
 </ScrollView>

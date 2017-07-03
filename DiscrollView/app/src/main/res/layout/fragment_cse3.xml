@@ -1,4 +1,3 @@
-
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
@@ -171,11 +170,13 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Piyush Gupta"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="9953547227"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -197,11 +198,13 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Harshit Sharma"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="9013380170"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -223,28 +226,25 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Kushagra Arora"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="9650989548"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="kushagra15049@iiitd.ac.in"/>
 
+                    </LinearLayout>
+
                 </LinearLayout>
 
-            </LinearLayout>
+            </android.support.v7.widget.CardView>
 
-
-
-        </android.support.v7.widget.CardView>
-    </LinearLayout>
-
-
-
-
+        </LinearLayout>
 
 </ScrollView>

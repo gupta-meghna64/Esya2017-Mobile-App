@@ -177,11 +177,13 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Parth Mittal"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="9811840076"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -203,11 +205,13 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Hanit Banga"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="not available"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -229,24 +233,25 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Nikhil Hassija"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="9560075851"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="nikhil15065@iiitd.ac.in"/>
 
+                    </LinearLayout>
+
                 </LinearLayout>
 
-            </LinearLayout>
+            </android.support.v7.widget.CardView>
 
+        </LinearLayout>
 
-
-        </android.support.v7.widget.CardView>
-            </LinearLayout>
-
-    </ScrollView>
+</ScrollView>

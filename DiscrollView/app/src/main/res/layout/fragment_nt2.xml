@@ -175,11 +175,13 @@ Please note : \n
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Ayushman Pandita"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="9871918003"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -253,11 +255,13 @@ Please note : \n
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Priysha Gupta"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="9971424593"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -280,11 +284,13 @@ Please note : \n
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Nirmita Mehra"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="9560785599"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -296,8 +302,8 @@ Please note : \n
             </LinearLayout>
 
 
-
         </android.support.v7.widget.CardView>
+
     </LinearLayout>
 
 </ScrollView>

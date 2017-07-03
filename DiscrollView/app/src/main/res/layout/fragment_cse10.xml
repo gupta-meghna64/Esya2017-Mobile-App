@@ -166,11 +166,13 @@ Shoutout to all computer nerds and gizmo geeks. For our 6th Edition of TechFest 
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Viresh Gupta"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="9811106704"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -193,11 +195,13 @@ Shoutout to all computer nerds and gizmo geeks. For our 6th Edition of TechFest 
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Anushka Bhandari"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="8800956772"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -219,11 +223,13 @@ Shoutout to all computer nerds and gizmo geeks. For our 6th Edition of TechFest 
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Viresh Gupta"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="9811106704"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -245,11 +251,13 @@ Shoutout to all computer nerds and gizmo geeks. For our 6th Edition of TechFest 
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Shubhang Sati"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="7838816965"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -271,11 +279,13 @@ Shoutout to all computer nerds and gizmo geeks. For our 6th Edition of TechFest 
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Tushar Kataria"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="9711670543"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -297,25 +307,28 @@ Shoutout to all computer nerds and gizmo geeks. For our 6th Edition of TechFest 
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Baani Leen"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="9999853720"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="baani16234@iiitd.ac.in"/>
 
+                    </LinearLayout>
+
                 </LinearLayout>
 
-            </LinearLayout>
 
+            </android.support.v7.widget.CardView>
 
-
-        </android.support.v7.widget.CardView>
         </LinearLayout>
-    </ScrollView>
+
+</ScrollView>
 
 

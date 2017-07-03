@@ -166,11 +166,13 @@ Exact details will only be conveyed at the start of the contest >:O
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Kushagra Arora"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="9650989548"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -192,11 +194,13 @@ Exact details will only be conveyed at the start of the contest >:O
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Palash Bansal"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="9717524704"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -218,11 +222,13 @@ Exact details will only be conveyed at the start of the contest >:O
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Tushar Kataria"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="9711670543"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -244,11 +250,13 @@ Exact details will only be conveyed at the start of the contest >:O
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Lohit Parmar"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="8860803480"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -260,6 +268,7 @@ Exact details will only be conveyed at the start of the contest >:O
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
+
     </LinearLayout>
 
 

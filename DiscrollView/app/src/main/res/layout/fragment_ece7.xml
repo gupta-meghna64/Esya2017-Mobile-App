@@ -173,11 +173,13 @@ Although we would ensure full transparency and fair conduct. \n \n
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Mukul Chhabra"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="9958455627"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -199,11 +201,13 @@ Although we would ensure full transparency and fair conduct. \n \n
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Pulkit Madan"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="7503134615"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -225,11 +229,13 @@ Although we would ensure full transparency and fair conduct. \n \n
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Gyanesh Anand"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="8882207355"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -251,11 +257,13 @@ Although we would ensure full transparency and fair conduct. \n \n
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Suyash Singh"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="9560505347"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -277,11 +285,13 @@ Although we would ensure full transparency and fair conduct. \n \n
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Raghav Goel"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="9654047277"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -294,6 +304,7 @@ Although we would ensure full transparency and fair conduct. \n \n
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
+
     </LinearLayout>
 
 

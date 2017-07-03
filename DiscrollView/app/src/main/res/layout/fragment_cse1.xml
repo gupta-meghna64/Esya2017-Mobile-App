@@ -181,11 +181,13 @@ ProSort is part of the Techathlon series of Esya '16. Techathlon is a 6-event te
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Utsav Rohilla"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="9953234769"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -207,11 +209,13 @@ ProSort is part of the Techathlon series of Esya '16. Techathlon is a 6-event te
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Nishant Sinha"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="8376051663"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -233,11 +237,13 @@ ProSort is part of the Techathlon series of Esya '16. Techathlon is a 6-event te
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Nikhil Hassija"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="9899008719"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -250,6 +256,7 @@ ProSort is part of the Techathlon series of Esya '16. Techathlon is a 6-event te
 
 
         </android.support.v7.widget.CardView>
+
     </LinearLayout>
 
 </ScrollView>

@@ -30,21 +30,6 @@ public class CSEMainActivity extends AppCompatActivity {
         PagerSlidingTabStrip tabs = (PagerSlidingTabStrip) findViewById(R.id.tabsCse);
         tabs.setViewPager(pager);
 
-
-//        Intent i = getIntent();
-//        String fragmentName = i.getStringExtra("fragment");
-//        String fragmentCSE2 = "FragmentCSE2";
-//        Log.e("Test1", "Test1" + fragmentName);
-//        if (fragmentName != null && fragmentName.equals(fragmentCSE2)) {
-//
-//            Fragment fragment2 = new FragmentCSE2();
-//            FragmentManager fm = getSupportFragmentManager();
-//            FragmentTransaction fragmentTransaction = fm.beginTransaction();
-//            fragmentTransaction.replace(R.id.pagerCse, fragment2);
-//            fragmentTransaction.commit();
-//
-//        }
-
         int position = 0;
         Bundle extras = getIntent().getExtras();
         if(extras != null) {
@@ -54,7 +39,6 @@ public class CSEMainActivity extends AppCompatActivity {
         MyPagerAdapterCSE myPagerAdapter = new MyPagerAdapterCSE(getSupportFragmentManager());
         if(pager.getAdapter() == null) {
             pager.setAdapter(myPagerAdapter);
-
         }
         pager.setCurrentItem(position);
     }

@@ -171,11 +171,13 @@ BrainFuzz is an on-site algorithm design contest which requires knowledge of alg
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Vedant Nanda"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="8527215158"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -197,11 +199,13 @@ BrainFuzz is an on-site algorithm design contest which requires knowledge of alg
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Viraj Parimi"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="9650516994"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -223,11 +227,13 @@ BrainFuzz is an on-site algorithm design contest which requires knowledge of alg
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Saksham Suri"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="9716679001"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -239,7 +245,7 @@ BrainFuzz is an on-site algorithm design contest which requires knowledge of alg
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
-    </LinearLayout>
 
+    </LinearLayout>
 
 </ScrollView>

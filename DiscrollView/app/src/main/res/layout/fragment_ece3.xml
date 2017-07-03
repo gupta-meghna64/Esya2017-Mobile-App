@@ -162,11 +162,13 @@ And this time we have a surprise* for all the participants, which would take thi
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Neelabhro Roy"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="9871279992"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -188,11 +190,13 @@ And this time we have a surprise* for all the participants, which would take thi
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Aseem"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="9953311582"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -214,11 +218,13 @@ And this time we have a surprise* for all the participants, which would take thi
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Arnav kumar"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="8130679900"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -240,11 +246,13 @@ And this time we have a surprise* for all the participants, which would take thi
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Vaibhav Goel"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="8586049164"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -256,6 +264,7 @@ And this time we have a surprise* for all the participants, which would take thi
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
+
     </LinearLayout>
 
 </ScrollView>

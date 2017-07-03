@@ -16,7 +16,6 @@ public class iiitdmap extends Activity {
     private final LatLng LOCATION_BURNABY = new LatLng(49.27645, -122.917587);
     private final LatLng LOCATION_SURRREY = new LatLng(49.187500, -122.849000);
     private final LatLng LOCATION_IIITD = new LatLng(28.5459495, 77.2688703);
-
     private GoogleMap map;
 
     @Override
@@ -38,24 +37,5 @@ public class iiitdmap extends Activity {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
-
-//    public void onClick_City(View v) {
-////		CameraUpdate update = CameraUpdateFactory.newLatLng(LOCATION_BURNABY);
-//        map.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
-//        CameraUpdate update = CameraUpdateFactory.newLatLngZoom(LOCATION_IIITD, 9);
-//        map.animateCamera(update);
-//    }
-//    public void onClick_Burnaby(View v) {
-//        map.setMapType(GoogleMap.MAP_TYPE_TERRAIN);
-//        CameraUpdate update = CameraUpdateFactory.newLatLngZoom(LOCATION_IIITD, 14);
-//        map.animateCamera(update);
-//
-//    }
-//    public void onClick_Surrey(View v) {
-//        map.setMapType(GoogleMap.MAP_TYPE_NORMAL);
-//        CameraUpdate update = CameraUpdateFactory.newLatLngZoom(LOCATION_IIITD, 16);
-//        map.animateCamera(update);
-//
-//    }
 
 }

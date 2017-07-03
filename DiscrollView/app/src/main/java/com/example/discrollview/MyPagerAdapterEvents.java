@@ -4,7 +4,6 @@ package com.example.discrollview;
  * Created by HP on 01-07-2017.
  */
 
-
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;

@@ -167,11 +167,13 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Vasu Agarwal" />
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="9871571158"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -193,11 +195,13 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Ashutosh Nandan"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="9717241805"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -219,11 +223,13 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Manish Kushwaha"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="9868632756"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -245,11 +251,13 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Hirak"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="9953559451"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -258,14 +266,10 @@
 
                 </LinearLayout>
 
-
-
-
             </LinearLayout>
 
-
-
         </android.support.v7.widget.CardView>
+
     </LinearLayout>
 
 </ScrollView>

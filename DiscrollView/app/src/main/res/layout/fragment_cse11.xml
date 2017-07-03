@@ -167,11 +167,13 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Arpit Bhatia"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="9560823326"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -193,11 +195,13 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Mrinal Paliwal"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="9968562308"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -219,11 +223,13 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Arnav Kumar"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="9868538952"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -245,11 +251,13 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Ishan Bassi"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="9971184071"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -271,25 +279,25 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Anant Sharma"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="8368623613"/>
+
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="anant16129@iiitd.ac.in"/>
 
+                    </LinearLayout>
+
                 </LinearLayout>
 
-            </LinearLayout>
+            </android.support.v7.widget.CardView>
 
-
-
-        </android.support.v7.widget.CardView>
-            </LinearLayout>
-
+        </LinearLayout>
 
 </ScrollView>
