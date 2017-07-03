@@ -111,7 +111,19 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
-                    android:text="Decision of organizers is final and binding."/>
+                    android:text="1) Event is open to all College/Institute/School students. \n \n
+2) Cross-college teams are allowed. \n \n
+3) Team size <= 2. \n \n
+4) Duration of the event - 90 Mins \n \n
+5) Internet access is strictly prohibited. Use of online IDE’s is not allowed. \n \n
+6) Solutions of questions to be submitted on a local judge. \n \n
+7) Contestants are ranked according to the total weight of the problems solved. Ties will be broken by the total time for each user in ascending order of time. \n \n
+8) Use of laptops or mobiles is prohibited. Use lab desktops only. \n \n
+9) Organizers hold the right to disqualify any team if found using unfair means. \n \n
+10) The organizers reserve the right to change the rules as they deem fit. \n \n
+11) Registration and settlement at venue closes 5 mins before start. \n \n
+11) The decision of the organizers shall be final and binding.
+"/>
 
             </LinearLayout>
 
