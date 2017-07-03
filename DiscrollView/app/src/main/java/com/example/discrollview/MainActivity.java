@@ -205,7 +205,7 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         foldedDJ.requestLayout();
 
         unfoldedEvents=(ImageView) findViewById(R.id.unfoldedEvents);
-        foldedEvents=(ImageView) findViewById(R.id.iconComedy);
+        foldedEvents=(ImageView) findViewById(R.id.iconEvents);
         unfoldedEvents.getLayoutParams().height = Resources.getSystem().getDisplayMetrics().widthPixels;
         unfoldedEvents.getLayoutParams().width = Resources.getSystem().getDisplayMetrics().widthPixels;
         unfoldedEvents.requestLayout();
