@@ -113,7 +113,7 @@
                     android:padding="8dp"
                     android:text="1) Event is open to all College/Institute/School students. \n \n
 2) Cross-college teams are allowed. \n \n
-3) Team size <= 2. \n \n
+3) Team size is maximum 2. \n \n
 4) Duration of the event - 90 Mins \n \n
 5) Internet access is strictly prohibited. Use of online IDE’s is not allowed. \n \n
 6) Solutions of questions to be submitted on a local judge. \n \n
