@@ -12,464 +12,154 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:orientation="vertical"
-            android:padding="8dp"
+            android:padding="4dp"
             android:layout_height="wrap_content">
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="400px"
                 android:layout_gravity="center"
                 android:id="@+id/cardCircuitrixjr"
                 card_view:cardUseCompatPadding="true"
                 card_view:cardElevation="1dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="0dp"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:clickable="true"
                 card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="2dp"
-                card_view:contentPaddingTop="5dp"
-                card_view:contentPaddingLeft="5dp"
-                card_view:contentPaddingBottom="5dp">
+                card_view:cardCornerRadius="4dp">
 
-                <LinearLayout
+                <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:weightSum="5">
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="CIRCUITRIX JUNIOR"/>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:weightSum="2"
-                        android:layout_weight="4">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent" />
-
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:scaleType="fitXY"
-                                android:src="@drawable/circuitrxjr"/>
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-                </LinearLayout>
-
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/circuitrixjunior_overlay"/>
             </android.support.v7.widget.CardView>
 
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="400px"
                 android:layout_gravity="center"
                 android:id="@+id/cardCircuitrix"
                 card_view:cardUseCompatPadding="true"
                 card_view:cardElevation="1dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="0dp"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:clickable="true"
                 card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="2dp"
-                card_view:contentPaddingTop="5dp"
-                card_view:contentPaddingLeft="5dp"
-                card_view:contentPaddingBottom="5dp">
+                card_view:cardCornerRadius="4dp">
 
-                <LinearLayout
+                <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:weightSum="5">
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="CIRCUITRIX"/>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:weightSum="2"
-                        android:layout_weight="4">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent" />
-
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:scaleType="fitXY"
-                                android:src="@drawable/circuitrix"/>
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-                </LinearLayout>
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/circuitrix_overlay"/>
 
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="400px"
                 android:layout_gravity="center"
                 android:id="@+id/cardRobowars"
                 card_view:cardUseCompatPadding="true"
                 card_view:cardElevation="1dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="0dp"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:clickable="true"
                 card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="2dp"
-                card_view:contentPaddingTop="5dp"
-                card_view:contentPaddingLeft="5dp"
-                card_view:contentPaddingBottom="5dp">
+                card_view:cardCornerRadius="4dp">
 
-                <LinearLayout
+                <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:weightSum="5">
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="ROBOWARS"/>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:weightSum="2"
-                        android:layout_weight="4">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent" />
-
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:scaleType="fitXY"
-                                android:src="@drawable/robowars" />
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-                </LinearLayout>
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/robowars_overlay"/>
 
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="400px"
                 android:layout_gravity="center"
                 android:id="@+id/cardRobocon"
                 card_view:cardUseCompatPadding="true"
                 card_view:cardElevation="1dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="0dp"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:clickable="true"
                 card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="2dp"
-                card_view:contentPaddingTop="5dp"
-                card_view:contentPaddingLeft="5dp"
-                card_view:contentPaddingBottom="5dp">
+                card_view:cardCornerRadius="4dp">
 
-                <LinearLayout
+                <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:weightSum="5">
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="ROBOCON"/>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:weightSum="2"
-                        android:layout_weight="4">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent" />
-
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:scaleType="fitXY"
-                                android:src="@drawable/robocon" />
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-                </LinearLayout>
-
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/robocon_overlay"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="400px"
                 android:layout_gravity="center"
                 android:id="@+id/cardRobomaze"
                 card_view:cardUseCompatPadding="true"
                 card_view:cardElevation="1dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="0dp"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:clickable="true"
                 card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="2dp"
-                card_view:contentPaddingTop="5dp"
-                card_view:contentPaddingLeft="5dp"
-                card_view:contentPaddingBottom="5dp">
+                card_view:cardCornerRadius="4dp">
 
-                <LinearLayout
+                <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:weightSum="5">
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="ROBOMAZE"/>
+                    android:layout_height="match_parent"
+                    android:src="@drawable/robomaze_overlay"
+                    android:scaleType="fitXY"/>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:weightSum="2"
-                        android:layout_weight="4">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent" />
-
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:scaleType="fitXY"
-                                android:src="@drawable/robomaze" />
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-                </LinearLayout>
 
             </android.support.v7.widget.CardView>
 
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="400px"
                 android:layout_gravity="center"
                 android:id="@+id/cardRobosoccer"
                 card_view:cardUseCompatPadding="true"
                 card_view:cardElevation="1dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="0dp"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:clickable="true"
                 card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="2dp"
-                card_view:contentPaddingTop="5dp"
-                card_view:contentPaddingLeft="5dp"
-                card_view:contentPaddingBottom="5dp">
+                card_view:cardCornerRadius="4dp">
 
-                <LinearLayout
+                <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:weightSum="5">
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="ROBOSOCCER"/>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:weightSum="2"
-                        android:layout_weight="4">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent" />
-
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:scaleType="fitXY"
-                                android:src="@drawable/robosoccer"/>
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-                </LinearLayout>
-
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/robosoccer_overlay"/>
             </android.support.v7.widget.CardView>
 
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="400px"
                 android:layout_gravity="center"
                 android:id="@+id/cardHackoverflow"
                 card_view:cardUseCompatPadding="true"
                 card_view:cardElevation="1dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="0dp"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:clickable="true"
                 card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="2dp"
-                card_view:contentPaddingTop="5dp"
-                card_view:contentPaddingLeft="5dp"
-                card_view:contentPaddingBottom="5dp">
+                card_view:cardCornerRadius="4dp">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:weightSum="5">
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="HACKOVERFLOW"/>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:weightSum="2"
-                        android:layout_weight="4">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent" />
-
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:scaleType="fitXY"
-                                android:src="@drawable/hackoverflow" />
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-                </LinearLayout>
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="fitXY"
+                   android:src="@drawable/hackoverflow_overlay"/>
 
             </android.support.v7.widget.CardView>
 

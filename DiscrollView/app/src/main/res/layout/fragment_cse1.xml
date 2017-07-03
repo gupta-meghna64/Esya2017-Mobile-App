@@ -1,3 +1,4 @@
+
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
@@ -7,7 +8,8 @@
     android:background="#DFE1E1"
     xmlns:custom="http://schemas.android.com/tools">
 
-        <LinearLayout
+
+<LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -136,7 +138,7 @@
             android:clickable="true"
             android:layout_gravity="center"
             card_view:cardBackgroundColor="@android:color/background_light"
-            card_view:cardCornerRadius="4dp"
+            card_view:cardCornerRadius="dp"
             card_view:contentPaddingTop="5dp"
             card_view:contentPaddingBottom="5dp" >
 
