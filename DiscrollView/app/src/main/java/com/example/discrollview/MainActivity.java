@@ -259,7 +259,7 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
             @Override
             public void onClick(View v) {
                 try {
-                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("fb://profile/Fe9qooYPLQd"));
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("fb://profile/383935642008094"));
                     startActivity(intent);
                 } catch (Exception e) {
                     startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.facebook.com/EsyaIIITD")));
@@ -395,9 +395,9 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
 
         }
         sliderLayout.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom);
-        sliderLayout.setPresetTransformer(SliderLayout.Transformer.Accordion);
+        sliderLayout.setPresetTransformer(SliderLayout.Transformer.ZoomOutSlide);
         sliderLayout.setCustomAnimation(new DescriptionAnimation());
-        sliderLayout.setDuration(2500);
+        sliderLayout.setDuration(3750);
         sliderLayout.addOnPageChangeListener(this);
 
 

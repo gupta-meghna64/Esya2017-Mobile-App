@@ -1,288 +1,286 @@
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools"
     xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DFE1E1"
-    xmlns:custom="http://schemas.android.com/tools">
+    android:background="#DFE1E1">
 
 
-        <!-- TODO: Update blank fragment layout -->
-        <LinearLayout
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardCircuitrixjr"
             android:layout_width="match_parent"
-            android:orientation="vertical"
-            android:padding="4dp"
-            android:layout_height="wrap_content">
+            android:layout_height="400px"
+            android:layout_gravity="center"
+            android:layout_marginBottom="0dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="1dp"
+            card_view:cardUseCompatPadding="true">
 
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="400px"
-                android:layout_gravity="center"
-                android:id="@+id/cardCircuitrixjr"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="1dp"
-                android:layout_marginBottom="0dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="4dp">
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
-                <FrameLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/circuitrixjunior_overlay" />
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/circuitrixjunior_overlay"/>
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="Circuit designing competition for School Students"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
 
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom"
-                        android:paddingLeft="8dp"
-                        android:paddingBottom="8dp"
-                        android:textStyle="bold"
-                        android:text="Circuit designing competition for School Students"
-                        android:textColor="#FFFFFF"/>
+            </FrameLayout>
 
-                </FrameLayout>
-
-            </android.support.v7.widget.CardView>
+        </android.support.v7.widget.CardView>
 
 
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="400px"
-                android:layout_gravity="center"
-                android:id="@+id/cardCircuitrix"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="1dp"
-                android:layout_marginBottom="0dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="4dp">
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardCircuitrix"
+            android:layout_width="match_parent"
+            android:layout_height="400px"
+            android:layout_gravity="center"
+            android:layout_marginBottom="0dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="1dp"
+            card_view:cardUseCompatPadding="true">
 
-                <FrameLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/circuitrix_overlay"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/circuitrix_overlay" />
 
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom"
-                        android:paddingLeft="8dp"
-                        android:paddingBottom="8dp"
-                        android:textStyle="bold"
-                        android:text="Design, Stimulate and Build"
-                        android:textColor="#FFFFFF"/>
-                </FrameLayout>
-
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="400px"
-                android:layout_gravity="center"
-                android:id="@+id/cardRobowars"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="1dp"
-                android:layout_marginBottom="0dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="4dp">
-
-                <FrameLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/robowars_overlay"/>
-
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom"
-                        android:paddingLeft="8dp"
-                        android:paddingBottom="8dp"
-                        android:textStyle="bold"
-                        android:text="A game of style, control, aggression and damage"
-                        android:textColor="#FFFFFF"/>
-
-                </FrameLayout>
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="Design, Stimulate and Build"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+            </FrameLayout>
 
 
-            </android.support.v7.widget.CardView>
+        </android.support.v7.widget.CardView>
 
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="400px"
-                android:layout_gravity="center"
-                android:id="@+id/cardRobocon"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="1dp"
-                android:layout_marginBottom="0dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="4dp">
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardRobowars"
+            android:layout_width="match_parent"
+            android:layout_height="400px"
+            android:layout_gravity="center"
+            android:layout_marginBottom="0dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="1dp"
+            card_view:cardUseCompatPadding="true">
 
-                <FrameLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/robocon_overlay"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/robowars_overlay" />
 
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom"
-                        android:paddingLeft="8dp"
-                        android:paddingBottom="8dp"
-                        android:textStyle="bold"
-                        android:text="Be a good robot, follow the line !"
-                        android:textColor="#FFFFFF"/>
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="A game of style, control, aggression and damage"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
 
-                </FrameLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="400px"
-                android:layout_gravity="center"
-                android:id="@+id/cardRobomaze"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="1dp"
-                android:layout_marginBottom="0dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="4dp">
-
-                <FrameLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/robomaze_overlay"/>
-
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom"
-                        android:paddingLeft="8dp"
-                        android:paddingBottom="8dp"
-                        android:textStyle="bold"
-                        android:text=""
-                        android:textColor="#FFFFFF"/>
-
-                </FrameLayout>
+            </FrameLayout>
 
 
-            </android.support.v7.widget.CardView>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardRobocon"
+            android:layout_width="match_parent"
+            android:layout_height="400px"
+            android:layout_gravity="center"
+            android:layout_marginBottom="0dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="1dp"
+            card_view:cardUseCompatPadding="true">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/robocon_overlay" />
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="Be a good robot, follow the line !"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardRobomaze"
+            android:layout_width="match_parent"
+            android:layout_height="400px"
+            android:layout_gravity="center"
+            android:layout_marginBottom="0dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="1dp"
+            card_view:cardUseCompatPadding="true">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/robomaze_overlay" />
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
 
 
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="400px"
-                android:layout_gravity="center"
-                android:id="@+id/cardRobosoccer"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="1dp"
-                android:layout_marginBottom="0dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="4dp">
-
-                <FrameLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/robosoccer_overlay"/>
-
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom"
-                        android:paddingLeft="8dp"
-                        android:paddingBottom="8dp"
-                        android:textStyle="bold"
-                        android:text="Find the Champion Soccer Master in Robots"
-                        android:textColor="#FFFFFF"/>
-
-                </FrameLayout>
-
-            </android.support.v7.widget.CardView>
+        </android.support.v7.widget.CardView>
 
 
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="400px"
-                android:layout_gravity="center"
-                android:id="@+id/cardHackoverflow"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="1dp"
-                android:layout_marginBottom="0dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="4dp">
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardRobosoccer"
+            android:layout_width="match_parent"
+            android:layout_height="400px"
+            android:layout_gravity="center"
+            android:layout_marginBottom="0dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="1dp"
+            card_view:cardUseCompatPadding="true">
 
-                <FrameLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/hackoverflow_overlay"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/robosoccer_overlay" />
 
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom"
-                        android:paddingLeft="8dp"
-                        android:paddingBottom="8dp"
-                        android:textStyle="bold"
-                        android:text="Nightlong hackathon for electronics freak"
-                        android:textColor="#FFFFFF"/>
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="Find the Champion Soccer Master in Robots"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
 
-                </FrameLayout>
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
 
 
-            </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardHackoverflow"
+            android:layout_width="match_parent"
+            android:layout_height="400px"
+            android:layout_gravity="center"
+            android:layout_marginBottom="0dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="1dp"
+            card_view:cardUseCompatPadding="true">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hackoverflow_overlay" />
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="Nightlong hackathon for electronics freak"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
 
 
-        </LinearLayout>
+        </android.support.v7.widget.CardView>
 
+
+    </LinearLayout>
 
 
 </ScrollView>

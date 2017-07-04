@@ -1,510 +1,507 @@
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools"
     xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DFE1E1"
-    xmlns:custom="http://schemas.android.com/tools">
+    android:background="#DFE1E1">
 
 
-        <!-- TODO: Update blank fragment layout -->
-        <LinearLayout
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardChess"
             android:layout_width="match_parent"
-            android:orientation="vertical"
-            android:padding="4dp"
-            android:layout_height="wrap_content">
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="400px"
-                android:layout_gravity="center"
-                android:id="@+id/cardChess"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="1dp"
-                android:layout_marginBottom="0dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="4dp">
-
-                <FrameLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/chess_overlay"/>
-
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom"
-                        android:paddingLeft="8dp"
-                        android:paddingBottom="8dp"
-                        android:textStyle="bold"
-                        android:text="Rapid chess event for School and college students."
-                        android:textColor="#FFFFFF"/>
-
-                </FrameLayout>
-
-            </android.support.v7.widget.CardView>
-
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="400px"
-                android:layout_gravity="center"
-                android:id="@+id/cardHuntIT"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="1dp"
-                android:layout_marginBottom="0dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="4dp">
-
-                <FrameLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/huntit_overlay"/>
-
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom"
-                        android:paddingLeft="8dp"
-                        android:paddingBottom="8dp"
-                        android:textStyle="bold"
-                        android:text="Unravel one of the greatest mysteries behind the death of Marilyn Monroe."
-                        android:textColor="#FFFFFF"/>
-
-                </FrameLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="400px"
-                android:layout_gravity="center"
-                android:id="@+id/cardQuiz"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="1dp"
-                android:layout_marginBottom="0dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="4dp">
-
-                <FrameLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/quiztime_overlay"/>
-
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom"
-                        android:paddingLeft="8dp"
-                        android:paddingBottom="8dp"
-                        android:textStyle="bold"
-                        android:text="Quiz."
-                        android:textColor="#FFFFFF"/>
-
-                </FrameLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="400px"
-                android:layout_gravity="center"
-                android:id="@+id/cardFOQS"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="1dp"
-                android:layout_marginBottom="0dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="4dp">
-
-                <FrameLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/foqs_overlay"/>
-
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom"
-                        android:paddingLeft="8dp"
-                        android:paddingBottom="8dp"
-                        android:textStyle="bold"
-                        android:text="Create, control &amp; capture it all."
-                        android:textColor="#FFFFFF"/>
-
-                </FrameLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="400px"
-                android:layout_gravity="center"
-                android:id="@+id/cardPWNED"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="1dp"
-                android:layout_marginBottom="0dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="4dp">
-
-                <FrameLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/pawned_overlay"/>
-
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom"
-                        android:paddingLeft="8dp"
-                        android:paddingBottom="8dp"
-                        android:textStyle="bold"
-                        android:text="Escape reality and respawn."
-                        android:textColor="#FFFFFF"/>
-
-                </FrameLayout>
-
-            </android.support.v7.widget.CardView>
-
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="400px"
-                android:layout_gravity="center"
-                android:id="@+id/cardFakingTheResearch"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="1dp"
-                android:layout_marginBottom="0dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="4dp">
-
-                <FrameLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/fakingthrresearch_overlay"/>
-
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom"
-                        android:paddingLeft="8dp"
-                        android:paddingBottom="8dp"
-                        android:textStyle="bold"
-                        android:text="Fake the research."
-                        android:textColor="#FFFFFF"/>
-
-                </FrameLayout>
-
-            </android.support.v7.widget.CardView>
-
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="400px"
-                android:layout_gravity="center"
-                android:id="@+id/cardBigBang"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="1dp"
-                android:layout_marginBottom="0dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="4dp">
-
-                <FrameLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/bigbang_overlay"/>
-
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom"
-                        android:paddingLeft="8dp"
-                        android:paddingBottom="8dp"
-                        android:textStyle="bold"
-                        android:text="A celestial quest through the stars."
-                        android:textColor="#FFFFFF"/>
-
-                </FrameLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="400px"
-                android:layout_gravity="center"
-                android:id="@+id/cardWordsToGo"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="1dp"
-                android:layout_marginBottom="0dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="4dp">
-
-                <FrameLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/wordstogo_overlay"/>
-
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom"
-                        android:paddingLeft="8dp"
-                        android:paddingBottom="8dp"
-                        android:textStyle="bold"
-                        android:text="16 words to go."
-                        android:textColor="#FFFFFF"/>
-
-                </FrameLayout>
-
-            </android.support.v7.widget.CardView>
-
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="400px"
-                android:layout_gravity="center"
-                android:id="@+id/cardMiniMilitia"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="1dp"
-                android:layout_marginBottom="0dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="4dp">
-
-                <FrameLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/minimafia_overlay"/>
-
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom"
-                        android:paddingLeft="8dp"
-                        android:paddingBottom="8dp"
-                        android:textStyle="bold"
-                        android:text="Mini militia Delhi battle."
-                        android:textColor="#FFFFFF"/>
-
-                </FrameLayout>
-
-            </android.support.v7.widget.CardView>
-
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="400px"
-                android:layout_gravity="center"
-                android:id="@+id/cardPoker"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="1dp"
-                android:layout_marginBottom="0dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="4dp">
-
-                <FrameLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/poker_overlay"/>
-
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom"
-                        android:paddingLeft="8dp"
-                        android:paddingBottom="8dp"
-                        android:textStyle="bold"
-                        android:text="Compete against each other in the no limit Texas hold’em format."
-                        android:textColor="#FFFFFF"/>
-
-                </FrameLayout>
-
-            </android.support.v7.widget.CardView>
-
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="400px"
-                android:layout_gravity="center"
-                android:id="@+id/cardSpeedCubing"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="1dp"
-                android:layout_marginBottom="0dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="4dp">
-
-                <FrameLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/speedcubing_overlay"/>
-
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom"
-                        android:paddingLeft="8dp"
-                        android:paddingBottom="8dp"
-                        android:textStyle="bold"
-                        android:text="Race to get shortest time to solve rubik's cubes."
-                        android:textColor="#FFFFFF"/>
-
-                </FrameLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="400px"
-                android:layout_gravity="center"
-                android:id="@+id/cardMockstocks"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="1dp"
-                android:layout_marginBottom="0dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="4dp">
-
-                <FrameLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/mockstock_overlay"/>
-
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom"
-                        android:paddingLeft="8dp"
-                        android:paddingBottom="8dp"
-                        android:textStyle="bold"
-                        android:text="Online stock market simulation contest."
-                        android:textColor="#FFFFFF"/>
-
-                </FrameLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="400px"
-                android:layout_gravity="center"
-                android:id="@+id/cardChakravyuha"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="1dp"
-                android:layout_marginBottom="0dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="4dp">
-
-                <FrameLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/chakravyu_overlay"/>
-
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom"
-                        android:paddingLeft="8dp"
-                        android:paddingBottom="8dp"
-                        android:textStyle="bold"
-                        android:text="Online cryptic hunt."
-                        android:textColor="#FFFFFF"/>
-
-                </FrameLayout>
-
-            </android.support.v7.widget.CardView>
-
-        </LinearLayout>
-
-
+            android:layout_height="400px"
+            android:layout_gravity="center"
+            android:layout_marginBottom="0dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="1dp"
+            card_view:cardUseCompatPadding="true">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/chess_overlay" />
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="Rapid chess event for School and college students."
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardHuntIT"
+            android:layout_width="match_parent"
+            android:layout_height="400px"
+            android:layout_gravity="center"
+            android:layout_marginBottom="0dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="1dp"
+            card_view:cardUseCompatPadding="true">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/huntit_overlay" />
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="Unravel one of the greatest mysteries behind the death of Marilyn Monroe."
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardQuiz"
+            android:layout_width="match_parent"
+            android:layout_height="400px"
+            android:layout_gravity="center"
+            android:layout_marginBottom="0dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="1dp"
+            card_view:cardUseCompatPadding="true">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/quiztime_overlay" />
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="Quiz."
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardFOQS"
+            android:layout_width="match_parent"
+            android:layout_height="400px"
+            android:layout_gravity="center"
+            android:layout_marginBottom="0dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="1dp"
+            card_view:cardUseCompatPadding="true">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/foqs_overlay" />
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="Create, control &amp; capture it all."
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardPWNED"
+            android:layout_width="match_parent"
+            android:layout_height="400px"
+            android:layout_gravity="center"
+            android:layout_marginBottom="0dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="1dp"
+            card_view:cardUseCompatPadding="true">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/pawned_overlay" />
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="Escape reality and respawn."
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardFakingTheResearch"
+            android:layout_width="match_parent"
+            android:layout_height="400px"
+            android:layout_gravity="center"
+            android:layout_marginBottom="0dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="1dp"
+            card_view:cardUseCompatPadding="true">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/fakingthrresearch_overlay" />
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="Fake the research."
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardBigBang"
+            android:layout_width="match_parent"
+            android:layout_height="400px"
+            android:layout_gravity="center"
+            android:layout_marginBottom="0dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="1dp"
+            card_view:cardUseCompatPadding="true">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bigbang_overlay" />
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="A celestial quest through the stars."
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardWordsToGo"
+            android:layout_width="match_parent"
+            android:layout_height="400px"
+            android:layout_gravity="center"
+            android:layout_marginBottom="0dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="1dp"
+            card_view:cardUseCompatPadding="true">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/wordstogo_overlay" />
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="16 words to go."
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardMiniMilitia"
+            android:layout_width="match_parent"
+            android:layout_height="400px"
+            android:layout_gravity="center"
+            android:layout_marginBottom="0dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="1dp"
+            card_view:cardUseCompatPadding="true">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/minimafia_overlay" />
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="Mini militia Delhi battle."
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardPoker"
+            android:layout_width="match_parent"
+            android:layout_height="400px"
+            android:layout_gravity="center"
+            android:layout_marginBottom="0dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="1dp"
+            card_view:cardUseCompatPadding="true">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/poker_overlay" />
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="Compete against each other in the no limit Texas hold’em format."
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardSpeedCubing"
+            android:layout_width="match_parent"
+            android:layout_height="400px"
+            android:layout_gravity="center"
+            android:layout_marginBottom="0dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="1dp"
+            card_view:cardUseCompatPadding="true">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/speedcubing_overlay" />
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="Race to get shortest time to solve rubik's cubes."
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardMockstocks"
+            android:layout_width="match_parent"
+            android:layout_height="400px"
+            android:layout_gravity="center"
+            android:layout_marginBottom="0dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="1dp"
+            card_view:cardUseCompatPadding="true">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/mockstock_overlay" />
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="Online stock market simulation contest."
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardChakravyuha"
+            android:layout_width="match_parent"
+            android:layout_height="400px"
+            android:layout_gravity="center"
+            android:layout_marginBottom="0dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="1dp"
+            card_view:cardUseCompatPadding="true">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/chakravyu_overlay" />
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="Online cryptic hunt."
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
 
 
 </ScrollView>
