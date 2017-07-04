@@ -26,12 +26,12 @@ public class NTMainActivity extends AppCompatActivity {
 
         int position = 0;
         Bundle extras = getIntent().getExtras();
-        if(extras != null) {
+        if (extras != null) {
             position = extras.getInt("viewpager_position");
         }
         pager = (ViewPager) findViewById(R.id.pagerNt);
         MyPagerAdapterNT myPagerAdapter = new MyPagerAdapterNT(getSupportFragmentManager());
-        if(pager.getAdapter() == null) {
+        if (pager.getAdapter() == null) {
             pager.setAdapter(myPagerAdapter);
 
         }

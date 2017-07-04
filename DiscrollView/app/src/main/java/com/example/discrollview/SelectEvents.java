@@ -10,7 +10,7 @@ import android.widget.Button;
  * Created by HP on 01-07-2017.
  */
 
-public class SelectEvents extends AppCompatActivity{
+public class SelectEvents extends AppCompatActivity {
 
     Button cse;
     Button ece;
@@ -28,7 +28,7 @@ public class SelectEvents extends AppCompatActivity{
         cse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent eventsIntent= new Intent(SelectEvents.this, CSEMainActivity.class);
+                Intent eventsIntent = new Intent(SelectEvents.this, CSEMainActivity.class);
                 startActivity(eventsIntent);
             }
         });
@@ -36,7 +36,7 @@ public class SelectEvents extends AppCompatActivity{
         ece.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent eventsIntent= new Intent(SelectEvents.this, ECEMainActivity.class);
+                Intent eventsIntent = new Intent(SelectEvents.this, ECEMainActivity.class);
                 startActivity(eventsIntent);
             }
         });
@@ -44,13 +44,11 @@ public class SelectEvents extends AppCompatActivity{
         nt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent eventsIntent= new Intent(SelectEvents.this, NTMainActivity.class);
+                Intent eventsIntent = new Intent(SelectEvents.this, NTMainActivity.class);
                 startActivity(eventsIntent);
             }
         });
     }
-
-
 
 
 }

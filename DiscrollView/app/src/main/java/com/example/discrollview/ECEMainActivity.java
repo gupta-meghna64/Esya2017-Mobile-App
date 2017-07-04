@@ -3,6 +3,7 @@ package com.example.discrollview;
 /**
  * Created by HP on 01-07-2017.
  */
+
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -25,12 +26,12 @@ public class ECEMainActivity extends AppCompatActivity {
 
         int position = 0;
         Bundle extras = getIntent().getExtras();
-        if(extras != null) {
+        if (extras != null) {
             position = extras.getInt("viewpager_position");
         }
         pager = (ViewPager) findViewById(R.id.pagerEce);
         MyPagerAdapterECE myPagerAdapter = new MyPagerAdapterECE(getSupportFragmentManager());
-        if(pager.getAdapter() == null) {
+        if (pager.getAdapter() == null) {
             pager.setAdapter(myPagerAdapter);
 
         }

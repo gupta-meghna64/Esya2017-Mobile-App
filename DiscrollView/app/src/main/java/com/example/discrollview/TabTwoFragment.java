@@ -15,15 +15,15 @@ import android.view.ViewGroup;
 public class TabTwoFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View v =  inflater.inflate(R.layout.fragment_tab_two,container,false);
+        View v = inflater.inflate(R.layout.fragment_tab_two, container, false);
 
-        CardView circuitrixjr = (CardView)v.findViewById(R.id.cardCircuitrixjr);
-        CardView circuitrix = (CardView)v.findViewById(R.id.cardCircuitrix);
-        CardView robowars = (CardView)v.findViewById(R.id.cardRobowars);
-        CardView robocon = (CardView)v.findViewById(R.id.cardRobocon);
-        CardView robomaze = (CardView)v.findViewById(R.id.cardRobomaze);
-        CardView robosoccer = (CardView)v.findViewById(R.id.cardRobosoccer);
-        CardView hackoverflow = (CardView)v.findViewById(R.id.cardHackoverflow);
+        CardView circuitrixjr = (CardView) v.findViewById(R.id.cardCircuitrixjr);
+        CardView circuitrix = (CardView) v.findViewById(R.id.cardCircuitrix);
+        CardView robowars = (CardView) v.findViewById(R.id.cardRobowars);
+        CardView robocon = (CardView) v.findViewById(R.id.cardRobocon);
+        CardView robomaze = (CardView) v.findViewById(R.id.cardRobomaze);
+        CardView robosoccer = (CardView) v.findViewById(R.id.cardRobosoccer);
+        CardView hackoverflow = (CardView) v.findViewById(R.id.cardHackoverflow);
 
         circuitrixjr.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -87,7 +87,6 @@ public class TabTwoFragment extends Fragment {
                 startActivity(i);
             }
         });
-
 
 
         return v;

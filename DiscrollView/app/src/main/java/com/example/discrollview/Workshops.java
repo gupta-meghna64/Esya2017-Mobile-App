@@ -13,15 +13,16 @@ import android.widget.Button;
 public class Workshops extends AppCompatActivity {
 
     private Button back;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.workshops_main);
-        back=(Button) findViewById(R.id.backButtonWorkshops);
+        back = (Button) findViewById(R.id.backButtonWorkshops);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent homeIntent=new Intent(Workshops.this,MainActivity.class);
+                Intent homeIntent = new Intent(Workshops.this, MainActivity.class);
                 startActivity(homeIntent);
             }
         });
@@ -29,7 +30,7 @@ public class Workshops extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Intent homeIntent= new Intent(Workshops.this,MainActivity.class);
+        Intent homeIntent = new Intent(Workshops.this, MainActivity.class);
         homeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
         homeIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(homeIntent);

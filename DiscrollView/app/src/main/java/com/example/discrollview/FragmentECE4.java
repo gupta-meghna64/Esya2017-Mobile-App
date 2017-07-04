@@ -13,6 +13,6 @@ import android.view.ViewGroup;
 public class FragmentECE4 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_ece4,container,false);
+        return inflater.inflate(R.layout.fragment_ece4, container, false);
     }
 }

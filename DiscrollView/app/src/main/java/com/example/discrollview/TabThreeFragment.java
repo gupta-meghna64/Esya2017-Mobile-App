@@ -15,21 +15,21 @@ import android.view.ViewGroup;
 public class TabThreeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_tab_three,container,false);
+        View v = inflater.inflate(R.layout.fragment_tab_three, container, false);
 
-        CardView chess = (CardView)v.findViewById(R.id.cardChess);
-        CardView huntit = (CardView)v.findViewById(R.id.cardHuntIT);
-        CardView quiz = (CardView)v.findViewById(R.id.cardQuiz);
-        CardView foqs = (CardView)v.findViewById(R.id.cardFOQS);
-        CardView pwned = (CardView)v.findViewById(R.id.cardPWNED);
-        CardView fakingtheresearch = (CardView)v.findViewById(R.id.cardFakingTheResearch);
-        CardView thebigbang = (CardView)v.findViewById(R.id.cardBigBang);
-        CardView words = (CardView)v.findViewById(R.id.cardWordsToGo);
-        CardView minimilitia = (CardView)v.findViewById(R.id.cardMiniMilitia);
-        CardView poker = (CardView)v.findViewById(R.id.cardPoker);
-        CardView speedcubing = (CardView)v.findViewById(R.id.cardSpeedCubing);
-        CardView mockstocks = (CardView)v.findViewById(R.id.cardMockstocks);
-        CardView chakravyuha = (CardView)v.findViewById(R.id.cardChakravyuha);
+        CardView chess = (CardView) v.findViewById(R.id.cardChess);
+        CardView huntit = (CardView) v.findViewById(R.id.cardHuntIT);
+        CardView quiz = (CardView) v.findViewById(R.id.cardQuiz);
+        CardView foqs = (CardView) v.findViewById(R.id.cardFOQS);
+        CardView pwned = (CardView) v.findViewById(R.id.cardPWNED);
+        CardView fakingtheresearch = (CardView) v.findViewById(R.id.cardFakingTheResearch);
+        CardView thebigbang = (CardView) v.findViewById(R.id.cardBigBang);
+        CardView words = (CardView) v.findViewById(R.id.cardWordsToGo);
+        CardView minimilitia = (CardView) v.findViewById(R.id.cardMiniMilitia);
+        CardView poker = (CardView) v.findViewById(R.id.cardPoker);
+        CardView speedcubing = (CardView) v.findViewById(R.id.cardSpeedCubing);
+        CardView mockstocks = (CardView) v.findViewById(R.id.cardMockstocks);
+        CardView chakravyuha = (CardView) v.findViewById(R.id.cardChakravyuha);
 
         chess.setOnClickListener(new View.OnClickListener() {
             @Override

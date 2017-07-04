@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 
-public class Sponspopup extends AppCompatActivity{
+public class Sponspopup extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

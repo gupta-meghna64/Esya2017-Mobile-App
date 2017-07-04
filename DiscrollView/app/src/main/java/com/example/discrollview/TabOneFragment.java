@@ -24,19 +24,19 @@ import com.astuetz.PagerSlidingTabStrip;
 public class TabOneFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_tab_one,container,false);
-        CardView proconjr = (CardView)v.findViewById(R.id.cardProconJr);
-        CardView procon = (CardView)v.findViewById(R.id.cardProcon);
-        CardView prosort = (CardView)v.findViewById(R.id.cardProsort);
-        CardView codeinless = (CardView)v.findViewById(R.id.cardCodeinless);
-        CardView darwingames = (CardView)v.findViewById(R.id.cardDarwingames);
-        CardView segfault = (CardView)v.findViewById(R.id.cardSegfault);
-        CardView brainfuzz = (CardView)v.findViewById(R.id.cardBrainFuzz);
-        CardView toasttocode = (CardView)v.findViewById(R.id.cardToastToCode);
-        CardView hackon = (CardView)v.findViewById(R.id.cardHackOn);
-        CardView hackiiitd = (CardView)v.findViewById(R.id.cardHackIIITD);
-        CardView design360 = (CardView)v.findViewById(R.id.cardDesign360);
-        CardView techathlon = (CardView)v.findViewById(R.id.cardTechathlon);
+        View v = inflater.inflate(R.layout.fragment_tab_one, container, false);
+        CardView proconjr = (CardView) v.findViewById(R.id.cardProconJr);
+        CardView procon = (CardView) v.findViewById(R.id.cardProcon);
+        CardView prosort = (CardView) v.findViewById(R.id.cardProsort);
+        CardView codeinless = (CardView) v.findViewById(R.id.cardCodeinless);
+        CardView darwingames = (CardView) v.findViewById(R.id.cardDarwingames);
+        CardView segfault = (CardView) v.findViewById(R.id.cardSegfault);
+        CardView brainfuzz = (CardView) v.findViewById(R.id.cardBrainFuzz);
+        CardView toasttocode = (CardView) v.findViewById(R.id.cardToastToCode);
+        CardView hackon = (CardView) v.findViewById(R.id.cardHackOn);
+        CardView hackiiitd = (CardView) v.findViewById(R.id.cardHackIIITD);
+        CardView design360 = (CardView) v.findViewById(R.id.cardDesign360);
+        CardView techathlon = (CardView) v.findViewById(R.id.cardTechathlon);
 
 
         proconjr.setOnClickListener(new View.OnClickListener() {
@@ -144,9 +144,6 @@ public class TabOneFragment extends Fragment {
                 startActivity(i);
             }
         });
-
-
-
 
 
         return v;

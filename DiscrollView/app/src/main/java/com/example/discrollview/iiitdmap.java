@@ -23,7 +23,7 @@ public class iiitdmap extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_iiitdmap);
 
-        map  = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
+        map = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
 
         map.addMarker(new MarkerOptions().position(LOCATION_IIITD).title("Find us here! IIITD"));
         map.setMapType(GoogleMap.MAP_TYPE_NORMAL);

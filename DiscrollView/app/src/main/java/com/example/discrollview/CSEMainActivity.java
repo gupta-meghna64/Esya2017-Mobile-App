@@ -3,6 +3,7 @@ package com.example.discrollview;
 /**
  * Created by HP on 01-07-2017.
  */
+
 import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -18,6 +19,7 @@ import com.astuetz.PagerSlidingTabStrip;
 public class CSEMainActivity extends AppCompatActivity {
 
     ViewPager pager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,12 +34,12 @@ public class CSEMainActivity extends AppCompatActivity {
 
         int position = 0;
         Bundle extras = getIntent().getExtras();
-        if(extras != null) {
+        if (extras != null) {
             position = extras.getInt("viewpager_position");
         }
         pager = (ViewPager) findViewById(R.id.pagerCse);
         MyPagerAdapterCSE myPagerAdapter = new MyPagerAdapterCSE(getSupportFragmentManager());
-        if(pager.getAdapter() == null) {
+        if (pager.getAdapter() == null) {
             pager.setAdapter(myPagerAdapter);
         }
         pager.setCurrentItem(position);

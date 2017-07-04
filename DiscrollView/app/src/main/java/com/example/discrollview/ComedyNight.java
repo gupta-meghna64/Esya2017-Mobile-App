@@ -16,15 +16,16 @@ import android.widget.ImageView;
 public class ComedyNight extends AppCompatActivity {
 
     private Button back;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.comedynight_main);
-        back=(Button) findViewById(R.id.backButtonComedy);
+        back = (Button) findViewById(R.id.backButtonComedy);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent homeIntent=new Intent(ComedyNight.this,MainActivity.class);
+                Intent homeIntent = new Intent(ComedyNight.this, MainActivity.class);
                 startActivity(homeIntent);
             }
         });
@@ -32,7 +33,7 @@ public class ComedyNight extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Intent homeIntent= new Intent(ComedyNight.this,MainActivity.class);
+        Intent homeIntent = new Intent(ComedyNight.this, MainActivity.class);
         homeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
         homeIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(homeIntent);
