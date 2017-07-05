@@ -74,6 +74,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
+                    android:textAlignment="viewStart"
                     android:text="Speedcubing is a Rubik's cube competition, for which many of the speedcubers wait. We here at IIITD are organizing this event for the very first time in our very famous tech fest ESYA'17. This event is for all those people who think they have some skills in solving cube and can compete with other cubers. Not only that but we also motivate those people who know about cubing to take part in this event. You will surely win if you have some skills otherwise you will get some exposure to speedcubing which will definitely give you a learning experience.
 " />
 
@@ -116,6 +117,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
+                    android:textAlignment="viewStart"
                     android:text="1) Solving cube before starting stackmat will lead to penalty. \n \n
 2) Stopping stackmat before finishing cube will lead to penalty. \n \n
 3) Starting cube after completing inspection time will lead to penalty. Make sure that you will start solving cube before the timer runs out of time. \n \n

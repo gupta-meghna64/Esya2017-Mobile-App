@@ -71,6 +71,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
+                    android:textAlignment="viewStart"
                     android:text="MockStocks is an online stock market simulation contest which will give participants a view in the world of stock markets. Virtual currency is used for trading stocks. Event is hosted on online stock simulation websites and the biggest trader will emerge as a winner." />
 
             </LinearLayout>
@@ -112,6 +113,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
+                    android:textAlignment="viewStart"
                     android:text="1) Every round is organized on online platform decided by organizers. \n \n
 2) Each participant is given equal amount of virtual currency at the start of an event to trade. \n \n
 3) If a participant loses money in trading or ran out of currency than no help is provided such situations means participant is out of contest. \n \n

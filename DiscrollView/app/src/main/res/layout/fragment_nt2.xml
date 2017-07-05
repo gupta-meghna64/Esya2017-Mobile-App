@@ -69,9 +69,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
+                    android:textAlignment="viewStart"
                     android:padding="8dp"
-                    android:text=" “Don't limit your challenges - challenge your limits” \n
-Esya'17 presents Hunt IT, Delhi's most exciting and the most awaited on-ground Treasure Hunt ! \n
+                    android:text=" “Don't limit your challenges - challenge your limits” \n \n
+Esya'17 presents Hunt IT, Delhi's most exciting and the most awaited on-ground Treasure Hunt ! \n \n
 Be ready to unravel one of the greatest mysteries behind the death of “Marilyn Monroe”, one of the best actresses Hollywood has seen till date and get a chance to show off your amazing Sherlock detective skills.
 So, pull up your socks and get ready to have an amazing time solving tricky clues, hunting down locations and winning amazing prizes and goodies worth upto 50,000 !
 " />
@@ -113,6 +114,7 @@ So, pull up your socks and get ready to have an amazing time solving tricky clue
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
+                    android:textAlignment="viewStart"
                     android:padding="8dp"
                     android:text="HuntIt is a completely non-tech fun event and will not give any unfair advantage to the participants from technical colleges or schools. It is an event to test your analytical skills. \n \n
 1) The maximum team size is 4. Lone wolves are also invited. Cross-college and cross-school teams are allowed. Multiple teams from same college are allowed. \n \n

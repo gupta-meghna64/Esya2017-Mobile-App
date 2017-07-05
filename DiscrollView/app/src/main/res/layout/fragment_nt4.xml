@@ -74,6 +74,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
+                    android:textAlignment="viewStart"
                     android:text="The event will comprise of three rounds. The first will be an online theme-based preliminary round. This will be followed by an on-site theme-based round on the first day of the fest in which the shortlisted students will participate.
 The final round will be on the first day of the fest itself*. The announcement of winners will be announced by the judges on the first day followed by an exhibition set-up for displaying the top entries in the contest.
 " />
@@ -116,6 +117,7 @@ The final round will be on the first day of the fest itself*. The announcement o
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
+                    android:textAlignment="viewStart"
                     android:text="1)Images should not be taken more than three years prior to the beginning date of the Contest. \n \n
 2) Photos should not violate or infringe upon another person's rights, including but not limited to copyright. \n \n
 3) Decision of organizers is final and binding.

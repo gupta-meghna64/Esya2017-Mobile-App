@@ -72,9 +72,10 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
-                    android:text="There will be several simple and important rules that will have to be followed by one and all for the smooth and fair functioning of the event.- \n
-https://lgamanitoba.ca/documents/texas-holdem-poker-tournament-standard-rules-of-play-2.pdf \n
-All the rules mentioned in the document above along with a few rules thought by us ( mentioned after this note)  will be followed strictly in the tournament and may be moulded as required for our tourney. \n
+                    android:textAlignment="viewStart"
+                    android:text="There will be several simple and important rules that will have to be followed by one and all for the smooth and fair functioning of the event.- \n \n
+https://lgamanitoba.ca/documents/texas-holdem-poker-tournament-standard-rules-of-play-2.pdf \n \n
+All the rules mentioned in the document above along with a few rules thought by us ( mentioned after this note)  will be followed strictly in the tournament and may be moulded as required for our tourney. \n \n
 1) There will be unlimited single buy-ins with the first buy-in free of the cost on the house and all the additional rounds of buy-ins will be needed to be purchased at a very negligible fees of say 50 Rupees. \n \n
 2) Any player has a max allowance of 6 re-entries after which buy-in will not be offered even in exchange of money. \n \n
 3) The organizers hold a right to shuffle and move players around to different tables as and how they feel for a good normalisation of stacks and avoiding learning of player playing techniques. \n \n
@@ -124,6 +125,7 @@ All the rules mentioned in the document above along with a few rules thought by 
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
+                    android:textAlignment="viewStart"
                     android:text="1) It is an individual event. \n \n
 2) Time Control: 25 minutes per person. Arbiters may decide to add a clock to any ongoing game. In that case the time allotted to each player is at the sole discretion of the arbiters/event coordinators. \n \n
 3) There will be no separate tournament for girls, but only a single tournament open to all. \n \n

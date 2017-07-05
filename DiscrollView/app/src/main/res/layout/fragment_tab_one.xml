@@ -46,7 +46,7 @@
                         android:paddingLeft="8dp"
                         android:paddingBottom="8dp"
                         android:textStyle="bold"
-                        android:text="On-Campus Programming Event"
+                        android:text="On-Campus programming event"
                         android:textColor="#FFFFFF"/>
 
                 </FrameLayout>
@@ -85,7 +85,7 @@
                         android:paddingLeft="8dp"
                         android:paddingBottom="8dp"
                         android:textStyle="bold"
-                        android:text="Online Programming Contest"
+                        android:text="Online programming contest"
                         android:textColor="#FFFFFF"/>
 
                 </FrameLayout>
@@ -122,7 +122,7 @@
                         android:paddingLeft="8dp"
                         android:paddingBottom="8dp"
                         android:textStyle="bold"
-                        android:text="Programming Competition for School Students"
+                        android:text="Programming competition for school students"
                         android:textColor="#FFFFFF"/>
 
                 </FrameLayout>
@@ -162,7 +162,7 @@
                         android:paddingBottom="8dp"
                         android:paddingRight="8dp"
                         android:textStyle="bold"
-                        android:text="Concision in Style, Precision in Thought, Decision in Life"
+                        android:text="Concision in style, precision in thought, decision in life"
                         android:textColor="#FFFFFF"/>
 
                 </FrameLayout>
@@ -241,7 +241,7 @@
                         android:paddingBottom="8dp"
                         android:paddingRight="8dp"
                         android:textStyle="bold"
-                        android:text="Win or Bugger Off"
+                        android:text="Win or bugger Off"
                         android:textColor="#FFFFFF"/>
 
                 </FrameLayout>
@@ -281,7 +281,7 @@
                         android:paddingBottom="8dp"
                         android:paddingRight="8dp"
                         android:textStyle="bold"
-                        android:text="Algorithm Design Challenge"
+                        android:text="Algorithm design challenge"
                         android:textColor="#FFFFFF"/>
 
                 </FrameLayout>
@@ -321,7 +321,7 @@
                         android:paddingBottom="8dp"
                         android:paddingRight="8dp"
                         android:textStyle="bold"
-                        android:text="Techathlon Finale"
+                        android:text="Techathlon finale"
                         android:textColor="#FFFFFF"/>
 
                 </FrameLayout>
@@ -362,7 +362,7 @@
                         android:paddingBottom="8dp"
                         android:paddingRight="8dp"
                         android:textStyle="bold"
-                        android:text="Capture The Flag"
+                        android:text="Capture the flag"
                         android:textColor="#FFFFFF"/>
 
                 </FrameLayout>
@@ -402,7 +402,7 @@
                         android:paddingBottom="8dp"
                         android:paddingRight="8dp"
                         android:textStyle="bold"
-                        android:text="Ultimate Overnight Hackathon"
+                        android:text="Ultimate overnight hackathon"
                         android:textColor="#FFFFFF"/>
 
                 </FrameLayout>
@@ -442,7 +442,7 @@
                         android:paddingBottom="8dp"
                         android:paddingRight="8dp"
                         android:textStyle="bold"
-                        android:text="Overnight Design Hackathon"
+                        android:text="Overnight design hackathon"
                         android:textColor="#FFFFFF"/>
 
                 </FrameLayout>
@@ -481,7 +481,7 @@
                         android:paddingBottom="8dp"
                         android:paddingRight="8dp"
                         android:textStyle="bold"
-                        android:text="Six event Technical Extravaganza"
+                        android:text="Six event technical extravaganza"
                         android:textColor="#FFFFFF"/>
 
                 </FrameLayout>

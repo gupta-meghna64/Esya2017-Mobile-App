@@ -71,6 +71,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
+                    android:textAlignment="viewStart"
                     android:text="IIIT Delhi hosts its 5th annual Rapid Chess Tournament. Compete against the best in the city and win amazing prizes!
 " />
 
@@ -113,6 +114,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
+                    android:textAlignment="viewStart"
                     android:text="1) It is an individual event. \n \n
 2) Time Control: 25 minutes per person. Arbiters may decide to add a clock to any ongoing game. In that case the time allotted to each player is at the sole discretion of the arbiters/event coordinators. \n \n
 3) There will be no separate tournament for girls, but only a single tournament open to all. \n \n

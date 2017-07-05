@@ -73,10 +73,11 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
-                    android:text="Can you enthrall us all with witty wordplays and your brevity? \n
-We throw open the doors for a yet another dazzling edition of 16 Words To Go! \n
+                    android:textAlignment="viewStart"
+                    android:text="Can you enthrall us all with witty wordplays and your brevity? \n \n
+We throw open the doors for a yet another dazzling edition of 16 Words To Go! \n \n
 Yes, it’s back, and we look forward to reading all your marvellous entries which strike a chord, coax a tear or make us let loose a giggle or tingle us with laughter! All are welcome aboard on this exciting literary journey where we write and express ourselves to the brink.. But here’s the catch! Only in 16 Words. Think you have what it takes to be the 16 Words champion? Do participate and register!
-We look forward to reading all the entries and judging your succinctness :D Interested? \n
+We look forward to reading all the entries and judging your succinctness :D Interested? \n \n
 Register and start writing! Check out the rules!
 " />
 
@@ -118,6 +119,7 @@ Register and start writing! Check out the rules!
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
+                    android:textAlignment="viewStart"
                     android:padding="8dp"
                     android:text="1) 16 words is an upper limit participants may use less than 16 words to express themselves. \n \n
 2) The competition will go on from X to Y date. \n \n

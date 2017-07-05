@@ -43,7 +43,7 @@
                     android:layout_gravity="bottom"
                     android:paddingBottom="8dp"
                     android:paddingLeft="8dp"
-                    android:text="Circuit designing competition for School Students"
+                    android:text="Circuit designing competition for school students"
                     android:textColor="#FFFFFF"
                     android:textStyle="bold" />
 
@@ -81,7 +81,7 @@
                     android:layout_gravity="bottom"
                     android:paddingBottom="8dp"
                     android:paddingLeft="8dp"
-                    android:text="Design, Stimulate and Build"
+                    android:text="Design, stimulate and build"
                     android:textColor="#FFFFFF"
                     android:textStyle="bold" />
             </FrameLayout>
@@ -156,7 +156,7 @@
                     android:layout_gravity="bottom"
                     android:paddingBottom="8dp"
                     android:paddingLeft="8dp"
-                    android:text="Be a good robot, follow the line !"
+                    android:text="Be a good robot, follow the line"
                     android:textColor="#FFFFFF"
                     android:textStyle="bold" />
 
@@ -232,7 +232,7 @@
                     android:layout_gravity="bottom"
                     android:paddingBottom="8dp"
                     android:paddingLeft="8dp"
-                    android:text="Find the Champion Soccer Master in Robots"
+                    android:text="Find the champion soccer master in robots"
                     android:textColor="#FFFFFF"
                     android:textStyle="bold" />
 

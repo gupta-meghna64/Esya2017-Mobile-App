@@ -73,8 +73,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
+                    android:textAlignment="viewStart"
                     android:text="Doodle Army 2: Mini Militia (DA2) is a free-to-play 2D shooter game released for iOS and Android devices. The game was released for iOS devices on April 5, 2011 and on Google Play for Android on March 18, 2015. \n \n
-It has three modes: training, survival and multiplayer. \n
+It has three modes: training, survival and multiplayer. \n \n
 Our event is based on the multiplayer mode in which people connect to one server to join a game and compete against one another. We have two types of events - Team event and lone wolf event. In team event, we have two teams (comprising of 4-5 players each) competing against each other. The team with the maximum kills in the game will proceed to the next round and the other team will be eliminated (knock-out style tournament). In the lone wolf event, we have 8-10 individual players playing one match and the top two players (according to maximum kills) get cash prize in each match. A person can participate any number of times in the lone wolf event (provided he/she registers each time), but can only play for one team in the team event. If your team is knocked-out, you can’t take further part in the tournament.
 " />
 
@@ -117,6 +118,7 @@ Our event is based on the multiplayer mode in which people connect to one server
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
+                    android:textAlignment="viewStart"
                     android:text="1) Decision of organizers is final and binding." />
 
             </LinearLayout>

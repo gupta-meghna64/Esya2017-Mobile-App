@@ -71,6 +71,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
+                    android:textAlignment="viewStart"
                     android:text="Participants are required to do research on any topic which they want.They are required to provide justification of  what they have prepared and make us believe that it is right even if it is wrong.They would be making a small power point presentation and presenting the same in front of our judges. The team which will give the best justification of their research work will be declared as winner at the end of the event." />
 
             </LinearLayout>
@@ -112,6 +113,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
+                    android:textAlignment="viewStart"
                     android:text="1) A team should consist of a maximum of two people. \n \n
 2) There are no restriction on the topic.Participants can choose any topic of their choice. \n \n
 3) Their presentation should not exceed 8 min .The presentation should cover all the facts that justify their work. \n \n

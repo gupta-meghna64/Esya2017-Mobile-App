@@ -73,6 +73,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
+                    android:textAlignment="viewStart"
                     android:text="“The oldest picture book in our possession is the night sky” - E.W. Maunder. \n \n
 For anyone who has ever looked up at the sky and wondered in awe, Esya’17 brings Big Bang - a fun filled trivia on astronomy and space-science consisting of four baffling rounds of competition ranging from practical astronomy to science-fiction movies!
 If even the slightest notion of outer-space excites you, then Astronuts(astronomy club at IIITD), invites you to be a part of Big Bang to get ready for this pursuit of knowledge and earn the huge prizes that are at stake!
@@ -118,6 +119,7 @@ The event would consist of fun quizzes on almost everything related to astronomy
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
+                    android:textAlignment="viewStart"
                     android:text="1) Team size of at most two is allowed. \n \n
 2) Cross-college/cross-school teams are allowed. \n \n
 3) Use of any electronic gadget(mobile phones, laptops, tablets, calculators, etc.) is prohibited. \n \n

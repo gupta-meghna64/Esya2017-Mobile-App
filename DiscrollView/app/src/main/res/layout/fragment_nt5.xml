@@ -72,6 +72,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
+                    android:textAlignment="viewStart"
                     android:text="Hushed voices, silent footsteps, reload of a gun, reviving of engines, a gush of nitrous. \n \n If all this is music to your ears then you're one of the gamers out there looking for another opportunity to show-off their unusual talent, hold your horses because here comes ESYA 17’s competitive Gaming event, PWNED, with some of the best and most played games on the table (FIFA 17, DOTA 2, Counter-Strike 1.6 and Need For Speed Most Wanted). Conquer the gaming realm to become the Ultimate Champion." />
 
             </LinearLayout>
@@ -113,6 +114,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
+                    android:textAlignment="viewStart"
                     android:text="1) Decision of organizers is final and binding." />
 
             </LinearLayout>
