@@ -145,7 +145,7 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         eventCount.setTypeface(countertype);
 
         footfallCount = (CountAnimationTextView) findViewById(R.id.count_animation_textView1);
-        footfallCount.setAnimationDuration(2000).countAnimation(0, 8000);
+//        footfallCount.setAnimationDuration(2000).countAnimation(0, 8000);
         footfallCount.setTypeface(countertype);
 
         schoolCount = (CountAnimationTextView) findViewById(R.id.count_animation_textView);
@@ -416,8 +416,10 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
             @Override
             public void onPageScrollStateChanged(int state) {
                 String s=sliderLayout.getCurrentSlider().getDescription();
-                Log.d("Checker",s);
-
+                if(s.contains("5") || s.contains("3"))
+                {
+                    footfallCount.setAnimationDuration(2000).countAnimation(0, 8000);
+                }
             }
         });
 
