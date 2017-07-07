@@ -383,38 +383,18 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         file_maps.put("Image 3", R.drawable.esya03);
         file_maps.put("Image 4", R.drawable.esya04);
         file_maps.put("Image 5", R.drawable.esya05);
-//        int i=1;
-//        for (String name : file_maps.keySet()) {
-//            TextSliderView textSliderView = new TextSliderView(MainActivity.this);
-//            textSliderView
-//
-//                    .image(file_maps.get(name))
-//                    .setScaleType(BaseSliderView.ScaleType.Fit).description(name);
-//
-//            sliderLayout.addSlider(textSliderView);
-//
-//        }
 
-        TextSliderView ts1= new TextSliderView(MainActivity.this);
-        ts1.image(file_maps.get("Image 1")).setScaleType(BaseSliderView.ScaleType.Fit).description("First");
-        ts1.image(file_maps.get("Image 2")).setScaleType(BaseSliderView.ScaleType.Fit).description("Second");
-        sliderLayout.addSlider(ts1);
+        for (String name : file_maps.keySet()) {
+            TextSliderView textSliderView = new TextSliderView(MainActivity.this);
+            textSliderView
 
-        TextSliderView ts2= new TextSliderView(MainActivity.this);
-        ts1.image(file_maps.get("Image 2")).setScaleType(BaseSliderView.ScaleType.Fit).description("Second");
-        sliderLayout.addSlider(ts2);
+                    .image(file_maps.get(name))
+                    .setScaleType(BaseSliderView.ScaleType.Fit).description(name);
 
-        TextSliderView ts3= new TextSliderView(MainActivity.this);
-        ts1.image(file_maps.get("Image 3")).setScaleType(BaseSliderView.ScaleType.Fit).description("Third");
-        sliderLayout.addSlider(ts3);
+            sliderLayout.addSlider(textSliderView);
 
-        TextSliderView ts4= new TextSliderView(MainActivity.this);
-        ts1.image(file_maps.get("Image 4")).setScaleType(BaseSliderView.ScaleType.Fit).description("Fourth");
-        sliderLayout.addSlider(ts4);
+        }
 
-        TextSliderView ts5= new TextSliderView(MainActivity.this);
-        ts1.image(file_maps.get("Image 5")).setScaleType(BaseSliderView.ScaleType.Fit).description("Fifth");
-        sliderLayout.addSlider(ts5);
 
         sliderLayout.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom);
         sliderLayout.setPresetTransformer(SliderLayout.Transformer.ZoomOutSlide);
