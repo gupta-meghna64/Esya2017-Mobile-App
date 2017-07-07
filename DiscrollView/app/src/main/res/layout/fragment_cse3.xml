@@ -72,9 +72,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
-                    android:text="This is a competitive programming contest exclusively for school students. The event will involve problems based on basic data structures and algorithms (those which  are a part of ZCO/ZIO) viz. binary search, dynamic programming, ad hoc and basic graph theory."
-                    android:textAlignment="center" />
-
+                    android:text="This is a competitive programming contest exclusively for school students. The event will involve problems based on basic data structures and algorithms (those which  are a part of ZCO/ZIO) viz. binary search, dynamic programming, ad hoc and basic graph theory." />
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
@@ -114,9 +112,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
-                    android:text="Decision of organizers is final and binding."
-                    android:textAlignment="center" />
-
+                    android:text="Decision of organizers is final and binding." />
             </LinearLayout>
 
         </android.support.v7.widget.CardView>

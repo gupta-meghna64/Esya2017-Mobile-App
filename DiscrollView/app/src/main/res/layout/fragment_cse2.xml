@@ -72,9 +72,7 @@
                     android:layout_weight="4"
                     android:padding="8dp"
                     android:text="On-site programming event to test coding and algorithm designing skills. We *intend to* hold an online round as the qualifiers.
-"
-                    android:textAlignment="center" />
-
+" />
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
