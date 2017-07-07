@@ -55,12 +55,14 @@
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:alpha="0.6">
+                    >
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:scaleType="fitXY"
                         android:src="@drawable/counterback"
+                        android:alpha="0.6"
                         />
 
                     <LinearLayout
