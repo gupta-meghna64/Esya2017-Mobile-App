@@ -399,8 +399,8 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         sliderLayout.setCustomAnimation(new DescriptionAnimation());
         sliderLayout.setDuration(3750);
         sliderLayout.addOnPageChangeListener(this);
-        int x=sliderLayout.getCurrentPosition();
-        Log.d("Checker",Integer.toString(x));
+        String s=sliderLayout.getCurrentSlider().getDescription();
+        Log.d("Checker",s);
 
         events = (Button) findViewById(R.id.events);
         events.setOnClickListener(new View.OnClickListener() {
