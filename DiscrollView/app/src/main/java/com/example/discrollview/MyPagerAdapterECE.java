@@ -32,7 +32,7 @@ public class MyPagerAdapterECE extends FragmentPagerAdapter {
         else if (position == 5)
             return "RoboSoccer";
         else
-            return "hackIIITD Hardware";
+            return "HackOverflow";
 
     }
 
