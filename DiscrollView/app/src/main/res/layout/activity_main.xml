@@ -52,101 +52,111 @@
                 card_view:contentPaddingBottom="5dp"
                 card_view:contentPaddingTop="5dp">
 
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
-
-
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Esya'16:"
-                        android:textColor="#000000"
-                        android:textSize="48sp" />
-
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/counterback"
+                    android:alpha="0.6">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingTop="-8dp">
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
 
 
-                        <com.daasuu.cat.CountAnimationTextView
-                            android:id="@+id/count_animation_textView"
+                        <com.example.discrollview.MyTextViewHeading
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="bottom|end"
-                            android:gravity="right"
-                            android:text="0"
+                            android:text="Esya'16:"
+                            android:textColor="#FFFFFF"
                             android:textSize="48sp" />
 
-                        <TextView
+
+                        <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="bottom"
-                            android:text=" Schools and Colleges"
-                            android:textColor="#000000"
-                            android:textSize="16sp" />
+                            android:paddingTop="-8dp">
 
+
+                            <com.daasuu.cat.CountAnimationTextView
+                                android:id="@+id/count_animation_textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|end"
+                                android:gravity="right"
+                                android:text="0"
+                                android:textColor="#FFFFFF"
+                                android:textSize="48sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:text=" Schools and Colleges"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="-8dp">
+
+                            <com.daasuu.cat.CountAnimationTextView
+                                android:id="@+id/count_animation_textView1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|end"
+                                android:gravity="right"
+                                android:text="0"
+                                android:textColor="#FFFFFF"
+                                android:textSize="48sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:text=" Footfall"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="-8dp">
+
+                            <com.daasuu.cat.CountAnimationTextView
+                                android:id="@+id/count_animation_textView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|end"
+                                android:gravity="right"
+                                android:text="0"
+                                android:textColor="#FFFFFF"
+                                android:textSize="48sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:text=" Events"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp" />
+
+
+                        </LinearLayout>
 
                     </LinearLayout>
 
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:paddingTop="-8dp">
-
-                        <com.daasuu.cat.CountAnimationTextView
-                            android:id="@+id/count_animation_textView1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="bottom|end"
-                            android:gravity="right"
-                            android:text="0"
-                            android:textSize="48sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="bottom"
-                            android:text=" Footfall"
-                            android:textColor="#000000"
-                            android:textSize="16sp" />
-
-
-                    </LinearLayout>
-
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:paddingTop="-8dp">
-
-                        <com.daasuu.cat.CountAnimationTextView
-                            android:id="@+id/count_animation_textView2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="bottom|end"
-                            android:gravity="right"
-                            android:text="0"
-                            android:textSize="48sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="bottom"
-                            android:text=" Events"
-                            android:textColor="#000000"
-                            android:textSize="16sp" />
-
-
-                    </LinearLayout>
-
-                </LinearLayout>
+                </FrameLayout>
 
 
             </android.support.v7.widget.CardView>
