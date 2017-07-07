@@ -389,9 +389,8 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
             textSliderView
 
                     .image(file_maps.get(name))
-                    .setScaleType(BaseSliderView.ScaleType.Fit).description(Integer.toString(i));
+                    .setScaleType(BaseSliderView.ScaleType.Fit).description(name);
 
-            i++;
             sliderLayout.addSlider(textSliderView);
 
         }
