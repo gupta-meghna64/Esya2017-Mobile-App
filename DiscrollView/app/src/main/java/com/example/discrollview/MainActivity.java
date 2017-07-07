@@ -397,6 +397,7 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
 
         TextSliderView ts1= new TextSliderView(MainActivity.this);
         ts1.image(file_maps.get("Image 1")).setScaleType(BaseSliderView.ScaleType.Fit).description("First");
+        ts1.image(file_maps.get("Image 2")).setScaleType(BaseSliderView.ScaleType.Fit).description("Second");
         sliderLayout.addSlider(ts1);
 
         TextSliderView ts2= new TextSliderView(MainActivity.this);
@@ -420,8 +421,25 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         sliderLayout.setCustomAnimation(new DescriptionAnimation());
         sliderLayout.setDuration(3750);
         sliderLayout.addOnPageChangeListener(this);
-        String s=sliderLayout.getCurrentSlider().getDescription();
-        Log.d("Checker",s);
+
+        sliderLayout.addOnPageChangeListener(new ViewPagerEx.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+                String s=sliderLayout.getCurrentSlider().getDescription();
+                Log.d("Checker",s);
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
+
 
         events = (Button) findViewById(R.id.events);
         events.setOnClickListener(new View.OnClickListener() {
