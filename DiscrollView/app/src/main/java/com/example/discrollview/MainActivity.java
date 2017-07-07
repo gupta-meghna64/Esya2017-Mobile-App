@@ -383,14 +383,15 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         file_maps.put("Image 3", R.drawable.esya03);
         file_maps.put("Image 4", R.drawable.esya04);
         file_maps.put("Image 5", R.drawable.esya05);
+        int i=1;
         for (String name : file_maps.keySet()) {
             TextSliderView textSliderView = new TextSliderView(MainActivity.this);
             textSliderView
 
                     .image(file_maps.get(name))
-                    .setScaleType(BaseSliderView.ScaleType.Fit);
+                    .setScaleType(BaseSliderView.ScaleType.Fit).description(Integer.toString(i));
 
-
+            i++;
             sliderLayout.addSlider(textSliderView);
 
         }
