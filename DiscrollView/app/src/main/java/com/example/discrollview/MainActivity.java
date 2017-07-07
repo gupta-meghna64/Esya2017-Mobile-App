@@ -105,6 +105,7 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
     private ImageView foldedWorkshops;
     private ImageView unfoldedInitiatives;
     private ImageView foldedInitiatives;
+    private TextView counterEndText;
     final int foldingCellArr[] = new int[5];
 
     private final LatLng LOCATION_IIITD = new LatLng(28.5459495, 77.2688703);
@@ -140,17 +141,15 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
 
         Typeface countertype = Typeface.createFromAsset(getAssets(), "fonts/Roboto-Light.ttf");
 
-        eventCount = (CountAnimationTextView) findViewById(R.id.count_animation_textView2);
-        eventCount.setAnimationDuration(2000).countAnimation(0, 30);
-        eventCount.setTypeface(countertype);
-
-        footfallCount = (CountAnimationTextView) findViewById(R.id.count_animation_textView1);
-//        footfallCount.setAnimationDuration(2000).countAnimation(0, 8000);
-        footfallCount.setTypeface(countertype);
+//        eventCount = (CountAnimationTextView) findViewById(R.id.count_animation_textView2);
+//        eventCount.setTypeface(countertype);
+//
+//        footfallCount = (CountAnimationTextView) findViewById(R.id.count_animation_textView1);
+//        footfallCount.setTypeface(countertype);
 
         schoolCount = (CountAnimationTextView) findViewById(R.id.count_animation_textView);
-        schoolCount.setAnimationDuration(2000).countAnimation(0, 800);
         schoolCount.setTypeface(countertype);
+        counterEndText = (TextView) findViewById(R.id.counterEndText);
 
         horizontalScrollview = (HorizontalScrollView) findViewById(R.id.horiztonal_scrollview_id);
         horizontalOuterLayout = (LinearLayout) findViewById(R.id.horiztonal_outer_layout_id);
@@ -381,8 +380,8 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         file_maps.put("Image 1", R.drawable.esya01);
         file_maps.put("Image 2", R.drawable.esya02);
         file_maps.put("Image 3", R.drawable.esya03);
-        file_maps.put("Image 4", R.drawable.esya04);
-        file_maps.put("Image 5", R.drawable.esya05);
+//        file_maps.put("Image 4", R.drawable.esya04);
+//        file_maps.put("Image 5", R.drawable.esya05);
 
         for (String name : file_maps.keySet()) {
             TextSliderView textSliderView = new TextSliderView(MainActivity.this);
@@ -416,9 +415,21 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
             @Override
             public void onPageScrollStateChanged(int state) {
                 String s=sliderLayout.getCurrentSlider().getDescription();
-                if(s.contains("5") || s.contains("3"))
+                if(s.contains("2"))
                 {
-                    footfallCount.setAnimationDuration(2000).countAnimation(0, 8000);
+                    schoolCount.setAnimationDuration(3000).countAnimation(0,8000);
+                    counterEndText.setText(" footfall");
+                }
+                else if(s.contains("1"))
+                {
+                    schoolCount.setAnimationDuration(3000).countAnimation(0,800);
+                    counterEndText.setText(" schools and colleges");
+                }
+
+                else if(s.contains("3"))
+                {
+                    schoolCount.setAnimationDuration(3000).countAnimation(0,30);
+                    counterEndText.setText(" events");
                 }
             }
         });
