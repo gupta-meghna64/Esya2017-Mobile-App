@@ -405,8 +405,7 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         sliderLayout.addOnPageChangeListener(new ViewPagerEx.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-                String s=sliderLayout.getCurrentSlider().getDescription();
-                Log.d("Checker",s);
+
             }
 
             @Override
@@ -416,6 +415,8 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
 
             @Override
             public void onPageScrollStateChanged(int state) {
+                String s=sliderLayout.getCurrentSlider().getDescription();
+                Log.d("Checker",s);
 
             }
         });
