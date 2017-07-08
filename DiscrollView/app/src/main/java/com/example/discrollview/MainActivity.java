@@ -106,6 +106,7 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
     private ImageView unfoldedInitiatives;
     private ImageView foldedInitiatives;
     private TextView counterEndText;
+    private RelativeLayout imageSlider;
     final int foldingCellArr[] = new int[5];
 
     private final LatLng LOCATION_IIITD = new LatLng(28.5459495, 77.2688703);
@@ -127,11 +128,7 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
     private Boolean isFaceDown = true;
     private String[] nameArray = {"AutoDesk", "RAJA Biscuits", "Bittoo Tikki Wala", "CodeChef", "Coding_Ninjas", "Engineers India LTD.", "GitLab", "Hacker Earth", "Happn", "Holiday IQ", "Luxor", "Qnswr", "Rau's IAS Study Circle", "Spykar", "UNIBIC"};
     private String[] imageNameArray = {"autode", "bisc", "btw", "codechef", "coding_ninjas", "eil", "gitlab", "hack", "happn", "holiq", "luxor", "qnswr", "rauias", "spykar", "unibic"};
-
-
-    private CountAnimationTextView eventCount;
-    private CountAnimationTextView footfallCount;
-    private CountAnimationTextView schoolCount;
+    private CountAnimationTextView prevEsyaCount;
 
 
     @Override
@@ -141,14 +138,13 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
 
         Typeface countertype = Typeface.createFromAsset(getAssets(), "fonts/Roboto-Light.ttf");
 
-//        eventCount = (CountAnimationTextView) findViewById(R.id.count_animation_textView2);
-//        eventCount.setTypeface(countertype);
-//
-//        footfallCount = (CountAnimationTextView) findViewById(R.id.count_animation_textView1);
-//        footfallCount.setTypeface(countertype);
-
-        schoolCount = (CountAnimationTextView) findViewById(R.id.count_animation_textView);
-        schoolCount.setTypeface(countertype);
+        imageSlider = (RelativeLayout) findViewById(R.id.slideFrame);
+        imageSlider.getLayoutParams().width=Resources.getSystem().getDisplayMetrics().widthPixels;
+        int height=(int) (Resources.getSystem().getDisplayMetrics().widthPixels*1.5);
+        imageSlider.getLayoutParams().height= height;
+        imageSlider.requestLayout();
+        prevEsyaCount = (CountAnimationTextView) findViewById(R.id.count_animation_textView);
+        prevEsyaCount.setTypeface(countertype);
         counterEndText = (TextView) findViewById(R.id.counterEndText);
 
         horizontalScrollview = (HorizontalScrollView) findViewById(R.id.horiztonal_scrollview_id);
@@ -377,9 +373,9 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
 
         sliderLayout = (SliderLayout) findViewById(R.id.slider);
         HashMap<String, Integer> file_maps = new HashMap<String, Integer>();
-        file_maps.put("Image 1", R.drawable.esya01);
-        file_maps.put("Image 2", R.drawable.esya02);
-        file_maps.put("Image 3", R.drawable.esya03);
+        file_maps.put("Image 1", R.drawable.esya011);
+        file_maps.put("Image 2", R.drawable.esya022);
+        file_maps.put("Image 3", R.drawable.esya033);
 //        file_maps.put("Image 4", R.drawable.esya04);
 //        file_maps.put("Image 5", R.drawable.esya05);
 
@@ -417,18 +413,18 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
                 String s=sliderLayout.getCurrentSlider().getDescription();
                 if(s.contains("2"))
                 {
-                    schoolCount.setAnimationDuration(3000).countAnimation(0,8000);
+                    prevEsyaCount.setAnimationDuration(1500).countAnimation(0,8000);
                     counterEndText.setText(" footfall");
                 }
                 else if(s.contains("1"))
                 {
-                    schoolCount.setAnimationDuration(3000).countAnimation(0,800);
+                    prevEsyaCount.setAnimationDuration(1500).countAnimation(0,800);
                     counterEndText.setText(" schools and colleges");
                 }
 
                 else if(s.contains("3"))
                 {
-                    schoolCount.setAnimationDuration(3000).countAnimation(0,30);
+                    prevEsyaCount.setAnimationDuration(1500).countAnimation(0,30);
                     counterEndText.setText(" events");
                 }
             }
