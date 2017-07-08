@@ -33,7 +33,7 @@
                 card_view:cardElevation="1dp"
                 card_view:cardUseCompatPadding="true"
                 card_view:contentPaddingBottom="5dp"
-                card_view:contentPaddingTop="5dp">
+                >
 
                 <FrameLayout
                     android:layout_width="match_parent"
@@ -67,6 +67,8 @@
                         android:layout_gravity="center"
                         android:orientation="vertical"
                         android:background="#99000000"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
                         >
 
 
