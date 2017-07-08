@@ -44,7 +44,7 @@
                     <RelativeLayout
                         android:id="@+id/slideFrame"
                         android:layout_width="fill_parent"
-                        android:layout_height="500dp"
+                        android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:orientation="vertical"
                         >
