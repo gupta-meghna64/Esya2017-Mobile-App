@@ -139,13 +139,13 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         Typeface countertype = Typeface.createFromAsset(getAssets(), "fonts/Roboto-Light.ttf");
 
         imageSlider = (RelativeLayout) findViewById(R.id.slideFrame);
-        imageSlider.getLayoutParams().width=Resources.getSystem().getDisplayMetrics().widthPixels;
-        int height=(int) (Resources.getSystem().getDisplayMetrics().widthPixels*1.5);
-        imageSlider.getLayoutParams().height= height;
+        imageSlider.getLayoutParams().width = Resources.getSystem().getDisplayMetrics().widthPixels;
+        int height = (int) (Resources.getSystem().getDisplayMetrics().widthPixels * 1.5);
+        imageSlider.getLayoutParams().height = height;
         imageSlider.requestLayout();
-        prevEsyaCount = (CountAnimationTextView) findViewById(R.id.count_animation_textView);
-        prevEsyaCount.setTypeface(countertype);
-        counterEndText = (TextView) findViewById(R.id.counterEndText);
+//        prevEsyaCount = (CountAnimationTextView) findViewById(R.id.count_animation_textView);
+//        prevEsyaCount.setTypeface(countertype);
+//        counterEndText = (TextView) findViewById(R.id.counterEndText);
 
         horizontalScrollview = (HorizontalScrollView) findViewById(R.id.horiztonal_scrollview_id);
         horizontalOuterLayout = (LinearLayout) findViewById(R.id.horiztonal_outer_layout_id);
@@ -397,38 +397,38 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         sliderLayout.setDuration(3750);
         sliderLayout.addOnPageChangeListener(this);
 
-        sliderLayout.addOnPageChangeListener(new ViewPagerEx.OnPageChangeListener() {
-            @Override
-            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-
-            }
-
-            @Override
-            public void onPageSelected(int position) {
-
-            }
-
-            @Override
-            public void onPageScrollStateChanged(int state) {
-                String s=sliderLayout.getCurrentSlider().getDescription();
-                if(s.contains("2"))
-                {
-                    prevEsyaCount.setAnimationDuration(1500).countAnimation(0,8000);
-                    counterEndText.setText(" footfall");
-                }
-                else if(s.contains("1"))
-                {
-                    prevEsyaCount.setAnimationDuration(1500).countAnimation(0,800);
-                    counterEndText.setText(" schools and colleges");
-                }
-
-                else if(s.contains("3"))
-                {
-                    prevEsyaCount.setAnimationDuration(1500).countAnimation(0,30);
-                    counterEndText.setText(" events");
-                }
-            }
-        });
+//        sliderLayout.addOnPageChangeListener(new ViewPagerEx.OnPageChangeListener() {
+//            @Override
+//            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+//
+//            }
+//
+//            @Override
+//            public void onPageSelected(int position) {
+//
+//            }
+//
+//            @Override
+//            public void onPageScrollStateChanged(int state) {
+//                String s=sliderLayout.getCurrentSlider().getDescription();
+//                if(s.contains("2"))
+//                {
+//                    prevEsyaCount.setAnimationDuration(1500).countAnimation(0,8000);
+//                    counterEndText.setText(" footfall");
+//                }
+//                else if(s.contains("1"))
+//                {
+//                    prevEsyaCount.setAnimationDuration(1500).countAnimation(0,800);
+//                    counterEndText.setText(" schools and colleges");
+//                }
+//
+//                else if(s.contains("3"))
+//                {
+//                    prevEsyaCount.setAnimationDuration(1500).countAnimation(0,30);
+//                    counterEndText.setText(" events");
+//                }
+//            }
+//        });
 
 
         events = (Button) findViewById(R.id.events);
