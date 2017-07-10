@@ -44,7 +44,7 @@
                     android:paddingBottom="8dp"
                     android:paddingLeft="8dp"
                     android:text="Rapid chess event for school and college students"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/white"
                     android:textStyle="bold" />
 
             </FrameLayout>
@@ -82,7 +82,7 @@
                     android:paddingBottom="8dp"
                     android:paddingLeft="8dp"
                     android:text="Unravel one of the greatest mysteries behind the death of Marilyn Monroe"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/white"
                     android:textStyle="bold" />
 
             </FrameLayout>
@@ -119,7 +119,7 @@
                     android:paddingBottom="8dp"
                     android:paddingLeft="8dp"
                     android:text="Quiz."
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/white"
                     android:textStyle="bold" />
 
             </FrameLayout>
@@ -156,7 +156,7 @@
                     android:paddingBottom="8dp"
                     android:paddingLeft="8dp"
                     android:text="Create, control &amp; capture it all"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/white"
                     android:textStyle="bold" />
 
             </FrameLayout>
@@ -193,7 +193,7 @@
                     android:paddingBottom="8dp"
                     android:paddingLeft="8dp"
                     android:text="Escape reality and respawn"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/white"
                     android:textStyle="bold" />
 
             </FrameLayout>
@@ -231,7 +231,7 @@
                     android:paddingBottom="8dp"
                     android:paddingLeft="8dp"
                     android:text="Fake the research"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/white"
                     android:textStyle="bold" />
 
             </FrameLayout>
@@ -269,7 +269,7 @@
                     android:paddingBottom="8dp"
                     android:paddingLeft="8dp"
                     android:text="A celestial quest through the stars"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/white"
                     android:textStyle="bold" />
 
             </FrameLayout>
@@ -306,7 +306,7 @@
                     android:paddingBottom="8dp"
                     android:paddingLeft="8dp"
                     android:text="16 words to go"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/white"
                     android:textStyle="bold" />
 
             </FrameLayout>
@@ -344,7 +344,7 @@
                     android:paddingBottom="8dp"
                     android:paddingLeft="8dp"
                     android:text="Mini militia Delhi battle"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/white"
                     android:textStyle="bold" />
 
             </FrameLayout>
@@ -382,7 +382,7 @@
                     android:paddingBottom="8dp"
                     android:paddingLeft="8dp"
                     android:text="Compete against each other in the no limit Texas hold’em format"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/white"
                     android:textStyle="bold" />
 
             </FrameLayout>
@@ -420,7 +420,7 @@
                     android:paddingBottom="8dp"
                     android:paddingLeft="8dp"
                     android:text="Slow and steady wins the race. Are you serious?"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/white"
                     android:textStyle="bold" />
 
             </FrameLayout>
@@ -457,7 +457,7 @@
                     android:paddingBottom="8dp"
                     android:paddingLeft="8dp"
                     android:text="Online stock market simulation contest"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/white"
                     android:textStyle="bold" />
 
             </FrameLayout>
@@ -494,7 +494,7 @@
                     android:paddingBottom="8dp"
                     android:paddingLeft="8dp"
                     android:text="Online cryptic hunt"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/white"
                     android:textStyle="bold" />
 
             </FrameLayout>

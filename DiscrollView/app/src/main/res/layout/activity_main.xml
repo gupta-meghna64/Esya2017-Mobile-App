@@ -49,7 +49,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="250dp"
                         android:adjustViewBounds="true"
-                        android:background="#000000"
+                        android:background="@color/black"
                         android:scaleType="fitXY"
                         custom:auto_cycle="true" />
 
@@ -139,7 +139,7 @@
                     android:id="@+id/folding_cell"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    folding-cell:backSideColor="#FFFFFF">
+                    folding-cell:backSideColor="@color/foldingCellColor">
 
                     <FrameLayout
                         android:id="@+id/cell_content_view"
@@ -189,7 +189,7 @@
                     android:id="@+id/folding_cell2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    folding-cell:backSideColor="#FFFFFF">
+                    folding-cell:backSideColor="@color/foldingCellColor">
 
                     <FrameLayout
                         android:id="@+id/cell_content_view2"
@@ -238,7 +238,7 @@
                     android:id="@+id/folding_cell3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    folding-cell:backSideColor="#FFFFFF">
+                    folding-cell:backSideColor="@color/foldingCellColor">
 
                     <FrameLayout
                         android:id="@+id/cell_content_view3"
@@ -289,7 +289,7 @@
                     android:id="@+id/folding_cell4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    folding-cell:backSideColor="#FFFFFF">
+                    folding-cell:backSideColor="@color/foldingCellColor">
 
                     <FrameLayout
                         android:id="@+id/cell_content_view4"
@@ -339,7 +339,7 @@
                     android:id="@+id/folding_cell5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    folding-cell:backSideColor="#FFFFFF">
+                    folding-cell:backSideColor="@color/foldingCellColor">
 
                     <FrameLayout
                         android:id="@+id/cell_content_view5"
@@ -476,7 +476,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#ffffff"
+                android:background="@color/white"
                 android:orientation="vertical">
 
                 <LinearLayout

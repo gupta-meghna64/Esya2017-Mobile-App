@@ -47,7 +47,7 @@
                         android:paddingBottom="8dp"
                         android:textStyle="bold"
                         android:text="On-Campus programming event"
-                        android:textColor="#FFFFFF"/>
+                        android:textColor="@color/white"/>
 
                 </FrameLayout>
 
@@ -86,7 +86,7 @@
                         android:paddingBottom="8dp"
                         android:textStyle="bold"
                         android:text="Online programming contest"
-                        android:textColor="#FFFFFF"/>
+                        android:textColor="@color/white"/>
 
                 </FrameLayout>
 
@@ -123,7 +123,7 @@
                         android:paddingBottom="8dp"
                         android:textStyle="bold"
                         android:text="Programming competition for school students"
-                        android:textColor="#FFFFFF"/>
+                        android:textColor="@color/white"/>
 
                 </FrameLayout>
 
@@ -163,7 +163,7 @@
                         android:paddingRight="8dp"
                         android:textStyle="bold"
                         android:text="Concision in style, precision in thought, decision in life"
-                        android:textColor="#FFFFFF"/>
+                        android:textColor="@color/white"/>
 
                 </FrameLayout>
 
@@ -202,7 +202,7 @@
                         android:paddingRight="8dp"
                         android:textStyle="bold"
                         android:text="Challenge yourself to new environments"
-                        android:textColor="#FFFFFF"/>
+                        android:textColor="@color/white"/>
 
                 </FrameLayout>
 
@@ -242,7 +242,7 @@
                         android:paddingRight="8dp"
                         android:textStyle="bold"
                         android:text="Win or bugger Off"
-                        android:textColor="#FFFFFF"/>
+                        android:textColor="@color/white"/>
 
                 </FrameLayout>
 
@@ -282,7 +282,7 @@
                         android:paddingRight="8dp"
                         android:textStyle="bold"
                         android:text="Algorithm design challenge"
-                        android:textColor="#FFFFFF"/>
+                        android:textColor="@color/white"/>
 
                 </FrameLayout>
 
@@ -322,7 +322,7 @@
                         android:paddingRight="8dp"
                         android:textStyle="bold"
                         android:text="Techathlon finale"
-                        android:textColor="#FFFFFF"/>
+                        android:textColor="@color/white"/>
 
                 </FrameLayout>
 
@@ -363,7 +363,7 @@
                         android:paddingRight="8dp"
                         android:textStyle="bold"
                         android:text="Capture the flag"
-                        android:textColor="#FFFFFF"/>
+                        android:textColor="@color/white"/>
 
                 </FrameLayout>
 
@@ -403,7 +403,7 @@
                         android:paddingRight="8dp"
                         android:textStyle="bold"
                         android:text="Ultimate overnight hackathon"
-                        android:textColor="#FFFFFF"/>
+                        android:textColor="@color/white"/>
 
                 </FrameLayout>
 
@@ -443,7 +443,7 @@
                         android:paddingRight="8dp"
                         android:textStyle="bold"
                         android:text="Overnight design hackathon"
-                        android:textColor="#FFFFFF"/>
+                        android:textColor="@color/white"/>
 
                 </FrameLayout>
 
@@ -482,7 +482,7 @@
                         android:paddingRight="8dp"
                         android:textStyle="bold"
                         android:text="Six event technical extravaganza"
-                        android:textColor="#FFFFFF"/>
+                        android:textColor="@color/white"/>
 
                 </FrameLayout>
 

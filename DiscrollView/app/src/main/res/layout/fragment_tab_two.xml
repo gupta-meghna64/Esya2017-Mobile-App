@@ -44,7 +44,7 @@
                     android:paddingBottom="8dp"
                     android:paddingLeft="8dp"
                     android:text="Circuit designing competition for school students"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/white"
                     android:textStyle="bold" />
 
             </FrameLayout>
@@ -82,7 +82,7 @@
                     android:paddingBottom="8dp"
                     android:paddingLeft="8dp"
                     android:text="Design, stimulate and build"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/white"
                     android:textStyle="bold" />
             </FrameLayout>
 
@@ -119,7 +119,7 @@
                     android:paddingBottom="8dp"
                     android:paddingLeft="8dp"
                     android:text="A game of style, control, aggression and damage"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/white"
                     android:textStyle="bold" />
 
             </FrameLayout>
@@ -157,7 +157,7 @@
                     android:paddingBottom="8dp"
                     android:paddingLeft="8dp"
                     android:text="Be a good robot, follow the line"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/white"
                     android:textStyle="bold" />
 
             </FrameLayout>
@@ -194,7 +194,7 @@
                     android:paddingBottom="8dp"
                     android:paddingLeft="8dp"
                     android:text=""
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/white"
                     android:textStyle="bold" />
 
             </FrameLayout>
@@ -233,7 +233,7 @@
                     android:paddingBottom="8dp"
                     android:paddingLeft="8dp"
                     android:text="Find the champion soccer master in robots"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/white"
                     android:textStyle="bold" />
 
             </FrameLayout>
@@ -271,7 +271,7 @@
                     android:paddingBottom="8dp"
                     android:paddingLeft="8dp"
                     android:text="Nightlong hackathon for electronics freak"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/white"
                     android:textStyle="bold" />
 
             </FrameLayout>
