@@ -6,4 +6,5 @@
     <color name="foldingCellColor">#CCCCCC</color>
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
+    <color name="lightgrey">#DFE1E1</color>
 </resources>
