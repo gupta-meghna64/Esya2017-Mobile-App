@@ -17,7 +17,7 @@
             android:background="@color/white"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:paddingBottom="0dp"
+            android:paddingBottom="8dp"
             android:paddingTop="5dp"></LinearLayout>
 
     </HorizontalScrollView>
