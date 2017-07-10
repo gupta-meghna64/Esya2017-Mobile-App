@@ -105,7 +105,6 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
     private ImageView foldedWorkshops;
     private ImageView unfoldedInitiatives;
     private ImageView foldedInitiatives;
-    private TextView counterEndText;
     private RelativeLayout imageSlider;
     final int foldingCellArr[] = new int[5];
 
@@ -128,7 +127,6 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
     private Boolean isFaceDown = true;
     private String[] nameArray = {"AutoDesk", "RAJA Biscuits", "Bittoo Tikki Wala", "CodeChef", "Coding_Ninjas", "Engineers India LTD.", "GitLab", "Hacker Earth", "Happn", "Holiday IQ", "Luxor", "Qnswr", "Rau's IAS Study Circle", "Spykar", "UNIBIC"};
     private String[] imageNameArray = {"autode", "bisc", "btw", "codechef", "coding_ninjas", "eil", "gitlab", "hack", "happn", "holiq", "luxor", "qnswr", "rauias", "spykar", "unibic"};
-    private CountAnimationTextView prevEsyaCount;
 
 
     @Override
@@ -136,16 +134,12 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Typeface countertype = Typeface.createFromAsset(getAssets(), "fonts/Roboto-Light.ttf");
 
         imageSlider = (RelativeLayout) findViewById(R.id.slideFrame);
         imageSlider.getLayoutParams().width = Resources.getSystem().getDisplayMetrics().widthPixels;
         int height = (int) (Resources.getSystem().getDisplayMetrics().widthPixels * 1.5);
         imageSlider.getLayoutParams().height = height;
         imageSlider.requestLayout();
-//        prevEsyaCount = (CountAnimationTextView) findViewById(R.id.count_animation_textView);
-//        prevEsyaCount.setTypeface(countertype);
-//        counterEndText = (TextView) findViewById(R.id.counterEndText);
 
         horizontalScrollview = (HorizontalScrollView) findViewById(R.id.horiztonal_scrollview_id);
         horizontalOuterLayout = (LinearLayout) findViewById(R.id.horiztonal_outer_layout_id);
@@ -373,18 +367,18 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
 
         sliderLayout = (SliderLayout) findViewById(R.id.slider);
         HashMap<String, Integer> file_maps = new HashMap<String, Integer>();
-        file_maps.put("Image 1", R.drawable.esya011);
-        file_maps.put("Image 2", R.drawable.esya022);
-        file_maps.put("Image 3", R.drawable.esya033);
-//        file_maps.put("Image 4", R.drawable.esya04);
-//        file_maps.put("Image 5", R.drawable.esya05);
+        file_maps.put("Image 1", R.drawable.esya01);
+        file_maps.put("Image 2", R.drawable.esya02);
+        file_maps.put("Image 3", R.drawable.esya03);
+        file_maps.put("Image 4", R.drawable.esya04);
+        file_maps.put("Image 5", R.drawable.esya05);
 
         for (String name : file_maps.keySet()) {
             TextSliderView textSliderView = new TextSliderView(MainActivity.this);
             textSliderView
 
                     .image(file_maps.get(name))
-                    .setScaleType(BaseSliderView.ScaleType.Fit).description(name);
+                    .setScaleType(BaseSliderView.ScaleType.Fit);
 
             sliderLayout.addSlider(textSliderView);
 
@@ -397,38 +391,6 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         sliderLayout.setDuration(3750);
         sliderLayout.addOnPageChangeListener(this);
 
-//        sliderLayout.addOnPageChangeListener(new ViewPagerEx.OnPageChangeListener() {
-//            @Override
-//            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-//
-//            }
-//
-//            @Override
-//            public void onPageSelected(int position) {
-//
-//            }
-//
-//            @Override
-//            public void onPageScrollStateChanged(int state) {
-//                String s=sliderLayout.getCurrentSlider().getDescription();
-//                if(s.contains("2"))
-//                {
-//                    prevEsyaCount.setAnimationDuration(1500).countAnimation(0,8000);
-//                    counterEndText.setText(" footfall");
-//                }
-//                else if(s.contains("1"))
-//                {
-//                    prevEsyaCount.setAnimationDuration(1500).countAnimation(0,800);
-//                    counterEndText.setText(" schools and colleges");
-//                }
-//
-//                else if(s.contains("3"))
-//                {
-//                    prevEsyaCount.setAnimationDuration(1500).countAnimation(0,30);
-//                    counterEndText.setText(" events");
-//                }
-//            }
-//        });
 
 
         events = (Button) findViewById(R.id.events);
