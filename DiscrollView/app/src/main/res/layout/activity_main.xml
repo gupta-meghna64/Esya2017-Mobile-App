@@ -253,7 +253,7 @@
                             android:id="@+id/unfoldedComedy"
                             android:layout_width="wrap_content"
                             android:layout_height="800px"
-                            android:src="@drawable/maindj" />
+                            android:src="@drawable/maincomedy" />
 
                         <Button
                             android:id="@+id/comedyNight"
@@ -304,7 +304,7 @@
                             android:id="@+id/unfoldedInitiatives"
                             android:layout_width="wrap_content"
                             android:layout_height="800px"
-                            android:src="@drawable/maindj" />
+                            android:src="@drawable/mainsocialcall" />
 
                         <Button
                             android:id="@+id/initiatives"
@@ -354,7 +354,7 @@
                             android:id="@+id/unfoldedWorkshops"
                             android:layout_width="wrap_content"
                             android:layout_height="800px"
-                            android:src="@drawable/maindj" />
+                            android:src="@drawable/mainworkshops" />
 
                         <Button
                             android:id="@+id/workshops"
