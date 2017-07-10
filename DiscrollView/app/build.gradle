@@ -14,6 +14,7 @@ android {
     buildTypes {
         release {
             minifyEnabled false
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -35,6 +36,7 @@ dependencies {
     compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
     compile 'com.nineoldandroids:library:2.4.0'
     compile 'com.daimajia.slider:library:1.1.5@aar'
+    compile 'com.squareup.picasso:picasso:2.3.2'
     compile 'com.android.support:design:25.3.1'
     compile 'com.ramotion.foldingcell:folding-cell:1.2.1'
     compile 'com.android.support:support-v4:25.3.1'
