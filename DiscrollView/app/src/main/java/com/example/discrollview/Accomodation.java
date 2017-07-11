@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.Target;
@@ -23,14 +24,14 @@ import com.squareup.picasso.Target;
 
 public class Accomodation extends AppCompatActivity {
 
-    private FrameLayout mainLayout;
+    private LinearLayout mainLayout;
     private Button back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.accomodation_main);
-        mainLayout=(FrameLayout) findViewById(R.id.accomodationFrame);
+        mainLayout=(LinearLayout) findViewById(R.id.accomodationFrame);
         back = (Button) findViewById(R.id.backButtonAccomodation);
         back.setOnClickListener(new View.OnClickListener() {
             @Override

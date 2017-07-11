@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.Target;
@@ -23,13 +24,13 @@ import com.squareup.picasso.Target;
 public class DjNight extends AppCompatActivity {
 
     private Button back;
-    private FrameLayout mainLayout;
+    private LinearLayout mainLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.djnight_main);
-        mainLayout = (FrameLayout) findViewById(R.id.starnightframe);
+        mainLayout = (LinearLayout) findViewById(R.id.starnightframe);
         back = (Button) findViewById(R.id.backButtonDJ);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
