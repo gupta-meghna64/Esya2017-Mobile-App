@@ -56,7 +56,7 @@
                     android:layout_gravity="center_horizontal"
                     android:text="COMING SOON"
                     android:textColor="@color/white"
-                    android:textSize="30sp" />
+                    android:textSize="25sp" />
 
                 <Button
                     android:id="@+id/backButtonComedy"
