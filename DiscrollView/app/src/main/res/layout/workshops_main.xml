@@ -7,47 +7,47 @@
 
 
     <LinearLayout
+        android:id="@+id/mainFrameWorkshops"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:weightSum="10"
-        android:id="@+id/mainFrameWorkshops">
+        android:weightSum="10">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_weight="4">
+            android:layout_weight="4"
+            android:orientation="vertical">
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
+            android:layout_weight="6"
             android:background="#99000000"
-            android:weightSum="10"
-            android:layout_weight="6">
+            android:orientation="vertical"
+            android:weightSum="10">
 
 
             <com.example.discrollview.MyTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
-                android:textColor="@color/white"
-                android:textSize="16sp"
                 android:layout_weight="3"
                 android:padding="8dp"
-                android:text="Esya'17 will leave no stone unturned to spread awareness about its theme 'Digital India' and to help transform India into a digitally empowered society.
-Accordingly, we will conduct workshops where students will be taught the basics of programming and circuit design. We will be conducting two tech events mainly for the school children, namely procon junior and circuitrix junior, to encourage young talent." />
+                android:text="Esya'17 will leave no stone unturned to spread awareness about its theme 'Digital India'. Accordingly, we will conduct workshops where students will be taught the basics of programming and circuit design. Two events are hosted specially for school students for the same and
+bonus marks are given to winners for admission in IIIT."
+                android:textColor="@color/white"
+                android:textSize="16sp" />
 
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|center"
-                android:orientation="vertical"
                 android:layout_weight="2"
+                android:orientation="vertical"
                 android:paddingBottom="30dp">
 
 

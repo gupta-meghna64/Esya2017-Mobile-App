@@ -7,46 +7,46 @@
 
 
     <LinearLayout
+        android:id="@+id/mainFrameInitiatives"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:weightSum="10"
-        android:id="@+id/mainFrameInitiatives">
+        android:weightSum="10">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_weight="4">
+            android:layout_weight="4"
+            android:orientation="vertical">
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
+            android:layout_weight="6"
             android:background="#99000000"
-            android:weightSum="10"
-            android:layout_weight="6">
+            android:orientation="vertical"
+            android:weightSum="10">
 
 
             <com.example.discrollview.MyTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
-                android:textColor="@color/white"
-                android:textSize="16sp"
                 android:layout_weight="3"
                 android:padding="8dp"
-                android:text="As part of social initiatives, Esya'17 will be an active promoter of Himmat App which was launched by the Home Minister on 1st January 2015. As a part of social initiatives, the collaboration between Esya'17 and the Delhi Police is intended to raise awareness about women safety. This app is a woman safety mobile application of Delhi Police." />
+                android:text="As part of social initiatives, Esya'17 will be an active promoter of Himmat App which was launched by the Home Minister on 1st January 2015. This collaboration between Esya'17 and the Delhi Police is intended to raise awareness about women safety. A blood donation camp will be held on both days of the fest."
+                android:textColor="@color/white"
+                android:textSize="16sp" />
 
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|center"
-                android:orientation="vertical"
                 android:layout_weight="2"
+                android:orientation="vertical"
                 android:paddingBottom="30dp">
 
 
