@@ -2,6 +2,7 @@ package com.example.discrollview;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -39,22 +40,10 @@ public class ComedyNight extends AppCompatActivity {
             }
         });
 
-        Picasso.with(this).load(R.drawable.maincomedy).resize(750,1334).centerCrop().into(new Target() {
-            @Override
-            public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
-                mainLayout.setBackground(new BitmapDrawable(bitmap));
-            }
-
-            @Override
-            public void onBitmapFailed(Drawable errorDrawable) {
-
-            }
-
-            @Override
-            public void onPrepareLoad(Drawable placeHolderDrawable) {
-
-            }
-        });
+        Bitmap comedyBitmap= BitmapFactory.decodeResource(getResources(),R.drawable.maincomedy);
+        Bitmap newResizedBMP= Bitmap.createScaledBitmap(comedyBitmap,1280,1280,true);
+        Bitmap finalBMP= Bitmap.createBitmap(newResizedBMP,250,0,768,1280);
+        mainLayout.setBackground(new BitmapDrawable(finalBMP));
     }
 
     @Override
