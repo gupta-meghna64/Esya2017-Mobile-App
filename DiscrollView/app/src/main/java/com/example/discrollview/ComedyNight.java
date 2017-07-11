@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.Target;
@@ -23,14 +24,14 @@ import com.squareup.picasso.Target;
 
 public class ComedyNight extends AppCompatActivity {
 
-    private FrameLayout mainLayout;
+    private LinearLayout mainLayout;
     private Button back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.comedynight_main);
-        mainLayout=(FrameLayout) findViewById(R.id.mainFrameComedy);
+        mainLayout=(LinearLayout) findViewById(R.id.mainFrameComedy);
         back = (Button) findViewById(R.id.backButtonComedy);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
