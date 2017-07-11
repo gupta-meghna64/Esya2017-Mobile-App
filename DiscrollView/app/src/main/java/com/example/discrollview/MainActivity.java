@@ -4,6 +4,7 @@ import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
+import android.media.Image;
 import android.net.Uri;
 import android.os.Handler;
 import android.os.Message;
@@ -58,6 +59,7 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
     private Button comedyNight;
     private Button workshops;
     private Button initiatives;
+    private Button accomodation;
     private ImageView unfoldedDJ;
     private ImageView foldedDJ;
     private ImageView unfoldedEvents;
@@ -68,8 +70,10 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
     private ImageView foldedWorkshops;
     private ImageView unfoldedInitiatives;
     private ImageView foldedInitiatives;
+    private ImageView unfoldedAccomodation;
+    private ImageView foldedAccomodation;
     private RelativeLayout imageSlider;
-    final int foldingCellArr[] = new int[5];
+    final int foldingCellArr[] = new int[6];
 
     private final LatLng LOCATION_IIITD = new LatLng(28.5459495, 77.2688703);
     private GoogleMap map;
@@ -197,11 +201,22 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         foldedComedy.getLayoutParams().height = (int) Resources.getSystem().getDisplayMetrics().widthPixels / 3;
         foldedComedy.requestLayout();
 
+        unfoldedAccomodation = (ImageView) findViewById(R.id.unfoldedAccomodation);
+        foldedAccomodation = (ImageView) findViewById(R.id.iconAccomodation);
+        unfoldedAccomodation.getLayoutParams().height = Resources.getSystem().getDisplayMetrics().widthPixels;
+        unfoldedAccomodation.getLayoutParams().width = Resources.getSystem().getDisplayMetrics().widthPixels;
+        unfoldedAccomodation.requestLayout();
+
+        foldedAccomodation.getLayoutParams().width = Resources.getSystem().getDisplayMetrics().widthPixels;
+        foldedAccomodation.getLayoutParams().height = (int) Resources.getSystem().getDisplayMetrics().widthPixels / 3;
+        foldedAccomodation.requestLayout();
+
         foldingCellArr[0] = R.id.folding_cell;
         foldingCellArr[1] = R.id.folding_cell2;
         foldingCellArr[2] = R.id.folding_cell3;
         foldingCellArr[3] = R.id.folding_cell4;
         foldingCellArr[4] = R.id.folding_cell5;
+        foldingCellArr[5] = R.id.folding_cell6;
 
         ImageButton facebook = (ImageButton) findViewById(R.id.facebookEsya);
         ImageButton instagram = (ImageButton) findViewById(R.id.instagramEsya);
@@ -326,6 +341,14 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
             }
         });
 
+        final FoldingCell fc6 = (FoldingCell) findViewById(R.id.folding_cell6);
+        fc6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                checkUnfolder(R.id.folding_cell6);
+                fc6.toggle(false);
+            }
+        });
 
         sliderLayout = (SliderLayout) findViewById(R.id.slider);
         HashMap<String, Integer> file_maps = new HashMap<String, Integer>();
@@ -401,10 +424,18 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
             }
         });
 
+        accomodation = (Button) findViewById(R.id.accomodation);
+        accomodation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent initiativeIntent = new Intent(MainActivity.this, Accomodation.class);
+                startActivity(initiativeIntent);
+            }
+        });
     }
 
     public void checkUnfolder(int unfolderID) {
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 6; i++) {
             FoldingCell fc = (FoldingCell) findViewById(foldingCellArr[i]);
             if (fc.isUnfolded()) {
                 fc.toggle(false);
