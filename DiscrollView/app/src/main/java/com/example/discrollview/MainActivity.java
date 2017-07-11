@@ -46,6 +46,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.squareup.picasso.Picasso;
 
 
 public class MainActivity extends AppCompatActivity implements BaseSliderView.OnSliderClickListener, ViewPagerEx.OnPageChangeListener {
@@ -145,7 +146,6 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
             }
 
         });
-
 
         unfoldedDJ = (ImageView) findViewById(R.id.unfoldedDJ);
         foldedDJ = (ImageView) findViewById(R.id.iconDJ);
