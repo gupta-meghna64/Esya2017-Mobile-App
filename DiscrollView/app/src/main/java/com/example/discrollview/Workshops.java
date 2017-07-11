@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.Target;
@@ -21,13 +22,13 @@ import com.squareup.picasso.Target;
 public class Workshops extends AppCompatActivity {
 
     private Button back;
-    private FrameLayout mainLayout;
+    private LinearLayout mainLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.workshops_main);
-        mainLayout= (FrameLayout) findViewById(R.id.mainFrameWorkshops);
+        mainLayout= (LinearLayout) findViewById(R.id.mainFrameWorkshops);
         back = (Button) findViewById(R.id.backButtonWorkshops);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
