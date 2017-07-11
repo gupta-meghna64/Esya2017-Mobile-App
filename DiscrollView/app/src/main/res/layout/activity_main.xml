@@ -21,8 +21,8 @@
             android:layout_gravity="center"
             android:layout_marginBottom="-8dp"
             android:layout_marginLeft="-4dp"
-            android:layout_marginRight="-4dp"
-            android:layout_marginTop="-3dp"
+            android:layout_marginRight="-6dp"
+            android:layout_marginTop="-4dp"
             android:clickable="true"
             android:foreground="?android:attr/selectableItemBackground"
             card_view:cardBackgroundColor="@android:color/background_light"
@@ -95,6 +95,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:textColor="#333333"
                     android:layout_weight="2"
                     android:text="Exploring Infinity and Beyond"
                     android:textAlignment="center"
@@ -420,6 +421,7 @@
                         android:layout_height="wrap_content"
                         android:paddingLeft="8dp"
                         android:paddingRight="8dp"
+                        android:paddingBottom="4dp"
                         android:paddingTop="8dp">>
 
                         <ImageView
@@ -536,6 +538,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:paddingTop="8dp"
                         android:text="PAST SPONSORS"
                         android:textSize="20dp" />
 
@@ -608,7 +611,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingBottom="20dp"
-                    android:paddingTop="20dp"
+                    android:paddingTop="8dp"
                     android:text="CONTACT"
                     android:textAlignment="center"
                     android:textSize="20dp" />
