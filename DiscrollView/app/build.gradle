@@ -41,5 +41,6 @@ dependencies {
     compile 'com.ramotion.foldingcell:folding-cell:1.2.1'
     compile 'com.android.support:support-v4:25.3.1'
     compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.github.ViksaaSkool:AwesomeSplash:v1.0.0'
     testCompile 'junit:junit:4.12'
 }
