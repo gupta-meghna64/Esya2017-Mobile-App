@@ -21,8 +21,14 @@
         <item>M 135.44554,259.48515 191.52475,259.9604 274.21782,344.07921 131.64356,344.55446 45.623762,257.58416 V 129.26733 L 132.11881,42.772277 257.58416,42.29703 342.65347,129.74257 342.17822,194.85149 264.71287,271.36634 187.24752,192.9505 253.78218,193.90099 254.25743,127.36634 135.44554,128.31683 Z</item>
     </string-array>
 
+    <string-array name="splashScreenText">
+        <item>Esya\'17</item>
+        <item>Exploring Infinity and Beyond</item>
+    </string-array>
+
     <integer-array name="google_glyph_colors">
         <item>@color/esyaLogoColor</item>
     </integer-array>
+
 
 </resources>
