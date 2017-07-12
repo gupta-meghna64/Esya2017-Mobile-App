@@ -94,6 +94,10 @@
 
         </activity>
 
+        <activity android:name=".Osmpopup">
+
+        </activity>
+
         <activity
             android:name=".Accomodation"
             android:theme="@style/Theme.AppCompat.NoActionBar">

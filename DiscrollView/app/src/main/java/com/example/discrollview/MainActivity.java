@@ -82,6 +82,9 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
     private LinearLayout horizontalOuterLayout;
     private HorizontalScrollView horizontalScrollview;
     private TextView horizontalTextView;
+    private LinearLayout horizontalOuterLayout1;
+    private HorizontalScrollView horizontalScrollview1;
+    private TextView horizontalTextView1;
     private int scrollMax;
     private int scrollPos = 0;
     private TimerTask clickSchedule;
@@ -94,7 +97,9 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
     private Boolean isFaceDown = true;
     private String[] nameArray = {"AutoDesk", "RAJA Biscuits", "Bittoo Tikki Wala", "CodeChef", "Coding_Ninjas", "Engineers India LTD.", "GitLab", "Hacker Earth", "Happn", "Holiday IQ", "Luxor", "Qnswr", "Rau's IAS Study Circle", "Spykar", "UNIBIC"};
     private String[] imageNameArray = {"autode", "bisc", "btw", "codechef", "coding_ninjas", "eil", "gitlab", "hack", "happn", "holiq", "luxor", "qnswr", "rauias", "spykar", "unibic"};
-
+    private String[] nameArray1 = {"EFY Group", "Campus Drift", "thecollegefever.com", "BuddyBits", "allevents.in", "iYouthMag", "DU beat", "Test Funda", "Brain Buxa", "Oh Campus", "festPav.com"};
+    private String[] imageNameArray1 = {"efy", "campus", "college", "buddy", "allevents", "youth", "du", "test", "brain", "oh", "fp"};
+    private String[] linkArray1 = {"http://electronicsforu.com", "http://campusdrift.com/", "http://thecollegefever.com/", "https://buddybits.com/amp/", "https://allevents.in/", "http://beingstudent.com/", "http://dubeat.com/", "http://testfunda.com", "https://www.brainbuxa.com", "www.ohcampus.com", "http://festpav.com"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -111,6 +116,24 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         horizontalScrollview = (HorizontalScrollView) findViewById(R.id.horiztonal_scrollview_id);
         horizontalOuterLayout = (LinearLayout) findViewById(R.id.horiztonal_outer_layout_id);
         horizontalTextView = (TextView) findViewById(R.id.horizontal_textview_id);
+
+        horizontalScrollview1 = (HorizontalScrollView) findViewById(R.id.horiztonal_scrollview_id1);
+        horizontalOuterLayout1 = (LinearLayout) findViewById(R.id.horiztonal_outer_layout_id1);
+        horizontalTextView1 = (TextView) findViewById(R.id.horizontal_textview_id1);
+
+        horizontalScrollview1.setHorizontalScrollBarEnabled(false);
+        addImagesToView1();
+
+        ViewTreeObserver vto1 = horizontalOuterLayout1.getViewTreeObserver();
+        vto1.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            @Override
+            public void onGlobalLayout() {
+                horizontalOuterLayout1.getViewTreeObserver().removeGlobalOnLayoutListener(this);
+                getScrollMaxAmount1();
+                startAutoScrolling1();
+            }
+        });
+
 
         horizontalScrollview.setHorizontalScrollBarEnabled(false);
         addImagesToView();
@@ -283,6 +306,20 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
                 builder.setView(inflater.inflate(R.layout.activity_sponspopup, null));
                 AlertDialog ad = builder.create();
                 ad.setTitle("All Past Sponsors");
+                ad.show();
+            }
+        });
+
+        Button viewallosmspons = (Button) findViewById(R.id.viewallOSM);
+        viewallosmspons.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                View view = LayoutInflater.from(MainActivity.this).inflate(R.layout.activity_osmpopup, null);
+                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                LayoutInflater inflater = getLayoutInflater();
+                builder.setView(inflater.inflate(R.layout.activity_osmpopup, null));
+                AlertDialog ad = builder.create();
+                ad.setTitle("Online Social Media Partners");
                 ad.show();
             }
         });
@@ -476,12 +513,41 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         scrollMax = actualWidth;
     }
 
+    public void getScrollMaxAmount1() {
+        int actualWidth = (horizontalOuterLayout1.getMeasuredWidth() - getWindowManager().getDefaultDisplay().getWidth());
+
+        scrollMax = actualWidth;
+    }
     public void startAutoScrolling() {
         if (scrollTimer == null) {
             scrollTimer = new Timer();
             final Runnable Timer_Tick = new Runnable() {
                 public void run() {
                     moveScrollView();
+                }
+            };
+
+            if (scrollerSchedule != null) {
+                scrollerSchedule.cancel();
+                scrollerSchedule = null;
+            }
+            scrollerSchedule = new TimerTask() {
+                @Override
+                public void run() {
+                    runOnUiThread(Timer_Tick);
+                }
+            };
+
+            scrollTimer.schedule(scrollerSchedule, 30, 30);
+        }
+    }
+
+    public void startAutoScrolling1() {
+        if (scrollTimer == null) {
+            scrollTimer = new Timer();
+            final Runnable Timer_Tick = new Runnable() {
+                public void run() {
+                    moveScrollView1();
                 }
             };
 
@@ -509,6 +575,17 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
             getScrollMaxAmount();
         }
         horizontalScrollview.scrollTo(scrollPos, 0);
+    }
+
+    public void moveScrollView1() {
+        scrollPos = (int) (horizontalScrollview1.getScrollX() + 4.0);
+
+        if (scrollPos >= scrollMax) {
+            Log.v("childCount", "" + scrollMax);
+            addImagesToView1();
+            getScrollMaxAmount1();
+        }
+        horizontalScrollview1.scrollTo(scrollPos, 0);
     }
 
     /**
@@ -574,6 +651,66 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         }
     }
 
+    public void addImagesToView1() {
+        for (int i = 0; i < imageNameArray1.length; i++) {
+            final Button imageButton = new Button(this);
+            int imageResourceId = getResources().getIdentifier(imageNameArray1[i], "drawable", getPackageName());
+            Drawable image = this.getResources().getDrawable(imageResourceId);
+            imageButton.setBackgroundDrawable(image);
+            float scale = getResources().getDisplayMetrics().density;
+            int dpAsPixels = (int) (10 * scale + 0.5f);
+            imageButton.setPadding(dpAsPixels, 0, dpAsPixels, 0);
+            imageButton.setTag(i);
+
+            imageButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View arg0) {
+                    if (isFaceDown) {
+                        if (clickTimer != null) {
+                            clickTimer.cancel();
+                            clickTimer = null;
+                        }
+                        clickedButton = (Button) arg0;
+                        stopAutoScrolling();
+                        clickedButton.startAnimation(scaleFaceUpAnimation1());
+                        clickedButton.setSelected(true);
+                        clickTimer = new Timer();
+
+                        if (clickSchedule != null) {
+                            clickSchedule.cancel();
+                            clickSchedule = null;
+                        }
+
+                        clickSchedule = new TimerTask() {
+                            public void run() {
+                                startAutoScrolling1();
+                            }
+                        };
+
+                        clickTimer.schedule(clickSchedule, 1500);
+                    }
+                }
+            });
+            int h = image.getIntrinsicHeight();
+            int w = image.getIntrinsicWidth();
+            int r = h / w;
+            if (r == 0) {
+                r = w / h;
+                r = 256 * r;
+            } else {
+                r = 256 / r;
+            }
+            if (r > 400)
+                r = 400;
+            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(r, 256);
+            params.setMargins(0, dpAsPixels, 0, dpAsPixels);
+            params.leftMargin = 10;
+            params.rightMargin = 10;
+            imageButton.setLayoutParams(params);
+            horizontalOuterLayout1.addView(imageButton);
+        }
+    }
+
     public Animation scaleFaceUpAnimation() {
         Animation scaleFace = new ScaleAnimation(1.0f, 1.2f, 1.0f, 1.2f, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
         scaleFace.setDuration(500);
@@ -616,11 +753,62 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         return scaleFace;
     }
 
+    public Animation scaleFaceUpAnimation1() {
+        Animation scaleFace = new ScaleAnimation(1.0f, 1.2f, 1.0f, 1.2f, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
+        scaleFace.setDuration(500);
+        scaleFace.setFillAfter(true);
+        scaleFace.setInterpolator(new AccelerateInterpolator());
+        Animation.AnimationListener scaleFaceAnimationListener = new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation arg0) {
+                horizontalTextView1.setText(nameArray1[(Integer) clickedButton.getTag()]);
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(linkArray1[(Integer) clickedButton.getTag()])));
+                isFaceDown = false;
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation arg0) {
+            }
+
+            @Override
+            public void onAnimationEnd(Animation arg0) {
+                if (faceTimer != null) {
+                    faceTimer.cancel();
+                    faceTimer = null;
+                }
+
+                faceTimer = new Timer();
+                if (faceAnimationSchedule != null) {
+                    faceAnimationSchedule.cancel();
+                    faceAnimationSchedule = null;
+                }
+                faceAnimationSchedule = new TimerTask() {
+                    @Override
+                    public void run() {
+                        faceScaleHandler1.sendEmptyMessage(0);
+                    }
+                };
+
+                faceTimer.schedule(faceAnimationSchedule, 750);
+            }
+        };
+        scaleFace.setAnimationListener(scaleFaceAnimationListener);
+        return scaleFace;
+    }
+
     private Handler faceScaleHandler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
             if (clickedButton.isSelected() == true)
                 clickedButton.startAnimation(scaleFaceDownAnimation(500));
+        }
+    };
+
+    private Handler faceScaleHandler1 = new Handler() {
+        @Override
+        public void handleMessage(Message msg) {
+            if (clickedButton.isSelected() == true)
+                clickedButton.startAnimation(scaleFaceDownAnimation1(500));
         }
     };
 
@@ -647,6 +835,31 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         scaleFace.setAnimationListener(scaleFaceAnimationListener);
         return scaleFace;
     }
+
+    public Animation scaleFaceDownAnimation1(int duration) {
+        Animation scaleFace = new ScaleAnimation(1.2f, 1.0f, 1.2f, 1.0f, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
+        scaleFace.setDuration(duration);
+        scaleFace.setFillAfter(true);
+        scaleFace.setInterpolator(new AccelerateInterpolator());
+        Animation.AnimationListener scaleFaceAnimationListener = new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation arg0) {
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation arg0) {
+            }
+
+            @Override
+            public void onAnimationEnd(Animation arg0) {
+                horizontalTextView1.setText("");
+                isFaceDown = true;
+            }
+        };
+        scaleFace.setAnimationListener(scaleFaceAnimationListener);
+        return scaleFace;
+    }
+
 
     public void stopAutoScrolling() {
         if (scrollTimer != null) {
