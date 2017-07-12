@@ -21,7 +21,7 @@
         app:animatedSvgImageSizeX="400"
         app:animatedSvgImageSizeY="400"
         app:animatedSvgTraceTime="2500"
-        app:animatedSvgTraceTimePerGlyph="1000"/>
+        app:animatedSvgTraceTimePerGlyph="1000" />
 
     <com.tomer.fadingtextview.FadingTextView
         android:id="@+id/fadingTextView"
@@ -30,9 +30,7 @@
         android:layout_gravity="bottom"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="32sp"
+        android:textSize="28sp"
         app:texts="@array/splashScreenText"
-        app:timeout="2500"
-        android:layout_marginTop="30dp"/>
-
+        app:timeout="2500"/>
 </LinearLayout>
