@@ -35,20 +35,6 @@ public class SplashScreen extends AppCompatActivity {
         FadingTextView changingText=(FadingTextView) findViewById(R.id.fadingTextView);
         Typeface tf = Typeface.createFromAsset(getAssets(),"Roboto-Light.ttf");
         changingText.setTypeface(tf);
-//        Timer timer = new Timer();
-//        timer.schedule(new TimerTask() {
-//
-//            public void run() {
-//
-//                //here you can start your Activity B.
-//                Intent i = new Intent(SplashScreen.this, MainActivity.class);
-//                i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//                i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-//                startActivity(i);
-//
-//            }
-//
-//        }, 5000);
 
     }
 
@@ -74,8 +60,6 @@ public class SplashScreen extends AppCompatActivity {
         @Override
         protected void onPostExecute(String result) {
             Intent i = new Intent(SplashScreen.this, MainActivity.class);
-            i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-            i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             i.putExtra("data", result);
             startActivity(i);
             finish();

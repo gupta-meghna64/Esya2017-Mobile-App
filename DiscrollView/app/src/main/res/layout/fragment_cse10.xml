@@ -220,34 +220,6 @@ Shoutout to all computer nerds and gizmo geeks. For our 6th Edition of TechFest 
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Viresh Gupta" />
-
-                    <com.example.discrollview.MyTextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="9811106704" />
-
-                    <com.example.discrollview.MyTextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="viresh16118@iiitd.ac.in" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="3"
-                    android:orientation="vertical"
-                    android:padding="8dp"
-                    android:weightSum="3">
-
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:text="Shubhang Sati" />
 
                     <com.example.discrollview.MyTextView

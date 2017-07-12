@@ -16,7 +16,7 @@
         android:layout_marginBottom="25dp"
         app:animatedSvgFillColors="@array/google_glyph_colors"
         app:animatedSvgGlyphStrings="@array/google_glyph_strings"
-        app:animatedSvgFillStart="2500"
+        app:animatedSvgFillStart="1500"
         app:animatedSvgFillTime="2500"
         app:animatedSvgImageSizeX="400"
         app:animatedSvgImageSizeY="400"
@@ -32,6 +32,7 @@
         android:textColor="@color/black"
         android:textSize="32sp"
         app:texts="@array/splashScreenText"
-        app:timeout="2500" />
+        app:timeout="2500"
+        android:layout_marginTop="30dp"/>
 
 </LinearLayout>
