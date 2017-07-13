@@ -552,33 +552,6 @@
 
                     <include layout="@layout/horizontal_layout" />
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom|right"
-                        android:orientation="vertical">
-
-                        <Button
-                            android:id="@+id/viewallspons"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="right"
-                            android:layout_marginRight="8dp"
-                            android:background="#E9EAEA"
-                            android:includeFontPadding="false"
-                            android:minHeight="0dp"
-                            android:minWidth="0dp"
-                            android:paddingBottom="8dp"
-                            android:paddingLeft="8dp"
-                            android:paddingRight="8dp"
-                            android:paddingTop="8dp"
-                            android:layout_marginTop="4dp"
-                            android:layout_marginBottom="4dp"
-                            android:text="View All"
-                            android:textSize="12dp" />
-
-                    </LinearLayout>
-
                 </FrameLayout>
 
             </LinearLayout>
@@ -629,33 +602,6 @@
                     >
 
                     <include layout="@layout/horizontal_layout1" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom|right"
-                        android:orientation="vertical">
-
-                        <Button
-                            android:id="@+id/viewallOSM"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="right"
-                            android:layout_marginRight="8dp"
-                            android:background="#E9EAEA"
-                            android:includeFontPadding="false"
-                            android:minHeight="0dp"
-                            android:minWidth="0dp"
-                            android:paddingBottom="8dp"
-                            android:paddingLeft="8dp"
-                            android:paddingRight="8dp"
-                            android:paddingTop="8dp"
-                            android:text="View All"
-                            android:layout_marginTop="4dp"
-                            android:layout_marginBottom="4dp"
-                            android:textSize="12dp" />
-
-                    </LinearLayout>
 
                 </FrameLayout>
 

@@ -306,34 +306,6 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
             }
         });
 
-        Button viewallspons = (Button) findViewById(R.id.viewallspons);
-        viewallspons.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                View view = LayoutInflater.from(MainActivity.this).inflate(R.layout.activity_sponspopup, null);
-                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-                LayoutInflater inflater = getLayoutInflater();
-                builder.setView(inflater.inflate(R.layout.activity_sponspopup, null));
-                AlertDialog ad = builder.create();
-                ad.setTitle("All Past Sponsors");
-                ad.show();
-            }
-        });
-
-        Button viewallosmspons = (Button) findViewById(R.id.viewallOSM);
-        viewallosmspons.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                View view = LayoutInflater.from(MainActivity.this).inflate(R.layout.activity_osmpopup, null);
-                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-                LayoutInflater inflater = getLayoutInflater();
-                builder.setView(inflater.inflate(R.layout.activity_osmpopup, null));
-                AlertDialog ad = builder.create();
-                ad.setTitle("Online Social Media Partners");
-                ad.show();
-            }
-        });
-
 
         TextView web = (TextView) findViewById(R.id.websiteEsya);
         web.setOnClickListener(new View.OnClickListener() {
