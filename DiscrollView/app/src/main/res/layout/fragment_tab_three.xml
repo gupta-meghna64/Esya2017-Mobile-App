@@ -305,7 +305,7 @@
                     android:layout_gravity="bottom"
                     android:paddingBottom="8dp"
                     android:paddingLeft="8dp"
-                    android:text="16 words to go"
+                    android:text="Test your creative writing skills and brevity"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
 
