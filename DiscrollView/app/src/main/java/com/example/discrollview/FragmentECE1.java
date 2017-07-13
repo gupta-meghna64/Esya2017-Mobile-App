@@ -28,7 +28,7 @@ public class FragmentECE1 extends Fragment {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://goo.gl/forms/Bb8sT4ixp6liz7Aq1")));
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://docs.google.com/a/iiitd.ac.in/forms/d/e/1FAIpQLSdUa95yH6PE3KtQVENWsXZrpR0KsAyWmB4NkjI1RZMQhR81_w/viewform")));
             }
         });
 
