@@ -305,7 +305,7 @@
                     android:layout_gravity="bottom"
                     android:paddingBottom="8dp"
                     android:paddingLeft="8dp"
-                    android:text="Test your creative writing skills and brevity"
+                    android:text="Online literary event: testing creativity and brevity"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
 
