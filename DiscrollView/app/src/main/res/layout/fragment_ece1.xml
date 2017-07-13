@@ -242,6 +242,13 @@ as a platform to showcase our Institute’s progress in the field of Electronics
 
                 </LinearLayout>
 
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="REGISTER"
+                    android:id="@+id/buttonRegisterCJ"/>
+
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
