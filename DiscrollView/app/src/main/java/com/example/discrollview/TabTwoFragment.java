@@ -74,7 +74,7 @@ public class TabTwoFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getActivity(), ECEMainActivity.class);
-                i.putExtra("viewpager_position", 5);
+                i.putExtra("viewpager_position", 4);
                 startActivity(i);
             }
         });
@@ -83,7 +83,7 @@ public class TabTwoFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getActivity(), ECEMainActivity.class);
-                i.putExtra("viewpager_position", 6);
+                i.putExtra("viewpager_position", 5);
                 startActivity(i);
             }
         });

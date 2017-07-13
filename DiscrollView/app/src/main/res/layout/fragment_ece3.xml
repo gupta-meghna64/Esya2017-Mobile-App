@@ -113,7 +113,17 @@ And this time we have a surprise* for all the participants, which would take thi
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
-                    android:text="1) We strongly discourage the use of any robot kits in the Tournament and the fest would not be responsible for any kind of damage to your Robot and no money would be given to repair it. \n \n2) Decision of organizers is final and binding." />
+                    android:text="1) We strongly discourage the use of any robot kits in the Tournament and the fest would not be responsible for any kind of damage to your Robot and no money would be given to repair it. \n \n2) Decision of organizers is final and binding. \n \n
+A detailed rulebook for the event can be found here - " />
+
+                <com.example.discrollview.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:id="@+id/roboconRules"
+                    android:padding="8dp"
+                    android:textColor="#0000FF"
+                    android:text="Link to the rulebook" />
 
             </LinearLayout>
 
