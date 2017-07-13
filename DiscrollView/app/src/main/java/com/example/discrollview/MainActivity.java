@@ -107,9 +107,9 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
     private Boolean isFaceDown1 = true;
     private String[] nameArray = {"AutoDesk", "RAJA Biscuits", "Bittoo Tikki Wala", "CodeChef", "Coding_Ninjas", "Engineers India LTD.", "GitLab", "Hacker Earth", "Happn", "Holiday IQ", "Luxor", "Qnswr", "Rau's IAS Study Circle", "Spykar", "UNIBIC"};
     private String[] imageNameArray = {"autode", "bisc", "btw", "codechef", "coding_ninjas", "eil", "gitlab", "hack", "happn", "holiq", "luxor", "qnswr", "rauias", "spykar", "unibic"};
-    private String[] nameArray1 = {"EFY Group", "Campus Drift", "thecollegefever.com", "BuddyBits", "allevents.in", "iYouthMag", "DU beat", "Test Funda", "Brain Buxa", "Oh Campus", "festPav.com"};
-    private String[] imageNameArray1 = {"efy", "campus", "college", "buddy", "allevents", "youth", "du", "test", "brain", "oh", "fp"};
-    private String[] linkArray1 = {"http://electronicsforu.com", "http://campusdrift.com/", "http://thecollegefever.com/", "https://buddybits.com/amp/", "https://allevents.in/", "http://beingstudent.com/", "http://dubeat.com/", "http://testfunda.com", "https://www.brainbuxa.com", "www.ohcampus.com", "http://festpav.com"};
+    private String[] nameArray1 = {"EFY Group", "Campus Drift", "allevents.in", "iYouthMag", "DU beat", "Test Funda", "Brain Buxa", "Oh Campus", "festPav.com"};
+    private String[] imageNameArray1 = {"efy", "campus", "allevents", "youth", "du", "test", "brain", "oh", "fp"};
+    private String[] linkArray1 = {"http://electronicsforu.com", "http://campusdrift.com/", "https://allevents.in/", "http://beingstudent.com/", "http://dubeat.com/", "http://testfunda.com", "https://www.brainbuxa.com", "www.ohcampus.com", "http://festpav.com"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
