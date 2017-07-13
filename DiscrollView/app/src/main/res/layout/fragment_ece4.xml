@@ -113,8 +113,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
-                    android:text="1) Size and dimensions of robot: \n \n
-2) Time limit: \n \n
+                    android:text="1) Size and dimensions of robot: available soon \n \n
+2) Time limit: available soon \n \n
 3) Time would be measured from the moment a robot crosses the starting mark until it reaches the finish point. \n \n
 4) Penalty for going off track = 30secs. (flexible) \n \n
 5) The line following course shall traverse a white paper rectangle, 44 wide and 96 long. The line shall be a black, 1/2 wide line traversing the arena from end to end. There shall be no crossovers (e.g. places where the line crosses itself). Switchbacks and hairpins are possible, but the adjacent sections of the line shall be no closer together than 15cm when measured from the center of each line \n \n

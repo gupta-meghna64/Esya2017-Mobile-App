@@ -95,6 +95,16 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
     private Timer clickTimer = null;
     private Timer faceTimer = null;
     private Boolean isFaceDown = true;
+    private int scrollMax1;
+    private int scrollPos1 = 0;
+    private TimerTask clickSchedule1;
+    private TimerTask scrollerSchedule1;
+    private TimerTask faceAnimationSchedule1;
+    private Button clickedButton1 = null;
+    private Timer scrollTimer1 = null;
+    private Timer clickTimer1 = null;
+    private Timer faceTimer1 = null;
+    private Boolean isFaceDown1 = true;
     private String[] nameArray = {"AutoDesk", "RAJA Biscuits", "Bittoo Tikki Wala", "CodeChef", "Coding_Ninjas", "Engineers India LTD.", "GitLab", "Hacker Earth", "Happn", "Holiday IQ", "Luxor", "Qnswr", "Rau's IAS Study Circle", "Spykar", "UNIBIC"};
     private String[] imageNameArray = {"autode", "bisc", "btw", "codechef", "coding_ninjas", "eil", "gitlab", "hack", "happn", "holiq", "luxor", "qnswr", "rauias", "spykar", "unibic"};
     private String[] nameArray1 = {"EFY Group", "Campus Drift", "thecollegefever.com", "BuddyBits", "allevents.in", "iYouthMag", "DU beat", "Test Funda", "Brain Buxa", "Oh Campus", "festPav.com"};
@@ -516,7 +526,7 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
     public void getScrollMaxAmount1() {
         int actualWidth = (horizontalOuterLayout1.getMeasuredWidth() - getWindowManager().getDefaultDisplay().getWidth());
 
-        scrollMax = actualWidth;
+        scrollMax1 = actualWidth;
     }
     public void startAutoScrolling() {
         if (scrollTimer == null) {
@@ -543,26 +553,26 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
     }
 
     public void startAutoScrolling1() {
-        if (scrollTimer == null) {
-            scrollTimer = new Timer();
-            final Runnable Timer_Tick = new Runnable() {
+        if (scrollTimer1 == null) {
+            scrollTimer1 = new Timer();
+            final Runnable Timer_Tick1 = new Runnable() {
                 public void run() {
                     moveScrollView1();
                 }
             };
 
-            if (scrollerSchedule != null) {
-                scrollerSchedule.cancel();
-                scrollerSchedule = null;
+            if (scrollerSchedule1 != null) {
+                scrollerSchedule1.cancel();
+                scrollerSchedule1 = null;
             }
-            scrollerSchedule = new TimerTask() {
+            scrollerSchedule1 = new TimerTask() {
                 @Override
                 public void run() {
-                    runOnUiThread(Timer_Tick);
+                    runOnUiThread(Timer_Tick1);
                 }
             };
 
-            scrollTimer.schedule(scrollerSchedule, 30, 30);
+            scrollTimer1.schedule(scrollerSchedule1, 30, 30);
         }
     }
 
@@ -578,14 +588,14 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
     }
 
     public void moveScrollView1() {
-        scrollPos = (int) (horizontalScrollview1.getScrollX() + 4.0);
+        scrollPos1 = (int) (horizontalScrollview1.getScrollX() + 4.0);
 
-        if (scrollPos >= scrollMax) {
-            Log.v("childCount", "" + scrollMax);
+        if (scrollPos1 >= scrollMax1) {
+            Log.v("childCount", "" + scrollMax1);
             addImagesToView1();
             getScrollMaxAmount1();
         }
-        horizontalScrollview1.scrollTo(scrollPos, 0);
+        horizontalScrollview1.scrollTo(scrollPos1, 0);
     }
 
     /**
@@ -653,46 +663,46 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
 
     public void addImagesToView1() {
         for (int i = 0; i < imageNameArray1.length; i++) {
-            final Button imageButton = new Button(this);
-            int imageResourceId = getResources().getIdentifier(imageNameArray1[i], "drawable", getPackageName());
-            Drawable image = this.getResources().getDrawable(imageResourceId);
-            imageButton.setBackgroundDrawable(image);
-            float scale = getResources().getDisplayMetrics().density;
-            int dpAsPixels = (int) (10 * scale + 0.5f);
-            imageButton.setPadding(dpAsPixels, 0, dpAsPixels, 0);
-            imageButton.setTag(i);
+            final Button imageButton1 = new Button(this);
+            int imageResourceId1 = getResources().getIdentifier(imageNameArray1[i], "drawable", getPackageName());
+            Drawable image1 = this.getResources().getDrawable(imageResourceId1);
+            imageButton1.setBackgroundDrawable(image1);
+            float scale1 = getResources().getDisplayMetrics().density;
+            int dpAsPixels1 = (int) (10 * scale1 + 0.5f);
+            imageButton1.setPadding(dpAsPixels1, 0, dpAsPixels1, 0);
+            imageButton1.setTag(i);
 
-            imageButton.setOnClickListener(new View.OnClickListener() {
+            imageButton1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View arg0) {
                     if (isFaceDown) {
-                        if (clickTimer != null) {
-                            clickTimer.cancel();
-                            clickTimer = null;
+                        if (clickTimer1 != null) {
+                            clickTimer1.cancel();
+                            clickTimer1 = null;
                         }
-                        clickedButton = (Button) arg0;
-                        stopAutoScrolling();
-                        clickedButton.startAnimation(scaleFaceUpAnimation1());
-                        clickedButton.setSelected(true);
-                        clickTimer = new Timer();
+                        clickedButton1 = (Button) arg0;
+                        stopAutoScrolling1();
+                        clickedButton1.startAnimation(scaleFaceUpAnimation1());
+                        clickedButton1.setSelected(true);
+                        clickTimer1 = new Timer();
 
-                        if (clickSchedule != null) {
-                            clickSchedule.cancel();
-                            clickSchedule = null;
+                        if (clickSchedule1 != null) {
+                            clickSchedule1.cancel();
+                            clickSchedule1 = null;
                         }
 
-                        clickSchedule = new TimerTask() {
+                        clickSchedule1 = new TimerTask() {
                             public void run() {
                                 startAutoScrolling1();
                             }
                         };
 
-                        clickTimer.schedule(clickSchedule, 1500);
+                        clickTimer1.schedule(clickSchedule1, 1500);
                     }
                 }
             });
-            int h = image.getIntrinsicHeight();
-            int w = image.getIntrinsicWidth();
+            int h = image1.getIntrinsicHeight();
+            int w = image1.getIntrinsicWidth();
             int r = h / w;
             if (r == 0) {
                 r = w / h;
@@ -703,11 +713,11 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
             if (r > 400)
                 r = 400;
             LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(r, 256);
-            params.setMargins(0, dpAsPixels, 0, dpAsPixels);
+            params.setMargins(0, dpAsPixels1, 0, dpAsPixels1);
             params.leftMargin = 10;
             params.rightMargin = 10;
-            imageButton.setLayoutParams(params);
-            horizontalOuterLayout1.addView(imageButton);
+            imageButton1.setLayoutParams(params);
+            horizontalOuterLayout1.addView(imageButton1);
         }
     }
 
@@ -754,15 +764,15 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
     }
 
     public Animation scaleFaceUpAnimation1() {
-        Animation scaleFace = new ScaleAnimation(1.0f, 1.2f, 1.0f, 1.2f, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
-        scaleFace.setDuration(500);
-        scaleFace.setFillAfter(true);
-        scaleFace.setInterpolator(new AccelerateInterpolator());
+        Animation scaleFace1 = new ScaleAnimation(1.0f, 1.2f, 1.0f, 1.2f, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
+        scaleFace1.setDuration(500);
+        scaleFace1.setFillAfter(true);
+        scaleFace1.setInterpolator(new AccelerateInterpolator());
         Animation.AnimationListener scaleFaceAnimationListener = new Animation.AnimationListener() {
             @Override
             public void onAnimationStart(Animation arg0) {
-                horizontalTextView1.setText(nameArray1[(Integer) clickedButton.getTag()]);
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(linkArray1[(Integer) clickedButton.getTag()])));
+                horizontalTextView1.setText(nameArray1[(Integer) clickedButton1.getTag()]);
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(linkArray1[(Integer) clickedButton1.getTag()])));
                 isFaceDown = false;
             }
 
@@ -772,28 +782,28 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
 
             @Override
             public void onAnimationEnd(Animation arg0) {
-                if (faceTimer != null) {
-                    faceTimer.cancel();
-                    faceTimer = null;
+                if (faceTimer1 != null) {
+                    faceTimer1.cancel();
+                    faceTimer1 = null;
                 }
 
-                faceTimer = new Timer();
-                if (faceAnimationSchedule != null) {
-                    faceAnimationSchedule.cancel();
-                    faceAnimationSchedule = null;
+                faceTimer1 = new Timer();
+                if (faceAnimationSchedule1 != null) {
+                    faceAnimationSchedule1.cancel();
+                    faceAnimationSchedule1 = null;
                 }
-                faceAnimationSchedule = new TimerTask() {
+                faceAnimationSchedule1 = new TimerTask() {
                     @Override
                     public void run() {
                         faceScaleHandler1.sendEmptyMessage(0);
                     }
                 };
 
-                faceTimer.schedule(faceAnimationSchedule, 750);
+                faceTimer1.schedule(faceAnimationSchedule1, 750);
             }
         };
-        scaleFace.setAnimationListener(scaleFaceAnimationListener);
-        return scaleFace;
+        scaleFace1.setAnimationListener(scaleFaceAnimationListener);
+        return scaleFace1;
     }
 
     private Handler faceScaleHandler = new Handler() {
@@ -807,8 +817,8 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
     private Handler faceScaleHandler1 = new Handler() {
         @Override
         public void handleMessage(Message msg) {
-            if (clickedButton.isSelected() == true)
-                clickedButton.startAnimation(scaleFaceDownAnimation1(500));
+            if (clickedButton1.isSelected() == true)
+                clickedButton1.startAnimation(scaleFaceDownAnimation1(500));
         }
     };
 
@@ -837,10 +847,10 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
     }
 
     public Animation scaleFaceDownAnimation1(int duration) {
-        Animation scaleFace = new ScaleAnimation(1.2f, 1.0f, 1.2f, 1.0f, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
-        scaleFace.setDuration(duration);
-        scaleFace.setFillAfter(true);
-        scaleFace.setInterpolator(new AccelerateInterpolator());
+        Animation scaleFace1 = new ScaleAnimation(1.2f, 1.0f, 1.2f, 1.0f, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
+        scaleFace1.setDuration(duration);
+        scaleFace1.setFillAfter(true);
+        scaleFace1.setInterpolator(new AccelerateInterpolator());
         Animation.AnimationListener scaleFaceAnimationListener = new Animation.AnimationListener() {
             @Override
             public void onAnimationStart(Animation arg0) {
@@ -853,11 +863,11 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
             @Override
             public void onAnimationEnd(Animation arg0) {
                 horizontalTextView1.setText("");
-                isFaceDown = true;
+                isFaceDown1 = true;
             }
         };
-        scaleFace.setAnimationListener(scaleFaceAnimationListener);
-        return scaleFace;
+        scaleFace1.setAnimationListener(scaleFaceAnimationListener);
+        return scaleFace1;
     }
 
 
@@ -865,6 +875,13 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         if (scrollTimer != null) {
             scrollTimer.cancel();
             scrollTimer = null;
+        }
+    }
+
+    public void stopAutoScrolling1() {
+        if (scrollTimer1 != null) {
+            scrollTimer1.cancel();
+            scrollTimer1 = null;
         }
     }
 

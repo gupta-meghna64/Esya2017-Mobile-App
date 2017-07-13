@@ -73,7 +73,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
-                    android:text="Esya'16 is organizing a 6-event mega-extravaganza called Techathlon. There will be 5 events spanning debugging, codegolf, algorithm-creation, ACM-style contest and alien environment coding. Qualifying teams will get to participate in the 6th Finale event called Toast to Code, whose format remains secret until its start.
+                    android:text="Esya'17 is organizing a 6-event mega-extravaganza called Techathlon. There will be 5 events spanning debugging, codegolf, algorithm-creation, ACM-style contest and alien environment coding. Qualifying teams will get to participate in the 6th Finale event called Toast to Code, whose format remains secret untill its start.
 Techathlon consists of the following events, other than the grand finale Toast to Code: \n
 1) ProSort \n
 2) BrainFuzz \n
@@ -124,12 +124,12 @@ Techathlon consists of the following events, other than the grand finale Toast t
                     android:padding="8dp"
                     android:text="1) One Techathlon team will participate in one slot only \n \n
 2) If there are finals for an event, then same team members have to participate in the finals \n \n
-3) Decision of organisers shall be final and binding \n \n
-4) Registrations and settlement at venue closes 5 mins before start \n \n
-5) No extensions or reimbursements in case of faulty infra \n \n
-6) All prizes will be awarded to the participating team \n \n
-7) Organisers have right to disallow/disqualify any team \n \n
-8) No use of unfair means
+3) Registrations and settlement at venue closes 5 mins before start \n \n
+4) No extensions or reimbursements in case of faulty infra \n \n
+5) All prizes will be awarded to the participating team \n \n
+6) Organisers have right to disallow/disqualify any team \n \n
+7) No use of unfair means \n \n
+8) Decision of organisers shall be final and binding \n \n
 " />
 
             </LinearLayout>

@@ -115,7 +115,7 @@ Solve the problems, optimize your code and shorten it. The shortest solution win
                     android:padding="8dp"
                     android:text="1) C, C++, or Java can be used to solve the problems. \n \n
 2) All inputs for the programming problem are taken from the standard input and the output is written into the standard output. \n \n
-3) The contest duration is for 90 minutes. \n \n
+3) The contest duration is 90 minutes. \n \n
 4) Use of internet is not allowed, except to access the contest portal. \n \n
 5) Maximum team size is 2. However, a team gets only one computer. \n \n
 6) For all the problems, the solutions will be judged based on correctness and the number of characters used. The correct solution with least characters gets full points. Other solutions will be marked relative to the best solution. \n \n
