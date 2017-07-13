@@ -112,10 +112,66 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
-                    android:text="Decision of organizers is final and binding." />
+                    android:text="1) Please do not discuss strategy, suggestions or tips in the comments during a live contest. Posting questions clarifying the problem statement is ok. If you are unsure, email us at feedback@codechef.com. \n \n
+2) Discussing CodeChef's problems or any aspect of problem, on any other platform on web, on identification, could lead to disabling of respective account and banning from the community. \n \n
+3) Almost all languages supported on CodeChef are allowed. \n \n
+4) Each program will be tested based on our critical test data. However output and input should be exactly as specified in the samples provided. \n \n
+5) Please contact kushagra15049@iiitd.ac.in for any queries during the contest. \n \n
+6) Decision of organizers is final and binding. \n \n
+Eligibilty for Qualification to Onsite Finals: \n
+1) The Participant has registered for the contest. \n \n
+2) The Participant is studying in an Indian school in a class between VI to XII (or equivalent) on 26th August 2017. \n \n
+3) The Participant has scored atleast X points in the preliminary round. Note that the value X would be decided later based on the performance of the participants and other logistics.
+" />
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="1dp"
+            card_view:cardUseCompatPadding="true"
+            card_view:contentPaddingBottom="5dp"
+            card_view:contentPaddingTop="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="5">
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:text="JUDGING CRITERIA"
+                    android:textAlignment="center"
+                    android:textSize="18dp" />
+
+                <com.example.discrollview.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:padding="8dp"
+                    android:text="1) All the problems will be partially graded and you will get score for passing certain test data . You will receive hundred (100) point for solving a problem (passing all test cases). \n \n
+2) The details of the failed test cases will also be visible on your solution page. \n \n
+3) You can submit solutions as many times as you'd like, there are no penalties for incorrect submissions. Only your best correct submission will be considered. \n \n
+4) Those who achieve the score first will be placed higher in the ranklist in case of a tie. \n \n
+5) The decision of the organizers in declaring the results will be final. No queries in this regard will be entertained. \n \n
+6) Any participant found to be indulging in any form of malpractice will be immediately disqualified.
+" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"

@@ -30,7 +30,7 @@
         android:layout_gravity="bottom"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="28sp"
+        android:textSize="32sp"
         app:texts="@array/splashScreenText"
         app:timeout="2500"/>
 </LinearLayout>

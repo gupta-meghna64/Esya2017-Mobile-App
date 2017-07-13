@@ -116,7 +116,7 @@ Exact details will only be conveyed at the start of the contest >:O
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
-                    android:text="1) ProSort is a mandatory event for qualifying. \n \n
+                    android:text="1) Top participants from techathlon will qualify for the event only. \n \n
 2) Decision of organizers is final and binding." />
 
             </LinearLayout>
