@@ -78,6 +78,50 @@
 
         </android.support.v7.widget.CardView>
 
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="1dp"
+            card_view:cardUseCompatPadding="true"
+            card_view:contentPaddingBottom="5dp"
+            card_view:contentPaddingTop="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="5">
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:text="EVENT STRUCTURE"
+                    android:textAlignment="center"
+                    android:textSize="18dp" />
+
+                <com.example.discrollview.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:padding="8dp"
+                    android:text="1) Round 1: Qualifier Round. Fastest 15-20 teams qualify \n \n
+2) Round 3: The contest gets a bit more complex. Best 5-10 teams based on time performance move to the next round. \n \n
+3) Round 3: Elimination races.
+" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
@@ -113,11 +157,11 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
-                    android:text="1) Size and dimensions of robot: available soon \n \n
-2) Time limit: available soon \n \n
-3) Time would be measured from the moment a robot crosses the starting mark until it reaches the finish point. \n \n
-4) Penalty for going off track = 30secs. (flexible) \n \n
-5) The line following course shall traverse a white paper rectangle, 44 wide and 96 long. The line shall be a black, 1/2 wide line traversing the arena from end to end. There shall be no crossovers (e.g. places where the line crosses itself). Switchbacks and hairpins are possible, but the adjacent sections of the line shall be no closer together than 15cm when measured from the center of each line \n \n
+                    android:text="1) The robot cannot exceed 15 cm in overall length and 15 cm in overall width and 7cm in overall height. \n \n
+2) You can use any microcontroller to program your robot. Pre-programmed kits such as LEGO, Pololu are NOT allowed. \n \n
+3) The robot must be controlled autonomously without any human aid. \n \n
+4) The robot must be powered by a power source such as a battery fixed on the robot. It cannot be powered by a stationary power source connected to it by a cord. \n \n
+5) The line following course shall traverse a white paper rectangle, 44\' wide and 96\' long. The line will be black and 2 cm in width. There shall be no crossovers (places where the line crosses itself). Switchbacks and hairpins are however possible. \n \n
 6) Decision of organizers is final and binding." />
 
             </LinearLayout>
