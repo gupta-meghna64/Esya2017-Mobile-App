@@ -72,7 +72,7 @@
                     android:layout_weight="4"
                     android:padding="8dp"
                     android:textAlignment="viewStart"
-                    android:text="Participants are required to do research on any topic which they want.They are required to provide justification of  what they have prepared and make us believe that it is right even if it is wrong.They would be making a small power point presentation and presenting the same in front of our judges. The team which will give the best justification of their research work will be declared as winner at the end of the event." />
+                    android:text="Participants are required to do research on any topic which they want. They are required to provide justification of what they have prepared and make us believe that it is right even if it is wrong.They would be making a small power point presentation and presenting the same in front of our judges. The team which will give the best justification of their research work will be declared as winner at the end of the event." />
 
             </LinearLayout>
 

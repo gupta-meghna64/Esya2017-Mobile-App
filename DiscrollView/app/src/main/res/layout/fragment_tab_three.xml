@@ -81,7 +81,7 @@
                     android:layout_gravity="bottom"
                     android:paddingBottom="8dp"
                     android:paddingLeft="8dp"
-                    android:text="Unravel one of the greatest mysteries behind the death of Marilyn Monroe"
+                    android:text="Unravel the mystery behind the death of Marilyn Monroe"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
 
@@ -381,7 +381,7 @@
                     android:layout_gravity="bottom"
                     android:paddingBottom="8dp"
                     android:paddingLeft="8dp"
-                    android:text="Compete against each other in the no limit Texas hold’em format"
+                    android:text="Compete in the Texas hold’em format"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
 

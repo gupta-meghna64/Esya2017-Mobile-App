@@ -115,7 +115,7 @@
                     android:layout_weight="4"
                     android:padding="8dp"
                     android:textAlignment="viewStart"
-                    android:text="1) Decision of organizers is final and binding." />
+                    android:text="Decision of organizers is final and binding." />
 
             </LinearLayout>
 
