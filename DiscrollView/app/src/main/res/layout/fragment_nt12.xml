@@ -167,7 +167,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Vasu Agarwal" />
+                        android:text="Vikas Singh" />
 
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
@@ -179,7 +179,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="vasu15113@iid.ac.in" />
+                        android:text="vikas14171@iiid.ac.in" />
 
                 </LinearLayout>
 
