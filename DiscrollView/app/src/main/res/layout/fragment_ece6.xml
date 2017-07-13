@@ -77,6 +77,105 @@
 
         </android.support.v7.widget.CardView>
 
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="1dp"
+            card_view:cardUseCompatPadding="true"
+            card_view:contentPaddingBottom="5dp"
+            card_view:contentPaddingTop="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="5">
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:text="EVENT STRUCTURE"
+                    android:textAlignment="center"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <com.example.discrollview.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:padding="8dp"
+                    android:text="1) Contest will have 4 rounds. \n \n
+2) Each team places 2 robots in the field, one is a defender while the other is a striker. \n \n
+3) First round will be a knockout round where losing team would be eliminated. \n \n
+4) Second round will be played between qualified teams and top 4 teams would be selected based on point difference. \n \n
+5) Third round and fourth rounds are semi finals and finals. \n \n
+6) Duration of matches is as follows: \n \n
+\t a) Round 1 and 2 : 4 min each, each half of 2 mins \n \n
+\t b) Semi finals: 5 min each, each half of 2 ½ mins \n \n
+\t c) Final: 6 min each, each half of 3 mins \n \n
+7) In case of a tie, extra time of 1 mins will be given following golden goal rule (team scoring the first goal wins). If there is still a tie, then penalty shootouts will take place. \n \n
+8) Penalty shootout: Each team would be given 3 tries where the striker/goalkeeper has to score goals from the defending half. \n \n
+9) Matches would be played with a Table Tennis Ball." />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="1dp"
+            card_view:cardUseCompatPadding="true"
+            card_view:contentPaddingBottom="5dp"
+            card_view:contentPaddingTop="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="5">
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:text="GAMEPLAY/SCORING"
+                    android:textAlignment="center"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <com.example.discrollview.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:padding="8dp"
+                    android:text="1) A coin would be tossed for the centre and team winning the toss will get possession of ball at the centre of arena. \n \n
+2) For every foul, a free kick will be awarded to the opponent team. \n \n
+3) Round 2 will be a point based round where point distribution is as follows: \n \n
+\t a) Goal scored : +5 points \n \n
+\t b) Foul : -2 points \n \n
+4) Four teams with maximum point difference will make it to the semi finals. \n \n
+" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
