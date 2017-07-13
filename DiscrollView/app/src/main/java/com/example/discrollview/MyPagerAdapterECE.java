@@ -28,8 +28,6 @@ public class MyPagerAdapterECE extends FragmentPagerAdapter {
         else if (position == 3)
             return "RoboCon";
         else if (position == 4)
-            return "RoboMaze";
-        else if (position == 5)
             return "RoboSoccer";
         else
             return "HackOverflow";
@@ -38,7 +36,7 @@ public class MyPagerAdapterECE extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 7;
+        return 6;
     }
 
     @Override
@@ -52,8 +50,6 @@ public class MyPagerAdapterECE extends FragmentPagerAdapter {
         else if (position == 3)
             return new FragmentECE4();
         else if (position == 4)
-            return new FragmentECE5();
-        else if (position == 5)
             return new FragmentECE6();
         else
             return new FragmentECE7();

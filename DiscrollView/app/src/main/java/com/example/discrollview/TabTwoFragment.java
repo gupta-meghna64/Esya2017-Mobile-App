@@ -21,7 +21,7 @@ public class TabTwoFragment extends Fragment {
         CardView circuitrix = (CardView) v.findViewById(R.id.cardCircuitrix);
         CardView robowars = (CardView) v.findViewById(R.id.cardRobowars);
         CardView robocon = (CardView) v.findViewById(R.id.cardRobocon);
-        CardView robomaze = (CardView) v.findViewById(R.id.cardRobomaze);
+    //    CardView robomaze = (CardView) v.findViewById(R.id.cardRobomaze);
         CardView robosoccer = (CardView) v.findViewById(R.id.cardRobosoccer);
         CardView hackoverflow = (CardView) v.findViewById(R.id.cardHackoverflow);
 
@@ -61,14 +61,14 @@ public class TabTwoFragment extends Fragment {
             }
         });
 
-        robomaze.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(getActivity(), ECEMainActivity.class);
-                i.putExtra("viewpager_position", 4);
-                startActivity(i);
-            }
-        });
+//        robomaze.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent i = new Intent(getActivity(), ECEMainActivity.class);
+//                i.putExtra("viewpager_position", 4);
+//                startActivity(i);
+//            }
+//        });
 
         robosoccer.setOnClickListener(new View.OnClickListener() {
             @Override
