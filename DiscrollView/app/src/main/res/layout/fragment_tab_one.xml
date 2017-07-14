@@ -16,6 +16,46 @@
             android:padding="4dp"
             android:layout_height="wrap_content">
 
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="400px"
+                android:layout_gravity="center"
+                android:id="@+id/cardDesign360"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="1dp"
+                android:layout_marginBottom="0dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                card_view:cardBackgroundColor="@android:color/background_light"
+                card_view:cardCornerRadius="0dp"
+                >
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/design360_overlay"/>
+
+                    <com.example.discrollview.MyTextViewHeading
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:paddingLeft="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingRight="8dp"
+                        android:textStyle="bold"
+                        android:text="Overnight design hackathon"
+                        android:textColor="@color/white"/>
+
+                </FrameLayout>
+
+            </android.support.v7.widget.CardView>
+
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="400px"
@@ -410,44 +450,6 @@
             </android.support.v7.widget.CardView>
 
 
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="400px"
-                android:layout_gravity="center"
-                android:id="@+id/cardDesign360"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="1dp"
-                android:layout_marginBottom="0dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="0dp"
-                >
-
-                <FrameLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/design360_overlay"/>
-
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom"
-                        android:paddingLeft="8dp"
-                        android:paddingBottom="8dp"
-                        android:paddingRight="8dp"
-                        android:textStyle="bold"
-                        android:text="Overnight design hackathon"
-                        android:textColor="@color/white"/>
-
-                </FrameLayout>
-
-            </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
