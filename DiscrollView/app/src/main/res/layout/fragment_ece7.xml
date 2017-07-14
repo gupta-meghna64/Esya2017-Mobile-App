@@ -297,6 +297,13 @@ HACKware aims to provide an innovative platform where all hardware enthusiasts c
                         android:layout_weight="1"
                         android:text="raghav16179@iiitd.ac.in" />
 
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="REGISTER"
+                        android:id="@+id/buttonRegisterHackoverflow"/>
+
                 </LinearLayout>
 
 
