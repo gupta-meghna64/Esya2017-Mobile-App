@@ -43,7 +43,7 @@ public class TabOneFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getActivity(), CSEMainActivity.class);
-                i.putExtra("viewpager_position", 2);
+                i.putExtra("viewpager_position", 3);
                 startActivity(i);
             }
         });
@@ -52,7 +52,7 @@ public class TabOneFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getActivity(), CSEMainActivity.class);
-                i.putExtra("viewpager_position", 1);
+                i.putExtra("viewpager_position", 2);
                 startActivity(i);
             }
         });
@@ -61,7 +61,7 @@ public class TabOneFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getActivity(), CSEMainActivity.class);
-                i.putExtra("viewpager_position", 0);
+                i.putExtra("viewpager_position", 1);
                 startActivity(i);
             }
         });
@@ -70,7 +70,7 @@ public class TabOneFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getActivity(), CSEMainActivity.class);
-                i.putExtra("viewpager_position", 3);
+                i.putExtra("viewpager_position", 4);
                 startActivity(i);
             }
         });
@@ -79,7 +79,7 @@ public class TabOneFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getActivity(), CSEMainActivity.class);
-                i.putExtra("viewpager_position", 4);
+                i.putExtra("viewpager_position", 5);
                 startActivity(i);
             }
         });
@@ -88,7 +88,7 @@ public class TabOneFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getActivity(), CSEMainActivity.class);
-                i.putExtra("viewpager_position", 5);
+                i.putExtra("viewpager_position", 6);
                 startActivity(i);
             }
         });
@@ -97,7 +97,7 @@ public class TabOneFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getActivity(), CSEMainActivity.class);
-                i.putExtra("viewpager_position", 6);
+                i.putExtra("viewpager_position", 7);
                 startActivity(i);
             }
         });
@@ -106,7 +106,7 @@ public class TabOneFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getActivity(), CSEMainActivity.class);
-                i.putExtra("viewpager_position", 7);
+                i.putExtra("viewpager_position", 8);
                 startActivity(i);
             }
         });
@@ -115,7 +115,7 @@ public class TabOneFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getActivity(), CSEMainActivity.class);
-                i.putExtra("viewpager_position", 8);
+                i.putExtra("viewpager_position", 9);
                 startActivity(i);
             }
         });
@@ -131,7 +131,7 @@ public class TabOneFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getActivity(), CSEMainActivity.class);
-                i.putExtra("viewpager_position", 10);
+                i.putExtra("viewpager_position", 0);
                 startActivity(i);
             }
         });
