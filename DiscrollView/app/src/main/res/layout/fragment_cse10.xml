@@ -72,7 +72,7 @@
                     android:layout_weight="4"
                     android:padding="8dp"
                     android:text="An overnight software development competition.
-Shoutout to all computer nerds and gizmo geeks. For our 6th Edition of TechFest Esya ‘s event HackIIITD, we’re asking you to Commit To Your Code . HackIIITD is a chance for all developers, hobbyists, students, or anyone else to build an innovative  application revolving around the theme Digital India in a single night fueled by creativity, passion and grit. What the application does is only limited by your creativity!
+Shoutout to all computer nerds and gizmo geeks. For our 6th Edition of TechFest Esya‘s event HackIIITD, we’re asking you to Commit To Your Code . HackIIITD is a chance for all developers, hobbyists, students, or anyone else to build an innovative  application revolving around the theme Digital India in a single night fueled by creativity, passion and grit. What the application does is only limited by your creativity!
 " />
 
             </LinearLayout>
