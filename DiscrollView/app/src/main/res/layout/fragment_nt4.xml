@@ -76,7 +76,7 @@
                     android:layout_weight="4"
                     android:padding="8dp"
                     android:text="The event will comprise of three rounds. The first will be an online theme-based preliminary round. This will be followed by an on-site theme-based round on the first day of the fest in which the shortlisted students will participate.
-The final round will be on the first day of the fest itself. The announcement of winners will be announced by the judges on the first day followed by an exhibition set-up for displaying the top entries in the contest.
+The final round will be on the first day of the fest itself. The winners will be announced by the judges on the first day followed by an exhibition set-up for displaying the top entries in the contest.
 "
                     android:textAlignment="viewStart" />
 

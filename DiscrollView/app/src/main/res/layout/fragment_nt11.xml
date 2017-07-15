@@ -120,7 +120,7 @@
                     android:text="1) Solving cube before starting stackmat will lead to penalty. \n \n
 2) Stopping stackmat before finishing cube will lead to penalty. \n \n
 3) Starting cube after completing inspection time will lead to penalty. Make sure that you will start solving cube before the timer runs out of time. \n \n
-4) There will be time limit after the time limit is crossed, the attempt will be stopped and will be considered DNF(Did not finish). \n \n
+4) There will be penalty after the time limit is crossed, the attempt will be stopped and will be considered DNF(Did not finish). \n \n
 5) A puzzle is solved when all colored parts are reassembled and all parts are aligned within the limits specified below \n \n
 \t a) If one face of the cube is misaligned by at most 45 degrees. \n \n
 \t b) Else it is considered equivalent to requiring one more move to solve the cube and in such a case there will be a penalty of 2 seconds. \n \n

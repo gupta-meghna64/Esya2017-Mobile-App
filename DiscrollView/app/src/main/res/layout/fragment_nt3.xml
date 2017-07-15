@@ -72,7 +72,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
-                    android:text="The quiz is intended to be a general quiz taking questions from multidisciplinary subjects and sources. The intent of the quiz would be to broadly summarise all themes we can think of ranging from music and dance to history, science and mythology. This quiz would be suitable for all interested individuals coming from broad backgrounds and would also be directed toward generating a basic interest in those topics which the participants may not be familiar with." />
+                    android:text="The quiz is intended to be a general quiz taking questions from multidisciplinary subjects and sources. The intent of the quiz would be to broadly summarise all themes we can think of ranging from music and dance to history, science and mythology. This quiz would be suitable for all interested individuals coming from broad backgrounds and would also be directed towards generating a basic interest in those topics which the participants may not be familiar with." />
 
             </LinearLayout>
 

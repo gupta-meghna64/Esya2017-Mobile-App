@@ -117,10 +117,10 @@
                     android:text="1) A team should consist of a maximum of two people. \n \n
 2) There are no restriction on the topic.Participants can choose any topic of their choice. \n \n
 3) Their presentation should not exceed 8 min .The presentation should cover all the facts that justify their work. \n \n
-4) While presenting ,most of their presentation should be in english language however they can switch to hindi if they get stuck in between. \n \n
+4) While presenting, most of their presentation should be in english language however they can switch to hindi if they get stuck in between. \n \n
 5) Decision of organizers is final and binding.
 "
-                    android:textAlignment="viewStart" />
+                     />
 
             </LinearLayout>
 

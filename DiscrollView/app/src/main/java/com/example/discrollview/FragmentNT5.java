@@ -29,7 +29,7 @@ public class FragmentNT5 extends Fragment {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("")));
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://docs.google.com/forms/d/e/1FAIpQLScE4-QtMFQCmwUZAsfQEn02Gpu8dnaS5FBfAyL2HooESDt4FQ/viewform")));
             }
         });
 

@@ -73,10 +73,10 @@
                     android:padding="8dp"
                     android:text=" “Don't limit your challenges - challenge your limits” \n \n
 Esya'17 presents Hunt IT, Delhi's most exciting and the most awaited on-ground Treasure Hunt ! \n \n
-Be ready to unravel one of the greatest mysteries behind the death of “Marilyn Monroe”, one of the best actresses Hollywood has seen till date and get a chance to show off your amazing Sherlock detective skills.
+Be ready to unravel one of the greatest mysteries behind the death of Marilyn Monroe one of the best actresses Hollywood has seen till date and get a chance to show off your amazing Sherlock detective skills.
 So, pull up your socks and get ready to have an amazing time solving tricky clues, hunting down locations and winning amazing prizes and goodies worth upto 50,000 !
 "
-                    android:textAlignment="viewStart" />
+                     />
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
@@ -116,7 +116,7 @@ So, pull up your socks and get ready to have an amazing time solving tricky clue
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
-                    android:text="HuntIt is a completely non-tech fun event and will not give any unfair advantage to the participants from technical colleges or schools. It is an event to test your analytical skills. \n \n
+                    android:text="HuntIT is a completely non-tech fun event and will not give any unfair advantage to the participants from technical colleges or schools. It is an event to test your analytical skills. \n \n
 1) The maximum team size is 4. Lone wolves are also invited. Cross-college and cross-school teams are allowed. Multiple teams from same college are allowed. \n \n
 2) It will be a two day event in which some of the rounds will require teams to race across the city to carry out the hunt successfully. \n \n
 3) Teams will face elimination through subsequent rounds leading up to the final round of the hunt. \n \n
@@ -126,10 +126,10 @@ So, pull up your socks and get ready to have an amazing time solving tricky clue
 7) On day 2, you’ll have to use public transport to go from one location to another. Anyone found using their own vehicle will be eliminated. \n \n
 Please note : \n
 1) In the elimination rounds, teams solving the rounds after a certain number of teams would be eliminated. \n \n
-2) Organizers have the right to disqualify any team if they break any rule. \n \n
+2) Organizers have the right to disqualify a team if they break any rule. \n \n
 3) Decision of organizers is final and binding. \n \n
 "
-                    android:textAlignment="viewStart" />
+                     />
 
             </LinearLayout>
 

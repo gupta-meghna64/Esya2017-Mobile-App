@@ -1,12 +1,15 @@
 package com.example.discrollview;
 
+import android.content.Intent;
 import android.content.res.Resources;
+import android.net.Uri;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 /**
  * Created by HP on 01-07-2017.
@@ -20,6 +23,14 @@ public class FragmentNT10 extends Fragment {
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
+
+        TextView rules = (TextView) getActivity().findViewById(R.id.pokerRulebook);
+        rules.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://lgamanitoba.ca/documents/texas-holdem-poker-tournament-standard-rules-of-play-2.pdf ")));
+            }
+        });
 
         int imageHeight = (int) Math.round(Resources.getSystem().getDisplayMetrics().widthPixels / 2.69);
         int imageWidth = Resources.getSystem().getDisplayMetrics().widthPixels;
