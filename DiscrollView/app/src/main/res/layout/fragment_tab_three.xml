@@ -17,7 +17,7 @@
         <android.support.v7.widget.CardView
             android:id="@+id/cardChess"
             android:layout_width="match_parent"
-            android:layout_height="400px"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="0dp"
             android:clickable="true"
@@ -32,6 +32,7 @@
                 android:layout_height="fill_parent">
 
                 <ImageView
+                    android:id="@+id/chessCover"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="fitXY"
@@ -55,7 +56,7 @@
         <android.support.v7.widget.CardView
             android:id="@+id/cardHuntIT"
             android:layout_width="match_parent"
-            android:layout_height="400px"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="0dp"
             android:clickable="true"
@@ -70,6 +71,7 @@
                 android:layout_height="fill_parent">
 
                 <ImageView
+                    android:id="@+id/huntITCover"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="fitXY"
@@ -92,7 +94,7 @@
         <android.support.v7.widget.CardView
             android:id="@+id/cardQuiz"
             android:layout_width="match_parent"
-            android:layout_height="400px"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="0dp"
             android:clickable="true"
@@ -107,6 +109,7 @@
                 android:layout_height="fill_parent">
 
                 <ImageView
+                    android:id="@+id/quizCover"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="fitXY"
@@ -129,7 +132,7 @@
         <android.support.v7.widget.CardView
             android:id="@+id/cardFOQS"
             android:layout_width="match_parent"
-            android:layout_height="400px"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="0dp"
             android:clickable="true"
@@ -144,6 +147,7 @@
                 android:layout_height="fill_parent">
 
                 <ImageView
+                    android:id="@+id/foqsCover"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="fitXY"
@@ -166,7 +170,7 @@
         <android.support.v7.widget.CardView
             android:id="@+id/cardPWNED"
             android:layout_width="match_parent"
-            android:layout_height="400px"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="0dp"
             android:clickable="true"
@@ -181,6 +185,7 @@
                 android:layout_height="fill_parent">
 
                 <ImageView
+                    android:id="@+id/pwnedCover"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="fitXY"
@@ -204,7 +209,7 @@
         <android.support.v7.widget.CardView
             android:id="@+id/cardFakingTheResearch"
             android:layout_width="match_parent"
-            android:layout_height="400px"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="0dp"
             android:clickable="true"
@@ -219,6 +224,7 @@
                 android:layout_height="fill_parent">
 
                 <ImageView
+                    android:id="@+id/fakingtheresearchCover"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="fitXY"
@@ -242,7 +248,7 @@
         <android.support.v7.widget.CardView
             android:id="@+id/cardBigBang"
             android:layout_width="match_parent"
-            android:layout_height="400px"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="0dp"
             android:clickable="true"
@@ -257,6 +263,7 @@
                 android:layout_height="fill_parent">
 
                 <ImageView
+                    android:id="@+id/bigbangCover"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="fitXY"
@@ -279,7 +286,7 @@
         <android.support.v7.widget.CardView
             android:id="@+id/cardWordsToGo"
             android:layout_width="match_parent"
-            android:layout_height="400px"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="0dp"
             android:clickable="true"
@@ -294,6 +301,7 @@
                 android:layout_height="fill_parent">
 
                 <ImageView
+                    android:id="@+id/wordstogoCover"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="fitXY"
@@ -317,7 +325,7 @@
         <android.support.v7.widget.CardView
             android:id="@+id/cardMiniMilitia"
             android:layout_width="match_parent"
-            android:layout_height="400px"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="0dp"
             android:clickable="true"
@@ -332,6 +340,7 @@
                 android:layout_height="fill_parent">
 
                 <ImageView
+                    android:id="@+id/minimilitiaCover"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="fitXY"
@@ -355,7 +364,7 @@
         <android.support.v7.widget.CardView
             android:id="@+id/cardPoker"
             android:layout_width="match_parent"
-            android:layout_height="400px"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="0dp"
             android:clickable="true"
@@ -370,6 +379,7 @@
                 android:layout_height="fill_parent">
 
                 <ImageView
+                    android:id="@+id/pokerCover"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="fitXY"
@@ -393,7 +403,7 @@
         <android.support.v7.widget.CardView
             android:id="@+id/cardSpeedCubing"
             android:layout_width="match_parent"
-            android:layout_height="400px"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="0dp"
             android:clickable="true"
@@ -408,6 +418,7 @@
                 android:layout_height="fill_parent">
 
                 <ImageView
+                    android:id="@+id/speedcubingCover"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="fitXY"
@@ -430,7 +441,7 @@
         <android.support.v7.widget.CardView
             android:id="@+id/cardMockstocks"
             android:layout_width="match_parent"
-            android:layout_height="400px"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="0dp"
             android:clickable="true"
@@ -445,6 +456,7 @@
                 android:layout_height="fill_parent">
 
                 <ImageView
+                    android:id="@+id/mockstocksCover"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="fitXY"
@@ -467,7 +479,7 @@
         <android.support.v7.widget.CardView
             android:id="@+id/cardChakravyuha"
             android:layout_width="match_parent"
-            android:layout_height="400px"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="0dp"
             android:clickable="true"
@@ -482,6 +494,7 @@
                 android:layout_height="fill_parent">
 
                 <ImageView
+                    android:id="@+id/chakravyuhaCover"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="fitXY"

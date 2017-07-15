@@ -1,12 +1,14 @@
 package com.example.discrollview;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 /**
  * Created by HP on 01-07-2017.
@@ -148,5 +150,77 @@ public class TabThreeFragment extends Fragment {
             }
         });
         return v;
+    }
+
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+
+        int imageHeight = (int) Math.round(Resources.getSystem().getDisplayMetrics().widthPixels / 2.69);
+        int imageWidth = Resources.getSystem().getDisplayMetrics().widthPixels;
+
+        ImageView chessCover = (ImageView) getActivity().findViewById(R.id.chessCover);
+        chessCover.getLayoutParams().width = imageWidth;
+        chessCover.getLayoutParams().height = imageHeight;
+        chessCover.requestLayout();
+
+        ImageView huntITCover = (ImageView) getActivity().findViewById(R.id.huntITCover);
+        huntITCover.getLayoutParams().width = imageWidth;
+        huntITCover.getLayoutParams().height = imageHeight;
+        huntITCover.requestLayout();
+
+        ImageView quizCover = (ImageView) getActivity().findViewById(R.id.quizCover);
+        quizCover.getLayoutParams().width = imageWidth;
+        quizCover.getLayoutParams().height = imageHeight;
+        quizCover.requestLayout();
+
+        ImageView foqsCover = (ImageView) getActivity().findViewById(R.id.foqsCover);
+        foqsCover.getLayoutParams().width = imageWidth;
+        foqsCover.getLayoutParams().height = imageHeight;
+        foqsCover.requestLayout();
+
+        ImageView pwnedCover = (ImageView) getActivity().findViewById(R.id.pwnedCover);
+        pwnedCover.getLayoutParams().width = imageWidth;
+        pwnedCover.getLayoutParams().height = imageHeight;
+        pwnedCover.requestLayout();
+
+        ImageView fakingtheresearchCover = (ImageView) getActivity().findViewById(R.id.fakingtheresearchCover);
+        fakingtheresearchCover.getLayoutParams().width = imageWidth;
+        fakingtheresearchCover.getLayoutParams().height = imageHeight;
+        fakingtheresearchCover.requestLayout();
+
+        ImageView bigbangCover = (ImageView) getActivity().findViewById(R.id.bigbangCover);
+        bigbangCover.getLayoutParams().width = imageWidth;
+        bigbangCover.getLayoutParams().height = imageHeight;
+        bigbangCover.requestLayout();
+
+        ImageView wordstogoCover = (ImageView) getActivity().findViewById(R.id.wordstogoCover);
+        wordstogoCover.getLayoutParams().width = imageWidth;
+        wordstogoCover.getLayoutParams().height = imageHeight;
+        wordstogoCover.requestLayout();
+
+        ImageView minimilitiaCover = (ImageView) getActivity().findViewById(R.id.minimilitiaCover);
+        minimilitiaCover.getLayoutParams().width = imageWidth;
+        minimilitiaCover.getLayoutParams().height = imageHeight;
+        minimilitiaCover.requestLayout();
+
+        ImageView pokerCover = (ImageView) getActivity().findViewById(R.id.pokerCover);
+        pokerCover.getLayoutParams().width = imageWidth;
+        pokerCover.getLayoutParams().height = imageHeight;
+        pokerCover.requestLayout();
+
+        ImageView speedcubingCover = (ImageView) getActivity().findViewById(R.id.speedcubingCover);
+        speedcubingCover.getLayoutParams().width = imageWidth;
+        speedcubingCover.getLayoutParams().height = imageHeight;
+        speedcubingCover.requestLayout();
+
+        ImageView mockstocksCover = (ImageView) getActivity().findViewById(R.id.mockstocksCover);
+        mockstocksCover.getLayoutParams().width = imageWidth;
+        mockstocksCover.getLayoutParams().height = imageHeight;
+        mockstocksCover.requestLayout();
+
+        ImageView chakravyuhaCover = (ImageView) getActivity().findViewById(R.id.chakravyuhaCover);
+        chakravyuhaCover.getLayoutParams().width = imageWidth;
+        chakravyuhaCover.getLayoutParams().height = imageHeight;
+        chakravyuhaCover.requestLayout();
     }
 }

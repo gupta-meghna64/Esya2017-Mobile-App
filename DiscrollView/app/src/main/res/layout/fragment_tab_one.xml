@@ -1,507 +1,493 @@
-
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools"
     xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/lightgrey"
-    xmlns:custom="http://schemas.android.com/tools">
+    android:background="@color/lightgrey">
 
     <!-- TODO: Update blank fragment layout -->
 
-        <LinearLayout
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardDesign360"
             android:layout_width="match_parent"
-            android:orientation="vertical"
-            android:padding="4dp"
-            android:layout_height="wrap_content">
-
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:id="@+id/cardDesign360"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="1dp"
-                android:layout_marginBottom="0dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="0dp"
-                >
-
-                <FrameLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="fitXY"
-                        android:id="@+id/designCover"
-                        android:src="@drawable/design360_overlay"/>
-
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom"
-                        android:paddingLeft="8dp"
-                        android:paddingBottom="8dp"
-                        android:paddingRight="8dp"
-                        android:textStyle="bold"
-                        android:text="Overnight design hackathon"
-                        android:textColor="@color/white"/>
-
-                </FrameLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:id="@+id/cardProsort"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="1dp"
-                android:layout_marginBottom="2dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="4dp">
-
-                <FrameLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="fitXY"
-                        android:id="@+id/prosortCover"
-                        android:src="@drawable/prosort_overlay"/>
-
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom"
-                        android:paddingLeft="8dp"
-                        android:paddingBottom="8dp"
-                        android:textStyle="bold"
-                        android:text="On-Campus programming event"
-                        android:textColor="@color/white"/>
-
-                </FrameLayout>
-
-            </android.support.v7.widget.CardView>
-
-
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:id="@+id/cardProcon"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="1dp"
-                android:layout_marginBottom="2dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="4dp">
-
-                <FrameLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="fitXY"
-                        android:id="@+id/proconCover"
-                        android:src="@drawable/procon_overlay"/>
-
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom"
-                        android:paddingLeft="8dp"
-                        android:paddingBottom="8dp"
-                        android:textStyle="bold"
-                        android:text="Online programming contest"
-                        android:textColor="@color/white"/>
-
-                </FrameLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:id="@+id/cardProconJr"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="1dp"
-                android:layout_marginBottom="2dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="4dp"
-                >
-                <FrameLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="fitXY"
-                        android:id="@+id/proconJrCover"
-                        android:src="@drawable/proconjunior_overlay"/>
-
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom"
-                        android:paddingLeft="8dp"
-                        android:paddingBottom="8dp"
-                        android:textStyle="bold"
-                        android:text="Programming competition for school students"
-                        android:textColor="@color/white"/>
-
-                </FrameLayout>
-
-            </android.support.v7.widget.CardView>
-
-
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:id="@+id/cardCodeinless"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="1dp"
-                android:layout_marginBottom="2dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="4dp">
-
-                <FrameLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="fitXY"
-                        android:id="@+id/codeinlessCover"
-                        android:src="@drawable/codeinless_overlay"/>
-
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom"
-                        android:paddingLeft="8dp"
-                        android:paddingBottom="8dp"
-                        android:paddingRight="8dp"
-                        android:textStyle="bold"
-                        android:text="Concision in style, precision in thought, decision in life"
-                        android:textColor="@color/white"/>
-
-                </FrameLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:id="@+id/cardDarwingames"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="1dp"
-                android:layout_marginBottom="0dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="4dp"
-          >
-
-                <FrameLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="fitXY"
-                        android:id="@+id/darwingamesCover"
-                        android:src="@drawable/darwingames_overlay"/>
-
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom"
-                        android:paddingLeft="8dp"
-                        android:paddingBottom="8dp"
-                        android:paddingRight="8dp"
-                        android:textStyle="bold"
-                        android:text="Challenge yourself to new environments"
-                        android:textColor="@color/white"/>
-
-                </FrameLayout>
-
-            </android.support.v7.widget.CardView>
-
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:id="@+id/cardSegfault"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="1dp"
-                android:layout_marginBottom="0dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="4dp"
-              >
-
-                <FrameLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="fitXY"
-                        android:id="@+id/segfaultCover"
-                        android:src="@drawable/segfault_overlay"/>
-
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom"
-                        android:paddingLeft="8dp"
-                        android:paddingBottom="8dp"
-                        android:paddingRight="8dp"
-                        android:textStyle="bold"
-                        android:text="Win or bugger Off"
-                        android:textColor="@color/white"/>
-
-                </FrameLayout>
-
-            </android.support.v7.widget.CardView>
-
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:id="@+id/cardBrainFuzz"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="1dp"
-                android:layout_marginBottom="0dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="4dp"
-                >
-
-                <FrameLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="fitXY"
-                        android:id="@+id/brainfuzzCover"
-                        android:src="@drawable/brainfuzz_overlay"/>
-
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom"
-                        android:paddingLeft="8dp"
-                        android:paddingBottom="8dp"
-                        android:paddingRight="8dp"
-                        android:textStyle="bold"
-                        android:text="Algorithm design challenge"
-                        android:textColor="@color/white"/>
-
-                </FrameLayout>
-
-            </android.support.v7.widget.CardView>
-
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:id="@+id/cardToastToCode"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="1dp"
-                android:layout_marginBottom="0dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="4dp"
-                >
-
-                <FrameLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="fitXY"
-                        android:id="@+id/toasttocodeCover"
-                        android:src="@drawable/toasttocode_overlay"/>
-
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom"
-                        android:paddingLeft="8dp"
-                        android:paddingBottom="8dp"
-                        android:paddingRight="8dp"
-                        android:textStyle="bold"
-                        android:text="Techathlon finale"
-                        android:textColor="@color/white"/>
-
-                </FrameLayout>
-
-            </android.support.v7.widget.CardView>
-
-
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:id="@+id/cardHackOn"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="1dp"
-                android:layout_marginBottom="0dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="4dp"
-               >
-
-                <FrameLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="fitXY"
-                        android:id="@+id/hackonCover"
-                        android:src="@drawable/hackon_overlay"/>
-
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom"
-                        android:paddingLeft="8dp"
-                        android:paddingBottom="8dp"
-                        android:paddingRight="8dp"
-                        android:textStyle="bold"
-                        android:text="Capture the flag"
-                        android:textColor="@color/white"/>
-
-                </FrameLayout>
-
-            </android.support.v7.widget.CardView>
-
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:id="@+id/cardHackIIITD"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="1dp"
-                android:layout_marginBottom="0dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="4dp"
-                >
-
-                <FrameLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="fitXY"
-                        android:id="@+id/hackIIITCover"
-                        android:src="@drawable/hack_overlay"/>
-
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom"
-                        android:paddingLeft="8dp"
-                        android:paddingBottom="8dp"
-                        android:paddingRight="8dp"
-                        android:textStyle="bold"
-                        android:text="Ultimate overnight hackathon"
-                        android:textColor="@color/white"/>
-
-                </FrameLayout>
-
-            </android.support.v7.widget.CardView>
-
-
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:id="@+id/cardTechathlon"
-                card_view:cardUseCompatPadding="true"
-                card_view:cardElevation="1dp"
-                android:layout_marginBottom="0dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                card_view:cardBackgroundColor="@android:color/background_light"
-                card_view:cardCornerRadius="4dp"
-                >
-
-                <FrameLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="fitXY"
-                        android:id="@+id/tecathlonCover"
-                        android:src="@drawable/techathlon_overlay"/>
-
-                    <com.example.discrollview.MyTextViewHeading
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom"
-                        android:paddingLeft="8dp"
-                        android:paddingBottom="8dp"
-                        android:paddingRight="8dp"
-                        android:textStyle="bold"
-                        android:text="Six event technical extravaganza"
-                        android:textColor="@color/white"/>
-
-                </FrameLayout>
-
-            </android.support.v7.widget.CardView>
-
-        </LinearLayout>
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="0dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="0dp"
+            card_view:cardElevation="1dp"
+            card_view:cardUseCompatPadding="true">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:id="@+id/designCover"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/design360_overlay" />
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="Overnight design hackathon"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardProsort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="2dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="1dp"
+            card_view:cardUseCompatPadding="true">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:id="@+id/prosortCover"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/prosort_overlay" />
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="On-Campus programming event"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardProcon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="2dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="1dp"
+            card_view:cardUseCompatPadding="true">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:id="@+id/proconCover"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/procon_overlay" />
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="Online programming contest"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardProconJr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="2dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="1dp"
+            card_view:cardUseCompatPadding="true">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:id="@+id/proconJrCover"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/proconjunior_overlay" />
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="Programming competition for school students"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardCodeinless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="2dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="1dp"
+            card_view:cardUseCompatPadding="true">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:id="@+id/codeinlessCover"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/codeinless_overlay" />
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="Concision in style, precision in thought, decision in life"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardDarwingames"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="0dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="1dp"
+            card_view:cardUseCompatPadding="true">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:id="@+id/darwingamesCover"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/darwingames_overlay" />
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="Challenge yourself to new environments"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardSegfault"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="0dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="1dp"
+            card_view:cardUseCompatPadding="true">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:id="@+id/segfaultCover"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/segfault_overlay" />
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="Win or bugger Off"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardBrainFuzz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="0dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="1dp"
+            card_view:cardUseCompatPadding="true">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:id="@+id/brainfuzzCover"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/brainfuzz_overlay" />
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="Algorithm design challenge"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardToastToCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="0dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="1dp"
+            card_view:cardUseCompatPadding="true">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:id="@+id/toasttocodeCover"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/toasttocode_overlay" />
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="Techathlon finale"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardHackOn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="0dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="1dp"
+            card_view:cardUseCompatPadding="true">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:id="@+id/hackonCover"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hackon_overlay" />
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="Capture the flag"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardHackIIITD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="0dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="1dp"
+            card_view:cardUseCompatPadding="true">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:id="@+id/hackIIITCover"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hack_overlay" />
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="Ultimate overnight hackathon"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardTechathlon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="0dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="1dp"
+            card_view:cardUseCompatPadding="true">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:id="@+id/tecathlonCover"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/techathlon_overlay" />
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="Six event technical extravaganza"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
 
 </ScrollView>
