@@ -3,7 +3,9 @@ package com.example.discrollview;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.res.Resources;
+import android.media.Image;
 import android.net.Uri;
+import android.provider.ContactsContract;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.os.Bundle;
@@ -13,6 +15,7 @@ import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.astuetz.PagerSlidingTabStrip;
@@ -37,6 +40,7 @@ public class TabOneFragment extends Fragment {
         CardView hackiiitd = (CardView) v.findViewById(R.id.cardHackIIITD);
         CardView design360 = (CardView) v.findViewById(R.id.cardDesign360);
         CardView techathlon = (CardView) v.findViewById(R.id.cardTechathlon);
+
 
 
         proconjr.setOnClickListener(new View.OnClickListener() {
@@ -149,4 +153,71 @@ public class TabOneFragment extends Fragment {
         return v;
     }
 
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+
+        int imageHeight=(int) Math.round(Resources.getSystem().getDisplayMetrics().widthPixels/2.69);
+        int imageWidth= Resources.getSystem().getDisplayMetrics().widthPixels;
+
+        ImageView designCover= (ImageView) getActivity().findViewById(R.id.designCover);
+        designCover.getLayoutParams().width=imageWidth;
+        designCover.getLayoutParams().height=imageHeight;
+        designCover.requestLayout();
+
+        ImageView prosortCover= (ImageView) getActivity().findViewById(R.id.prosortCover);
+        prosortCover.getLayoutParams().width=imageWidth;
+        prosortCover.getLayoutParams().height=imageHeight;
+        prosortCover.requestLayout();
+
+        ImageView proconCover= (ImageView) getActivity().findViewById(R.id.proconCover);
+        proconCover.getLayoutParams().width=imageWidth;
+        proconCover.getLayoutParams().height=imageHeight;
+        proconCover.requestLayout();
+
+        ImageView proconJrCover= (ImageView) getActivity().findViewById(R.id.proconJrCover);
+        proconJrCover.getLayoutParams().width=imageWidth;
+        proconJrCover.getLayoutParams().height=imageHeight;
+        proconJrCover.requestLayout();
+
+        ImageView codeinlessCover= (ImageView) getActivity().findViewById(R.id.codeinlessCover);
+        codeinlessCover.getLayoutParams().width=imageWidth;
+        codeinlessCover.getLayoutParams().height=imageHeight;
+        codeinlessCover.requestLayout();
+
+        ImageView darwingamesCover= (ImageView) getActivity().findViewById(R.id.darwingamesCover);
+        darwingamesCover.getLayoutParams().width=imageWidth;
+        darwingamesCover.getLayoutParams().height=imageHeight;
+        darwingamesCover.requestLayout();
+
+        ImageView segfaultCover= (ImageView) getActivity().findViewById(R.id.segfaultCover);
+        segfaultCover.getLayoutParams().width=imageWidth;
+        segfaultCover.getLayoutParams().height=imageHeight;
+        segfaultCover.requestLayout();
+
+        ImageView brainfuzzCover= (ImageView) getActivity().findViewById(R.id.brainfuzzCover);
+        brainfuzzCover.getLayoutParams().width=imageWidth;
+        brainfuzzCover.getLayoutParams().height=imageHeight;
+        brainfuzzCover.requestLayout();
+
+        ImageView toasttocodeCover= (ImageView) getActivity().findViewById(R.id.toasttocodeCover);
+        toasttocodeCover.getLayoutParams().width=imageWidth;
+        toasttocodeCover.getLayoutParams().height=imageHeight;
+        toasttocodeCover.requestLayout();
+
+        ImageView hackonCover= (ImageView) getActivity().findViewById(R.id.hackonCover);
+        hackonCover.getLayoutParams().width=imageWidth;
+        hackonCover.getLayoutParams().height=imageHeight;
+        hackonCover.requestLayout();
+
+        ImageView hackIIITCover= (ImageView) getActivity().findViewById(R.id.hackIIITCover);
+        hackIIITCover.getLayoutParams().width=imageWidth;
+        hackIIITCover.getLayoutParams().height=imageHeight;
+        hackIIITCover.requestLayout();
+
+        ImageView tecathlonCover= (ImageView) getActivity().findViewById(R.id.tecathlonCover);
+        tecathlonCover.getLayoutParams().width=imageWidth;
+        tecathlonCover.getLayoutParams().height=imageHeight;
+        tecathlonCover.requestLayout();
+
+    }
 }

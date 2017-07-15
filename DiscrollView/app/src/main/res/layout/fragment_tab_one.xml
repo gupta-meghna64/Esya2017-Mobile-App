@@ -19,7 +19,7 @@
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="400px"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:id="@+id/cardDesign360"
                 card_view:cardUseCompatPadding="true"
@@ -39,6 +39,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:scaleType="fitXY"
+                        android:id="@+id/designCover"
                         android:src="@drawable/design360_overlay"/>
 
                     <com.example.discrollview.MyTextViewHeading
@@ -58,7 +59,7 @@
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="400px"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:id="@+id/cardProsort"
                 card_view:cardUseCompatPadding="true"
@@ -77,6 +78,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:scaleType="fitXY"
+                        android:id="@+id/prosortCover"
                         android:src="@drawable/prosort_overlay"/>
 
                     <com.example.discrollview.MyTextViewHeading
@@ -97,7 +99,7 @@
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="400px"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:id="@+id/cardProcon"
                 card_view:cardUseCompatPadding="true"
@@ -116,6 +118,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:scaleType="fitXY"
+                        android:id="@+id/proconCover"
                         android:src="@drawable/procon_overlay"/>
 
                     <com.example.discrollview.MyTextViewHeading
@@ -134,7 +137,7 @@
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="400px"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:id="@+id/cardProconJr"
                 card_view:cardUseCompatPadding="true"
@@ -153,6 +156,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:scaleType="fitXY"
+                        android:id="@+id/proconJrCover"
                         android:src="@drawable/proconjunior_overlay"/>
 
                     <com.example.discrollview.MyTextViewHeading
@@ -173,7 +177,7 @@
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="400px"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:id="@+id/cardCodeinless"
                 card_view:cardUseCompatPadding="true"
@@ -192,6 +196,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:scaleType="fitXY"
+                        android:id="@+id/codeinlessCover"
                         android:src="@drawable/codeinless_overlay"/>
 
                     <com.example.discrollview.MyTextViewHeading
@@ -211,7 +216,7 @@
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="400px"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:id="@+id/cardDarwingames"
                 card_view:cardUseCompatPadding="true"
@@ -231,6 +236,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:scaleType="fitXY"
+                        android:id="@+id/darwingamesCover"
                         android:src="@drawable/darwingames_overlay"/>
 
                     <com.example.discrollview.MyTextViewHeading
@@ -251,7 +257,7 @@
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="400px"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:id="@+id/cardSegfault"
                 card_view:cardUseCompatPadding="true"
@@ -271,6 +277,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:scaleType="fitXY"
+                        android:id="@+id/segfaultCover"
                         android:src="@drawable/segfault_overlay"/>
 
                     <com.example.discrollview.MyTextViewHeading
@@ -291,7 +298,7 @@
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="400px"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:id="@+id/cardBrainFuzz"
                 card_view:cardUseCompatPadding="true"
@@ -311,6 +318,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:scaleType="fitXY"
+                        android:id="@+id/brainfuzzCover"
                         android:src="@drawable/brainfuzz_overlay"/>
 
                     <com.example.discrollview.MyTextViewHeading
@@ -331,7 +339,7 @@
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="400px"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:id="@+id/cardToastToCode"
                 card_view:cardUseCompatPadding="true"
@@ -351,6 +359,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:scaleType="fitXY"
+                        android:id="@+id/toasttocodeCover"
                         android:src="@drawable/toasttocode_overlay"/>
 
                     <com.example.discrollview.MyTextViewHeading
@@ -372,7 +381,7 @@
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="400px"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:id="@+id/cardHackOn"
                 card_view:cardUseCompatPadding="true"
@@ -392,6 +401,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:scaleType="fitXY"
+                        android:id="@+id/hackonCover"
                         android:src="@drawable/hackon_overlay"/>
 
                     <com.example.discrollview.MyTextViewHeading
@@ -412,7 +422,7 @@
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="400px"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:id="@+id/cardHackIIITD"
                 card_view:cardUseCompatPadding="true"
@@ -432,6 +442,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:scaleType="fitXY"
+                        android:id="@+id/hackIIITCover"
                         android:src="@drawable/hack_overlay"/>
 
                     <com.example.discrollview.MyTextViewHeading
@@ -453,7 +464,7 @@
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="400px"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:id="@+id/cardTechathlon"
                 card_view:cardUseCompatPadding="true"
@@ -473,6 +484,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:scaleType="fitXY"
+                        android:id="@+id/tecathlonCover"
                         android:src="@drawable/techathlon_overlay"/>
 
                     <com.example.discrollview.MyTextViewHeading

@@ -17,7 +17,7 @@
         <android.support.v7.widget.CardView
             android:id="@+id/cardCircuitrixjr"
             android:layout_width="match_parent"
-            android:layout_height="400px"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="0dp"
             android:clickable="true"
@@ -35,6 +35,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="fitXY"
+                    android:id="@+id/circuitrixjrCover"
                     android:src="@drawable/circuitrixjunior_overlay" />
 
                 <com.example.discrollview.MyTextViewHeading
@@ -55,7 +56,7 @@
         <android.support.v7.widget.CardView
             android:id="@+id/cardCircuitrix"
             android:layout_width="match_parent"
-            android:layout_height="400px"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="0dp"
             android:clickable="true"
@@ -73,6 +74,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="fitXY"
+                    android:id="@+id/circuitrixCover"
                     android:src="@drawable/circuitrix_overlay" />
 
                 <com.example.discrollview.MyTextViewHeading
@@ -92,7 +94,7 @@
         <android.support.v7.widget.CardView
             android:id="@+id/cardRobowars"
             android:layout_width="match_parent"
-            android:layout_height="400px"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="0dp"
             android:clickable="true"
@@ -110,6 +112,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="fitXY"
+                    android:id="@+id/robowarsCover"
                     android:src="@drawable/robowars_overlay" />
 
                 <com.example.discrollview.MyTextViewHeading
@@ -130,7 +133,7 @@
         <android.support.v7.widget.CardView
             android:id="@+id/cardRobocon"
             android:layout_width="match_parent"
-            android:layout_height="400px"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="0dp"
             android:clickable="true"
@@ -148,6 +151,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="fitXY"
+                    android:id="@+id/roboconCover"
                     android:src="@drawable/robocon_overlay" />
 
                 <com.example.discrollview.MyTextViewHeading
@@ -164,49 +168,11 @@
 
         </android.support.v7.widget.CardView>
 
-        <!--<android.support.v7.widget.CardView-->
-            <!--android:id="@+id/cardRobomaze"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="400px"-->
-            <!--android:layout_gravity="center"-->
-            <!--android:layout_marginBottom="0dp"-->
-            <!--android:clickable="true"-->
-            <!--android:foreground="?android:attr/selectableItemBackground"-->
-            <!--card_view:cardBackgroundColor="@android:color/background_light"-->
-            <!--card_view:cardCornerRadius="4dp"-->
-            <!--card_view:cardElevation="1dp"-->
-            <!--card_view:cardUseCompatPadding="true">-->
-
-            <!--<FrameLayout-->
-                <!--android:layout_width="fill_parent"-->
-                <!--android:layout_height="fill_parent">-->
-
-                <!--<ImageView-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="match_parent"-->
-                    <!--android:scaleType="fitXY"-->
-                    <!--android:src="@drawable/robomaze_overlay" />-->
-
-                <!--<com.example.discrollview.MyTextViewHeading-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_gravity="bottom"-->
-                    <!--android:paddingBottom="8dp"-->
-                    <!--android:paddingLeft="8dp"-->
-                    <!--android:text=""-->
-                    <!--android:textColor="@color/white"-->
-                    <!--android:textStyle="bold" />-->
-
-            <!--</FrameLayout>-->
-
-
-        <!--</android.support.v7.widget.CardView>-->
-
 
         <android.support.v7.widget.CardView
             android:id="@+id/cardRobosoccer"
             android:layout_width="match_parent"
-            android:layout_height="400px"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="0dp"
             android:clickable="true"
@@ -224,6 +190,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="fitXY"
+                    android:id="@+id/robosoccerCover"
                     android:src="@drawable/robosoccer_overlay" />
 
                 <com.example.discrollview.MyTextViewHeading
@@ -244,7 +211,7 @@
         <android.support.v7.widget.CardView
             android:id="@+id/cardHackoverflow"
             android:layout_width="match_parent"
-            android:layout_height="400px"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="0dp"
             android:clickable="true"
@@ -262,6 +229,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="fitXY"
+                    android:id="@+id/hackoverflowCover"
                     android:src="@drawable/hackoverflow_overlay" />
 
                 <com.example.discrollview.MyTextViewHeading
