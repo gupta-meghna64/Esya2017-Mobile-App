@@ -242,6 +242,14 @@ As you progress through the different stages of this mysterious puzzle, the myst
                         android:layout_weight="1"
                         android:text="sarthak16189@iiitd.ac.in" />
 
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="REGISTER"
+                        android:id="@+id/buttonRegisterChakravyuha"/>
+
+
                 </LinearLayout>
 
 
