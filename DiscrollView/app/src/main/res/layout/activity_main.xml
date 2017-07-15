@@ -163,6 +163,9 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="bottom|center"
                             android:layout_marginBottom="24dp"
+                            android:background="@drawable/button"
+                            android:textColor="@color/white"
+                            android:padding="8dp"
                             android:text="MORE INFORMATION" />
 
                     </FrameLayout>
@@ -213,6 +216,9 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="bottom|center"
                             android:layout_marginBottom="24dp"
+                            android:background="@drawable/button"
+                            android:textColor="@color/white"
+                            android:padding="8dp"
                             android:text="MORE INFORMATION" />
                     </FrameLayout>
                     ​
@@ -262,6 +268,9 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="bottom|center"
                             android:layout_marginBottom="24dp"
+                            android:background="@drawable/button"
+                            android:textColor="@color/white"
+                            android:padding="8dp"
                             android:text="MORE INFORMATION" />
 
                     </FrameLayout>
@@ -313,6 +322,9 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="bottom|center"
                             android:layout_marginBottom="24dp"
+                            android:background="@drawable/button"
+                            android:textColor="@color/white"
+                            android:padding="8dp"
                             android:text="MORE INFORMATION" />
 
                     </FrameLayout>
@@ -363,6 +375,9 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="bottom|center"
                             android:layout_marginBottom="24dp"
+                            android:background="@drawable/button"
+                            android:textColor="@color/white"
+                            android:padding="8dp"
                             android:text="MORE INFORMATION" />
                     </FrameLayout>
                     ​
@@ -411,6 +426,9 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="bottom|center"
                             android:layout_marginBottom="24dp"
+                            android:background="@drawable/button"
+                            android:textColor="@color/white"
+                            android:padding="8dp"
                             android:text="MORE INFORMATION" />
                     </FrameLayout>
                     ​
