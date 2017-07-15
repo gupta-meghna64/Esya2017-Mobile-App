@@ -1,6 +1,7 @@
 package com.example.discrollview;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.net.Uri;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
@@ -8,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 /**
@@ -39,6 +41,14 @@ public class FragmentECE3 extends Fragment {
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://docs.google.com/a/iiitd.ac.in/forms/d/1tpBgPMSR7A676fHmQTAeB0QG4emaJiQfu6jKUA0BRmE/edit?usp=drivesdk")));
             }
         });
+
+        int imageHeight = (int) Math.round(Resources.getSystem().getDisplayMetrics().widthPixels / 2.69);
+        int imageWidth = Resources.getSystem().getDisplayMetrics().widthPixels;
+
+        ImageView robowarsCover = (ImageView) getActivity().findViewById(R.id.robowarsMainCover);
+        robowarsCover.getLayoutParams().width = imageWidth;
+        robowarsCover.getLayoutParams().height = imageHeight;
+        robowarsCover.requestLayout();
 
 
     }
