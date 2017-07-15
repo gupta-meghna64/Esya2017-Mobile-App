@@ -17,7 +17,7 @@
         <android.support.v7.widget.CardView
             android:id="@+id/cardViewTop"
             android:layout_width="match_parent"
-            android:layout_height="400px"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginLeft="-4dp"
             android:layout_marginRight="-4dp"
@@ -31,6 +31,7 @@
 
 
             <ImageView
+                android:id="@+id/speedcubingMainCover"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="fitXY"
@@ -116,7 +117,6 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
-                    android:textAlignment="viewStart"
                     android:text="1) Solving cube before starting stackmat will lead to penalty. \n \n
 2) Stopping stackmat before finishing cube will lead to penalty. \n \n
 3) Starting cube after completing inspection time will lead to penalty. Make sure that you will start solving cube before the timer runs out of time. \n \n
@@ -127,7 +127,8 @@
 \t c) In any other state in which more than one move is required to solve the cube, the puzzle is considered unsolved (DNF). \n \n
 6) Event head can modify the rules according to the situation, assuring you that no biasing will happen. \n \n
 7) Decision of organizers is final and binding.
-" />
+"
+                    android:textAlignment="viewStart" />
 
             </LinearLayout>
 

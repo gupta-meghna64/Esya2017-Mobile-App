@@ -17,7 +17,7 @@
         <android.support.v7.widget.CardView
             android:id="@+id/cardViewTop"
             android:layout_width="match_parent"
-            android:layout_height="400px"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="4"
             android:clickable="true"
@@ -28,6 +28,7 @@
             card_view:cardUseCompatPadding="true">
 
             <ImageView
+                android:id="@+id/mockstockMainCover"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="fitXY"
@@ -71,8 +72,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
-                    android:textAlignment="viewStart"
-                    android:text="MockStocks is an online stock market simulation contest which will give participants a view in the world of stock markets. Virtual currency is used for trading stocks. Event is hosted on online stock simulation websites and the biggest trader will emerge as a winner." />
+                    android:text="MockStocks is an online stock market simulation contest which will give participants a view in the world of stock markets. Virtual currency is used for trading stocks. Event is hosted on online stock simulation websites and the biggest trader will emerge as a winner."
+                    android:textAlignment="viewStart" />
 
             </LinearLayout>
 
@@ -113,14 +114,14 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
-                    android:textAlignment="viewStart"
                     android:text="1) Every round is organized on an online platform decided by organizers. \n \n
 2) Each participant is given equal amount of virtual currency at the start of an event to trade. \n \n
 3) If a participant loses money in trading or runs out of currency then no help is provided, such situations means the participant is out of the contest. \n \n
 4) Top two, top five are decided on the ranking of the participants at the end of the final round. For biggest leap award rankings of participants at the end of the first day of final event is noted and is compared to the rank of participant at the end of the event on day 2, participant who improved his/her rank the most is given the biggest leap award. \n \n
 5) Only winner, runner up and biggest leaper will get cash prizes decided by organizers. \n \n
 6) Decision of organizers is final and binding.
-" />
+"
+                    android:textAlignment="viewStart" />
 
             </LinearLayout>
 
