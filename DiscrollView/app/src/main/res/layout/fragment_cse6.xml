@@ -234,6 +234,13 @@
                         android:layout_weight="1"
                         android:text="ankur16225@iiitd.ac.in" />
 
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="REGISTER"
+                        android:id="@+id/buttonRegisterSegfault"/>
+
                 </LinearLayout>
 
             </LinearLayout>
