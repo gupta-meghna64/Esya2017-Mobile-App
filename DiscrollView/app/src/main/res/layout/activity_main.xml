@@ -155,7 +155,7 @@
                             android:id="@+id/unfoldedEvents"
                             android:layout_width="wrap_content"
                             android:layout_height="800px"
-                            android:src="@drawable/maindj" />
+                            android:src="@drawable/mainevents" />
 
                         <Button
                             android:id="@+id/events"
