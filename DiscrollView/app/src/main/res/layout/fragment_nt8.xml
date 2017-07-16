@@ -134,7 +134,8 @@ Register and start writing! Check out the rules!
 11) Mentioning the theme is compulsory to be eligible for judgement. \n \n
 12) A minimum of one and a maximum of four keywords from the given keywords must be included in the stories. Any story without following this rule will not be considered for qualification/prizes. \n \n
 13) The keywords and themes should be hashtagged at the end of each story. \n \n
-14) Decision of the judges will be final and binding.
+14) Registration is mandatory for the post to be eligible for the competition. \n \n
+15) Decision of the judges will be final and binding.
 "
                     android:textAlignment="viewStart" />
 
@@ -227,6 +228,12 @@ Register and start writing! Check out the rules!
 
                 </LinearLayout>
 
+                <Button
+                    android:id="@+id/buttonRegisterWordsToGo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="REGISTER" />
             </LinearLayout>
 
 
