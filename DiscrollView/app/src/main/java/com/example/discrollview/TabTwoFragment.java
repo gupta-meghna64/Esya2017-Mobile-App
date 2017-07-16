@@ -2,6 +2,7 @@ package com.example.discrollview;
 
 import android.content.Intent;
 import android.content.res.Resources;
+import android.net.Uri;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
@@ -63,14 +64,6 @@ public class TabTwoFragment extends Fragment {
             }
         });
 
-//        robomaze.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent i = new Intent(getActivity(), ECEMainActivity.class);
-//                i.putExtra("viewpager_position", 4);
-//                startActivity(i);
-//            }
-//        });
 
         robosoccer.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,9 +77,8 @@ public class TabTwoFragment extends Fragment {
         hackoverflow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getActivity(), ECEMainActivity.class);
-                i.putExtra("viewpager_position", 5);
-                startActivity(i);
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://esya.iiitd.edu.in/hackoverflow/")));
+
             }
         });
 
