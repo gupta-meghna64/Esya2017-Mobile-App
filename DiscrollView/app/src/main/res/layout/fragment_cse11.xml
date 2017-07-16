@@ -64,7 +64,7 @@
                     android:padding="8dp"
                     android:text="DESCRIPTION"
                     android:textAlignment="center"
-                    android:textSize="18dp"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <com.example.discrollview.MyTextView
@@ -105,7 +105,7 @@
                     android:padding="8dp"
                     android:text="RULES"
                     android:textAlignment="center"
-                    android:textSize="18dp" />
+                    android:textSize="18sp" />
 
                 <com.example.discrollview.MyTextView
                     android:layout_width="match_parent"
@@ -152,7 +152,7 @@
                     android:padding="8dp"
                     android:text="POINT OF CONTACT"
                     android:textAlignment="center"
-                    android:textSize="18dp" />
+                    android:textSize="18sp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
