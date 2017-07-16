@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
     private ImageView foldedInitiatives;
     private ImageView unfoldedAccomodation;
     private ImageView foldedAccomodation;
-    private RelativeLayout imageSlider;
+    private SliderLayout imageSlider;
     final int foldingCellArr[] = new int[6];
 
     private final LatLng LOCATION_IIITD = new LatLng(28.5459495, 77.2688703);
@@ -117,9 +117,9 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         setContentView(R.layout.activity_main);
 
 
-        imageSlider = (RelativeLayout) findViewById(R.id.slideFrame);
+        imageSlider = (SliderLayout) findViewById(R.id.slider);
         imageSlider.getLayoutParams().width = Resources.getSystem().getDisplayMetrics().widthPixels;
-        int height = (int) (Resources.getSystem().getDisplayMetrics().widthPixels * 1.5);
+        int height = (int) (Resources.getSystem().getDisplayMetrics().widthPixels / 1.5);
         imageSlider.getLayoutParams().height = height;
         imageSlider.requestLayout();
 
