@@ -89,7 +89,7 @@
                     android:padding="8dp"
                     android:text="ABOUT US"
                     android:textAlignment="center"
-                    android:textSize="18dp" />
+                    android:textSize="18sp" />
 
                 <com.example.discrollview.MyTextViewMedium
                     android:layout_width="match_parent"
@@ -106,7 +106,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="3"
-                    android:padding="8dp"
+                    android:padding="8sp"
                     android:text="Esya is a two-day long festival that aims to stimulate new innovations and carve out hidden talents.This year, Esya promises to be an unprecedented celebration of budding talent, technical excellence and innovative minds, breaking all barriers and exploring the unexplored.."
                     android:textAlignment="center" />
 
@@ -491,7 +491,7 @@
                         android:padding="8dp"
                         android:text="ADDRESS"
                         android:textAlignment="center"
-                        android:textSize="18dp" />
+                        android:textSize="18sp" />
 
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
@@ -558,7 +558,7 @@
                         android:layout_gravity="center"
                         android:paddingTop="8dp"
                         android:text="PAST SPONSORS"
-                        android:textSize="20dp" />
+                        android:textSize="20sp" />
 
 
                 </LinearLayout>
@@ -609,7 +609,7 @@
                         android:layout_gravity="center"
                         android:paddingTop="8dp"
                         android:text="ONLINE SOCIAL MEDIA PARTNERS"
-                        android:textSize="20dp" />
+                        android:textSize="20sp" />
 
 
                 </LinearLayout>
@@ -659,7 +659,7 @@
                     android:paddingTop="8dp"
                     android:text="CONTACT"
                     android:textAlignment="center"
-                    android:textSize="20dp" />
+                    android:textSize="20sp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
