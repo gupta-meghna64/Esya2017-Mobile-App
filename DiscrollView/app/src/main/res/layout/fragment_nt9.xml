@@ -211,6 +211,12 @@ Our event is based on the multiplayer mode in which people connect to one server
 
                 </LinearLayout>
 
+                <Button
+                    android:id="@+id/buttonRegisterMiniMilitia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="REGISTER" />
 
             </LinearLayout>
 

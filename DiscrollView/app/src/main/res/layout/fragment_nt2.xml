@@ -301,14 +301,16 @@ Please note : \n
                         android:layout_weight="1"
                         android:text="nirmita16174@iiitd.ac.in" />
 
-                    <Button
-                        android:id="@+id/buttonRegisterHuntIT"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:text="REGISTER" />
+
 
                 </LinearLayout>
+
+                <Button
+                    android:id="@+id/buttonRegisterHuntIT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="REGISTER" />
 
             </LinearLayout>
 
