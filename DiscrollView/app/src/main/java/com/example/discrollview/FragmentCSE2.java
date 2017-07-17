@@ -30,7 +30,7 @@ public class FragmentCSE2 extends Fragment {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("rebrand.ly/procon")));
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://rebrand.ly/procon")));
             }
         });
 
