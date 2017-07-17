@@ -269,14 +269,14 @@ A detailed rulebook for the event can be found here - " />
                         android:layout_weight="1"
                         android:text="vaibhav16111@iiitd.ac.in" />
 
-                    <Button
-                        android:id="@+id/buttonRegisterRobowars"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:text="REGISTER" />
-
                 </LinearLayout>
+
+                <Button
+                    android:id="@+id/buttonRegisterRobowars"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="REGISTER" />
 
             </LinearLayout>
 

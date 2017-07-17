@@ -16,6 +16,8 @@ import android.widget.ImageView;
  */
 
 public class FragmentCSE12 extends Fragment {
+
+    private Button register;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_cse12, container, false);
@@ -32,6 +34,14 @@ public class FragmentCSE12 extends Fragment {
         techathlonCover.getLayoutParams().width = imageWidth;
         techathlonCover.getLayoutParams().height = imageHeight;
         techathlonCover.requestLayout();
+
+        register = (Button) getActivity().findViewById(R.id.buttonRegisterTechathlon);
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://rebrand.ly/techathlon")));
+            }
+        });
 
 
     }

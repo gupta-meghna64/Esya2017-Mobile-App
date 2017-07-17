@@ -268,14 +268,15 @@
                         android:layout_weight="1"
                         android:text="sanidhya15085@iiitd.ac.in" />
 
-                    <Button
-                        android:id="@+id/buttonRegisterDarwin"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:text="REGISTER" />
 
                 </LinearLayout>
+
+                <Button
+                    android:id="@+id/buttonRegisterDarwin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="REGISTER" />
 
             </LinearLayout>
 

@@ -345,14 +345,14 @@
                         android:layout_weight="1"
                         android:text="sushant16103@iiitd.ac.in" />
 
-                    <Button
-                        android:id="@+id/buttonRegisterRobosoccer"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:text="REGISTER" />
-
                 </LinearLayout>
+
+                <Button
+                    android:id="@+id/buttonRegisterRobosoccer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="REGISTER" />
 
             </LinearLayout>
 

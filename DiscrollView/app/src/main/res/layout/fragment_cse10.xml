@@ -291,14 +291,15 @@ Shoutout to all computer nerds and gizmo geeks. For our 6th Edition of TechFest 
                         android:layout_weight="1"
                         android:text="baani16234@iiitd.ac.in" />
 
-                    <Button
-                        android:id="@+id/buttonRegisterHackiiitd"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:text="REGISTER" />
 
                 </LinearLayout>
+
+                <Button
+                    android:id="@+id/buttonRegisterHackiiitd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="REGISTER" />
 
             </LinearLayout>
 

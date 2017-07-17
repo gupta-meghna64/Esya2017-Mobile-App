@@ -248,14 +248,14 @@ ProSort is part of the Techathlon series of Esya '17. Techathlon is a 6-event te
                         android:layout_weight="1"
                         android:text="siddharth16096@iiitd.ac.in" />
 
-                    <Button
-                        android:id="@+id/buttonRegisterProsort"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:text="REGISTER" />
 
                 </LinearLayout>
+                <Button
+                    android:id="@+id/buttonRegisterProsort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="REGISTER" />
 
             </LinearLayout>
 

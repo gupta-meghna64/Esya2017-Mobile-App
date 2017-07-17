@@ -16,6 +16,7 @@ import android.widget.ImageView;
  */
 
 public class FragmentCSE9 extends Fragment {
+    private Button register;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_cse9, container, false);
@@ -24,6 +25,13 @@ public class FragmentCSE9 extends Fragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
 
+        register = (Button) getActivity().findViewById(R.id.buttonRegisterHackon);
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://rebrand.ly/hackon")));
+            }
+        });
 
         int imageHeight = (int) Math.round(Resources.getSystem().getDisplayMetrics().widthPixels / 2.69);
         int imageWidth = Resources.getSystem().getDisplayMetrics().widthPixels;
