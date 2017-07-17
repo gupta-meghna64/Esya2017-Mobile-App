@@ -222,12 +222,6 @@ Techathlon consists of the following events, other than the grand finale Toast t
 
                 </LinearLayout>
 
-                <Button
-                    android:id="@+id/buttonRegisterTechathlon"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="REGISTER" />
 
             </LinearLayout>
 
