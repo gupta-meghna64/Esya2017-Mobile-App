@@ -38,7 +38,7 @@ public class MyPagerAdapterCSE extends FragmentPagerAdapter {
         else if (position == 8)
             return "Toast To Code";
         else if (position == 9)
-            return "HackOn";
+            return "Hackcon";
         else if (position == 10)
             return "HackIIIT";
         else
