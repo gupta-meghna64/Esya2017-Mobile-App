@@ -594,8 +594,7 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
                         }
                         clickedButton = (Button) arg0;
                         stopAutoScrolling();
-                        clickedButton.startAnimation
-                                (scaleFaceUpAnimation());
+                        clickedButton.startAnimation(scaleFaceUpAnimation());
                         clickedButton.setSelected(true);
                         clickTimer = new Timer();
 
