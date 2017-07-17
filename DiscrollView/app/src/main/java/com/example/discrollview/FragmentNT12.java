@@ -27,7 +27,7 @@ public class FragmentNT12 extends Fragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
 
-        register = (Button) getActivity().findViewById(R.id.buttonRegisterSpeedCubing);
+        register = (Button) getActivity().findViewById(R.id.buttonRegisterMockStocks);
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
