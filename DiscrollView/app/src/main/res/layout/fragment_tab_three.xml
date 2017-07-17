@@ -121,7 +121,7 @@
                     android:layout_gravity="bottom"
                     android:paddingBottom="8dp"
                     android:paddingLeft="8dp"
-                    android:text="Quiz."
+                    android:text="Time to tickle your grey cells"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
 
