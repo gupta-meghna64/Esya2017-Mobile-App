@@ -83,7 +83,7 @@
                     android:layout_gravity="bottom"
                     android:paddingBottom="8dp"
                     android:paddingLeft="8dp"
-                    android:text="Unravel the mystery behind the death of Marilyn Monroe"
+                    android:text="Unravel the mystery behind death of Marilyn Monroe"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
 
