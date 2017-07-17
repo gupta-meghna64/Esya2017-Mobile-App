@@ -36,7 +36,7 @@
                 android:layout_gravity="left"
                 android:layout_weight="3"
                 android:padding="8dp"
-                android:text="The best way to experience this spectacular fest is to stay at the college and enjoy every mnute of it. We will ensure that your stay here will be most memorable and pleasant."
+                android:text="The best way to experience this spectacular fest is to stay at the college and enjoy every minute of it. We will ensure that your stay here will be most memorable and pleasant."
                 android:textColor="@color/white"
                 android:textSize="16sp" />
 
