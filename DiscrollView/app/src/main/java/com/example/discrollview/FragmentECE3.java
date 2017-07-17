@@ -18,6 +18,7 @@ import android.widget.TextView;
 
 public class FragmentECE3 extends Fragment {
     private Button register;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_ece3, container, false);
@@ -25,7 +26,7 @@ public class FragmentECE3 extends Fragment {
     }
 
     @Override
-    public void onViewCreated(View view, Bundle savedInstanceState){
+    public void onViewCreated(View view, Bundle savedInstanceState) {
         MyTextView rules = (MyTextView) getActivity().findViewById(R.id.roboconRules);
         register = (Button) getActivity().findViewById(R.id.buttonRegisterRobowars);
         rules.setOnClickListener(new View.OnClickListener() {

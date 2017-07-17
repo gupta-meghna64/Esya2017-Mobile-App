@@ -28,7 +28,7 @@ public class Workshops extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.workshops_main);
-        mainLayout= (LinearLayout) findViewById(R.id.mainFrameWorkshops);
+        mainLayout = (LinearLayout) findViewById(R.id.mainFrameWorkshops);
         back = (Button) findViewById(R.id.backButtonWorkshops);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,9 +38,9 @@ public class Workshops extends AppCompatActivity {
             }
         });
 
-        Bitmap workshopsBitmap= BitmapFactory.decodeResource(getResources(),R.drawable.mainworkshops);
-        Bitmap newResizedBMP= Bitmap.createScaledBitmap(workshopsBitmap,1280,1280,true);
-        Bitmap finalBMP= Bitmap.createBitmap(newResizedBMP,250,0,768,1280);
+        Bitmap workshopsBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.mainworkshops);
+        Bitmap newResizedBMP = Bitmap.createScaledBitmap(workshopsBitmap, 1280, 1280, true);
+        Bitmap finalBMP = Bitmap.createBitmap(newResizedBMP, 250, 0, 768, 1280);
         mainLayout.setBackground(new BitmapDrawable(finalBMP));
     }
 

@@ -32,13 +32,13 @@ public class SplashScreen extends AppCompatActivity {
         startHeavyProcessing();
         AnimatedSvgView svgView = (AnimatedSvgView) findViewById(R.id.animated_svg_view);
         svgView.start();
-        FadingTextView changingText=(FadingTextView) findViewById(R.id.fadingTextView);
-        Typeface tf = Typeface.createFromAsset(getAssets(),"Roboto-Light.ttf");
+        FadingTextView changingText = (FadingTextView) findViewById(R.id.fadingTextView);
+        Typeface tf = Typeface.createFromAsset(getAssets(), "Roboto-Light.ttf");
         changingText.setTypeface(tf);
 
     }
 
-    private void startHeavyProcessing(){
+    private void startHeavyProcessing() {
         new LongOperation().execute("");
     }
 
@@ -66,10 +66,12 @@ public class SplashScreen extends AppCompatActivity {
         }
 
         @Override
-        protected void onPreExecute() {}
+        protected void onPreExecute() {
+        }
 
         @Override
-        protected void onProgressUpdate(Void... values) {}
+        protected void onProgressUpdate(Void... values) {
+        }
     }
 
 }

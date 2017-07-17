@@ -18,6 +18,7 @@ import android.widget.TextView;
 
 public class FragmentNT5 extends Fragment {
     private Button register;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_nt5, container, false);
@@ -35,7 +36,7 @@ public class FragmentNT5 extends Fragment {
         });
 
 
-        register=(Button) getActivity().findViewById(R.id.buttonRegisterPWNED);
+        register = (Button) getActivity().findViewById(R.id.buttonRegisterPWNED);
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -31,7 +31,7 @@ public class Accomodation extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.accomodation_main);
-        mainLayout=(LinearLayout) findViewById(R.id.accomodationFrame);
+        mainLayout = (LinearLayout) findViewById(R.id.accomodationFrame);
         back = (Button) findViewById(R.id.backButtonAccomodation);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,9 +41,9 @@ public class Accomodation extends AppCompatActivity {
             }
         });
 
-        Bitmap comedyBitmap= BitmapFactory.decodeResource(getResources(),R.drawable.mainaccomodation);
-        Bitmap newResizedBMP= Bitmap.createScaledBitmap(comedyBitmap,1280,1280,true);
-        Bitmap finalBMP= Bitmap.createBitmap(newResizedBMP,250,0,768,1280);
+        Bitmap comedyBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.mainaccomodation);
+        Bitmap newResizedBMP = Bitmap.createScaledBitmap(comedyBitmap, 1280, 1280, true);
+        Bitmap finalBMP = Bitmap.createBitmap(newResizedBMP, 250, 0, 768, 1280);
         mainLayout.setBackground(new BitmapDrawable(finalBMP));
     }
 

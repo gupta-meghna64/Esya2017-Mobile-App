@@ -396,7 +396,6 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         sliderLayout.addOnPageChangeListener(this);
 
 
-
         events = (Button) findViewById(R.id.events);
         events.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -500,6 +499,7 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
 
         scrollMax1 = actualWidth;
     }
+
     public void startAutoScrolling() {
         if (scrollTimer == null) {
             scrollTimer = new Timer();

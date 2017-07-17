@@ -17,6 +17,7 @@ import android.widget.ImageView;
 
 public class FragmentCSE7 extends Fragment {
     private Button register;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_cse7, container, false);
@@ -25,7 +26,7 @@ public class FragmentCSE7 extends Fragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
 
-        register=(Button) getActivity().findViewById(R.id.buttonRegisterBrainfuzz);
+        register = (Button) getActivity().findViewById(R.id.buttonRegisterBrainfuzz);
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

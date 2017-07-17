@@ -39,9 +39,9 @@ public class DjNight extends AppCompatActivity {
                 startActivity(homeIntent);
             }
         });
-        Bitmap djBitmap= BitmapFactory.decodeResource(getResources(),R.drawable.maindj);
-        Bitmap newResizedBMP= Bitmap.createScaledBitmap(djBitmap,1280,1280,true);
-        Bitmap finalBMP= Bitmap.createBitmap(newResizedBMP,250,0,768,1280);
+        Bitmap djBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.maindj);
+        Bitmap newResizedBMP = Bitmap.createScaledBitmap(djBitmap, 1280, 1280, true);
+        Bitmap finalBMP = Bitmap.createBitmap(newResizedBMP, 250, 0, 768, 1280);
         mainLayout.setBackground(new BitmapDrawable(finalBMP));
     }
 

@@ -26,7 +26,7 @@ public class FragmentECE1 extends Fragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
 
-        register=(Button) getActivity().findViewById(R.id.buttonRegisterCJ);
+        register = (Button) getActivity().findViewById(R.id.buttonRegisterCJ);
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -28,7 +28,7 @@ public class Initiatives extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.initiatives_main);
-        mainLayout=(LinearLayout) findViewById(R.id.mainFrameInitiatives);
+        mainLayout = (LinearLayout) findViewById(R.id.mainFrameInitiatives);
         back = (Button) findViewById(R.id.backButtonInitiatives);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,9 +38,9 @@ public class Initiatives extends AppCompatActivity {
             }
         });
 
-        Bitmap initiativesBitmap= BitmapFactory.decodeResource(getResources(),R.drawable.mainsocialcall);
-        Bitmap newResizedBMP= Bitmap.createScaledBitmap(initiativesBitmap,1280,1280,true);
-        Bitmap finalBMP= Bitmap.createBitmap(newResizedBMP,250,0,768,1280);
+        Bitmap initiativesBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.mainsocialcall);
+        Bitmap newResizedBMP = Bitmap.createScaledBitmap(initiativesBitmap, 1280, 1280, true);
+        Bitmap finalBMP = Bitmap.createBitmap(newResizedBMP, 250, 0, 768, 1280);
         mainLayout.setBackground(new BitmapDrawable(finalBMP));
 
 

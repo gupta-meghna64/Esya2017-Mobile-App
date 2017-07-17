@@ -18,6 +18,7 @@ import android.widget.ImageView;
 public class FragmentCSE3 extends Fragment {
 
     private Button register;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
@@ -29,11 +30,11 @@ public class FragmentCSE3 extends Fragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
 
-        register=(Button) getActivity().findViewById(R.id.buttonRegisterPJ);
+        register = (Button) getActivity().findViewById(R.id.buttonRegisterPJ);
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("https://docs.google.com/forms/d/e/1FAIpQLScnRTjz5mE4jypXB4T2rokaslZwSk9ckKfpc1s4FH_1VgLKow/viewform")));
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://docs.google.com/forms/d/e/1FAIpQLScnRTjz5mE4jypXB4T2rokaslZwSk9ckKfpc1s4FH_1VgLKow/viewform")));
             }
         });
 
