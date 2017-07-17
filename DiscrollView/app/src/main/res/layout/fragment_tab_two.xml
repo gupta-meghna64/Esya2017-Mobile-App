@@ -32,10 +32,10 @@
                 android:layout_height="fill_parent">
 
                 <ImageView
+                    android:id="@+id/circuitrixjrCover"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="fitXY"
-                    android:id="@+id/circuitrixjrCover"
                     android:src="@drawable/circuitrixjunior_overlay" />
 
                 <com.example.discrollview.MyTextViewHeading
@@ -71,10 +71,10 @@
                 android:layout_height="fill_parent">
 
                 <ImageView
+                    android:id="@+id/circuitrixCover"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="fitXY"
-                    android:id="@+id/circuitrixCover"
                     android:src="@drawable/circuitrix_overlay" />
 
                 <com.example.discrollview.MyTextViewHeading
@@ -109,10 +109,10 @@
                 android:layout_height="fill_parent">
 
                 <ImageView
+                    android:id="@+id/robowarsCover"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="fitXY"
-                    android:id="@+id/robowarsCover"
                     android:src="@drawable/robowars_overlay" />
 
                 <com.example.discrollview.MyTextViewHeading
@@ -148,10 +148,10 @@
                 android:layout_height="fill_parent">
 
                 <ImageView
+                    android:id="@+id/roboconCover"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="fitXY"
-                    android:id="@+id/roboconCover"
                     android:src="@drawable/robocon_overlay" />
 
                 <com.example.discrollview.MyTextViewHeading
@@ -187,10 +187,10 @@
                 android:layout_height="fill_parent">
 
                 <ImageView
+                    android:id="@+id/robosoccerCover"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="fitXY"
-                    android:id="@+id/robosoccerCover"
                     android:src="@drawable/robosoccer_overlay" />
 
                 <com.example.discrollview.MyTextViewHeading
@@ -226,10 +226,10 @@
                 android:layout_height="fill_parent">
 
                 <ImageView
+                    android:id="@+id/hackoverflowCover"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="fitXY"
-                    android:id="@+id/hackoverflowCover"
                     android:src="@drawable/hackoverflow_overlay" />
 
                 <com.example.discrollview.MyTextViewHeading

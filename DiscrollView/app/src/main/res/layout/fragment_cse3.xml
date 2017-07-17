@@ -30,10 +30,10 @@
 
 
             <ImageView
+                android:id="@+id/proconjrMainCover"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:scaleType="fitXY"
-                android:id="@+id/proconjrMainCover"
                 android:src="@drawable/proconjunior_plain" />
 
 
@@ -286,11 +286,11 @@ Eligibilty for Qualification to Onsite Finals: \n
                 </LinearLayout>
 
                 <Button
+                    android:id="@+id/buttonRegisterPJ"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="REGISTER"
-                    android:id="@+id/buttonRegisterPJ"/>
+                    android:text="REGISTER" />
 
             </LinearLayout>
 

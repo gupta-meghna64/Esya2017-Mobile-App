@@ -28,10 +28,10 @@
 
 
             <ImageView
+                android:id="@+id/roboconMainCover"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:scaleType="fitXY"
-                android:id="@+id/roboconMainCover"
                 android:src="@drawable/robocon_plain" />
 
 
@@ -121,7 +121,6 @@
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
-
 
 
         <android.support.v7.widget.CardView
@@ -281,11 +280,11 @@
                         android:text="kaustubh15143@iiitd.ac.in" />
 
                     <Button
+                        android:id="@+id/buttonRegisterRobocon"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:text="REGISTER"
-                        android:id="@+id/buttonRegisterRobocon"/>
+                        android:text="REGISTER" />
 
                 </LinearLayout>
 

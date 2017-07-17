@@ -28,10 +28,10 @@
 
 
             <ImageView
+                android:id="@+id/hackoverflowMainCover"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:scaleType="fitXY"
-                android:id="@+id/hackoverflowMainCover"
                 android:src="@drawable/hackoverflow_plain" />
 
 
@@ -299,11 +299,11 @@ Hackoverflow aims to provide an innovative platform where all hardware enthusias
                         android:text="raghav16179@iiitd.ac.in" />
 
                     <Button
+                        android:id="@+id/buttonRegisterHackoverflow"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:text="REGISTER"
-                        android:id="@+id/buttonRegisterHackoverflow"/>
+                        android:text="REGISTER" />
 
                 </LinearLayout>
 

@@ -7,234 +7,234 @@
     android:background="@color/lightgrey">
 
     <!--<LinearLayout-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:orientation="vertical"-->
-        <!--android:padding="4dp"-->
-        <!--android:weightSum="10">-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--android:padding="4dp"-->
+    <!--android:weightSum="10">-->
 
-        <!--<android.support.v7.widget.CardView-->
-            <!--android:id="@+id/cardViewTop"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="400px"-->
-            <!--android:layout_gravity="center"-->
-            <!--android:layout_weight="4"-->
-            <!--android:clickable="true"-->
-            <!--android:foreground="?android:attr/selectableItemBackground"-->
-            <!--card_view:cardBackgroundColor="@android:color/background_light"-->
-            <!--card_view:cardCornerRadius="4dp"-->
-            <!--card_view:cardElevation="1dp"-->
-            <!--card_view:cardUseCompatPadding="true">-->
+    <!--<android.support.v7.widget.CardView-->
+    <!--android:id="@+id/cardViewTop"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="400px"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_weight="4"-->
+    <!--android:clickable="true"-->
+    <!--android:foreground="?android:attr/selectableItemBackground"-->
+    <!--card_view:cardBackgroundColor="@android:color/background_light"-->
+    <!--card_view:cardCornerRadius="4dp"-->
+    <!--card_view:cardElevation="1dp"-->
+    <!--card_view:cardUseCompatPadding="true">-->
 
-            <!--<ImageView-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="match_parent"-->
-                <!--android:scaleType="fitXY"-->
-                <!--android:src="@drawable/robomaze_plain" />-->
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:scaleType="fitXY"-->
+    <!--android:src="@drawable/robomaze_plain" />-->
 
-        <!--</android.support.v7.widget.CardView>-->
+    <!--</android.support.v7.widget.CardView>-->
 
-        <!--<android.support.v7.widget.CardView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_gravity="center"-->
-            <!--android:layout_weight="4"-->
-            <!--android:clickable="true"-->
-            <!--android:foreground="?android:attr/selectableItemBackground"-->
-            <!--card_view:cardBackgroundColor="@android:color/background_light"-->
-            <!--card_view:cardCornerRadius="4dp"-->
-            <!--card_view:cardElevation="1dp"-->
-            <!--card_view:cardUseCompatPadding="true"-->
-            <!--card_view:contentPaddingBottom="5dp"-->
-            <!--card_view:contentPaddingTop="5dp">-->
+    <!--<android.support.v7.widget.CardView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_weight="4"-->
+    <!--android:clickable="true"-->
+    <!--android:foreground="?android:attr/selectableItemBackground"-->
+    <!--card_view:cardBackgroundColor="@android:color/background_light"-->
+    <!--card_view:cardCornerRadius="4dp"-->
+    <!--card_view:cardElevation="1dp"-->
+    <!--card_view:cardUseCompatPadding="true"-->
+    <!--card_view:contentPaddingBottom="5dp"-->
+    <!--card_view:contentPaddingTop="5dp">-->
 
-            <!--<LinearLayout-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:orientation="vertical"-->
-                <!--android:weightSum="5">-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--android:weightSum="5">-->
 
-                <!--<com.example.discrollview.MyTextViewHeading-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_weight="1"-->
-                    <!--android:padding="8dp"-->
-                    <!--android:text="DESCRIPTION"-->
-                    <!--android:textAlignment="center"-->
-                    <!--android:textSize="18dp"-->
-                    <!--android:textStyle="bold" />-->
+    <!--<com.example.discrollview.MyTextViewHeading-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:padding="8dp"-->
+    <!--android:text="DESCRIPTION"-->
+    <!--android:textAlignment="center"-->
+    <!--android:textSize="18dp"-->
+    <!--android:textStyle="bold" />-->
 
-                <!--<com.example.discrollview.MyTextView-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_weight="4"-->
-                    <!--android:padding="8dp"-->
-                    <!--android:text="Megatron and his team has attacked IIITD Campus, Optimus Prime came to know regarding that from BUMBLEBEE and his other team mates, now he wanted to save the world and rescue his team. Optimus Prime is at Rajeev Chowk metro station and want to reach IIITD as soon as possible. There are many roads he can take but he wanted to pick the shortest path so that he can reach as soon as possible. In between he has to avoid any harm to people and animal in between his path. Now the twist and advantage here is BUMBLEBEE has placed some sign board over the wall though they are not clear as he has placed them in a hurry, following those sign’s Optimus Prime can reach IIITD in the least time, but that depends on the vision power of Optimus.-->
-<!--So each team need to get their Prime bots and save our campus from Megatron and his evil team. Director has promised to that the team with the best bot will be awarded by him, and that you can utilize to make your Prime team more powerful.-->
-<!--" />-->
+    <!--<com.example.discrollview.MyTextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="4"-->
+    <!--android:padding="8dp"-->
+    <!--android:text="Megatron and his team has attacked IIITD Campus, Optimus Prime came to know regarding that from BUMBLEBEE and his other team mates, now he wanted to save the world and rescue his team. Optimus Prime is at Rajeev Chowk metro station and want to reach IIITD as soon as possible. There are many roads he can take but he wanted to pick the shortest path so that he can reach as soon as possible. In between he has to avoid any harm to people and animal in between his path. Now the twist and advantage here is BUMBLEBEE has placed some sign board over the wall though they are not clear as he has placed them in a hurry, following those sign’s Optimus Prime can reach IIITD in the least time, but that depends on the vision power of Optimus.-->
+    <!--So each team need to get their Prime bots and save our campus from Megatron and his evil team. Director has promised to that the team with the best bot will be awarded by him, and that you can utilize to make your Prime team more powerful.-->
+    <!--" />-->
 
-            <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
 
-        <!--</android.support.v7.widget.CardView>-->
-
-
-        <!--<android.support.v7.widget.CardView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_gravity="center"-->
-            <!--android:layout_weight="4"-->
-            <!--android:clickable="true"-->
-            <!--android:foreground="?android:attr/selectableItemBackground"-->
-            <!--card_view:cardBackgroundColor="@android:color/background_light"-->
-            <!--card_view:cardCornerRadius="4dp"-->
-            <!--card_view:cardElevation="1dp"-->
-            <!--card_view:cardUseCompatPadding="true"-->
-            <!--card_view:contentPaddingBottom="5dp"-->
-            <!--card_view:contentPaddingTop="5dp">-->
-
-            <!--<LinearLayout-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:orientation="vertical"-->
-                <!--android:weightSum="5">-->
-
-                <!--<com.example.discrollview.MyTextViewHeading-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_weight="1"-->
-                    <!--android:padding="8dp"-->
-                    <!--android:text="RULES"-->
-                    <!--android:textAlignment="center"-->
-                    <!--android:textSize="18dp" />-->
-
-                <!--<com.example.discrollview.MyTextView-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_weight="4"-->
-                    <!--android:padding="8dp"-->
-                    <!--android:text="Decision of organizers is final and binding." />-->
-
-            <!--</LinearLayout>-->
-
-        <!--</android.support.v7.widget.CardView>-->
-
-        <!--<android.support.v7.widget.CardView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_gravity="center"-->
-            <!--android:layout_weight="4"-->
-            <!--android:clickable="true"-->
-            <!--android:foreground="?android:attr/selectableItemBackground"-->
-            <!--card_view:cardBackgroundColor="@android:color/background_light"-->
-            <!--card_view:cardCornerRadius="4dp"-->
-            <!--card_view:cardElevation="1dp"-->
-            <!--card_view:cardUseCompatPadding="true"-->
-            <!--card_view:contentPaddingBottom="5dp"-->
-            <!--card_view:contentPaddingTop="5dp">-->
-
-            <!--<LinearLayout-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:orientation="vertical"-->
-                <!--android:weightSum="7">-->
-
-                <!--<com.example.discrollview.MyTextViewHeading-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_weight="1"-->
-                    <!--android:padding="8dp"-->
-                    <!--android:text="POINT OF CONTACT"-->
-                    <!--android:textAlignment="center"-->
-                    <!--android:textSize="18dp" />-->
-
-                <!--<LinearLayout-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_weight="3"-->
-                    <!--android:orientation="vertical"-->
-                    <!--android:padding="8dp"-->
-                    <!--android:weightSum="3">-->
-
-                    <!--<com.example.discrollview.MyTextViewHeading-->
-                        <!--android:layout_width="match_parent"-->
-                        <!--android:layout_height="wrap_content"-->
-                        <!--android:layout_weight="1"-->
-                        <!--android:text="Kunal Saini" />-->
-
-                    <!--<com.example.discrollview.MyTextView-->
-                        <!--android:layout_width="match_parent"-->
-                        <!--android:layout_height="wrap_content"-->
-                        <!--android:layout_weight="1"-->
-                        <!--android:text="9910676886" />-->
-
-                    <!--<com.example.discrollview.MyTextView-->
-                        <!--android:layout_width="match_parent"-->
-                        <!--android:layout_height="wrap_content"-->
-                        <!--android:layout_weight="1"-->
-                        <!--android:text="kunal14053@iiitd.ac.in" />-->
-
-                <!--</LinearLayout>-->
-
-                <!--<LinearLayout-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_weight="3"-->
-                    <!--android:orientation="vertical"-->
-                    <!--android:padding="8dp"-->
-                    <!--android:weightSum="3">-->
-
-                    <!--<com.example.discrollview.MyTextViewHeading-->
-                        <!--android:layout_width="match_parent"-->
-                        <!--android:layout_height="wrap_content"-->
-                        <!--android:layout_weight="1"-->
-                        <!--android:text="Mandeep" />-->
-
-                    <!--<com.example.discrollview.MyTextView-->
-                        <!--android:layout_width="match_parent"-->
-                        <!--android:layout_height="wrap_content"-->
-                        <!--android:layout_weight="1"-->
-                        <!--android:text="9811273998" />-->
-
-                    <!--<com.example.discrollview.MyTextView-->
-                        <!--android:layout_width="match_parent"-->
-                        <!--android:layout_height="wrap_content"-->
-                        <!--android:layout_weight="1"-->
-                        <!--android:text="mandeep14145@iiitd.ac.in" />-->
-
-                <!--</LinearLayout>-->
-
-                <!--<LinearLayout-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_weight="3"-->
-                    <!--android:orientation="vertical"-->
-                    <!--android:padding="8dp"-->
-                    <!--android:weightSum="3">-->
-
-                    <!--<com.example.discrollview.MyTextViewHeading-->
-                        <!--android:layout_width="match_parent"-->
-                        <!--android:layout_height="wrap_content"-->
-                        <!--android:layout_weight="1"-->
-                        <!--android:text="Suraj Kumar" />-->
-
-                    <!--<com.example.discrollview.MyTextView-->
-                        <!--android:layout_width="match_parent"-->
-                        <!--android:layout_height="wrap_content"-->
-                        <!--android:layout_weight="1"-->
-                        <!--android:text="9716039754" />-->
-
-                    <!--<com.example.discrollview.MyTextView-->
-                        <!--android:layout_width="match_parent"-->
-                        <!--android:layout_height="wrap_content"-->
-                        <!--android:layout_weight="1"-->
-                        <!--android:text="suraj16203@iiitd.ac.in" />-->
-
-                <!--</LinearLayout>-->
-
-            <!--</LinearLayout>-->
+    <!--</android.support.v7.widget.CardView>-->
 
 
-        <!--</android.support.v7.widget.CardView>-->
+    <!--<android.support.v7.widget.CardView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_weight="4"-->
+    <!--android:clickable="true"-->
+    <!--android:foreground="?android:attr/selectableItemBackground"-->
+    <!--card_view:cardBackgroundColor="@android:color/background_light"-->
+    <!--card_view:cardCornerRadius="4dp"-->
+    <!--card_view:cardElevation="1dp"-->
+    <!--card_view:cardUseCompatPadding="true"-->
+    <!--card_view:contentPaddingBottom="5dp"-->
+    <!--card_view:contentPaddingTop="5dp">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--android:weightSum="5">-->
+
+    <!--<com.example.discrollview.MyTextViewHeading-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:padding="8dp"-->
+    <!--android:text="RULES"-->
+    <!--android:textAlignment="center"-->
+    <!--android:textSize="18dp" />-->
+
+    <!--<com.example.discrollview.MyTextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="4"-->
+    <!--android:padding="8dp"-->
+    <!--android:text="Decision of organizers is final and binding." />-->
+
+    <!--</LinearLayout>-->
+
+    <!--</android.support.v7.widget.CardView>-->
+
+    <!--<android.support.v7.widget.CardView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_weight="4"-->
+    <!--android:clickable="true"-->
+    <!--android:foreground="?android:attr/selectableItemBackground"-->
+    <!--card_view:cardBackgroundColor="@android:color/background_light"-->
+    <!--card_view:cardCornerRadius="4dp"-->
+    <!--card_view:cardElevation="1dp"-->
+    <!--card_view:cardUseCompatPadding="true"-->
+    <!--card_view:contentPaddingBottom="5dp"-->
+    <!--card_view:contentPaddingTop="5dp">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--android:weightSum="7">-->
+
+    <!--<com.example.discrollview.MyTextViewHeading-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:padding="8dp"-->
+    <!--android:text="POINT OF CONTACT"-->
+    <!--android:textAlignment="center"-->
+    <!--android:textSize="18dp" />-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="3"-->
+    <!--android:orientation="vertical"-->
+    <!--android:padding="8dp"-->
+    <!--android:weightSum="3">-->
+
+    <!--<com.example.discrollview.MyTextViewHeading-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="Kunal Saini" />-->
+
+    <!--<com.example.discrollview.MyTextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="9910676886" />-->
+
+    <!--<com.example.discrollview.MyTextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="kunal14053@iiitd.ac.in" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="3"-->
+    <!--android:orientation="vertical"-->
+    <!--android:padding="8dp"-->
+    <!--android:weightSum="3">-->
+
+    <!--<com.example.discrollview.MyTextViewHeading-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="Mandeep" />-->
+
+    <!--<com.example.discrollview.MyTextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="9811273998" />-->
+
+    <!--<com.example.discrollview.MyTextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="mandeep14145@iiitd.ac.in" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="3"-->
+    <!--android:orientation="vertical"-->
+    <!--android:padding="8dp"-->
+    <!--android:weightSum="3">-->
+
+    <!--<com.example.discrollview.MyTextViewHeading-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="Suraj Kumar" />-->
+
+    <!--<com.example.discrollview.MyTextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="9716039754" />-->
+
+    <!--<com.example.discrollview.MyTextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="suraj16203@iiitd.ac.in" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+
+    <!--</android.support.v7.widget.CardView>-->
 
     <!--</LinearLayout>-->
 

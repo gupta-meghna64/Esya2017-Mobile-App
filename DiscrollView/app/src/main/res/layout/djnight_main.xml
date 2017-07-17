@@ -7,46 +7,46 @@
 
 
     <LinearLayout
+        android:id="@+id/starnightframe"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:weightSum="10"
-        android:id="@+id/starnightframe">
+        android:weightSum="10">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_weight="4.5">
+            android:layout_weight="4.5"
+            android:orientation="vertical">
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
+            android:layout_weight="5.5"
             android:background="#99000000"
-            android:weightSum="10"
-            android:layout_weight="5.5">
+            android:orientation="vertical"
+            android:weightSum="10">
 
 
             <com.example.discrollview.MyTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
-                android:textColor="@color/white"
-                android:textSize="16sp"
                 android:layout_weight="3"
                 android:padding="8dp"
-                android:text="This event is most looked forward to and we promise that you won't be disappointed. Esya'17 will see an army of 20,000 people, roaring and thumping with excitement, when the city sleeps - as our team gladly announces ESYA'17 PRONGHT." />
+                android:text="This event is most looked forward to and we promise that you won't be disappointed. Esya'17 will see an army of 20,000 people, roaring and thumping with excitement, when the city sleeps - as our team gladly announces ESYA'17 PRONGHT."
+                android:textColor="@color/white"
+                android:textSize="16sp" />
 
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|center"
-                android:orientation="vertical"
                 android:layout_weight="2"
+                android:orientation="vertical"
                 android:paddingBottom="30dp">
 
 

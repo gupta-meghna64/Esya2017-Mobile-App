@@ -28,10 +28,10 @@
 
 
             <ImageView
+                android:id="@+id/brainfuzzMainCover"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:scaleType="fitXY"
-                android:id="@+id/brainfuzzMainCover"
                 android:src="@drawable/brainfuzz_plain" />
 
 
@@ -241,11 +241,11 @@ BrainFuzz is an on-site algorithm design contest which requires knowledge of alg
                         android:text="saksham15082@iiitd.ac.in" />
 
                     <Button
+                        android:id="@+id/buttonRegisterBrainfuzz"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:text="REGISTER"
-                        android:id="@+id/buttonRegisterBrainfuzz"/>
+                        android:text="REGISTER" />
 
                 </LinearLayout>
 

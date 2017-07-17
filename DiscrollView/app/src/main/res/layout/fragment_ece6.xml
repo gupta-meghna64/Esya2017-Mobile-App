@@ -1,4 +1,4 @@
- <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:custom="http://schemas.android.com/tools"
     xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
@@ -27,10 +27,10 @@
             card_view:cardUseCompatPadding="true">
 
             <ImageView
+                android:id="@+id/robosoccerMainCover"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:scaleType="fitXY"
-                android:id="@+id/robosoccerMainCover"
                 android:src="@drawable/robosoccer_plain" />
 
 
@@ -346,11 +346,11 @@
                         android:text="sushant16103@iiitd.ac.in" />
 
                     <Button
+                        android:id="@+id/buttonRegisterRobosoccer"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:text="REGISTER"
-                        android:id="@+id/buttonRegisterRobosoccer"/>
+                        android:text="REGISTER" />
 
                 </LinearLayout>
 

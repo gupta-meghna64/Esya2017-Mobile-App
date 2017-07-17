@@ -112,13 +112,14 @@
                     android:textSize="18sp" />
 
                 <com.example.discrollview.MyTextView
+                    android:id="@+id/pokerRulebook"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:padding="8dp"
-                    android:id="@+id/pokerRulebook"
-                    android:textColor="#0000FF"
-                    android:text="Rulebook" />
+                    android:text="Rulebook"
+                    android:textColor="#0000FF" />
+
                 <com.example.discrollview.MyTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

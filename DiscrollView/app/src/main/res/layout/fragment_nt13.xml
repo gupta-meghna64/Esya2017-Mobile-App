@@ -76,7 +76,7 @@
                     android:text="It’s all about clues and conundrums. Yes, it is Chakravyuha, the online hunt for cryptic clues.It consists of multiple levels, each testing your ability to put your mind to finding and cracking clues. With each right answer, you get one step deeper into the problem solving maze, and ultimately reach the destiny!
 As you progress through the different stages of this mysterious puzzle, the mystery unfolds and the complexity progressively increases. So, the deeper you dig, the closer you reach to your destination.
 "
-                    android:textAlignment="viewStart" />
+                     />
 
             </LinearLayout>
 

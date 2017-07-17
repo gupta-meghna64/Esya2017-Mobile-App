@@ -27,10 +27,10 @@
             card_view:cardUseCompatPadding="true">
 
             <ImageView
+                android:id="@+id/codeinlessMainCover"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:scaleType="fitXY"
-                android:id="@+id/codeinlessMainCover"
                 android:src="@drawable/codeinless_plain" />
 
 
@@ -239,11 +239,11 @@ Solve the problems, optimize your code and shorten it. The shortest solution win
                         android:text="vishal16277@iiitd.ac.in" />
 
                     <Button
+                        android:id="@+id/buttonRegisterCodeinless"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:text="REGISTER"
-                        android:id="@+id/buttonRegisterCodeinless"/>
+                        android:text="REGISTER" />
 
                 </LinearLayout>
 

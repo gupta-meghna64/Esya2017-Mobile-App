@@ -28,10 +28,10 @@
 
 
             <ImageView
+                android:id="@+id/circuitrixjrMainCover"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:scaleType="fitXY"
-                android:id="@+id/circuitrixjrMainCover"
                 android:src="@drawable/circuitrixjunior_plain" />
 
 
@@ -244,11 +244,11 @@ as a platform to showcase our Institute’s progress in the field of Electronics
                 </LinearLayout>
 
                 <Button
+                    android:id="@+id/buttonRegisterCJ"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="REGISTER"
-                    android:id="@+id/buttonRegisterCJ"/>
+                    android:text="REGISTER" />
 
             </LinearLayout>
 

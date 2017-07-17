@@ -28,10 +28,10 @@
 
 
             <ImageView
+                android:id="@+id/robowarsMainCover"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:scaleType="fitXY"
-                android:id="@+id/robowarsMainCover"
                 android:src="@drawable/robowars_plain" />
 
 
@@ -118,13 +118,13 @@ And this time we have a surprise* for all the participants, which would take thi
 A detailed rulebook for the event can be found here - " />
 
                 <com.example.discrollview.MyTextView
+                    android:id="@+id/roboconRules"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
-                    android:id="@+id/roboconRules"
                     android:padding="8dp"
-                    android:textColor="#0000FF"
-                    android:text="Link to the rulebook" />
+                    android:text="Link to the rulebook"
+                    android:textColor="#0000FF" />
 
             </LinearLayout>
 
@@ -270,11 +270,11 @@ A detailed rulebook for the event can be found here - " />
                         android:text="vaibhav16111@iiitd.ac.in" />
 
                     <Button
+                        android:id="@+id/buttonRegisterRobowars"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:text="REGISTER"
-                        android:id="@+id/buttonRegisterRobowars"/>
+                        android:text="REGISTER" />
 
                 </LinearLayout>
 

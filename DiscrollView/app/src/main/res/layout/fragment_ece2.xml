@@ -28,10 +28,10 @@
 
 
             <ImageView
+                android:id="@+id/circuitrixMainCover"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:scaleType="fitXY"
-                android:id="@+id/circuitrixMainCover"
                 android:src="@drawable/circuitrix_plain" />
 
 
@@ -238,11 +238,11 @@
                         android:text="vasisht15137@iiitd.ac.in" />
 
                     <Button
+                        android:id="@+id/buttonRegisterCircuitrix"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:text="REGISTER"
-                        android:id="@+id/buttonRegisterCircuitrix"/>
+                        android:text="REGISTER" />
 
                 </LinearLayout>
 

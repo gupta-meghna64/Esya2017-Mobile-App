@@ -28,10 +28,10 @@
 
 
             <ImageView
+                android:id="@+id/designMainCover"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:scaleType="fitXY"
-                android:id="@+id/designMainCover"
                 android:src="@drawable/design360_plain" />
 
 
@@ -293,11 +293,11 @@
                         android:text="anant16129@iiitd.ac.in" />
 
                     <Button
+                        android:id="@+id/buttonRegisterDesign"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:text="REGISTER"
-                        android:id="@+id/buttonRegisterDesign"/>
+                        android:text="REGISTER" />
 
                 </LinearLayout>
 

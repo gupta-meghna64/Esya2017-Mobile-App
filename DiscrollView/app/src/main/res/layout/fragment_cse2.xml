@@ -29,10 +29,10 @@
             card_view:contentPaddingTop="1dp">
 
             <ImageView
+                android:id="@+id/proconMainCover"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:scaleType="fitXY"
-                android:id="@+id/proconMainCover"
                 android:src="@drawable/procon_plain" />
 
 
@@ -245,11 +245,11 @@
                         android:text="nikhil15065@iiitd.ac.in" />
 
                     <Button
+                        android:id="@+id/buttonRegisterProcon"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:text="REGISTER"
-                        android:id="@+id/buttonRegisterProcon"/>
+                        android:text="REGISTER" />
 
                 </LinearLayout>
 

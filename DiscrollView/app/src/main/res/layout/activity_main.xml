@@ -95,10 +95,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:textColor="#333333"
                     android:layout_weight="2"
                     android:text="Exploring Infinity and Beyond"
                     android:textAlignment="center"
+                    android:textColor="#333333"
                     android:textStyle="bold" />
 
                 <com.example.discrollview.MyTextView
@@ -164,9 +164,9 @@
                             android:layout_gravity="bottom|center"
                             android:layout_marginBottom="24dp"
                             android:background="@drawable/button"
-                            android:textColor="@color/white"
                             android:padding="8dp"
-                            android:text="MORE INFORMATION" />
+                            android:text="MORE INFORMATION"
+                            android:textColor="@color/white" />
 
                     </FrameLayout>
                     ​
@@ -217,9 +217,9 @@
                             android:layout_gravity="bottom|center"
                             android:layout_marginBottom="24dp"
                             android:background="@drawable/button"
-                            android:textColor="@color/white"
                             android:padding="8dp"
-                            android:text="MORE INFORMATION" />
+                            android:text="MORE INFORMATION"
+                            android:textColor="@color/white" />
                     </FrameLayout>
                     ​
 
@@ -269,9 +269,9 @@
                             android:layout_gravity="bottom|center"
                             android:layout_marginBottom="24dp"
                             android:background="@drawable/button"
-                            android:textColor="@color/white"
                             android:padding="8dp"
-                            android:text="MORE INFORMATION" />
+                            android:text="MORE INFORMATION"
+                            android:textColor="@color/white" />
 
                     </FrameLayout>
                     ​
@@ -323,9 +323,9 @@
                             android:layout_gravity="bottom|center"
                             android:layout_marginBottom="24dp"
                             android:background="@drawable/button"
-                            android:textColor="@color/white"
                             android:padding="8dp"
-                            android:text="MORE INFORMATION" />
+                            android:text="MORE INFORMATION"
+                            android:textColor="@color/white" />
 
                     </FrameLayout>
                     ​
@@ -376,9 +376,9 @@
                             android:layout_gravity="bottom|center"
                             android:layout_marginBottom="24dp"
                             android:background="@drawable/button"
-                            android:textColor="@color/white"
                             android:padding="8dp"
-                            android:text="MORE INFORMATION" />
+                            android:text="MORE INFORMATION"
+                            android:textColor="@color/white" />
                     </FrameLayout>
                     ​
 
@@ -427,9 +427,9 @@
                             android:layout_gravity="bottom|center"
                             android:layout_marginBottom="24dp"
                             android:background="@drawable/button"
-                            android:textColor="@color/white"
                             android:padding="8dp"
-                            android:text="MORE INFORMATION" />
+                            android:text="MORE INFORMATION"
+                            android:textColor="@color/white" />
                     </FrameLayout>
                     ​
 
@@ -437,9 +437,9 @@
                         android:id="@+id/cell_title_view6"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:paddingBottom="4dp"
                         android:paddingLeft="8dp"
                         android:paddingRight="8dp"
-                        android:paddingBottom="4dp"
                         android:paddingTop="8dp">>
 
                         <ImageView
@@ -565,8 +565,7 @@
 
                 <FrameLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    >
+                    android:layout_height="wrap_content">
 
                     <include layout="@layout/horizontal_layout" />
 
@@ -616,8 +615,7 @@
 
                 <FrameLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    >
+                    android:layout_height="wrap_content">
 
                     <include layout="@layout/horizontal_layout1" />
 
@@ -626,7 +624,6 @@
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
-
 
 
         <android.support.v7.widget.CardView

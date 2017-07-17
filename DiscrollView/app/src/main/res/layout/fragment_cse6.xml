@@ -28,10 +28,10 @@
 
 
             <ImageView
+                android:id="@+id/segfaultMainCover"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:scaleType="fitXY"
-                android:id="@+id/segfaultMainCover"
                 android:src="@drawable/segfault_plain" />
 
 
@@ -236,11 +236,11 @@
                         android:text="ankur16225@iiitd.ac.in" />
 
                     <Button
+                        android:id="@+id/buttonRegisterSegfault"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:text="REGISTER"
-                        android:id="@+id/buttonRegisterSegfault"/>
+                        android:text="REGISTER" />
 
                 </LinearLayout>
 
