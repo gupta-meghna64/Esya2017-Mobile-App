@@ -311,7 +311,8 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         web.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.esya.iiitd.edu.in")));
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://esya.iiitd.edu.in/")));
+
             }
         });
 
