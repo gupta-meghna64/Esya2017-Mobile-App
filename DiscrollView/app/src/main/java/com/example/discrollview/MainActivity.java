@@ -257,12 +257,9 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         facebook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                try {
-                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("fb://profile/383935642008094"));
-                    startActivity(intent);
-                } catch (Exception e) {
-                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.facebook.com/EsyaIIITD")));
-                }
+             
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.facebook.com/EsyaIIITD")));
+                
             }
         });
 
