@@ -8,8 +8,7 @@
         android:id="@+id/tabsEvents"
         android:layout_width="match_parent"
         android:layout_height="48dip"
-        app:pstsShouldExpand="true"
-        android:background="@drawable/stripbackground"/>
+        app:pstsShouldExpand="true" />
 
     <android.support.v4.view.ViewPager
         android:id="@+id/pagerEvents"
