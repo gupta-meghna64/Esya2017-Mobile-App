@@ -278,19 +278,19 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Anant Sharma" />
+                        android:text="Aysha " />
 
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="8368623613" />
+                        android:text="8800307673" />
 
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="anant16129@iiitd.ac.in" />
+                        android:text="aysha16140@iiitd.ac.in" />
 
                 </LinearLayout>
 

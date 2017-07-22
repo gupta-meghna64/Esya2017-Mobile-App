@@ -249,7 +249,7 @@ Shoutout to all computer nerds and gizmo geeks. For our 6th Edition of TechFest 
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Tushar Kataria" />
+                        android:text="Anant Sharma" />
 
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
@@ -261,7 +261,7 @@ Shoutout to all computer nerds and gizmo geeks. For our 6th Edition of TechFest 
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="tushar15184@iiitd.ac.in" />
+                        android:text="anant16129@iiitd.ac.in" />
 
                 </LinearLayout>
 

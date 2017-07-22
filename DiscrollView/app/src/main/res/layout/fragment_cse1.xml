@@ -234,7 +234,7 @@ ProSort is part of the Techathlon series of Esya '17. Techathlon is a 6-event te
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Nikhil Hassija" />
+                        android:text="Siddharth Dhawan" />
 
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
