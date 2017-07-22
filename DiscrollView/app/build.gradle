@@ -1,10 +1,18 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'android'
+            keyPassword 'android'
+            storeFile file('C:/Users/jains/.android/debug.keystore')
+            storePassword 'android'
+        }
+    }
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
     defaultConfig {
-        applicationId "com.example.discrollview"
+        applicationId "com.iiitd.esya"
         minSdkVersion 16
         targetSdkVersion 25
         versionCode 1
@@ -14,8 +22,11 @@ android {
     buildTypes {
         release {
             minifyEnabled false
-            shrinkResources true
+            shrinkResources false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.config
         }
     }
 }
@@ -23,7 +34,7 @@ android {
 
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
