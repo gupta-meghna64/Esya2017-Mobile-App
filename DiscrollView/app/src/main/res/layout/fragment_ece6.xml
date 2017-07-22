@@ -309,7 +309,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="918447107641" />
+                        android:text="8447107641" />
 
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
