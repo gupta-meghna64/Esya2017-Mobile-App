@@ -20,7 +20,7 @@ public class EventsMainActivity extends AppCompatActivity {
 
         ViewPager pager = (ViewPager) findViewById(R.id.pagerEvents);
         pager.setAdapter(new MyPagerAdapterEvents(getSupportFragmentManager()));
-
+        pager.setOffscreenPageLimit(4);
         // Bind the tabs to the ViewPager
         PagerSlidingTabStrip tabs = (PagerSlidingTabStrip) findViewById(R.id.tabsEvents);
         tabs.setViewPager(pager);

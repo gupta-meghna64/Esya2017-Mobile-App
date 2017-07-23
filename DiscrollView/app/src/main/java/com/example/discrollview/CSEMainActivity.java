@@ -27,7 +27,7 @@ public class CSEMainActivity extends AppCompatActivity {
 
         ViewPager pager = (ViewPager) findViewById(R.id.pagerCse);
         pager.setAdapter(new MyPagerAdapterCSE(getSupportFragmentManager()));
-
+        pager.setOffscreenPageLimit(4);
         // Bind the tabs to the ViewPager
         PagerSlidingTabStrip tabs = (PagerSlidingTabStrip) findViewById(R.id.tabsCse);
         tabs.setViewPager(pager);

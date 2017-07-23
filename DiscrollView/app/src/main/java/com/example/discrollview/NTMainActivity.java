@@ -19,7 +19,7 @@ public class NTMainActivity extends AppCompatActivity {
 
         ViewPager pager = (ViewPager) findViewById(R.id.pagerNt);
         pager.setAdapter(new MyPagerAdapterNT(getSupportFragmentManager()));
-
+        pager.setOffscreenPageLimit(4);
         // Bind the tabs to the ViewPager
         PagerSlidingTabStrip tabs = (PagerSlidingTabStrip) findViewById(R.id.tabsNt);
         tabs.setViewPager(pager);
