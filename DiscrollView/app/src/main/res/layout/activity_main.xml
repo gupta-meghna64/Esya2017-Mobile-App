@@ -204,22 +204,41 @@
                         android:paddingTop="8dp"
                         android:visibility="gone">>
 
+
                         <ImageView
                             android:id="@+id/unfoldedDJ"
                             android:layout_width="wrap_content"
                             android:layout_height="800px"
                             android:background="@drawable/maindj" />
 
-                        <Button
-                            android:id="@+id/djNight"
-                            android:layout_width="wrap_content"
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="bottom|center"
-                            android:layout_marginBottom="24dp"
-                            android:background="@drawable/button"
-                            android:padding="8dp"
-                            android:text="MORE INFORMATION"
-                            android:textColor="@color/white" />
+                            android:layout_gravity="bottom"
+                            android:background="#99000000"
+                            android:orientation="vertical">
+
+                            <com.example.discrollview.MyTextViewMedium
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|top"
+                                android:paddingTop="8dp"
+                                android:text="COMING SOON"
+                                android:textColor="@color/white"
+                                android:textSize="20sp" />
+
+                            <com.example.discrollview.MyTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_weight="3"
+                                android:padding="8dp"
+                                android:text="This event is most looked forward to and we promise that you won't be disappointed. Esya'17 will see an army of 20,000 people, roaring and thumping with excitement, when the city sleeps - as our team gladly announces ESYA'17 PRONGHT."
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
                     </FrameLayout>
                     ​
 
@@ -262,16 +281,34 @@
                             android:layout_height="800px"
                             android:src="@drawable/maincomedy" />
 
-                        <Button
-                            android:id="@+id/comedyNight"
-                            android:layout_width="wrap_content"
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="bottom|center"
-                            android:layout_marginBottom="24dp"
-                            android:background="@drawable/button"
-                            android:padding="8dp"
-                            android:text="MORE INFORMATION"
-                            android:textColor="@color/white" />
+                            android:layout_gravity="bottom"
+                            android:background="#99000000"
+                            android:orientation="vertical">
+
+                            <com.example.discrollview.MyTextViewMedium
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|top"
+                                android:paddingTop="8dp"
+                                android:text="COMING SOON"
+                                android:textColor="@color/white"
+                                android:textSize="20sp" />
+
+                            <com.example.discrollview.MyTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_weight="3"
+                                android:padding="8dp"
+                                android:text="The most wasted of all days is one without laughter so Esya'17 will make sure you don't waste your day. This event is sure to bring the house down with roaring laughter."
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
 
                     </FrameLayout>
                     ​
@@ -316,16 +353,34 @@
                             android:layout_height="800px"
                             android:src="@drawable/mainsocialcall" />
 
-                        <Button
-                            android:id="@+id/initiatives"
-                            android:layout_width="wrap_content"
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="bottom|center"
-                            android:layout_marginBottom="24dp"
-                            android:background="@drawable/button"
-                            android:padding="8dp"
-                            android:text="MORE INFORMATION"
-                            android:textColor="@color/white" />
+                            android:layout_gravity="bottom"
+                            android:background="#99000000"
+                            android:orientation="vertical">
+
+                            <com.example.discrollview.MyTextViewMedium
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|top"
+                                android:paddingTop="8dp"
+                                android:text="COMING SOON"
+                                android:textColor="@color/white"
+                                android:textSize="20sp" />
+
+                            <com.example.discrollview.MyTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_weight="3"
+                                android:padding="8dp"
+                                android:text="As part of social initiatives, Esya'17 will be an active promoter of Himmat App which was launched by the Home Minister on 1st January 2015. This collaboration between Esya'17 and the Delhi Police is intended to raise awareness about women safety. A blood donation camp will be held on both days of the fest."
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
 
                     </FrameLayout>
                     ​
@@ -369,16 +424,35 @@
                             android:layout_height="800px"
                             android:src="@drawable/mainworkshops" />
 
-                        <Button
-                            android:id="@+id/workshops"
-                            android:layout_width="wrap_content"
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="bottom|center"
-                            android:layout_marginBottom="24dp"
-                            android:background="@drawable/button"
-                            android:padding="8dp"
-                            android:text="MORE INFORMATION"
-                            android:textColor="@color/white" />
+                            android:layout_gravity="bottom"
+                            android:background="#99000000"
+                            android:orientation="vertical">
+
+                            <com.example.discrollview.MyTextViewMedium
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|top"
+                                android:paddingTop="8dp"
+                                android:text="COMING SOON"
+                                android:textColor="@color/white"
+                                android:textSize="20sp" />
+
+                            <com.example.discrollview.MyTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_weight="3"
+                                android:padding="8dp"
+                                android:text="Esya'17 aims at spreading knowledge about it's theme, accordingly, we will conduct workshops where students will be taught the basics of programming and circuit design. Two events are hosted specially for school students for the same and
+bonus marks are given to winners for admission in IIIT."
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
                     </FrameLayout>
                     ​
 
@@ -420,16 +494,34 @@
                             android:layout_height="800px"
                             android:src="@drawable/mainaccomodation" />
 
-                        <Button
-                            android:id="@+id/accomodation"
-                            android:layout_width="wrap_content"
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="bottom|center"
-                            android:layout_marginBottom="24dp"
-                            android:background="@drawable/button"
-                            android:padding="8dp"
-                            android:text="MORE INFORMATION"
-                            android:textColor="@color/white" />
+                            android:layout_gravity="bottom"
+                            android:background="#99000000"
+                            android:orientation="vertical">
+
+                            <com.example.discrollview.MyTextViewMedium
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|top"
+                                android:paddingTop="8dp"
+                                android:text="COMING SOON"
+                                android:textColor="@color/white"
+                                android:textSize="20sp" />
+
+                            <com.example.discrollview.MyTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_weight="3"
+                                android:padding="8dp"
+                                android:text="The best way to experience this spectacular fest is to stay at the college and enjoy every minute of it. We will ensure that your stay here will be most memorable and pleasant."
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
                     </FrameLayout>
                     ​
 

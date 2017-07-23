@@ -257,9 +257,9 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         facebook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-             
+
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.facebook.com/EsyaIIITD")));
-                
+
             }
         });
 
@@ -379,14 +379,23 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
             TextSliderView textSliderView = new TextSliderView(MainActivity.this);
             textSliderView
 
-                    .image(file_maps.get(name))
-                    .setScaleType(BaseSliderView.ScaleType.Fit);
+                    .image(file_maps.get(name));
 
             sliderLayout.addSlider(textSliderView);
 
         }
 
-
+        ViewTreeObserver vt = sliderLayout.getViewTreeObserver();
+        vt.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            @Override
+            public void onGlobalLayout() {
+                sliderLayout.getViewTreeObserver().removeGlobalOnLayoutListener(this);
+                int width = Resources.getSystem().getDisplayMetrics().widthPixels;
+                RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) sliderLayout.getLayoutParams();
+                params.height = (int) (width / 1.5);
+                sliderLayout.setLayoutParams(params);
+            }
+        });
         sliderLayout.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom);
         sliderLayout.setPresetTransformer(SliderLayout.Transformer.ZoomOutSlide);
         sliderLayout.setCustomAnimation(new DescriptionAnimation());
@@ -403,51 +412,6 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
             }
         });
 
-        djNight = (Button) findViewById(R.id.djNight);
-        djNight.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent djIntent = new Intent(MainActivity.this, DjNight.class);
-                startActivity(djIntent);
-            }
-        });
-
-        comedyNight = (Button) findViewById(R.id.comedyNight);
-        comedyNight.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent comedyIntent = new Intent(MainActivity.this, ComedyNight.class);
-                startActivity(comedyIntent);
-
-            }
-        });
-
-        workshops = (Button) findViewById(R.id.workshops);
-        workshops.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent workshopIntent = new Intent(MainActivity.this, Workshops.class);
-                startActivity(workshopIntent);
-            }
-        });
-
-        initiatives = (Button) findViewById(R.id.initiatives);
-        initiatives.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent initiativeIntent = new Intent(MainActivity.this, Initiatives.class);
-                startActivity(initiativeIntent);
-            }
-        });
-
-        accomodation = (Button) findViewById(R.id.accomodation);
-        accomodation.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent initiativeIntent = new Intent(MainActivity.this, Accomodation.class);
-                startActivity(initiativeIntent);
-            }
-        });
     }
 
     public void checkUnfolder(int unfolderID) {
