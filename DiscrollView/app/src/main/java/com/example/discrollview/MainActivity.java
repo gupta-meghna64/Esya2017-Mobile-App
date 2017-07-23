@@ -876,6 +876,10 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
     {
         super.onResume();
         sliderLayout.startAutoCycle();
+        getScrollMaxAmount();
+        getScrollMaxAmount1();
+        startAutoScrolling();
+        startAutoScrolling1();
     }
 
 
