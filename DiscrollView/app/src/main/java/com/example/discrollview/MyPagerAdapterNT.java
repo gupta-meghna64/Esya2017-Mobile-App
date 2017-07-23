@@ -39,15 +39,13 @@ public class MyPagerAdapterNT extends FragmentPagerAdapter {
             return "Poker";
         else if (position == 10)
             return "SpeedCubing";
-        else if (position == 11)
-            return "Mockstocks";
         else
             return "Chakravyuha";
     }
 
     @Override
     public int getCount() {
-        return 13;
+        return 12;
     }
 
     @Override
@@ -74,8 +72,6 @@ public class MyPagerAdapterNT extends FragmentPagerAdapter {
             return new FragmentNT10();
         else if (position == 10)
             return new FragmentNT11();
-        else if (position == 11)
-            return new FragmentNT12();
         else
             return new FragmentNT13();
 

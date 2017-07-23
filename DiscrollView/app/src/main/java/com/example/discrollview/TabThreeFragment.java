@@ -30,7 +30,6 @@ public class TabThreeFragment extends Fragment {
         CardView minimilitia = (CardView) v.findViewById(R.id.cardMiniMilitia);
         CardView poker = (CardView) v.findViewById(R.id.cardPoker);
         CardView speedcubing = (CardView) v.findViewById(R.id.cardSpeedCubing);
-        CardView mockstocks = (CardView) v.findViewById(R.id.cardMockstocks);
         CardView chakravyuha = (CardView) v.findViewById(R.id.cardChakravyuha);
 
         chess.setOnClickListener(new View.OnClickListener() {
@@ -132,15 +131,6 @@ public class TabThreeFragment extends Fragment {
             }
         });
 
-        mockstocks.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(getActivity(), NTMainActivity.class);
-                i.putExtra("viewpager_position", 11);
-                startActivity(i);
-            }
-        });
-
         chakravyuha.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -213,10 +203,6 @@ public class TabThreeFragment extends Fragment {
         speedcubingCover.getLayoutParams().height = imageHeight;
         speedcubingCover.requestLayout();
 
-        ImageView mockstocksCover = (ImageView) getActivity().findViewById(R.id.mockstocksCover);
-        mockstocksCover.getLayoutParams().width = imageWidth;
-        mockstocksCover.getLayoutParams().height = imageHeight;
-        mockstocksCover.requestLayout();
 
         ImageView chakravyuhaCover = (ImageView) getActivity().findViewById(R.id.chakravyuhaCover);
         chakravyuhaCover.getLayoutParams().width = imageWidth;
