@@ -172,6 +172,7 @@
 \t a) Goal scored : +5 points \n \n
 \t b) Foul : -2 points \n \n
 4) Four teams with maximum point difference will make it to the semi finals. \n \n
+5) The arena will be a plywood with dimensions 7 feet by 4 feet, surrounded by wall boundaries. The goal post would be 40 cm wide.
 " />
 
             </LinearLayout>
@@ -233,6 +234,95 @@
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="1dp"
+            card_view:cardUseCompatPadding="true"
+            card_view:contentPaddingBottom="5dp"
+            card_view:contentPaddingTop="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="5">
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:text="ROBOT SPECIFICATION"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+                <com.example.discrollview.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:padding="8dp"
+                    android:text="1) Robot’s length and width should strictly be under 30cm x 30cm. In case of circular robots, diameter should be less than or equal to 30cm. \n \n
+2) Robot should not weigh more than 2kg. \n \n
+3) Wireless robots would be appreciated and may get rewarded with some bonus points. You can use Bluetooth, Zigbee etc, but the teams are responsible for their communication. The availability of frequencies is not guaranteed. \n \n
+4) For wired robots, essential adjustments to keep the wire above 30 cm from ground (maybe a plastic cylindrical structure to hold the wire) should be made, and wires must not be more than 3 metres. \n \n
+5) The bots must not be equipped with anything that can harm other bots. \n \n
+6) Power supply of maximum 12V and 2A is allowed.
+" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="1dp"
+            card_view:cardUseCompatPadding="true"
+            card_view:contentPaddingBottom="5dp"
+            card_view:contentPaddingTop="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="5">
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:text="BONUS POINTS"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+                <com.example.discrollview.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:padding="8dp"
+                    android:text="There are some bonus points. The bonus points are applicable for first 2 rounds only. Instructions for the same are as follow: \n
+1) Wireless Robots: Max +1 points may be awarded to team with wireless robots
+" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"

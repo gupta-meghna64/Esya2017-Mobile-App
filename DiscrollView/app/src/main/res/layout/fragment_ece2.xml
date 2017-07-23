@@ -79,6 +79,59 @@
 
         </android.support.v7.widget.CardView>
 
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="1dp"
+            card_view:cardUseCompatPadding="true"
+            card_view:contentPaddingBottom="5dp"
+            card_view:contentPaddingTop="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="5">
+
+                <com.example.discrollview.MyTextViewHeading
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:text="EVENT STRUCTURE"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <com.example.discrollview.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:padding="8dp"
+                    android:text="Competition will be team based, with the team size limited upto 2. (Lone-wolves allowed)
+There will be 3 rounds (All on-site): \n
+1) A set of circuit analysis questions consisting of a large variety and meant to be more conceptual than calculation based. (Pen-Paper/Online) \n
+Note: There will be multiple levels with varying difficulty, and top 50 teams will qualify for the second round \n \n
+2) On simulation software: SPICE : Final round for top 8-10 teams \n
+Note: 30 teams qualify for the final round from here \n \n
+3) Circuit designing and building will be conducted in ECE labs. \n \n
+The event will be held on two days: First round on the first day. 2nd and 3rd rounds will be held on the last day and will be evaluated together \n
+NOTE: Participants have to bring their own laptops with LTSpice installed. Systems won’t be provided
+Note: If we receive 100+ team registrations, then we will hold an online screening test. For any reason, if the online round won’t be possible, then the teams will be called on FCFS basis.
+Note: (Simulation) We might be giving a small demo on design techniques for helping participants to solve design problems so that all are on the same page. The evaluation will be done on the basis of various parameters like efficiency, robustness, complexity etc. This will allow all groups to participate. (Demo is optional and depends on the difficulty of the problem given and time constraint)
+" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
