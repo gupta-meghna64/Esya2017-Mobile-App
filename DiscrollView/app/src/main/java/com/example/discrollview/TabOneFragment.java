@@ -133,9 +133,7 @@ public class TabOneFragment extends Fragment {
         design360.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getActivity(), CSEMainActivity.class);
-                i.putExtra("viewpager_position", 0);
-                startActivity(i);
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://esya.iiitd.edu.in/design360")));
             }
         });
 
