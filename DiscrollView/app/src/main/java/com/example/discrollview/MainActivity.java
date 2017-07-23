@@ -821,12 +821,12 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
 
     public void onBackPressed() {
         super.onBackPressed();
-        finish();
+
     }
 
     public void onPause() {
         super.onPause();
-        finish();
+
     }
 
     public void onDestroy() {
@@ -859,4 +859,22 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
             timerTask = null;
         }
     }
+
+    public void onStart()
+    {
+        super.onStart();
+
+    }
+    public void onRestart()
+    {
+        super.onRestart();
+
+    }
+    public void onResume()
+    {
+        super.onResume();
+    }
+
+
+
 }
