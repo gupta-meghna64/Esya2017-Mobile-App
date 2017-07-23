@@ -829,6 +829,8 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
 
     }
 
+
+
     public void onDestroy() {
         clearTimerTaks(clickSchedule);
         clearTimerTaks(scrollerSchedule);
@@ -873,6 +875,7 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
     public void onResume()
     {
         super.onResume();
+        sliderLayout.startAutoCycle();
     }
 
 
