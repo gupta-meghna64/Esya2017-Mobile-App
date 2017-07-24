@@ -376,7 +376,7 @@
                                 android:layout_gravity="left"
                                 android:layout_weight="3"
                                 android:padding="8dp"
-                                android:text="As part of social initiatives, Esya'17 will be an active promoter of Himmat App which was launched by the Home Minister on 1st January 2015. This collaboration between Esya'17 and the Delhi Police is intended to raise awareness about women safety. A blood donation camp will be held on both days of the fest."
+                                android:text="As part of social initiatives, Esya'17 will be an active promoter of Himmat App launched by the Home Minister on 1st January 2015. This collaboration between Esya'17 and the Delhi Police is intended to raise awareness about women safety. A blood donation camp will be held on both days of the fest."
                                 android:textColor="@color/white"
                                 android:textSize="16sp" />
 

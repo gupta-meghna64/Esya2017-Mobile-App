@@ -443,7 +443,6 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
     @Override
     public void onPageSelected(int position) {
 
-        Log.d("Slider Demo", "Page Changed: " + position);
     }
 
     @Override
@@ -514,7 +513,6 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         scrollPos = (int) (horizontalScrollview.getScrollX() + 4.0);
 
         if (scrollPos >= scrollMax) {
-            Log.v("childCount", "" + scrollMax);
             addImagesToView();
             getScrollMaxAmount();
         }
@@ -525,7 +523,6 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         scrollPos1 = (int) (horizontalScrollview1.getScrollX() + 4.0);
 
         if (scrollPos1 >= scrollMax1) {
-            Log.v("childCount", "" + scrollMax1);
             addImagesToView1();
             getScrollMaxAmount1();
         }
