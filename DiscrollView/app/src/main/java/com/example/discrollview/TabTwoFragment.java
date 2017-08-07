@@ -26,7 +26,7 @@ public class TabTwoFragment extends Fragment {
         CardView robocon = (CardView) v.findViewById(R.id.cardRobocon);
         //    CardView robomaze = (CardView) v.findViewById(R.id.cardRobomaze);
         CardView robosoccer = (CardView) v.findViewById(R.id.cardRobosoccer);
-        CardView hackoverflow = (CardView) v.findViewById(R.id.cardHackoverflow);
+//        CardView hackoverflow = (CardView) v.findViewById(R.id.cardHackoverflow);
 
         circuitrixjr.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,15 +74,6 @@ public class TabTwoFragment extends Fragment {
             }
         });
 
-        hackoverflow.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://esya.iiitd.edu.in/hackoverflow/")));
-
-            }
-        });
-
-
         return v;
     }
 
@@ -117,10 +108,6 @@ public class TabTwoFragment extends Fragment {
         robosoccerCover.getLayoutParams().height = imageHeight;
         robosoccerCover.requestLayout();
 
-        ImageView hackoverflowCover = (ImageView) getActivity().findViewById(R.id.hackoverflowCover);
-        hackoverflowCover.getLayoutParams().width = imageWidth;
-        hackoverflowCover.getLayoutParams().height = imageHeight;
-        hackoverflowCover.requestLayout();
 
 
     }
