@@ -236,7 +236,7 @@
                     android:layout_gravity="bottom"
                     android:paddingBottom="8dp"
                     android:paddingLeft="8dp"
-                    android:text="Fake the research"
+                    android:text="As long as you justify it, we believe it"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
 
@@ -313,7 +313,7 @@
                     android:layout_gravity="bottom"
                     android:paddingBottom="8dp"
                     android:paddingLeft="8dp"
-                    android:text="Online literary event: testing creativity and brevity"
+                    android:text="Brevity is tthe soul of wit"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
 
@@ -352,7 +352,7 @@
                     android:layout_gravity="bottom"
                     android:paddingBottom="8dp"
                     android:paddingLeft="8dp"
-                    android:text="Mini militia Delhi battle"
+                    android:text="The right spawn position"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
 
