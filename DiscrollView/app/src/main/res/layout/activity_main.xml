@@ -165,7 +165,7 @@
                             android:layout_marginBottom="24dp"
                             android:background="@drawable/button"
                             android:padding="8dp"
-                            android:text="MORE INFORMATION"
+                            android:text="VIEW ALL"
                             android:textColor="@color/white" />
 
                     </FrameLayout>
@@ -216,7 +216,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="bottom"
-                            android:background="#99000000"
+                            android:background="#8c000000"
                             android:orientation="vertical">
 
                             <com.example.discrollview.MyTextViewMedium
@@ -286,7 +286,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="bottom"
-                            android:background="#99000000"
+                            android:background="#8c000000"
                             android:orientation="vertical">
 
                             <com.example.discrollview.MyTextViewMedium
@@ -358,18 +358,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="bottom"
-                            android:background="#99000000"
+                            android:background="#8c000000"
                             android:orientation="vertical">
-
-                            <com.example.discrollview.MyTextViewMedium
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center_horizontal|top"
-                                android:paddingTop="8dp"
-                                android:text="COMING SOON"
-                                android:textColor="@color/white"
-                                android:textSize="20sp" />
-
+                            
                             <com.example.discrollview.MyTextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -429,7 +420,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="bottom"
-                            android:background="#99000000"
+                            android:background="#8c000000"
                             android:orientation="vertical">
 
                             <com.example.discrollview.MyTextViewMedium
@@ -499,17 +490,8 @@ bonus marks are given to winners for admission in IIIT."
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="bottom"
-                            android:background="#99000000"
+                            android:background="#8c000000"
                             android:orientation="vertical">
-
-                            <com.example.discrollview.MyTextViewMedium
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center_horizontal|top"
-                                android:paddingTop="8dp"
-                                android:text="COMING SOON"
-                                android:textColor="@color/white"
-                                android:textSize="20sp" />
 
                             <com.example.discrollview.MyTextView
                                 android:layout_width="match_parent"
@@ -517,9 +499,23 @@ bonus marks are given to winners for admission in IIIT."
                                 android:layout_gravity="left"
                                 android:layout_weight="3"
                                 android:padding="8dp"
-                                android:text="The best way to experience this spectacular fest is to stay at the college and enjoy every minute of it. We will ensure that your stay here will be most memorable and pleasant."
+                                android:text="Not from Delhi? Not a problem! This Esya season, enjoy your sojourn in Delhi as we intend to provide all the outside Delhi participants with accommodation! Facilities included: \n \t 1. Complimentary breakfast \n \t 2. Free wifi facilities and transportation \n \t 3. Free pass for the DJ Night "
                                 android:textColor="@color/white"
                                 android:textSize="16sp" />
+
+                            <Button
+                                android:id="@+id/accomodation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|center"
+                                android:layout_marginBottom="12dp"
+                                android:minHeight="0dp"
+                                android:minWidth="0dp"
+                                android:padding="12dp"
+                                android:includeFontPadding="false"
+                                android:background="@drawable/button"
+                                android:text="APPLY"
+                                android:textColor="@color/white" />
 
                         </LinearLayout>
                     </FrameLayout>
