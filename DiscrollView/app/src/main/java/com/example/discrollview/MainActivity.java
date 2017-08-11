@@ -116,6 +116,14 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        accomodation = (Button) findViewById(R.id.accomodation);
+        accomodation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent accomodationIntent = new Intent(MainActivity.this, Accomodation.class);
+                startActivity(accomodationIntent);
+            }
+        });
 
         imageSlider = (SliderLayout) findViewById(R.id.slider);
         imageSlider.getLayoutParams().width = Resources.getSystem().getDisplayMetrics().widthPixels;
@@ -827,7 +835,6 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
     }
 
 
-
     public void onDestroy() {
         clearTimerTaks(clickSchedule);
         clearTimerTaks(scrollerSchedule);
@@ -859,18 +866,17 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         }
     }
 
-    public void onStart()
-    {
+    public void onStart() {
         super.onStart();
 
     }
-    public void onRestart()
-    {
+
+    public void onRestart() {
         super.onRestart();
 
     }
-    public void onResume()
-    {
+
+    public void onResume() {
         super.onResume();
         sliderLayout.startAutoCycle();
         getScrollMaxAmount();
@@ -878,7 +884,6 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         startAutoScrolling();
         startAutoScrolling1();
     }
-
 
 
 }

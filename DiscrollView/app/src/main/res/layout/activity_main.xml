@@ -289,15 +289,6 @@
                             android:background="#8c000000"
                             android:orientation="vertical">
 
-                            <com.example.discrollview.MyTextViewMedium
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center_horizontal|top"
-                                android:paddingTop="8dp"
-                                android:text="COMING SOON"
-                                android:textColor="@color/white"
-                                android:textSize="20sp" />
-
                             <com.example.discrollview.MyTextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -307,6 +298,77 @@
                                 android:text="The most wasted of all days is one without laughter so Esya'17 will make sure you don't waste your day. This event is sure to bring the house down with roaring laughter."
                                 android:textColor="@color/white"
                                 android:textSize="16sp" />
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                >
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/jaspreet"
+                                    android:padding="8dp"/>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_gravity="center">
+
+                                    <com.example.discrollview.MyTextViewMedium
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Jaspreet Singh"
+                                        android:textSize="18sp"
+                                        android:textColor="@color/white"/>
+
+                                    <com.example.discrollview.MyTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Facebook"
+                                        android:textSize="12sp"
+                                        android:textColor="@color/white"/>
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                >
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/sumit"
+                                    android:padding="8dp"/>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_gravity="center">
+
+                                    <com.example.discrollview.MyTextViewMedium
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Sumit Anand"
+                                        android:textSize="18sp"
+                                        android:textColor="@color/white"/>
+
+                                    <com.example.discrollview.MyTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Facebook"
+                                        android:textSize="12sp"
+                                        android:textColor="@color/white"/>
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+
 
                         </LinearLayout>
 
@@ -360,7 +422,7 @@
                             android:layout_gravity="bottom"
                             android:background="#8c000000"
                             android:orientation="vertical">
-                            
+
                             <com.example.discrollview.MyTextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -423,51 +485,15 @@
                             android:background="#8c000000"
                             android:orientation="vertical">
 
-                            <LinearLayout
-                                android:layout_width="match_parent"
+                            <com.example.discrollview.MyTextViewMedium
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:orientation="horizontal">
+                                android:layout_gravity="center_horizontal|top"
+                                android:paddingTop="8dp"
+                                android:text="COMING SOON"
+                                android:textColor="@color/white"
+                                android:textSize="20sp" />
 
-                                <LinearLayout
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="0.5">
-
-                                    <com.example.discrollview.MyTextView
-
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:layout_weight="3"
-                                        android:padding="8dp"
-                                        android:text="Infezeal Workshop"
-                                        android:textColor="@color/white"
-                                        android:textSize="16sp" />
-
-
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="0.5">
-
-                                    <com.example.discrollview.MyTextView
-
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:layout_weight="3"
-                                        android:padding="8dp"
-                                        android:text="Canon Workshop"
-                                        android:textColor="@color/white"
-                                        android:textSize="16sp" />
-
-
-                                </LinearLayout>
-
-
-                            </LinearLayout>
                             <com.example.discrollview.MyTextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
