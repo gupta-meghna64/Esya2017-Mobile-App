@@ -295,7 +295,7 @@
                                 android:layout_gravity="left"
                                 android:layout_weight="3"
                                 android:padding="8dp"
-                                android:text="The most wasted of all days is one without laughter so Esya'17 will make sure you don't waste your day. This event is sure to bring the house down with roaring laughter."
+                                android:text="The most wasted of all days is one without laughter so Esya'17 will make sure you don't waste your day. This event is sure to bring the house down with roaring laughter. Presenting to you-"
                                 android:textColor="@color/white"
                                 android:textSize="16sp" />
 
@@ -303,19 +303,22 @@
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:paddingLeft="8dp"
                                 >
 
                                 <ImageView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:src="@drawable/jaspreet"
-                                    android:padding="8dp"/>
+                                    android:padding="8dp"
+                                    android:id="@+id/jaspreet"/>
 
                                 <LinearLayout
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:orientation="vertical"
-                                    android:layout_gravity="center">
+                                    android:layout_marginTop="12dp">
 
                                     <com.example.discrollview.MyTextViewMedium
                                         android:layout_width="wrap_content"
@@ -328,7 +331,17 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:text="Facebook"
-                                        android:textSize="12sp"
+                                        android:textSize="16sp"
+                                        android:id="@+id/jaspreetFB"
+                                        android:textColor="@color/white"/>
+
+                                    <com.example.discrollview.MyTextView
+                                        android:layout_marginTop="4dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="YouTube"
+                                        android:id="@+id/jaspreetYT"
+                                        android:textSize="16sp"
                                         android:textColor="@color/white"/>
 
                                 </LinearLayout>
@@ -337,19 +350,22 @@
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:paddingLeft="8dp"
                                 >
 
                                 <ImageView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:src="@drawable/sumit"
+                                    android:id="@+id/sumit"
                                     android:padding="8dp"/>
 
                                 <LinearLayout
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:orientation="vertical"
-                                    android:layout_gravity="center">
+                                    android:layout_marginTop="12dp">
 
                                     <com.example.discrollview.MyTextViewMedium
                                         android:layout_width="wrap_content"
@@ -362,13 +378,36 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:text="Facebook"
-                                        android:textSize="12sp"
+                                        android:textSize="16sp"
+                                        android:id="@+id/sumitFB"
+                                        android:textColor="@color/white"/>
+
+                                    <com.example.discrollview.MyTextView
+                                        android:layout_marginTop="4dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="YouTube"
+                                        android:id="@+id/sumitYT"
+                                        android:textSize="16sp"
                                         android:textColor="@color/white"/>
 
                                 </LinearLayout>
                             </LinearLayout>
 
-
+                            <Button
+                                android:id="@+id/comedyNightTickets"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|center"
+                                android:layout_marginBottom="12dp"
+                                android:layout_marginTop="12dp"
+                                android:minHeight="0dp"
+                                android:minWidth="0dp"
+                                android:padding="12dp"
+                                android:includeFontPadding="false"
+                                android:background="@drawable/button"
+                                android:text="BUY TICKETS"
+                                android:textColor="@color/white" />
 
                         </LinearLayout>
 

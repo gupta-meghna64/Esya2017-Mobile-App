@@ -55,10 +55,7 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
     private SliderLayout sliderLayout;
     private SliderLayout sponsorsSliderLayout;
     private Button events;
-    private Button djNight;
-    private Button comedyNight;
-    private Button workshops;
-    private Button initiatives;
+    private Button comedyNightTickets;
     private Button accomodation;
     private ImageView unfoldedDJ;
     private ImageView foldedDJ;
@@ -74,6 +71,11 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
     private ImageView foldedAccomodation;
     private SliderLayout imageSlider;
     final int foldingCellArr[] = new int[6];
+
+    private MyTextView jaspreetFB;
+    private MyTextView jaspreetYT;
+    private MyTextView sumitFB;
+    private MyTextView sumitYT;
 
     private final LatLng LOCATION_IIITD = new LatLng(28.5459495, 77.2688703);
     private GoogleMap map;
@@ -116,14 +118,6 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        accomodation = (Button) findViewById(R.id.accomodation);
-        accomodation.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent accomodationIntent = new Intent(MainActivity.this, Accomodation.class);
-                startActivity(accomodationIntent);
-            }
-        });
 
         imageSlider = (SliderLayout) findViewById(R.id.slider);
         imageSlider.getLayoutParams().width = Resources.getSystem().getDisplayMetrics().widthPixels;
@@ -417,6 +411,56 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
             public void onClick(View v) {
                 Intent eventsIntent = new Intent(MainActivity.this, EventsMainActivity.class);
                 startActivity(eventsIntent);
+            }
+        });
+
+        accomodation = (Button) findViewById(R.id.accomodation);
+        accomodation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent accomodationIntent = new Intent(MainActivity.this, Accomodation.class);
+                startActivity(accomodationIntent);
+            }
+        });
+
+        jaspreetFB = (MyTextView) findViewById(R.id.jaspreetFB);
+        jaspreetFB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.facebook.com/LifeOfPaaji/")));
+            }
+        });
+
+        jaspreetYT = (MyTextView) findViewById(R.id.jaspreetYT);
+        jaspreetYT.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.youtube.com/channel/UCmQCEVKEYpKxG8NwXnfIbCw")));
+            }
+        });
+
+        sumitFB = (MyTextView) findViewById(R.id.sumitFB);
+        sumitFB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.facebook.com/Sumit-Anand-761855273875154/")));
+            }
+        });
+
+        sumitYT = (MyTextView) findViewById(R.id.sumitYT);
+        sumitYT.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.youtube.com/user/sumibangs")));
+            }
+        });
+
+
+        comedyNightTickets = (Button) findViewById(R.id.comedyNightTickets);
+        comedyNightTickets.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("https://insider.in/comedy-night-at-esya-aug25-2017/event")));
             }
         });
 

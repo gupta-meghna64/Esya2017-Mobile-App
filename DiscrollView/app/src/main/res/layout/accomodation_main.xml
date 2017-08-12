@@ -40,44 +40,20 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
-                    android:text="Not from Delhi? Not a problem! This Esya season, enjoy your sojourn in Delhi as we intend to provide all the outside Delhi participants with accommodation! Facilities included: \n \t 1. Complimentary breakfast \n \t 2. Free wifi facilities and transportation \n \t 3. Free pass for the DJ Night " />
-
-            </LinearLayout>
-
-        </android.support.v7.widget.CardView>
-
-        <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="4"
-            android:clickable="true"
-            android:foreground="?android:attr/selectableItemBackground"
-            card_view:cardBackgroundColor="@android:color/background_light"
-            card_view:cardCornerRadius="4dp"
-            card_view:cardElevation="1dp"
-            card_view:cardUseCompatPadding="true"
-            card_view:contentPaddingBottom="5dp"
-            card_view:contentPaddingTop="5dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:weightSum="5">
+                    android:text="Not from Delhi? Not a problem! This Esya season, enjoy your sojourn in Delhi as we intend to provide all the outside Delhi participants with accommodation! Facilities included: \n \t 1. Complimentary breakfast \n \t 2. Free wifi facilities and transportation \n \t 3. Free pass for the DJ Night "
+                    android:textColor="@color/black" />
 
                 <Button
+                    android:id="@+id/applyAcommodation"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:id="@+id/applyAcommodation"
-                    android:text="Apply For Accomodation"/>
+                    android:text="Apply For Accomodation" />
+
 
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
-
-
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
@@ -106,6 +82,7 @@
                     android:padding="8dp"
                     android:text="GUIDELINES FOR APPLYING"
                     android:textAlignment="center"
+                    android:textColor="@color/black"
                     android:textSize="18sp" />
 
                 <com.example.discrollview.MyTextView
@@ -113,15 +90,16 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:padding="8dp"
-                    android:text="Click on the Register link to fill the form for registration for accommodation. The form requires for you to fill in your personal and contact details and asks for a link on google drive to share a copy of your ID proof. In case, you’re having difficulties in uploading it on the Google drive, you can send the required pictures on marketing.esya@iiitd.ac.in with a subject ‘Accommodation: Copy of ID proof’. The next step would be to make the required advance payment of Rs. 320 via NEFT. Following are the required details of the bank account to be transferred to - \n
+                    android:text="Click on the apply button to fill the form for registration for accommodation. The form requires for you to fill in your personal and contact details and asks for a link on google drive to share a copy of your ID proof. In case, you’re having difficulties in uploading it on the Google drive, you can send the required pictures on marketing.esya@iiitd.ac.in with a subject ‘Accommodation: Copy of ID proof’. The next step would be to make the required advance payment of Rs. 320 via NEFT. Following are the required details of the bank account to be transferred to - \n \n
 \t * Bank Name - Kotak Mahindra Bank \n
 \t * Branch Name - New Rohtak Road , Karol Bagh \n
 \t * IFSC - KKBK0004580 \n
 \t * Account Name - Yashdeep Singh \n
-\t * Account Number - 3211453979 \n
+\t * Account Number - 3211453979 \n \n
 After making the payment, you need to email the receipt for the same to marketing.esya@iiitd.ac.in with the subject ‘Accommodation Payment Receipt’. Please mention your Name and Contact Number as well. \n
 The rest of the amount (i.e. Rs. 300 and a security deposit of Rs. 100) will be collected when you report at IIIT-Delhi campus.
-Further details regarding venue and contact for reporting will be provided to you beforehand in the confirmation mail after the above mentioned steps have been completed. The amount for security deposit will be returned to you at the time of checkout. " />
+Further details regarding venue and contact for reporting will be provided to you beforehand in the confirmation mail after the above mentioned steps have been completed. The amount for security deposit will be returned to you at the time of checkout. "
+                    android:textColor="@color/black" />
 
             </LinearLayout>
 
@@ -154,6 +132,7 @@ Further details regarding venue and contact for reporting will be provided to yo
                     android:padding="8dp"
                     android:text="CODE OF CONDUCT"
                     android:textAlignment="center"
+                    android:textColor="@color/black"
                     android:textSize="18sp" />
 
 
@@ -167,7 +146,8 @@ Further details regarding venue and contact for reporting will be provided to yo
 3) While checking - out of the hotel, the participants are required to produce the registration receipt provided to them at the time of registration to avail their security deposit. \n \n
 4) Any kind of prohibited or restricted items like alcohol, drugs or explosives are not allowed inside the hotel and IIITD campus. Items deemed unsafe will be strictly prohibited and strict actions will be undertaken on being caught. \n \n
 5) All Participants are required to abide by all rules of the hotel. \n \n
-6) Decisions taken by the Esya team during any dispute will be final and binding. " />
+6) Decisions taken by the Esya team during any dispute will be final and binding. "
+                    android:textColor="@color/black" />
 
             </LinearLayout>
 
@@ -200,6 +180,7 @@ Further details regarding venue and contact for reporting will be provided to yo
                     android:padding="8dp"
                     android:text="FAQs"
                     android:textAlignment="center"
+                    android:textColor="@color/black"
                     android:textSize="18sp" />
 
 
@@ -213,15 +194,17 @@ Further details regarding venue and contact for reporting will be provided to yo
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:padding="8dp"
-                        android:textStyle="bold"
-                        android:text="What is the payment procedure? " />
+                        android:text="What is the payment procedure? "
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
 
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="4"
                         android:padding="8dp"
-                        android:text="The payment will be in 2 folds. After filling the form for accommodation, you need to make a transaction of Rs. 320 through NEFT to Account No. - 3211453979 and mail a copy of the receipt to marketing.esya@iiitd.ac.in with the subject ‘Accommodation Payment Receipt’. Please mention your Name and Contact Number as well. Process uptill here will confirm your registration for accommodation. The rest of the amount (i.e. Rs. 300 and a security deposit of Rs. 100) will be collected when you report at IIIT-Delhi campus. Further details regarding venue and contact for reporting will be provided to you beforehand in the confirmation mail. The amount for security deposit will be returned to you at the time of checkout. " />
+                        android:text="The payment will be in 2 folds. After filling the form for accommodation, you need to make a transaction of Rs. 320 through NEFT to Account No. - 3211453979 and mail a copy of the receipt to marketing.esya@iiitd.ac.in with the subject ‘Accommodation Payment Receipt’. Please mention your Name and Contact Number as well. Process uptill here will confirm your registration for accommodation. The rest of the amount (i.e. Rs. 300 and a security deposit of Rs. 100) will be collected when you report at IIIT-Delhi campus. Further details regarding venue and contact for reporting will be provided to you beforehand in the confirmation mail. The amount for security deposit will be returned to you at the time of checkout. "
+                        android:textColor="@color/black" />
 
                 </LinearLayout>
 
@@ -235,15 +218,17 @@ Further details regarding venue and contact for reporting will be provided to yo
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:padding="8dp"
-                        android:textStyle="bold"
-                        android:text="Will accommodation be provided on-the-spot? " />
+                        android:text="Will accommodation be provided on-the-spot? "
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
 
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="4"
                         android:padding="8dp"
-                        android:text="No. Participants must complete the registration procedure for accommodation and present a hard copy of the confirmation mail and ID proof to avail accommodation facilities from our side." />
+                        android:text="No. Participants must complete the registration procedure for accommodation and present a hard copy of the confirmation mail and ID proof to avail accommodation facilities from our side."
+                        android:textColor="@color/black" />
 
                 </LinearLayout>
 
@@ -257,15 +242,17 @@ Further details regarding venue and contact for reporting will be provided to yo
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:padding="8dp"
-                        android:textStyle="bold"
-                        android:text="Where do I report to for availing the hotel accommodation? " />
+                        android:text="Where do I report to for availing the hotel accommodation? "
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
 
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="4"
                         android:padding="8dp"
-                        android:text="Participants who have completed the registration process for accommodation will be receiving a confirmation email containing all necessary details." />
+                        android:text="Participants who have completed the registration process for accommodation will be receiving a confirmation email containing all necessary details."
+                        android:textColor="@color/black" />
 
                 </LinearLayout>
 
@@ -279,15 +266,17 @@ Further details regarding venue and contact for reporting will be provided to yo
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:padding="8dp"
-                        android:textStyle="bold"
-                        android:text="What kind of accommodation is provided? " />
+                        android:text="What kind of accommodation is provided? "
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
 
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="4"
                         android:padding="8dp"
-                        android:text="Accommodation will be provided in a hotel within a radius of 3 kms of IIIT-Delhi on a sharing basis. There will be 3 people sharing a room. Proper bedding and adequate space for luggage will be provided within the rooms for all. " />
+                        android:text="Accommodation will be provided in a hotel within a radius of 3 kms of IIIT-Delhi on a sharing basis. There will be 3 people sharing a room. Proper bedding and adequate space for luggage will be provided within the rooms for all. "
+                        android:textColor="@color/black" />
 
                 </LinearLayout>
 
@@ -301,15 +290,17 @@ Further details regarding venue and contact for reporting will be provided to yo
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:padding="8dp"
-                        android:textStyle="bold"
-                        android:text="Will all the team members be given accommodation at the same place? " />
+                        android:text="Will all the team members be given accommodation at the same place? "
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
 
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="4"
                         android:padding="8dp"
-                        android:text="We will try our best to accommodate all team members together, probably in rooms next to each other, if not in the same room. " />
+                        android:text="We will try our best to accommodate all team members together, probably in rooms next to each other, if not in the same room. "
+                        android:textColor="@color/black" />
 
                 </LinearLayout>
 
@@ -323,15 +314,17 @@ Further details regarding venue and contact for reporting will be provided to yo
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:padding="8dp"
-                        android:textStyle="bold"
-                        android:text="Does the accommodation charges include food and travel facilities too? " />
+                        android:text="Does the accommodation charges include food and travel facilities too? "
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
 
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="4"
                         android:padding="8dp"
-                        android:text="Yes, the accommodation fee of Rs. 620 will cover the stay at hotel as well as the breakfast and transportation to and fro IIIT-Delhi campus from the hotel twice a day (Morning and Night). We would leave no stone unturned in providing you with the best of facilities at a reasonable price. " />
+                        android:text="Yes, the accommodation fee of Rs. 620 will cover the stay at hotel as well as the breakfast and transportation to and fro IIIT-Delhi campus from the hotel twice a day (Morning and Night). We would leave no stone unturned in providing you with the best of facilities at a reasonable price. "
+                        android:textColor="@color/black" />
 
                 </LinearLayout>
 
@@ -345,22 +338,23 @@ Further details regarding venue and contact for reporting will be provided to yo
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:padding="8dp"
-                        android:textStyle="bold"
-                        android:text="What about the hospital facility? " />
+                        android:text="What about the hospital facility? "
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
 
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="4"
                         android:padding="8dp"
-                        android:text="We have an on-campus clinic to cater to small injuries and a hospital near the hotel as well as IIIT - Delhi campus in case of emergency. " />
+                        android:text="We have an on-campus clinic to cater to small injuries and a hospital near the hotel as well as IIIT - Delhi campus in case of emergency. "
+                        android:textColor="@color/black" />
 
                 </LinearLayout>
 
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
-
 
 
         <android.support.v7.widget.CardView
@@ -390,6 +384,7 @@ Further details regarding venue and contact for reporting will be provided to yo
                     android:padding="8dp"
                     android:text="POINT OF CONTACT"
                     android:textAlignment="center"
+                    android:textColor="@color/black"
                     android:textSize="18sp" />
 
                 <LinearLayout
@@ -404,19 +399,24 @@ Further details regarding venue and contact for reporting will be provided to yo
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Siddharth Arya" />
+                        android:text="Siddharth Arya"
+
+                        android:textColor="@color/black" />
 
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Convenor" />
+                        android:text="Convenor"
+                        android:textColor="@color/black" />
 
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="9560354511" />
+                        android:text="9560354511"
+
+                        android:textColor="@color/black" />
 
                 </LinearLayout>
 
@@ -432,19 +432,24 @@ Further details regarding venue and contact for reporting will be provided to yo
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Yashdeep Singh" />
+                        android:text="Yashdeep Singh"
+
+                        android:textColor="@color/black" />
 
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Hospitality" />
+                        android:text="Hospitality"
+                        android:textColor="@color/black" />
 
                     <com.example.discrollview.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="7838289952" />
+                        android:text="7838289952"
+
+                        android:textColor="@color/black" />
 
                 </LinearLayout>
 
