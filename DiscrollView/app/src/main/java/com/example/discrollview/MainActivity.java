@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
     private Button events;
     private Button comedyNightTickets;
     private Button accomodation;
+    private Button workshops;
     private ImageView unfoldedDJ;
     private ImageView foldedDJ;
     private ImageView unfoldedEvents;
@@ -464,6 +465,15 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
             }
         });
 
+        workshops = (Button) findViewById(R.id.workshops);
+        workshops.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent workshopsIntent = new Intent(MainActivity.this, Workshops.class);
+                startActivity(workshopsIntent);
+
+            }
+        });
     }
 
     public void checkUnfolder(int unfolderID) {

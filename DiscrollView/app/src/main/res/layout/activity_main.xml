@@ -524,27 +524,67 @@
                             android:background="#8c000000"
                             android:orientation="vertical">
 
+
                             <com.example.discrollview.MyTextViewMedium
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_gravity="center_horizontal|top"
-                                android:paddingTop="8dp"
-                                android:text="COMING SOON"
+                                android:layout_gravity="left"
+                                android:layout_weight="3"
+                                android:padding="8dp"
+                                android:textStyle="bold"
+                                android:text="Infizeal Workshop"
                                 android:textColor="@color/white"
-                                android:textSize="20sp" />
+                                android:textSize="24sp" />
 
                             <com.example.discrollview.MyTextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="left"
                                 android:layout_weight="3"
-                                android:padding="8dp"
-                                android:text="Esya'17 aims at spreading knowledge about it's theme, accordingly, we will conduct workshops where students will be taught the basics of programming and circuit design. Two events are hosted specially for school students for the same and
-bonus marks are given to winners for admission in IIIT."
+                                android:paddingLeft="8dp"
+                                android:text="When: 19th-20th August'17 \nWhere: IIIT Delhi, Okhla Phase 3, New Delhi"
                                 android:textColor="@color/white"
                                 android:textSize="16sp" />
 
+                            <com.example.discrollview.MyTextViewMedium
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_weight="3"
+                                android:padding="8dp"
+                                android:textStyle="bold"
+                                android:text="Canon Workshop"
+                                android:textColor="@color/white"
+                                android:textSize="24sp" />
+
+                            <com.example.discrollview.MyTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_weight="3"
+                                android:paddingLeft="8dp"
+                                android:text="When: 12th August'17 \nWhere: IIIT Delhi, Okhla Phase 3, New Delhi"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:id="@+id/workshops"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|center"
+                                android:layout_marginBottom="12dp"
+                                android:layout_marginTop="12dp"
+                                android:minHeight="0dp"
+                                android:minWidth="0dp"
+                                android:padding="12dp"
+                                android:includeFontPadding="false"
+                                android:background="@drawable/button"
+                                android:text="REGISTER"
+                                android:textColor="@color/white" />
+
+
                         </LinearLayout>
+
                     </FrameLayout>
                     ​
 
