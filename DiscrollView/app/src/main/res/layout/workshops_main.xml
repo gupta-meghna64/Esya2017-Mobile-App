@@ -9,6 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:padding="4dp">
 
         <android.support.v7.widget.CardView
@@ -22,9 +23,7 @@
             card_view:cardBackgroundColor="@android:color/background_light"
             card_view:cardCornerRadius="4dp"
             card_view:cardElevation="1dp"
-            card_view:cardUseCompatPadding="true"
-            card_view:contentPaddingBottom="1dp"
-            card_view:contentPaddingTop="1dp">
+            card_view:cardUseCompatPadding="true">
 
             <FrameLayout
                 android:layout_width="wrap_content"
@@ -35,6 +34,178 @@
                     android:layout_width="wrap_content"
                     android:layout_height="800px"
                     android:src="@drawable/trial" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <com.example.discrollview.MyTextViewMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="INFIZEAL WORKSHOP"
+                        android:textSize="32sp"
+                        android:padding="12dp"
+                        android:textColor="@android:color/white"/>
+
+                    <view
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/white" />
+
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:paddingTop="10dp"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:text="August 19th at 11 AM to August 20th at 5 PM"/>
+
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:text="IIIT Delhi, Okhla Phase 3, New Delhi"/>
+
+                    <view
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/white" />
+
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:text="Esya'17 and Infizeal Technologies are organizing a workshop on Touch and Augmented Reality on 19th and 20th August. This would be a great opportunity to learn how to interact with the digital world using physical objects." />
+
+                    <Button
+                        android:id="@+id/applyInfizeal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginBottom="12dp"
+                        android:minHeight="0dp"
+                        android:minWidth="0dp"
+                        android:padding="12dp"
+                        android:includeFontPadding="false"
+                        android:background="@drawable/button"
+                        android:text="REGISTER"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="@android:color/background_light"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="1dp"
+            card_view:cardUseCompatPadding="true">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/infizealImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="800px"
+                    android:src="@drawable/trial" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <com.example.discrollview.MyTextViewMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CANON WORKSHOP"
+                        android:textSize="32sp"
+                        android:padding="12dp"
+                        android:textColor="@android:color/white"/>
+
+                    <view
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/white" />
+
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:paddingTop="10dp"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:text="August 12th 10 AM to 2 PM"/>
+
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:paddingTop="10dp"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:text="Registration Fee : Rs.150"/>
+
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:text="IIIT Delhi, Okhla Phase 3, New Delhi"/>
+
+                    <view
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/white" />
+
+                    <com.example.discrollview.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:text="Esya'17 is organizing a workshop on photography for all those who cannot stop themselves from clicking pics once they see something captivating." />
+
+                    <Button
+                        android:id="@+id/applyCanon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginBottom="12dp"
+                        android:minHeight="0dp"
+                        android:minWidth="0dp"
+                        android:padding="12dp"
+                        android:includeFontPadding="false"
+                        android:background="@drawable/button"
+                        android:text="REGISTER"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+
 
             </FrameLayout>
 
