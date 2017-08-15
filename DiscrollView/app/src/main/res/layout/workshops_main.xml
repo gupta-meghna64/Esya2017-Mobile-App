@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -49,7 +48,7 @@
                         android:padding="12dp"
                         android:textColor="@android:color/white"/>
 
-                    <view
+                    <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:background="@android:color/white" />
@@ -72,7 +71,7 @@
                         android:textAlignment="center"
                         android:text="IIIT Delhi, Okhla Phase 3, New Delhi"/>
 
-                    <view
+                    <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:background="@android:color/white" />
@@ -143,7 +142,7 @@
                         android:padding="12dp"
                         android:textColor="@android:color/white"/>
 
-                    <view
+                    <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:background="@android:color/white" />
@@ -175,7 +174,7 @@
                         android:textAlignment="center"
                         android:text="IIIT Delhi, Okhla Phase 3, New Delhi"/>
 
-                    <view
+                    <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:background="@android:color/white" />
@@ -204,7 +203,6 @@
                         android:textColor="@color/white" />
 
                 </LinearLayout>
-
 
 
             </FrameLayout>

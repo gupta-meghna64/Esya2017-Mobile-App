@@ -465,7 +465,7 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
             }
         });
 
-        workshops = (Button) findViewById(R.id.workshops);
+        workshops = (Button) findViewById(R.id.workshopsButton);
         workshops.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

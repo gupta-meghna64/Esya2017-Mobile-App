@@ -24,9 +24,8 @@ import com.squareup.picasso.Target;
 
 public class Workshops extends AppCompatActivity {
 
-    private Button back;
-    private LinearLayout mainLayout;
     private ImageView canon;
+    private ImageView infizeal;
     private Button registerInfizeal;
     private Button registerCanon;
 
@@ -37,16 +36,15 @@ public class Workshops extends AppCompatActivity {
         registerCanon = (Button) findViewById(R.id.applyCanon);
         registerInfizeal = (Button) findViewById(R.id.applyInfizeal);
         canon = (ImageView) findViewById(R.id.canonImageView);
-//        canon.getLayoutParams().height = Resources.getSystem().getDisplayMetrics().widthPixels;
-//        canon.getLayoutParams().width = Resources.getSystem().getDisplayMetrics().widthPixels;
-//        canon.requestLayout();
-//        back.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent homeIntent = new Intent(Workshops.this, MainActivity.class);
-//                startActivity(homeIntent);
-//            }
-//        });
+        canon.getLayoutParams().height = Resources.getSystem().getDisplayMetrics().widthPixels;
+        canon.getLayoutParams().width = Resources.getSystem().getDisplayMetrics().widthPixels;
+        canon.requestLayout();
+
+        infizeal = (ImageView) findViewById(R.id.infizealImageView);
+        infizeal.getLayoutParams().height = Resources.getSystem().getDisplayMetrics().widthPixels;
+        infizeal.getLayoutParams().width = Resources.getSystem().getDisplayMetrics().widthPixels;
+        infizeal.requestLayout();
+
 
         registerInfizeal.setOnClickListener(new View.OnClickListener() {
             @Override
