@@ -83,9 +83,7 @@
             android:theme="@style/Theme.AppCompat.NoActionBar">
 
         </activity>
-        <activity
-            android:name=".Workshops"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".Workshops">
 
         </activity>
         <activity android:name=".iiitdmap">
