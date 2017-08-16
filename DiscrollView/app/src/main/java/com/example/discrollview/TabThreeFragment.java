@@ -28,7 +28,7 @@ public class TabThreeFragment extends Fragment {
         CardView thebigbang = (CardView) v.findViewById(R.id.cardBigBang);
         CardView words = (CardView) v.findViewById(R.id.cardWordsToGo);
         CardView minimilitia = (CardView) v.findViewById(R.id.cardMiniMilitia);
-        CardView poker = (CardView) v.findViewById(R.id.cardPoker);
+//        CardView poker = (CardView) v.findViewById(R.id.cardPoker);
         CardView speedcubing = (CardView) v.findViewById(R.id.cardSpeedCubing);
         CardView chakravyuha = (CardView) v.findViewById(R.id.cardChakravyuha);
 
@@ -113,14 +113,14 @@ public class TabThreeFragment extends Fragment {
             }
         });
 
-        poker.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(getActivity(), NTMainActivity.class);
-                i.putExtra("viewpager_position", 9);
-                startActivity(i);
-            }
-        });
+//        poker.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent i = new Intent(getActivity(), NTMainActivity.class);
+//                i.putExtra("viewpager_position", 9);
+//                startActivity(i);
+//            }
+//        });
 
         speedcubing.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -193,10 +193,10 @@ public class TabThreeFragment extends Fragment {
         minimilitiaCover.getLayoutParams().height = imageHeight;
         minimilitiaCover.requestLayout();
 
-        ImageView pokerCover = (ImageView) getActivity().findViewById(R.id.pokerCover);
-        pokerCover.getLayoutParams().width = imageWidth;
-        pokerCover.getLayoutParams().height = imageHeight;
-        pokerCover.requestLayout();
+//        ImageView pokerCover = (ImageView) getActivity().findViewById(R.id.pokerCover);
+//        pokerCover.getLayoutParams().width = imageWidth;
+//        pokerCover.getLayoutParams().height = imageHeight;
+//        pokerCover.requestLayout();
 
         ImageView speedcubingCover = (ImageView) getActivity().findViewById(R.id.speedcubingCover);
         speedcubingCover.getLayoutParams().width = imageWidth;

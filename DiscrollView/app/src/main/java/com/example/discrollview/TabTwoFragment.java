@@ -21,7 +21,7 @@ public class TabTwoFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_tab_two, container, false);
 
         CardView circuitrixjr = (CardView) v.findViewById(R.id.cardCircuitrixjr);
-        CardView circuitrix = (CardView) v.findViewById(R.id.cardCircuitrix);
+//        CardView circuitrix = (CardView) v.findViewById(R.id.cardCircuitrix);
         CardView robowars = (CardView) v.findViewById(R.id.cardRobowars);
         CardView robocon = (CardView) v.findViewById(R.id.cardRobocon);
         CardView robosoccer = (CardView) v.findViewById(R.id.cardRobosoccer);
@@ -35,15 +35,15 @@ public class TabTwoFragment extends Fragment {
                 startActivity(i);
             }
         });
-
-        circuitrix.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(getActivity(), ECEMainActivity.class);
-                i.putExtra("viewpager_position", 1);
-                startActivity(i);
-            }
-        });
+//
+//        circuitrix.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent i = new Intent(getActivity(), ECEMainActivity.class);
+//                i.putExtra("viewpager_position", 1);
+//                startActivity(i);
+//            }
+//        });
 
         robowars.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -87,10 +87,10 @@ public class TabTwoFragment extends Fragment {
         cjCover.getLayoutParams().height = imageHeight;
         cjCover.requestLayout();
 
-        ImageView circuitrixCover = (ImageView) getActivity().findViewById(R.id.circuitrixCover);
-        circuitrixCover.getLayoutParams().width = imageWidth;
-        circuitrixCover.getLayoutParams().height = imageHeight;
-        circuitrixCover.requestLayout();
+//        ImageView circuitrixCover = (ImageView) getActivity().findViewById(R.id.circuitrixCover);
+//        circuitrixCover.getLayoutParams().width = imageWidth;
+//        circuitrixCover.getLayoutParams().height = imageHeight;
+//        circuitrixCover.requestLayout();
 
         ImageView robowarsCover = (ImageView) getActivity().findViewById(R.id.robowarsCover);
         robowarsCover.getLayoutParams().width = imageWidth;
