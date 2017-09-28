@@ -14,17 +14,9 @@ It has the following features -
 ### Frameworks Used 
 
 This is built using Android Studio and has a UI that supports all screen-sizes. It uses multiple open source UI-UX Libraries.
-### How to use it ?
+### Link to APK
 
-It's very easy to use Esya App on your mobile phones. Just follow these steps - 
-
-* Go to the link https://github.com/gupta-meghna64/Esya2017-Mobile-Appp 
-* Click on Clone or Download button and then download as zip.
-* Extract the zip folder to any directory in your computer.
-* Make sure you have Android Studio installed in your computer.
-* Go to Android Studio, and click on File and then Open.
-* Now browse into the directory where you extracted the zip folder and click on Esya2017-Mobile-App.
-* Here you go.
+http://bit.ly/2xcgV8b
 
 ### Screenshots of ESYA App
 <p align="center">
